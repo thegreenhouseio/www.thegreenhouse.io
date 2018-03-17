@@ -5,7 +5,7 @@ pipeline {
     
     stage('Install Dependencies') {
       steps {
-        yarn install
+        sh "yarn install"
       }
     }
 
@@ -17,7 +17,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        yarn build
+        sh "yarn build"
       }
     }
 
