@@ -3,15 +3,21 @@ pipeline {
 
   stages {
     
-    stage('Build') {
+    stage('Install Dependencies') {
       steps {
-        yarn build
+        yarn install
       }
     }
 
     stage('Test') {
       steps {
         echo 'Testing..'
+      }
+    }
+
+    stage('Build') {
+      steps {
+        yarn build
       }
     }
 
