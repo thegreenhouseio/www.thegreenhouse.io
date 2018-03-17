@@ -1,9 +1,14 @@
 pipeline {
   agent any
 
+  // this tool will be used for all stages/steps except over-written
+  tools {
+    nodejs "node-8.9.4"
+  }
+
   stages {
     
-    stage('Install Dependencies') {
+    stage('Prep') {
       steps {
         sh "yarn install"
       }
