@@ -1,7 +1,11 @@
 pipeline {
   agent any
 
-  // this tool will be used for all stages/steps except over-written
+  environment {
+    AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
+    AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
+  }
+
   tools {
     nodejs "node-8.9.4"
   }
@@ -26,13 +30,13 @@ pipeline {
       }
     }
 
+    // Only deploy when building from the master branch
     stage('Deploy') {
       when {
-        // Only deploy when building from the master branch
         expression { BRANCH_NAME == 'master' }
       }
       steps {
-          sh "yarn release"
+        sh "yarn release"
       }
     }
 
