@@ -10,7 +10,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "yarn build && gatsby serve",
-    "release": "yarn build && node release.js"
+    "release": "node release.js"
   },
   "devDependencies": {
     "aws-sdk": "^2.211.0",
