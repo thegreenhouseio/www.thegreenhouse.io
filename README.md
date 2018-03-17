@@ -9,8 +9,8 @@ Stuff to do / run. 🏃‍♂️
 
 ### Setup
 After cloning the repo, do the following to get up and running
-1. Install LTS [NodeJS](https://nodejs.org/en/)
-1. Install >= 1.x [Yarn](https://yarnpkg.com/en/)
+1. Install [NodeJS](https://nodejs.org/en/) (LTS)
+1. Install [Yarn](https://yarnpkg.com/en/) (>= 1.x)
 1. Run `yarn install`
 
 ### Tasks
@@ -20,7 +20,7 @@ After cloning the repo, do the following to get up and running
 - `yarn release` - deploys a build to S3
 
 ## Release Management
-The project is hosted in [AWS]() and is setup to deploys continously on every merge to master in GitHub by running _running.js_.
+The project is hosted in [AWS](https://aws.amazon.com/) and is setup to deploy continously on every merge to master in GitHub by running _running.js_.
 1. Jenkins build and deploys to an S3 bucket
 1. Cloudfront fronts this S3 bucket
 1. Route53 has a `CNAME` entry mapping _www.thegreenhouse.io_ to the Cloudfront distrubution
