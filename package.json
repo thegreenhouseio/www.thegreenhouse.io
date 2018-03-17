@@ -1,0 +1,19 @@
+{
+  "name": "www.thegreenhouse.io",
+  "version": "1.0.0",
+  "description": "Personal website and blog project statically generated with Gatsby.",
+  "main": "index.js",
+  "repository": "git@github.com:thegreenhouseio/www.thegreenhouse.io.git",
+  "author": "owen@thegreenhouse.io",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "yarn build && gatsby serve"
+  },
+  "devDependencies": {
+    "gatsby": "^1.9.236",
+    "gatsby-cli": "^1.1.46",
+    "gatsby-link": "^1.6.39"
+  }
+}
