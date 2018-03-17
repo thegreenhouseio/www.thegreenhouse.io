@@ -27,8 +27,12 @@ pipeline {
     }
 
     stage('Deploy') {
+      when {
+        // Only deploy when building from the master branch
+        expression { BRANCH_NAME == 'master' }
+      }
       steps {
-        echo 'Deploying....'
+          sh "yarn release"
       }
     }
 
