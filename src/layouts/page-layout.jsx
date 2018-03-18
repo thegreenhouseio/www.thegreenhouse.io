@@ -15,14 +15,13 @@ const PageLayout = (props) => {
         <Navigation/>
       </section>
 
-      <section>
+      <section className="outlet">
         { props.children }
       </section>
 
       <section>
         <Footer/>
       </section>
-
     </div>
   )
 }

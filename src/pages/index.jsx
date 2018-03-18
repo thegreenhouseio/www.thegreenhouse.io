@@ -5,10 +5,20 @@ import HomePage from './home';
 import './app.css';
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: "18px",
   baseLineHeight: 1.45,
-  baseFontFamily: ['Avenir Next', 'Helvetica Neue']
-})
+  headerFontFamily: [
+    "Avenir Next",
+    "Helvetica Neue",
+    "Segoe UI",
+    "Helvetica",
+    "Arial",
+    "sans-serif",
+  ],
+  bodyFontFamily: ["Avenir Next", "serif"],
+});
+
+typography.injectStyles();
 
 export default () => {
   return (

@@ -2,10 +2,6 @@ nav {
   display: block;
 }
 
-nav a {
-  color: #020202;
-}
-
 nav ul {
   list-style: none;
 }
@@ -13,4 +9,9 @@ nav ul {
 nav li {
   display: inline-block;
   width: 100px;
+}
+
+nav a {
+  color: #020202;
+  font-size: 1.4em;
 }
