@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import PageWrapper from '../components/page-wrapper/page-wrapper';
+import PageWrapper from '../layouts/page-layout';
 
 const AboutPage = () => {
   return (

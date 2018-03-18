@@ -1,0 +1,6 @@
+header {
+  background-image: url('./banner.png');
+  width: 100%;
+  background-size: cover;
+  height: 200px;
+}
