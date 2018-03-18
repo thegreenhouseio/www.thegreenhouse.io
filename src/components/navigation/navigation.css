@@ -1,0 +1,16 @@
+nav {
+  display: block;
+}
+
+nav a {
+  color: #020202;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  width: 100px;
+}
