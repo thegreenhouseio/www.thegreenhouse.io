@@ -2,16 +2,17 @@ import React from 'react';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import Navigation from '../components/navigation/navigation';
+import './page-layout.css';
 
 const PageLayout = (props) => {
   return (
-    <div>
+    <div className="layout">
       <section>
-        <Navigation/>
+        <Header/>
       </section>
 
       <section>
-        <Header/>
+        <Navigation/>
       </section>
 
       <section>

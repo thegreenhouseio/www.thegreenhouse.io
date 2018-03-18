@@ -8,9 +8,9 @@ nav a {
 
 nav ul {
   list-style: none;
-  height: 10px;
 }
 
 nav li {
-  float: left;
+  display: inline-block;
+  width: 100px;
 }

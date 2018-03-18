@@ -1,6 +1,15 @@
 header {
   background-image: url('./banner.png');
-  width: 100%;
   background-size: cover;
-  height: 200px;
+  background-color: #020202;
+  height: 250px;
+}
+
+.caption {
+  width: 100%;
+  text-align: center;
+  color: #efefef;
+  background-color: #020202;
+  font-size: 12px;
+  font-style: italic;
 }

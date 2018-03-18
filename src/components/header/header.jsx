@@ -3,8 +3,11 @@ import './header.css';
 
 const Header = () => {
   return (
-    <header></header>
+    <div> 
+      <header></header>
+      <h4 className="caption">A DREAMER BY DESIGN</h4>
+    </div>
   )
 };
 
-export default Header
+export default Header;

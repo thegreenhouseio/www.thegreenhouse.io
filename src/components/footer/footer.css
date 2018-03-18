@@ -1,3 +1,7 @@
 footer {
   font-size: 10px;
 }
+
+footer a {
+  margin: 10px 10px;
+}

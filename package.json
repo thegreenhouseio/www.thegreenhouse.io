@@ -12,6 +12,10 @@
     "serve": "yarn build && gatsby serve",
     "release": "node release.js"
   },
+  "dependencies": {
+    "react-social-icons": "^2.8.1",
+    "typography": "^0.16.6"
+  },
   "devDependencies": {
     "aws-sdk": "^2.211.0",
     "gatsby": "^1.9.236",
@@ -19,8 +23,5 @@
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-typography": "^1.7.18",
     "glob": "^7.1.2"
-  },
-  "dependencies": {
-    "typography": "^0.16.6"
   }
 }
