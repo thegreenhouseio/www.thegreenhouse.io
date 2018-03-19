@@ -21,38 +21,43 @@ export class PublicationsPage extends React.Component {
         <p>I think the best way to tell you about myself is to show you what I am passionate about.  Below are some featured articles
           and presentations I've worked on.</p>
 
-        <h2><u>Speaking</u></h2>
-        {
-          this.presentations.map(presentation => {
-            let key = 0;
-            let item = {
-              title: presentation.title,
-              abstract: presentation.abstract,
-              link: presentation.link,
-              date: presentation.date,
-              video: presentation.video
-            }
-            return <Card key={item.title} item={item}/>
-          })
-        }
+        <div>
+          <h2><u>Speaking</u></h2>
+          {
+            this.presentations.map(presentation => {
+              let key = 0;
+              let item = {
+                title: presentation.title,
+                abstract: presentation.abstract,
+                link: presentation.link,
+                date: presentation.date,
+                video: presentation.video
+              }
+              return <Card key={item.title} item={item}/>
+            })
+          }
+        </div>
 
-        <h2><u>Writing</u></h2>
-        {
-          this.articles.map(article => {
-            let key = 0;
-            let subHeading = article.subHeading ? `: ${article.subHeading}` : '';
-            let item = {
-              title: `${article.heading} ${subHeading}`,
-              abstract: article.abstract,
-              link: article.link,
-              img: article.img,
-              date: article.date
-            }
-            return <Card key={item.title} item={item}/>
-          })
-        }
+        <div>
+          <h2><u>Writing</u></h2>
+          {
+            this.articles.map(article => {
+              let key = 0;
+              let subHeading = article.subHeading ? `: ${article.subHeading}` : '';
+              let item = {
+                title: `${article.heading} ${subHeading}`,
+                abstract: article.abstract,
+                link: article.link,
+                img: article.img,
+                date: article.date
+              }
+              return <Card key={item.title} item={item}/>
+            })
+          }
 
-        <span>Please feel free to visit my <a href={this.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
+          <span>Please feel free to visit my <a href={this.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
+        </div>
+      
       </PageWrapper>
     )
   }
