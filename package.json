@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "rimraf ./public && gatsby build",
     "serve": "yarn build && gatsby serve",
     "release": "node release.js"
   },
@@ -22,6 +22,7 @@
     "gatsby-cli": "^1.1.46",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-typography": "^1.7.18",
-    "glob": "^7.1.2"
+    "glob": "^7.1.2",
+    "rimraf": "^2.6.2"
   }
 }
