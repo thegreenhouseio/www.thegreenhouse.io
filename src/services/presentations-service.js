@@ -1,6 +1,6 @@
 class PresentationsService {
   constructor() {
-    // add new articles at the top, i.e. FIFO
+    // add new presentations at the top, i.e. FIFO
     this.presentations = [{
       title: 'Providence Geeks 2.0: Building a Website and a Community',
       abstract: 'Part two in my performance series for the Providence Geeks website.',

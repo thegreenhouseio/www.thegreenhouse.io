@@ -17,3 +17,7 @@ section p {
 section p.cta {
   text-align: center;
 }
+
+.clear-fix {
+  clear: both;
+}
