@@ -6,18 +6,21 @@ const HomePage = () => {
   return (
     <PageLayout>
       
-      <p>Owen Buckley (that's me 👋) is a passionate problem solver and lifetime learner specializing in web 
-        application architectures, bringing my wide range of technical knowledge, creativity and entrepreneurial spirit 
-        to the projects I work on. I consider the hallmarks of any successful endeavor to include organization, preparation, 
-        and thoughtful deliberation to ensure timely delivery and expectations that are not just met, but exceeded.</p>
+      <p>Hello (👋), I'm <b>Owen</b>!  I'm a problem solver and passionate lifetime learner specializing in web 
+        application architectures and business development.  My broad range of technical knowledge and capabilities, 
+        creativity, comminicaton skills, and a good splash of entrepreneurial spirit make me a valuable contributor to all stages of the
+        software delivery lifecycle (SDLC) and business operations. I consider the hallmarks of any successful endeavor to 
+        include strong communication and feedback to ensure expectations are not just met, but exceeded.</p>
 
-      <p>The Greenhouse is my platform for growing and building ideas, projects, and businesses with pragmatic technology 
-        solutions by leveraging some of the best tools available today specifically as it makes sense for a given project. 
-        Jenkins, Docker, AWS, NodeJS, and PHP are just a few the technologies being used to help deliver projects 
-        for myself and colloborators.</p>
+      <p><b>The Greenhouse</b> is my platform for growing and building ideas, projects, and businesses with pragmatic technology 
+        solutions leveraging some of the best tools available today. Projects are designed and developed to be 
+        performant and maintainable (developer experience) and automated in their delivery (CI / CD) while most importantly,
+        ensuring the application provides great user experiences (UX).</p>
 
-      <p>Please checkout my <Link to="/blog/">blog</Link> to see what I’ve been up to and <Link to="/contact/">contact me</Link> if
-        you would like us to work together!</p>
+      {/* <p>Please checkout my <Link to="/blog/">blog</Link> to see what I’ve been up to and feel free to <Link to="/contact/">reach out</Link>
+        to me here or on social media.</p> */}
+
+      <hr/>
 
       <span>I want to help build your future.</span>
 
