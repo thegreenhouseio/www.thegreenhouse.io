@@ -1,20 +1,26 @@
 import React from "react";
 import SocialIcons from 'react-social-icons';
+import SocialLinksService from '../../services/social-links-service';
 import './footer.css';
 
-const Footer = () => {
-  const urls = [
-    'https://www.linkedin.com/in/owen-buckley-91393447/',
-    'https://twitter.com/thegreenhouseio',
-    'https://medium.com/@thegreenhouseio',
-    'https://github.com/thegreenhouseio'
-  ];
+class Footer extends React.Component {
+  
+  constructor() {
+    super();
+    const links = new SocialLinksService().getLinks();
+    
+    this.urls = links.map(link => {
+      return link.url;
+    });
+  }
 
-  return (
-    <footer>
-      <SocialIcons urls={urls} />
-    </footer>
-  )
+  render() {
+    return (
+      <footer>
+        <SocialIcons urls={this.urls} />
+      </footer>
+    )
+  }
 };
 
 export default Footer;
