@@ -28,7 +28,7 @@ class HomePage extends React.Component {
           enable great user experiences (UX).</p>
 
         <p>I'm always up to something online be it on <a href={this.socialLinksMap.twitter}>twitter</a>, <a href={this.socialLinksMap.medium}>Medium</a>, 
-        or around the local <a href="https://www.pvdgeeks.org">Rhode Island Tech Meetup Comminity</a>, so I hope to hear from you!</p>
+        or around the local <a href="https://www.pvdgeeks.org">Rhode Island Tech Meetup Community</a>, so I hope to hear from you!</p>
 
         <hr/>
 
