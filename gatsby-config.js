@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Greenhouse I/O - Building Your Future Together 👐 🌱 💻'
+    title: 'The Greenhouse I/O',
+    siteUrl: 'https://www.thegreenhouse.io',
+    description: 'Personal / portfolio website for The Greenhouse.',
   },
   plugins: [
     'gatsby-plugin-typography', 

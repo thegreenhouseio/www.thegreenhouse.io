@@ -1,8 +1,8 @@
 {
   "name": "www.thegreenhouse.io",
   "version": "1.0.0",
-  "description": "Personal website and blog project statically generated with Gatsby.",
-  "main": "index.js",
+  "description": "Personal / portfolio website for The Greenhouse.",
+  "main": "src/pages/index.jsx",
   "repository": "git@github.com:thegreenhouseio/www.thegreenhouse.io.git",
   "author": "owen@thegreenhouse.io",
   "license": "MIT",
