@@ -24,7 +24,8 @@ export class ProjectsPage extends React.Component {
             let item = {
               title: project.name,
               abstract: project.description,
-              link: project.link
+              link: project.link,
+              img: project.img
             }
             return <Card key={item.title} item={item}/>
           })
