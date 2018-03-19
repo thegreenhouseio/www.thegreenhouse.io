@@ -4,9 +4,8 @@ import ArticlesService from '../services/articles-service';
 import PresentationsService from '../services/presentations-service';
 import SocialLinksService from '../services/social-links-service';
 import Card from '../components/card/card';
-import PageWrapper from '../layouts/page-layout';
 
-export class PublicationsPage extends React.Component {
+class PublicationsPage extends React.Component {
   constructor() {
     super();
 
@@ -17,7 +16,7 @@ export class PublicationsPage extends React.Component {
 
   render() {
     return (
-      <PageWrapper>
+      <div>
         <p>I think the best way to tell you about myself is to show you what I am passionate about.  Below are some featured articles
           and presentations I've worked on.</p>
 
@@ -58,7 +57,7 @@ export class PublicationsPage extends React.Component {
           <span>Please feel free to visit my <a href={this.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
         </div>
       
-      </PageWrapper>
+      </div>
     )
   }
 };

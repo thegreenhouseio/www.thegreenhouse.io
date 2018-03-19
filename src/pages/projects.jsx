@@ -4,9 +4,8 @@ import PresentationsService from '../services/presentations-service';
 import ProjectsService from '../services/projects-service';
 import SocialLinksService from '../services/social-links-service';
 import Card from '../components/card/card';
-import PageWrapper from '../layouts/page-layout';
 
-export class ProjectsPage extends React.Component {
+class ProjectsPage extends React.Component {
   constructor() {
     super();
 
@@ -15,7 +14,7 @@ export class ProjectsPage extends React.Component {
 
   render() {
     return (
-      <PageWrapper>
+      <div>
         <p>These are a few projects that I think reflect well some of my general interests and activities.</p>
 
         {
@@ -31,7 +30,7 @@ export class ProjectsPage extends React.Component {
           })
         }
 
-      </PageWrapper>
+      </div>
     )
   }
 };

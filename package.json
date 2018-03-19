@@ -1,8 +1,8 @@
 {
   "name": "www.thegreenhouse.io",
   "version": "1.0.0",
-  "description": "Personal website and blog project statically generated with Gatsby.",
-  "main": "index.js",
+  "description": "Personal / portfolio website for The Greenhouse.",
+  "main": "src/pages/index.jsx",
   "repository": "git@github.com:thegreenhouseio/www.thegreenhouse.io.git",
   "author": "owen@thegreenhouse.io",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "release": "node release.js"
   },
   "dependencies": {
+    "react-helmet": "^5.2.0",
     "react-social-icons": "^2.8.1",
     "typography": "^0.16.6"
   },
@@ -21,6 +22,7 @@
     "gatsby": "^1.9.236",
     "gatsby-cli": "^1.1.46",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-typography": "^1.7.18",
     "glob": "^7.1.2",
     "rimraf": "^2.6.2"
