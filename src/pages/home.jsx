@@ -14,10 +14,10 @@ class HomePage extends React.Component {
     return (
       <PageLayout>
         
-        <p>Hello, I'm <b>Owen</b> 👋!</p>
+        <p>Hello, I'm <b>Owen</b>! 👋</p>
           
         <p>I consider myself a problem solver and a passionate lifelong learner specializing in web 
-          application architectures and business development.  My broad range of technical knowledge and capabilities, 
+          application architectures and business / product development.  My broad range of technical knowledge and capabilities, 
           creativity, interpersonal skills, and a good splash of entrepreneurial spirit make me a valuable contributor to all stages of the
           software delivery lifecycle (SDLC) and business operations. I consider the hallmarks of any successful endeavor to 
           include strong communication and feedback to ensure expectations are not just met, but exceeded.</p>
