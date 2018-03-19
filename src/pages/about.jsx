@@ -17,7 +17,7 @@ class PublicationsPage extends React.Component {
   render() {
     return (
       <div>
-        <p>I think the best way to tell you about myself is to show you what I am passionate about.  Below are some featured articles
+        <p className="sub-heading">I think the best way to tell you about myself is to show you what I am passionate about.  Below are some featured articles
           and presentations I've worked on.</p>
 
         <div>

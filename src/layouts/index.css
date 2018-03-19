@@ -36,3 +36,9 @@ section p.cta {
 .layout .outlet {
   margin: 0 0 20px;
 }
+
+p.sub-heading {
+  width: 60%;
+  margin: 10px auto 30px;
+  text-align: center;
+}

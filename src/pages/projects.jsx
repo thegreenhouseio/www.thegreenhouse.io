@@ -15,7 +15,7 @@ class ProjectsPage extends React.Component {
   render() {
     return (
       <div>
-        <p>These are a few projects that I think reflect well some of my general interests and activities.</p>
+        <p className="sub-heading">These are a few projects that I think reflect some of my general interests and activities.</p>
 
         {
           this.projects.map(project => {
