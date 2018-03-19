@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import SocialLinksService from '../services/social-links-service';
 import ArticlesService from '../services/articles-service';
+import PresentationsService from '../services/presentations-service';
+import SocialLinksService from '../services/social-links-service';
 import Card from '../components/card/card';
 import PageWrapper from '../layouts/page-layout';
 
@@ -11,6 +12,7 @@ export class PublicationsPage extends React.Component {
 
     this.socialLinksMap = new SocialLinksService().getLinks(true);
     this.articles = new ArticlesService().getArticles();
+    this.presentations = new PresentationsService().getPresentations();
   }
 
   render() {
@@ -20,13 +22,27 @@ export class PublicationsPage extends React.Component {
           and presentations I've worked on.</p>
 
         <h2><u>Speaking</u></h2>
+        {
+          this.presentations.map(presentation => {
+            let key = 0;
+            let item = {
+              title: presentation.title,
+              abstract: presentation.abstract,
+              link: presentation.link,
+              date: presentation.date,
+              video: presentation.video
+            }
+            return <Card key={item.title} item={item}/>
+          })
+        }
 
         <h2><u>Writing</u></h2>
         {
           this.articles.map(article => {
             let key = 0;
+            let subHeading = article.subHeading ? `: ${article.subHeading}` : '';
             let item = {
-              title: `${article.heading}: ${article.subHeading}`,
+              title: `${article.heading} ${subHeading}`,
               abstract: article.abstract,
               link: article.link,
               img: article.img,
