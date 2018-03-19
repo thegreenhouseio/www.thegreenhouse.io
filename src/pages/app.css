@@ -13,3 +13,7 @@ section p {
   text-align: left;
   font-size: 20px;
 }
+
+section p.cta {
+  text-align: center;
+}

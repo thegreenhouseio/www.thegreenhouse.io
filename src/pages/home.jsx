@@ -6,12 +6,8 @@ import SocialLinksService from '../services/social-links-service';
 class HomePage extends React.Component {
   constructor() {
     super();
-    const links = new SocialLinksService().getLinks();
-    this.socialLinksMap = {}
     
-    links.map(link => {
-      this.socialLinksMap[link.name] = link.url;
-    });
+    this.socialLinksMap = new SocialLinksService().getLinks(true);
   }
   
   render() {

@@ -15,8 +15,20 @@ class SocialLinksService {
     }]
   }
 
-  getLinks() {
-    return this.links;
+  getLinks(asMap) {
+    let links = this.links;
+
+    if(asMap) {
+      let linksMap = {};
+
+      this.links.map(link => {
+        linksMap[link.name] = link.url;
+      });
+
+      links = linksMap;
+    }
+
+    return links;
   }
 }
 
