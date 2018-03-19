@@ -4,7 +4,7 @@ import './header.css';
 
 const Header = () => {
   return (
-    <div> 
+    <div className="header"> 
       <Link to="/">
         <header></header>
         <h2 className="caption">A DREAMER BY DESIGN</h2>

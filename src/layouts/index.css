@@ -1,21 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Layout / Global */
 body {
   background-color: rgb(0, 122, 204);
 }
 
-section {
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: 0 auto;
   text-align: center;
 }
 
-section p {
-  width: 65%;
-  margin: 20px auto;
-  text-align: left;
-  font-size: 20px;
-}
-
-section p.cta {
-  text-align: center;
+.layout {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto 20px;
 }
 
 .clear-fix {
@@ -28,16 +31,29 @@ section p.cta {
   margin: 0 auto 20px;
 }
 
-.layout hr {
-  width: 15%;
-  margin: 5px auto;
-}
-
 .layout .outlet {
   margin: 0 0 20px;
 }
 
-p.sub-heading {
+/* Home Page */
+.home p {
+  width: 65%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+.home section p.cta {
+  text-align: center;
+}
+
+.home hr {
+  width: 15%;
+  margin: 5px auto;
+}
+
+/* About Page */
+.about .sub-heading {
   width: 60%;
   margin: 10px auto 30px;
   text-align: center;
