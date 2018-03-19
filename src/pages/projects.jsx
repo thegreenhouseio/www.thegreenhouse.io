@@ -16,7 +16,7 @@ export class ProjectsPage extends React.Component {
   render() {
     return (
       <PageWrapper>
-        <p>Here are a few projects that I think reflect my interests / activities.</p>
+        <p>These are a few projects that I think reflect well some of my general interests and activities.</p>
 
         {
           this.projects.map(project => {
