@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Typography from 'typography';
 import Footer from '../components/footer/footer';
@@ -26,6 +27,9 @@ class Layout extends React.Component {
   render() {
     return (
       <div className="layout">
+        { /* TODO would be nice to need a dependency for this */} 
+        <Helmet title="The Greenhouse I/O"/>
+
         <section>
           <Header/>
         </section>

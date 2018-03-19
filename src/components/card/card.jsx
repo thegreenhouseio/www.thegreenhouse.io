@@ -26,6 +26,8 @@ const Card = (props) => {
       {props.item.video ? <iframe width="560" height="315" src={props.item.video} frameBorder="0" allowFullScreen/>
                         : ''
       }
+
+      <hr/>
     </div>
   )
 

@@ -13,6 +13,7 @@
     "release": "node release.js"
   },
   "dependencies": {
+    "react-helmet": "^5.2.0",
     "react-social-icons": "^2.8.1",
     "typography": "^0.16.6"
   },
