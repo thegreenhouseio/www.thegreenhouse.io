@@ -27,21 +27,20 @@ const Card = (props) => {
 
     <div className="card">
   
-      <div className="wrapper">
-        <div className="main-head">
+      <div className="wrapper">       
+        <div className="card-header-icon">
+          <SocialIcon url={props.item.link}/>
+        </div>
+
+        <div className="card-header-heading">
           <h3><a href={props.item.link}>{props.item.title}</a></h3>
         </div>
-        
-        <nav className="main-nav">
-          <SocialIcon url={props.item.link}/>
-          <p>{props.item.date}</p>
-        </nav>
 
-        <article className="content">
-          <p>{props.item.abstract}</p>
-        </article> 
+        <div className="card-content">
+          <article>{props.item.abstract}</article>
+        </div>
 
-        <div className="main-footer">
+        <div className="card-footer">
           {props.item.img ? <img src={props.item.img}/>
                           : ''
           }
