@@ -21,7 +21,7 @@ class PresentationsService {
     }, {
       title: 'Managing an Open Source Project in GitHub',
       abstract: 'Presentation I gave at the Linux Open Source Leadership Summit for Kenzan highlighting tips and features to use when managing an open source project in GitHub.',
-      link: 'http://events.linuxfoundation.org/events/open-source-leadership-summit/program/schedule',
+      link: 'https://osleadershipsummit2017.sched.com/event/9Khi/best-practices-for-maintaining-an-oss-project-in-github-owen-buckley-kenzan',
       date: '3/16/2017'
     }]
   }
