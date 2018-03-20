@@ -15,6 +15,12 @@ const Card = (props) => {
 
         <div className="card-header-heading">
           <h3><a href={props.item.link}>{props.item.title}</a></h3>
+
+          {
+            props.item.date 
+              ? <span><b>Date: {props.item.date}</b></span>
+              : ''
+          }
         </div>
 
         <div className="card-content">
