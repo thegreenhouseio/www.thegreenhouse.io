@@ -1,18 +1,18 @@
-nav {
+.navigation {
   display: block;
 }
 
-nav ul {
+.navigation ul {
   list-style: none;
   margin: 0;
 }
 
-nav li {
+.navigation li {
   display: inline-block;
   width: 100px;
 }
 
-nav a {
+.navigation a {
   color: #020202;
   font-size: 1.4em;
 }

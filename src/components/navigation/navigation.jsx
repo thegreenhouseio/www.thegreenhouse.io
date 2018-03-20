@@ -4,12 +4,14 @@ import './navigation.css';
 
 const Naviagation = () => {
   return (
-    <nav>
-      <ul>
-        <li><Link to="/about/">About</Link></li>
-        <li><Link to="/projects/">Projects</Link></li>
-      </ul>
-    </nav>
+    <div className="navigation">
+      <nav>
+        <ul>
+          <li><Link to="/about/">About</Link></li>
+          <li><Link to="/projects/">Projects</Link></li>
+        </ul>
+      </nav>
+    </div>
   )
 };
 

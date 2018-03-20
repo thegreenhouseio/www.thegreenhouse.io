@@ -11,7 +11,7 @@ class HomePage extends React.Component {
   
   render() {
     return (  
-      <div>      
+      <div className="home">      
         <p>Hello, I'm <b>Owen</b>! 👋</p>
           
         <p>I consider myself a problem solver and a passionate lifelong learner specializing in web 

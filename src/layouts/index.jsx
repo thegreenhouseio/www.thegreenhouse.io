@@ -23,26 +23,33 @@ const typography = new Typography({
 
 typography.injectStyles();
 
+
 class Layout extends React.Component {
   render() {
     return (
       <div className="layout">
         { /* TODO would be nice to need a dependency for this */} 
-        <Helmet title="The Greenhouse I/O"/>
-
-        <section>
+        <Helmet>
+          <title>The Greenhouse I/O</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <meta name="mobile-web-app-capable" content="yes"/>
+          <meta name="apple-mobile-web-app-capable" content="yes"/>
+          <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        </Helmet>
+ 
+        <section className="row">
           <Header/>
         </section>
 
-        <section>
+        <section className="row">
           <Navigation/>
         </section>
 
-        <section className="outlet">
+        <section className="outlet row">
           { this.props.children() }
         </section>
 
-        <section>
+        <section className="row">
           <Footer/>
         </section>
       </div>
