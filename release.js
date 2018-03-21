@@ -1,13 +1,43 @@
 
+/*
+ * 
+ * This script assumes the following configuration is available in addition to any access credentials
+ * - process.env.release_env - used determines the release environment, values can be prod or stage, with stage the default
+ * - AWS_CLOUDFRONT_DISTRIBUTION_ID_PROD
+ * - AWS_CLOUDFRONT_DISTRIBUTION_ID_STAGE
+ * 
+ */
+
 const AWS = require('aws-sdk');
 const fs = require('fs');
 const glob = require('glob');
+const yargs = require('yargs').argv;
+
 const s3 = new AWS.S3();
+const cloudfront = new AWS.CloudFront();
 
-const S3_BUCKET = 'www.thegreenhouse.io';
+// AWS CONFIGURATIONS
+const AWS_REGION = 'us-east-1';
+const AWS_S3_BUCKET = {
+  PROD: 'www.thegreenhouse.io',
+  STAGE: 'stage.thegreenhouse.io'
+};
 
-AWS.config.region = 'us-east-1';
+const AWS_CLOUDFRONT_DISTRIBUTION = {
+  PROD: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID_PROD,
+  STAGE: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID_STAGE,
+  INVALIDATION_KEY: 'index.html',
+  INVALIDATION_PATHS: ['/**/*.html', '/index.html']
+};
 
+// used to determine whether to deploy to prod or stage
+// PROD is set using a manual release process, so STAGE is default
+const RELEASE_ENVIRONMENT = yargs.release_env === 'prod' ? 'PROD' : 'STAGE';
+console.log(`!!! Releasing to => ${RELEASE_ENVIRONMENT }`);
+
+AWS.config.region = AWS_REGION;
+
+// helpful for simple debugging
 // s3.listBuckets(function(err, data) {
 //   if (err) {
 //     console.log("Error:", err);
@@ -19,7 +49,7 @@ AWS.config.region = 'us-east-1';
 //   }
 // });
 
-// uploads the build directory to S3
+// uploads the build directory to S3, our "main method"
 glob('./public/**/**', function (er, files) {
   for (let i = 0, l = files.length; i < l; i += 1) {
     const filename = files[i];
@@ -33,7 +63,7 @@ glob('./public/**/**', function (er, files) {
 
       const s3 = new AWS.S3({
         params: {
-          Bucket: S3_BUCKET,
+          Bucket: AWS_S3_BUCKET[RELEASE_ENVIRONMENT],
           Key: s3Filename,
           ContentType: contentType,
           ACL: 'public-read'
@@ -45,6 +75,49 @@ glob('./public/**/**', function (er, files) {
   }
 });
 
+// mainly here so there's something fun to see in the jenkins build 
+function httpUploadProgress(evt) {
+  console.log(evt);
+}
+
+// watches for index.html upload and triggers a cache bust in cloudfront
+function httpUploadSend(err, data) {
+  console.log(err, data);
+  // trigger an invalidation to cache bust the site on each release
+  if (!err && data.key === AWS_CLOUDFRONT_DISTRIBUTION.INVALIDATION_KEY) {
+    invalidateCloudfrontDistribution();
+  }
+}
+
+// creates an invalidatation in cloudfront for /index.html for cache busting on each release
+function invalidateCloudfrontDistribution() {
+  const timestamp = new Date().getTime();
+  const paths = AWS_CLOUDFRONT_DISTRIBUTION.INVALIDATION_PATHS;
+
+  const params = {
+    DistributionId: AWS_CLOUDFRONT_DISTRIBUTION[RELEASE_ENVIRONMENT],
+    InvalidationBatch: {
+      CallerReference: `jenkins-release-${RELEASE_ENVIRONMENT}-${timestamp}`,
+      Paths: { 
+        Quantity: paths.length, 
+        Items: paths
+      }
+    }
+  };
+  
+  cloudfront.createInvalidation(params, function(err, data) {
+    const invalidationObjectKey = AWS_CLOUDFRONT_DISTRIBUTION.INVALIDATION_KEY;
+
+    if (err) {
+      console.log(`FAILED: on ${invalidationObjectKey} invalidation request`);
+      console.log(err, err.stack); // an error occurred
+    } else { 
+      console.log(`SUCCESS: for ${invalidationObjectKey} invalidation request`);
+    }
+  });
+}
+
+// appropriately set objects content-type when uploading build to S3
 function getContentType(extension) {
   let contentType = '';
 
@@ -82,12 +155,4 @@ function getContentType(extension) {
   }
 
   return contentType;
-}
-
-function httpUploadProgress(evt) {
-  console.log(evt);
-}
-
-function httpUploadSend(err, data) {
-  console.log(err, data);
 }

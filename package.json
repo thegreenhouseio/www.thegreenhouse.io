@@ -25,6 +25,7 @@
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-typography": "^1.7.18",
     "glob": "^7.1.2",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "yargs": "^11.0.0"
   }
 }
