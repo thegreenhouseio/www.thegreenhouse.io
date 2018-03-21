@@ -49,7 +49,7 @@ pipeline {
         }
       }
       steps {
-        sh "deploying to STAGE"
+        sh "echo deploying to STAGE"
         sh "yarn release --release_env=stage"
       }
     }
@@ -61,7 +61,7 @@ pipeline {
         }
       }
       steps {
-        sh "deploying to PROD"
+        sh "echo deploying to PROD"
         sh "yarn release --release_env=prod"
       }
     }
