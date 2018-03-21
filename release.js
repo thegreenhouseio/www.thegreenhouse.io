@@ -2,7 +2,7 @@
 /*
  * 
  * This script assumes the following configuration is available in addition to any access credentials
- * - process.env.is_production_release - determines the release environment, stage by default
+ * - process.env.release_env - used determines the release environment, values can be prod or stage, with stage the default
  * - AWS_CLOUDFRONT_DISTRIBUTION_ID_PROD
  * - AWS_CLOUDFRONT_DISTRIBUTION_ID_STAGE
  * 
