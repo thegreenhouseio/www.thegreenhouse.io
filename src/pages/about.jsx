@@ -54,7 +54,7 @@ class PublicationsPage extends React.Component {
             })
           }
 
-          <span>Please feel free to visit my <a href={this.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
+          <span>Please feel free to visit my <a target="_blank" href={this.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
         </div>
       
       </div>
