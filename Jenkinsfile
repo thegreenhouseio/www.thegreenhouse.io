@@ -51,7 +51,7 @@ pipeline {
         when {
           expression { IS_PRODUCTION_RELEASE == 'false' }
         }
-        sh "yarn release --release_env=staging"
+        sh "yarn release --release_env=stage"
       }
     }
 
