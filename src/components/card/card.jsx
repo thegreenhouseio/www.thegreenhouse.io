@@ -14,7 +14,7 @@ const Card = (props) => {
         </div>
 
         <div className="card-header-heading">
-          <h3><a href={props.item.link}>{props.item.title}</a></h3>
+          <h3><a target="_blank" href={props.item.link}>{props.item.title}</a></h3>
 
           {
             props.item.date 
