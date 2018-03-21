@@ -17,7 +17,7 @@ After cloning the repo, do the following to get up and running
 - `yarn develop` - start local development server with file watching, live reload, etc
 - `yarn build` - build the site for production deployment
 - `yarn serve` - builds the site for production and starts a server locally (useful for a local demo)
-- `yarn release` - deploys a build to S3
+- `yarn release --release_env=[stage|prod]` - deploys a build to S3, to either stage or prod
 
 ## Release Management
 The project is hosted in [AWS](https://aws.amazon.com/) and is setup to deploy continously on every merge to master in GitHub by running _running.js_.
@@ -25,11 +25,11 @@ The project is hosted in [AWS](https://aws.amazon.com/) and is setup to deploy c
 1. CloudFront fronts this S3 bucket
 1. Route53 has a `CNAME` entry mapping _www.thegreenhouse.io_ to the CloudFront distrubution
 
-To release manually run `yarn build && yarn release`
+To release manually run `yarn build && yarn release --release_env=[stage|prod]`
 
-**Note:** the release expects the following access credentials to be available, either as environment variables or in a file, e.g _~/.aws/credentials.json_
+**Note:** the release expects the following access credentials to be available, either as environment variables or in a file, e.g _~/.aws/credentials.json_.
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
-- `AWS_CLOUDFRONT_DISTRIBUTION_ID_PROD`
-- `AWS_CLOUDFRONT_DISTRIBUTION_ID_STAGE`
-- `IS_PRODUCTION_RELEASE`
+
+
+**Note: see _release.js_ for additional variables needed.**

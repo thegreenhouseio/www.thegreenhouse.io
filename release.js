@@ -50,7 +50,7 @@ AWS.config.region = AWS_REGION;
 //   }
 // });
 
-uploads the build directory to S3, our "main method"
+// uploads the build directory to S3, our "main method"
 glob('./public/**/**', function (er, files) {
   for (let i = 0, l = files.length; i < l; i += 1) {
     const filename = files[i];
