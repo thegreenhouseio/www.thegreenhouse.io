@@ -13,7 +13,11 @@ pipeline {
   }
 
   parameters {
-    booleanParam(defaultValue: false, description: 'Production Release toggle', name: 'IS_PRODUCTION_RELEASE')
+    booleanParam(
+      defaultValue: false, 
+      description: 'Production Release toggle', 
+      name: 'IS_PRODUCTION_RELEASE'
+    )
   }
 
   stages {
@@ -38,20 +42,49 @@ pipeline {
 
     // Only deploy when building from the master branch
     // stage by default, otherwise prod if IS_PRODUCTION_RELEASE is true
-    stage('Deploy') {
+    stages {
+    
+    stage('Prep') {
+      steps {
+        sh "yarn install"
+      }
+    }
+
+    stage('Test') {
+      steps {
+        echo 'Testing..'
+      }
+    }
+
+    stage('Build') {
+      steps {
+        sh "yarn build"
+      }
+    }
+
+    // Only deploy when building from the master branch
+    // stage by default, otherwise prod if IS_PRODUCTION_RELEASE is true manually
+    stage('Deploy to Stage') {
       when {
-        expression { BRANCH_NAME == 'master' }
+        expression { 
+          return BRANCH_NAME == 'master' && IS_PRODUCTION_RELEASE == 'false'
+        }
       }
       steps {
-        when {
-          expression { IS_PRODUCTION_RELEASE == 'true' }
-        }
-        sh "yarn release --release_env=prod"
-        
-        when {
-          expression { IS_PRODUCTION_RELEASE == 'false' }
-        }
+        sh "deploying to STAGE"
         sh "yarn release --release_env=stage"
+      }
+    }
+
+    stage('Deploy to Prod') {
+      when {
+        expression { 
+          return BRANCH_NAME == 'master' && IS_PRODUCTION_RELEASE == 'true'
+        }
+      }
+      steps {
+        sh "deploying to PROD"
+        sh "yarn release --release_env=prod"
       }
     }
 

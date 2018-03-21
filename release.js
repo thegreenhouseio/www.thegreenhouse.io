@@ -20,15 +20,14 @@ const cloudfront = new AWS.CloudFront();
 const AWS_REGION = 'us-east-1';
 const AWS_S3_BUCKET = {
   PROD: 'www.thegreenhouse.io',
-  STAGE: 'stage.thegreenhouse.io',
-  PATH: {
-    INDEX_HTML: 'index.html'
-  }
+  STAGE: 'stage.thegreenhouse.io'
 };
 
 const AWS_CLOUDFRONT_DISTRIBUTION = {
   PROD: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID_PROD,
-  STAGE: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID_STAGE
+  STAGE: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID_STAGE,
+  INVALIDATION_KEY: 'index.html',
+  INVALIDATION_PATHS: ['/**/*.html', '/index.html']
 };
 
 // used to determine whether to deploy to prod or stage
@@ -85,7 +84,7 @@ function httpUploadProgress(evt) {
 function httpUploadSend(err, data) {
   console.log(err, data);
   // trigger an invalidation to cache bust the site on each release
-  if (!err && data.key === AWS_S3_BUCKET.PATH.INDEX_HTML) {
+  if (!err && data.key === AWS_CLOUDFRONT_DISTRIBUTION.INVALIDATION_KEY) {
     invalidateCloudfrontDistribution();
   }
 }
@@ -93,24 +92,27 @@ function httpUploadSend(err, data) {
 // creates an invalidatation in cloudfront for /index.html for cache busting on each release
 function invalidateCloudfrontDistribution() {
   const timestamp = new Date().getTime();
-  const indexObject = AWS_S3_BUCKET.PATH.INDEX_HTML;
+  const paths = AWS_CLOUDFRONT_DISTRIBUTION.INVALIDATION_PATHS;
+
   const params = {
     DistributionId: AWS_CLOUDFRONT_DISTRIBUTION[RELEASE_ENVIRONMENT],
     InvalidationBatch: {
       CallerReference: `jenkins-release-${RELEASE_ENVIRONMENT}-${timestamp}`,
       Paths: { 
-        Quantity: 2, 
-        Items: ['/**/*.html', '/index.html']
+        Quantity: paths.length, 
+        Items: paths
       }
     }
   };
   
   cloudfront.createInvalidation(params, function(err, data) {
+    const invalidationObjectKey = AWS_CLOUDFRONT_DISTRIBUTION.INVALIDATION_KEY;
+
     if (err) {
-      console.log(`FAILED: on ${indexObject} invalidation request`);
+      console.log(`FAILED: on ${invalidationObjectKey} invalidation request`);
       console.log(err, err.stack); // an error occurred
     } else { 
-      console.log(`SUCCESS: for ${indexObject} invalidation request`);
+      console.log(`SUCCESS: for ${invalidationObjectKey} invalidation request`);
     }
   });
 }
