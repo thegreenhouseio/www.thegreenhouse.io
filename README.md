@@ -22,12 +22,14 @@ After cloning the repo, do the following to get up and running
 ## Release Management
 The project is hosted in [AWS](https://aws.amazon.com/) and is setup to deploy continously on every merge to master in GitHub by running _running.js_.
 1. Jenkins build and deploys to an S3 bucket
-1. Cloudfront fronts this S3 bucket
-1. Route53 has a `CNAME` entry mapping _www.thegreenhouse.io_ to the Cloudfront distrubution
+1. CloudFront fronts this S3 bucket
+1. Route53 has a `CNAME` entry mapping _www.thegreenhouse.io_ to the CloudFront distrubution
 
 To release manually run `yarn build && yarn release`
 
-**Note:** the release expects the following to be exported environment variables or defined in a credentials file, e.g _~/.aws/credentials.json_
+**Note:** the release expects the following access credentials to be available, either as environment variables or in a file, e.g _~/.aws/credentials.json_
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
-- `AWS_CLOUDFRONT_DISTRIBUTION_ID`
+- `AWS_CLOUDFRONT_DISTRIBUTION_ID_PROD`
+- `AWS_CLOUDFRONT_DISTRIBUTION_ID_STAGE`
+- `IS_PRODUCTION_RELEASE`
