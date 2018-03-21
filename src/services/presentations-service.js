@@ -8,6 +8,11 @@ class PresentationsService {
       date: '1/18/2018',
       video: 'https://www.youtube.com/embed/_23QLTJ-eIw',
     }, {
+      title: 'Cultivating Developer Experience in the Age of Digitial Transformation',
+      abstract: 'A talk I gave at BrooklynJS highlighting the need to cultivate developer experiences that value training, knowledge transfer, educational support and professional development to fuel digital transformations and yield better products and stronger technical teams.',
+      link: 'https://github.com/brooklynjs/brooklynjs.github.io/issues/410',
+      date: '9/21/2017'
+    }, {
       title: 'A JavaScript Stack to Build On: Intersecting UX and DX',
       abstract: 'Presentation I gave at ProvJS based on my article series for Kenzan that covered modern frontend development with Yarn, webpack and TypeScript.  Included a code walkthrough on a webpack based React project.',
       link: 'https://www.meetup.com/Prov-JS/events/241787664/',
