@@ -86,7 +86,7 @@ function httpUploadSend(err, data) {
   console.log(err, data);
   // trigger an invalidation to cache bust the site on each release
   if (!err && data.key === AWS_S3_BUCKET.PATH.INDEX_HTML) {
-    // invalidateCloudfrontDistribution();
+    invalidateCloudfrontDistribution();
   }
 }
 
@@ -99,7 +99,7 @@ function invalidateCloudfrontDistribution() {
     InvalidationBatch: {
       CallerReference: `jenkins-release-${RELEASE_ENVIRONMENT}-${timestamp}`,
       Paths: { 
-        Quantity: 1, 
+        Quantity: 2, 
         Items: ['/**/*.html', '/index.html']
       }
     }
