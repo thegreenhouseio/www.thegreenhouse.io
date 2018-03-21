@@ -44,7 +44,7 @@ glob('./public/**/**', function (er, files) {
         }
       });
 
-      s3.upload({Body: body}).on('httpUploadProgress', (httpUploadProgress)).send(httpUploadSend);
+      s3.upload({Body: body}).on('httpUploadProgress', httpUploadProgress).send(httpUploadSend);
     }
   }
 });
@@ -78,10 +78,10 @@ function invalidateCloudfrontDistribution() {
   
   cloudfront.createInvalidation(params, function(err, data) {
     if (err) {
-      console.log(`FAILED: ${S3_KEY_INDEX_HTML} invlidation request`);
+      console.log(`FAILED: ${S3_KEY_INDEX_HTML} invalidation request`);
       console.log(err, err.stack); // an error occurred
     } else { 
-      console.log(`SUCCESS: ${S3_KEY_INDEX_HTML} invlidation request`);
+      console.log(`SUCCESS: ${S3_KEY_INDEX_HTML} invalidation request`);
     }
   });
 }

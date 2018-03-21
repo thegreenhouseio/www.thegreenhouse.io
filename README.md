@@ -27,4 +27,7 @@ The project is hosted in [AWS](https://aws.amazon.com/) and is setup to deploy c
 
 To release manually run `yarn build && yarn release`
 
-**Note:** the release expects `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` to be exported environment variables or defined in a credentials file, e.g _~/.aws/credentials.json_
+**Note:** the release expects the following to be exported environment variables or defined in a credentials file, e.g _~/.aws/credentials.json_
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+- `AWS_CLOUDFRONT_DISTRIBUTION_ID`
