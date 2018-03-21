@@ -100,7 +100,7 @@ function invalidateCloudfrontDistribution() {
       CallerReference: `jenkins-release-${RELEASE_ENVIRONMENT}-${timestamp}`,
       Paths: { 
         Quantity: 1, 
-        Items: [`/${indexObject}`]
+        Items: ['/**/*.html', '/index.html']
       }
     }
   };
