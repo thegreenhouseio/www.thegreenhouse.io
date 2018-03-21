@@ -16,7 +16,7 @@ After cloning the repo, do the following to get up and running
 ### Tasks
 - `yarn develop` - start local development server with file watching, live reload, etc
 - `yarn build` - build the site for production deployment
-- `yarn serve` - builds the site and starts a server locally
+- `yarn serve` - builds the site for production and starts a server locally (useful for a local demo)
 - `yarn release` - deploys a build to S3
 
 ## Release Management
@@ -27,4 +27,4 @@ The project is hosted in [AWS](https://aws.amazon.com/) and is setup to deploy c
 
 To release manually run `yarn build && yarn release`
 
-**Note:** the release expects `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` to exported environment variables or as a credentials files in _~/.aws/_
+**Note:** the release expects `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` to be exported environment variables or defined in a credentials file, e.g _~/.aws/credentials.json_
