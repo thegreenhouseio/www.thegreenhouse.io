@@ -41,28 +41,6 @@ pipeline {
     }
 
     // Only deploy when building from the master branch
-    // stage by default, otherwise prod if IS_PRODUCTION_RELEASE is true
-    stages {
-    
-    stage('Prep') {
-      steps {
-        sh "yarn install"
-      }
-    }
-
-    stage('Test') {
-      steps {
-        echo 'Testing..'
-      }
-    }
-
-    stage('Build') {
-      steps {
-        sh "yarn build"
-      }
-    }
-
-    // Only deploy when building from the master branch
     // stage by default, otherwise prod if IS_PRODUCTION_RELEASE is true manually
     stage('Deploy to Stage') {
       when {
