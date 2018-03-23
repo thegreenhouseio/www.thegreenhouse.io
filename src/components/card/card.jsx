@@ -1,5 +1,6 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { SocialIcon } from 'react-social-icons';
 import './card.css';
 
 const Card = (props) => {
@@ -28,18 +29,32 @@ const Card = (props) => {
         </div>
 
         <div className="card-footer">
-          {props.item.img ? <img src={props.item.img}/>
-                          : ''
+          {
+            props.item.img 
+              ? <img src={props.item.img}/> 
+              : ''
           }
 
-          {props.item.video 
-            ? <iframe width="100%" height="315" src={props.item.video} frameBorder="0" allowFullScreen/>
-            : ''
+          {
+            props.item.video 
+              ? <iframe width="100%" height="315" src={props.item.video} frameBorder="0" allowFullScreen/>
+              : ''
           }
         </div>
       </div>
     </div>
-  )
+  );
+};
+
+Card.propTypes = {
+  item: PropTypes.shape({
+    abstract: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    img: PropTypes.string,
+    video: PropTypes.string
+  })
 };
 
 export default Card;

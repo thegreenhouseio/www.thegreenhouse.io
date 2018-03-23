@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Link from 'gatsby-link';
 import './header.css';
 
@@ -10,7 +10,7 @@ const Header = () => {
         <h2 className="caption">A DREAMER BY DESIGN</h2>
       </Link>
     </div>
-  )
+  );
 };
 
 export default Header;

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Link from 'gatsby-link';
 import './navigation.css';
 
@@ -12,7 +12,7 @@ const Naviagation = () => {
         </ul>
       </nav>
     </div>
-  )
+  );
 };
 
-export default Naviagation
+export default Naviagation;

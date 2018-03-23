@@ -30,7 +30,8 @@ pipeline {
 
     stage('Test') {
       steps {
-        echo 'Testing..'
+        sh "echo testing.."
+        sh "yarn test"
       }
     }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import SocialIcons from 'react-social-icons';
 import SocialLinksService from '../../services/social-links-service';
 import './footer.css';
@@ -16,11 +16,11 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <footer>
+      <footer className="footer">
         <SocialIcons urls={this.urls} />
       </footer>
-    )
+    );
   }
-};
+}
 
 export default Footer;
