@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialLinksService from '../services/social-links-service';
+import SocialLinksService from '../services/social-links/social-links-service';
 
 class HomePage extends React.Component {
   constructor() {

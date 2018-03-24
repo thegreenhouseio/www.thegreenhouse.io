@@ -42,11 +42,11 @@ class ArticlesService {
       const subHeading = article.subHeading ? `: ${article.subHeading}` : '';
       
       return {
-        title: `${article.heading} ${subHeading}`,
         abstract: article.abstract,
+        date: article.date,
         link: article.link,
         img: article.img,
-        date: article.date
+        title: `${article.heading} ${subHeading}`
       };
     });
   }

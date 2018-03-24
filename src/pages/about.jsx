@@ -1,7 +1,7 @@
 import React from 'react';
-import ArticlesService from '../services/articles-service';
-import PresentationsService from '../services/presentations-service';
-import SocialLinksService from '../services/social-links-service';
+import ArticlesService from '../services/articles/articles-service';
+import PresentationsService from '../services/presentations/presentations-service';
+import SocialLinksService from '../services/social-links/social-links-service';
 import CardList from '../components/card-list/card-list';
 
 class PublicationsPage extends React.Component {

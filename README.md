@@ -18,6 +18,7 @@ After cloning the repo, do the following to get up and running
 - `yarn build` - build the site for production deployment
 - `yarn serve` - builds the site for production and starts a server locally (useful for a local demo)
 - `yarn release --release_env=[stage|prod]` - deploys a build to S3, to either stage or prod
+- `yarn test --[watch|coverage]` - run tests, opttionally in watch mode and / or to generate code coverage
 
 ## Release Management
 The project is hosted in [AWS](https://aws.amazon.com/) and is setup to deploy continously on every merge to master in GitHub by running _running.js_.

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectsService from '../services/projects-service';
+import ProjectsService from '../services/projects/projects-service';
 import CardList from '../components/card-list/card-list';
 
 class ProjectsPage extends React.Component {

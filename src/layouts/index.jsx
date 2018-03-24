@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Typography from 'typography';
-import SocialLinksService from '../services/social-links-service';
+import SocialLinksService from '../services/social-links/social-links-service';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import Navigation from '../components/navigation/navigation';
