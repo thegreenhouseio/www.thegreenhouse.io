@@ -25,6 +25,13 @@ describe('About Page', () => {
     expect(subHeading.text()).toBeDefined();
   });
 
+  it('should have a call to action', () => {
+    const subHeading = about.find('span.cta');
+
+    expect(subHeading.length).toBe(1);
+    expect(subHeading.text()).toBeDefined();
+  });
+
   describe('it should have content', () => {
     it('should have articles', () => {
       expect(about.state().articles.length).toBeGreaterThanOrEqual(1);

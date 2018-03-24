@@ -32,7 +32,7 @@ class PublicationsPage extends React.Component {
 
           <CardList items={this.state.articles}/>
 
-          <span>Please feel free to visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
+          <span className="cta">Please feel free to visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
         </div>
       
       </div>
