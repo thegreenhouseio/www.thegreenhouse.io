@@ -24,6 +24,7 @@ const typography = new Typography({
 
 typography.injectStyles();
 
+// TODO fix why bombs out because of <Link> being used in the component
 class Layout extends React.Component {
   
   constructor() {

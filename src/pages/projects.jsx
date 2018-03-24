@@ -6,7 +6,9 @@ class ProjectsPage extends React.Component {
   constructor() {
     super();
 
-    this.projects = new ProjectsService().getModeledProjects();
+    this.state = {
+      projects: new ProjectsService().getModeledProjects()
+    };
   }
 
   render() {
@@ -14,7 +16,9 @@ class ProjectsPage extends React.Component {
       <div>
         <p className="sub-heading">These are a few projects that I think reflect some of my general interests and activities.</p>
         
-        <CardList items={this.projects}/>
+        <div className="projects">
+          <CardList items={this.state.projects}/>
+        </div>
 
       </div>
     );

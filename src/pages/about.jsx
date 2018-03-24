@@ -8,9 +8,11 @@ class PublicationsPage extends React.Component {
   constructor() {
     super();
 
-    this.socialLinksMap = new SocialLinksService().getLinks(true);
-    this.articles = new ArticlesService().getModeledArticles();
-    this.presentations = new PresentationsService().getModeledPresentations();
+    this.state = {
+      socialLinksMap: new SocialLinksService().getLinks(true),
+      articles: new ArticlesService().getModeledArticles(),
+      presentations: new PresentationsService().getModeledPresentations()
+    };
   }
 
   render() {
@@ -19,18 +21,18 @@ class PublicationsPage extends React.Component {
         <p className="sub-heading">I think the best way to tell you about myself is to show you what I am passionate about.  Below are some featured articles
           and presentations I've worked on.</p>
 
-        <div>
+        <div className="speaking">
           <h2><u>Speaking</u></h2>
 
-          <CardList items={this.presentations}/>
+          <CardList items={this.state.presentations}/>
         </div>
 
-        <div>
+        <div className="writing">
           <h2><u>Writing</u></h2>
 
-          <CardList items={this.articles}/>
+          <CardList items={this.state.articles}/>
 
-          <span>Please feel free to visit my <a target="_blank" href={this.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
+          <span>Please feel free to visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
         </div>
       
       </div>
