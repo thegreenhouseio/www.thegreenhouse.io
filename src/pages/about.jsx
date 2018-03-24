@@ -24,15 +24,15 @@ class PublicationsPage extends React.Component {
           <h2><u>Speaking</u></h2>
           {
             this.presentations.map(presentation => {
-              let key = 0;
-              let item = {
+              const item = {
                 title: presentation.title,
                 abstract: presentation.abstract,
                 link: presentation.link,
                 date: presentation.date,
                 video: presentation.video
-              }
-              return <Card key={item.title} item={item}/>
+              };
+
+              return <Card key={item.title} item={item}/>;
             })
           }
         </div>
@@ -41,16 +41,16 @@ class PublicationsPage extends React.Component {
           <h2><u>Writing</u></h2>
           {
             this.articles.map(article => {
-              let key = 0;
-              let subHeading = article.subHeading ? `: ${article.subHeading}` : '';
-              let item = {
+              const subHeading = article.subHeading ? `: ${article.subHeading}` : '';
+              const item = {
                 title: `${article.heading} ${subHeading}`,
                 abstract: article.abstract,
                 link: article.link,
                 img: article.img,
                 date: article.date
-              }
-              return <Card key={item.title} item={item}/>
+              };
+
+              return <Card key={item.title} item={item}/>;
             })
           }
 
@@ -58,8 +58,8 @@ class PublicationsPage extends React.Component {
         </div>
       
       </div>
-    )
+    );
   }
-};
+}
 
 export default PublicationsPage;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Typography from 'typography';
+import SocialLinksService from '../services/social-links-service';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import Navigation from '../components/navigation/navigation';
@@ -24,10 +25,17 @@ const typography = new Typography({
 typography.injectStyles();
 
 class Layout extends React.Component {
+  
+  constructor() {
+    super();
+    
+    this.urls = new SocialLinksService().getLinks();
+  }
+
   render() {
     return (
       <div className='layout'>
-        { /* TODO would be nice to need a dependency for this */} 
+        { /* TODO would be nice to not need a dependency for this */} 
         <Helmet>
           <title>The Greenhouse I/O</title>
           <meta name='viewport' content='width=device-width, initial-scale=1'/>
@@ -49,10 +57,10 @@ class Layout extends React.Component {
         </section>
 
         <section className='row'>
-          <Footer/>
+          <Footer links={this.links}/>
         </section>
       </div>
-    )
+    );
   }
 }
 

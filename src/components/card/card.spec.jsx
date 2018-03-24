@@ -7,13 +7,13 @@ import Card from './card';
 configure({ adapter: new Adapter() });
 
 describe('Card Component', () => {
-  let card;
   const mockItem = {
     abstract: 'Some abstract that tells about this thing',
     link: 'http://www.abc.com/1/',
     title: 'My Mock Item Title'
   };
-
+  let card;
+  
   describe('basic layout', () => {
     beforeEach(() => {
       card = mount(<Card item={mockItem}/>);

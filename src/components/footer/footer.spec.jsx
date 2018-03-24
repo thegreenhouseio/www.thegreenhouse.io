@@ -22,23 +22,21 @@ describe('Footer Component', () => {
     expect(footer.find(SocialIcons).length).toEqual(1);
   });
 
-  it('should have have URLs passed to <SocialLinksComponent?', () => {
-    // TODO
+  it('should have default urls prop set to <SocialIcons/>s urls prop', () => {
+    expect(footer.find(SocialIcons).prop('urls')).toEqual([]);
   });
 
-  it('should display twitter social link', () => { 
-    // TODO
+  it('should have passed urls prop set to <SocialIcons/>s urls prop', () => {
+    const mockUrls = [
+      'it doesnt even',
+      'really matter',
+      'what I pass',
+      '✌️'
+    ];
+
+    footer = mount(<Footer links={mockUrls}/>);
+
+    expect(footer.find(SocialIcons).prop('urls')).toEqual(mockUrls);
   });
 
-  it('should display medium social link', () => { 
-    // TODO
-  });
-
-  it('should display github social link', () => { 
-    // TODO
-  });
-
-  it('should display linkedin social link', () => { 
-    // TODO
-  });
 });
