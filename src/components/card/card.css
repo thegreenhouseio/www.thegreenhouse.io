@@ -18,7 +18,7 @@
   grid-column: col-start / span 12;
 }
 
-.card-header-heading, .card-content {
+.card-header, .card-content {
   text-align: left;
 }
 

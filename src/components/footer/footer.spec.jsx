@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
+import SocialIcons from 'react-social-icons';
 import Footer from './footer';
 
 configure({ adapter: new Adapter() });
@@ -17,8 +18,8 @@ describe('Footer Component', () => {
     expect(footer.find('.footer').length).toEqual(1);
   });
 
-  it('should have <SocialLinksComponent?', () => {
-    // TODO
+  it('should have a <SocialIcons/> component', () => {
+    expect(footer.find(SocialIcons).length).toEqual(1);
   });
 
   it('should have have URLs passed to <SocialLinksComponent?', () => {
