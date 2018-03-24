@@ -31,7 +31,7 @@ pipeline {
     stage('Test') {
       steps {
         sh "echo testing.."
-        sh "yarn test"
+        sh "yarn test --coverage"
       }
     }
 

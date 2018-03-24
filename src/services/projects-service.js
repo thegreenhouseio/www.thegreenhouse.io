@@ -32,6 +32,18 @@ class ProjectsService {
   getProjects() {
     return this.projects;
   }
+
+  getModeledProjects() {
+    return this.projects.map(project => {
+      return {
+        title: project.name,
+        abstract: project.description,
+        link: project.link,
+        img: project.img
+      };
+    });
+  }
+  
 }
 
 export default ProjectsService;

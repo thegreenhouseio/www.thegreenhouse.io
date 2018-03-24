@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import './navigation.css';
 
+// TODO fix why bombs out because of <Link> being used in the component
 const Naviagation = () => {
   return (
     <div className="navigation">

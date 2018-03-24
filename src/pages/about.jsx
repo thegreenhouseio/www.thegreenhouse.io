@@ -1,17 +1,16 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import ArticlesService from '../services/articles-service';
 import PresentationsService from '../services/presentations-service';
 import SocialLinksService from '../services/social-links-service';
-import Card from '../components/card/card';
+import CardList from '../components/card-list/card-list';
 
 class PublicationsPage extends React.Component {
   constructor() {
     super();
 
     this.socialLinksMap = new SocialLinksService().getLinks(true);
-    this.articles = new ArticlesService().getArticles();
-    this.presentations = new PresentationsService().getPresentations();
+    this.articles = new ArticlesService().getModeledArticles();
+    this.presentations = new PresentationsService().getModeledPresentations();
   }
 
   render() {
@@ -22,37 +21,14 @@ class PublicationsPage extends React.Component {
 
         <div>
           <h2><u>Speaking</u></h2>
-          {
-            this.presentations.map(presentation => {
-              const item = {
-                title: presentation.title,
-                abstract: presentation.abstract,
-                link: presentation.link,
-                date: presentation.date,
-                video: presentation.video
-              };
 
-              return <Card key={item.title} item={item}/>;
-            })
-          }
+          <CardList items={this.presentations}/>
         </div>
 
         <div>
           <h2><u>Writing</u></h2>
-          {
-            this.articles.map(article => {
-              const subHeading = article.subHeading ? `: ${article.subHeading}` : '';
-              const item = {
-                title: `${article.heading} ${subHeading}`,
-                abstract: article.abstract,
-                link: article.link,
-                img: article.img,
-                date: article.date
-              };
 
-              return <Card key={item.title} item={item}/>;
-            })
-          }
+          <CardList items={this.articles}/>
 
           <span>Please feel free to visit my <a target="_blank" href={this.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
         </div>

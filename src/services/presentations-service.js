@@ -37,6 +37,19 @@ class PresentationsService {
   getPresentations() {
     return this.presentations;
   }
+
+  getModeledPresentations() {
+    return this.presentations.map(presentation => {
+      return {
+        title: presentation.title,
+        abstract: presentation.abstract,
+        link: presentation.link,
+        date: presentation.date,
+        video: presentation.video
+      };
+    });
+  }
+  
 }
 
 export default PresentationsService;

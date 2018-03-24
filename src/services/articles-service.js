@@ -36,6 +36,20 @@ class ArticlesService {
   getArticles() {
     return this.articles;
   }
+
+  getModeledArticles() {
+    return this.articles.map(article => {
+      const subHeading = article.subHeading ? `: ${article.subHeading}` : '';
+      
+      return {
+        title: `${article.heading} ${subHeading}`,
+        abstract: article.abstract,
+        link: article.link,
+        img: article.img,
+        date: article.date
+      };
+    });
+  }
 }
 
 export default ArticlesService;
