@@ -18,7 +18,7 @@
   grid-column: col-start / span 12;
 }
 
-.card-header-heading, .card-content {
+.card-header, .card-content {
   text-align: left;
 }
 
@@ -57,7 +57,7 @@
     grid-row: 1 / 6;  /* autoprefixer: off */
   }
 
-  .card-header-heading {
+  .card-header {
     grid-column: col-start 3 / span 10;
     grid-row: 1 / 6; /* autoprefixer: off */
   }

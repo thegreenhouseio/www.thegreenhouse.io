@@ -1,26 +1,24 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 import SocialIcons from 'react-social-icons';
-import SocialLinksService from '../../services/social-links-service';
 import './footer.css';
 
-class Footer extends React.Component {
-  
-  constructor() {
-    super();
-    const links = new SocialLinksService().getLinks();
-    
-    this.urls = links.map(link => {
-      return link.url;
-    });
-  }
+const Footer = (props) => {
 
-  render() {
-    return (
-      <footer>
-        <SocialIcons urls={this.urls} />
-      </footer>
-    )
-  }
+  return (
+    <footer className="footer">
+      <SocialIcons urls={props.links}/>
+    </footer>
+  );
+
+};
+
+Footer.propTypes = {
+  links: PropTypes.array
+};
+
+Footer.defaultProps = {
+  links: []
 };
 
 export default Footer;

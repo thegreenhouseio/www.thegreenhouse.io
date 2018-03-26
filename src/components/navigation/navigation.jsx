@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 import Link from 'gatsby-link';
 import './navigation.css';
 
+// TODO fix why bombs out because of <Link> being used in the component
 const Naviagation = () => {
   return (
     <div className="navigation">
@@ -12,7 +13,7 @@ const Naviagation = () => {
         </ul>
       </nav>
     </div>
-  )
+  );
 };
 
-export default Naviagation
+export default Naviagation;

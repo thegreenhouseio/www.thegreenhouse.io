@@ -30,7 +30,17 @@ pipeline {
 
     stage('Test') {
       steps {
-        echo 'Testing..'
+        sh "echo testing.."
+        sh "yarn test --coverage"
+
+        publishHTML target: [
+          allowMissing: false,
+          alwaysLinkToLastBuild: false,
+          keepAll: false,
+          reportDir: 'reports/test-coverage',
+          reportFiles: 'index.html',
+          reportName: 'Coverage Report'
+        ]
       }
     }
 

@@ -2,12 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'The Greenhouse I/O',
     siteUrl: 'https://www.thegreenhouse.io',
-    description: 'Personal / portfolio website for The Greenhouse.',
+    description: 'Personal / portfolio website for The Greenhouse.'
   },
   plugins: [
     'gatsby-plugin-typography', 
     {
-      resolve:  'gatsby-plugin-favicon',
+      resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './src/favicon.jpg',
         injectHTML: true,
@@ -25,4 +25,4 @@ module.exports = {
       }
     }
   ]
-}
+};

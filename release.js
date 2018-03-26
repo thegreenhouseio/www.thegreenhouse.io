@@ -13,7 +13,7 @@ const fs = require('fs');
 const glob = require('glob');
 const yargs = require('yargs').argv;
 
-const s3 = new AWS.S3();
+const s3 = new AWS.S3(); // eslint-disable-line no-unused-vars
 const cloudfront = new AWS.CloudFront();
 
 // AWS CONFIGURATIONS
@@ -33,7 +33,8 @@ const AWS_CLOUDFRONT_DISTRIBUTION = {
 // used to determine whether to deploy to prod or stage
 // PROD is set using a manual release process, so STAGE is default
 const RELEASE_ENVIRONMENT = yargs.release_env === 'prod' ? 'PROD' : 'STAGE';
-console.log(`!!! Releasing to => ${RELEASE_ENVIRONMENT }`);
+
+console.log(`Releasing to => ${RELEASE_ENVIRONMENT }`); // eslint-disable-line no-console
 
 AWS.config.region = AWS_REGION;
 
@@ -55,11 +56,11 @@ glob('./public/**/**', function (er, files) {
     const filename = files[i];
     const s3Filename = filename.replace('./public/', '');
 
-    //upload only files
+    // upload only files
     if (s3Filename.indexOf('.') > 0) {
       const extension = filename.slice(filename.lastIndexOf('.'));
       const contentType = getContentType(extension);
-      const body = fs.readFileSync(filename); //.pipe(zlib.createGzip());
+      const body = fs.readFileSync(filename); // .pipe(zlib.createGzip());
 
       const s3 = new AWS.S3({
         params: {
@@ -70,19 +71,19 @@ glob('./public/**/**', function (er, files) {
         }
       });
 
-      s3.upload({Body: body}).on('httpUploadProgress', httpUploadProgress).send(httpUploadSend);
+      s3.upload({ Body: body }).on('httpUploadProgress', httpUploadProgress).send(httpUploadSend);
     }
   }
 });
 
 // mainly here so there's something fun to see in the jenkins build 
 function httpUploadProgress(evt) {
-  console.log(evt);
+  console.log(evt); // eslint-disable-line no-console
 }
 
 // watches for index.html upload and triggers a cache bust in cloudfront
 function httpUploadSend(err, data) {
-  console.log(err, data);
+  console.log(err, data); // eslint-disable-line no-console
   // trigger an invalidation to cache bust the site on each release
   if (!err && data.key === AWS_CLOUDFRONT_DISTRIBUTION.INVALIDATION_KEY) {
     invalidateCloudfrontDistribution();
@@ -109,10 +110,11 @@ function invalidateCloudfrontDistribution() {
     const invalidationObjectKey = AWS_CLOUDFRONT_DISTRIBUTION.INVALIDATION_KEY;
 
     if (err) {
-      console.log(`FAILED: on ${invalidationObjectKey} invalidation request`);
-      console.log(err, err.stack); // an error occurred
+      console.log(`FAILED: on ${invalidationObjectKey} invalidation request`); // eslint-disable-line no-console
+      console.log(err, err.stack); // eslint-disable-line no-console
+      console.log(data); // eslint-disable-line no-console
     } else { 
-      console.log(`SUCCESS: for ${invalidationObjectKey} invalidation request`);
+      console.log(`SUCCESS: for ${invalidationObjectKey} invalidation request`); // eslint-disable-line no-console
     }
   });
 }
@@ -122,6 +124,7 @@ function getContentType(extension) {
   let contentType = '';
 
   switch (extension) {
+
     case '.eot':
       contentType = 'application/vnd.ms-fontobject';
       break;
@@ -152,6 +155,7 @@ function getContentType(extension) {
     default:
       contentType = 'text/' + extension.replace('.', '');
       break;
+
   }
 
   return contentType;

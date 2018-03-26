@@ -12,13 +12,13 @@ class SocialLinksService {
     }, {
       name: 'github',
       url: 'https://github.com/thegreenhouseio'
-    }]
+    }];
   }
 
   getLinks(asMap) {
     let links = this.links;
 
-    if(asMap) {
+    if (asMap) {
       let linksMap = {};
 
       this.links.map(link => {
