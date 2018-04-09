@@ -53,8 +53,19 @@ body {
 }
 
 /* About Page */
-.sub-heading {
+#about .sub-heading {
   width: 60%;
   margin: 10px auto 30px;
   text-align: center;
+}
+
+#about .content-links h2 {
+  width: 50%;
+  cursor: pointer;
+  display: inline;
+  margin: 10px;
+}
+
+#about .content-output {
+  margin: 20px auto;
 }

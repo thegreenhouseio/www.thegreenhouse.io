@@ -8,31 +8,64 @@ class PublicationsPage extends React.Component {
   constructor() {
     super();
 
+    this.SECTIONS = {
+      SPEAKING: 'SPEAKING',
+      WRITING: 'WRITING'
+    };
+
     this.state = {
       socialLinksMap: new SocialLinksService().getLinks(true),
       articles: new ArticlesService().getModeledArticles(),
-      presentations: new PresentationsService().getModeledPresentations()
+      presentations: new PresentationsService().getModeledPresentations(),
+      activeSection: this.SECTIONS.SPEAKING
     };
   }
 
+  setActiveSection(section) {
+    const state = this.state;
+
+    this.setState({
+      ...state,
+      activeSection: section
+    });
+  }
+
+  getContent() {
+    let content;
+    
+    switch (this.state.activeSection) {
+      case this.SECTIONS.SPEAKING:
+        content = <CardList items={this.state.articles}/>;
+        break;
+      case this.SECTIONS.WRITING:
+        content = 
+          <div>
+            <CardList items={this.state.presentations}/>
+            <span className="cta">Please feel free to visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
+          </div>;
+        break;
+      default:
+        content = '';
+    
+    }
+
+    return content;
+  }
+
   render() {
+
     return (
-      <div className="about">
+      <div id="about">
         <p className="sub-heading">I think the best way to tell you about myself is to show you what I am passionate about.  Below are some featured articles
-          and presentations I've worked on.</p>
+          and presentations I&apos;ve worked on.</p>
 
-        <div className="speaking">
-          <h2><u>Speaking</u></h2>
-
-          <CardList items={this.state.presentations}/>
+        <div className="content-links">
+          <h2 onClick={() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
+          <h2 onClick={() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
         </div>
 
-        <div className="writing">
-          <h2><u>Writing</u></h2>
-
-          <CardList items={this.state.articles}/>
-
-          <span className="cta">Please feel free to visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
+        <div className="content-output">
+          { this.getContent() }
         </div>
       
       </div>
