@@ -1,0 +1,7 @@
+#blog .blog-posts-list {
+  list-style-type: none;
+}
+
+#blog a {
+  text-decoration: none;
+}

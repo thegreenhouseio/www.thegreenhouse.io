@@ -15,7 +15,11 @@
   "coverageDirectory": "<rootDir>/reports/test-coverage",
 
   "collectCoverageFrom": [
-    "src/**/**/*.{js,jsx}",
+    "src/components/**/*.{js,jsx}",
+    "src/layouts/*.{js,jsx}",
+    "src/pages/*.{js,jsx}",
+    "src/pages/blog/*.{js,jsx}",
+    "src/services/**/*.{js,jsx}",
     "!src/**/**/*.spec.*"
   ],
 
@@ -27,8 +31,8 @@
     "global": {
       "branches": 80,
       "functions": 80,
-      "lines": 65,
-      "statements": 65
+      "lines": 70,
+      "statements": 70
     }
   }
 }
