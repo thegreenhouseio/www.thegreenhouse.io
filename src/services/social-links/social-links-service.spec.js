@@ -38,11 +38,11 @@ describe('SocialLinksService', () => {
 
   });
 
-  describe('getLinks (asMap)', () => {
+  describe('getLinksAsMap', () => {
     let links;
 
     beforeEach(() => {
-      links = socialLinksService.getLinks(true);
+      links = socialLinksService.getLinksAsMap();
     });
 
     it('should be a hash map', () => {
@@ -54,6 +54,27 @@ describe('SocialLinksService', () => {
       expect(links.twitter).toBe('https://twitter.com/thegreenhouseio');
       expect(links.medium).toBe('https://medium.com/@thegreenhouseio');
       expect(links.github).toBe('https://github.com/thegreenhouseio');
+    });
+
+  });
+
+  describe('getLinksAsArray', () => {
+    let links;
+
+    beforeEach(() => {
+      links = socialLinksService.getLinksAsMap();
+    });
+
+    it('should be an array of four items', () => {
+      expect(links.length).toBe(4);
+    });
+
+
+    it('should return the expected links from getLinks', () => {
+      expect(links[0]).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');
+      expect(links[1]).toBe('https://twitter.com/thegreenhouseio');
+      expect(links[2]).toBe('https://medium.com/@thegreenhouseio');
+      expect(links[3]).toBe('https://github.com/thegreenhouseio');
     });
 
   });

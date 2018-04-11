@@ -15,21 +15,30 @@ class SocialLinksService {
     }];
   }
 
-  getLinks(asMap) {
-    let links = this.links;
+  getLinks() {
+    return this.links;
+  }
 
-    if (asMap) {
-      let linksMap = {};
+  getLinksAsMap() {
+    let linksMap = {};
 
-      this.links.map(link => {
-        linksMap[link.name] = link.url;
-      });
+    this.links.map(link => {
+      linksMap[link.name] = link.url;
+    });
 
-      links = linksMap;
-    }
+    return linksMap;
+  }
+
+  getLinksAsArray() {
+    let links = [];
+
+    this.links.forEach(link => {
+      links.push(link.url);
+    });
 
     return links;
   }
+
 }
 
 export default SocialLinksService;

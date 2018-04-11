@@ -36,18 +36,18 @@ body {
 }
 
 /* Home Page */
-.home p {
+#home p {
   width: 65%;
   margin: 20px auto;
   text-align: left;
   font-size: 20px;
 }
 
-.home section p.cta {
+#home section p.cta {
   text-align: center;
 }
 
-.home hr {
+#home hr {
   width: 15%;
   margin: 5px auto;
 }

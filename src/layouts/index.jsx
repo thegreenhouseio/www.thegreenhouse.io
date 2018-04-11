@@ -30,7 +30,7 @@ class Layout extends React.Component {
   constructor() {
     super();
     
-    this.urls = new SocialLinksService().getLinks();
+    this.links = new SocialLinksService().getLinksAsArray();
   }
 
   render() {

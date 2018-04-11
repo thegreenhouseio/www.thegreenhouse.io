@@ -13,7 +13,7 @@ class HomePage extends React.Component {
   
   render() {
     return (  
-      <div className="home">      
+      <div id="home">      
         <p>Hello, I&apos;m <b>Owen</b>! 👋</p>
           
         <p>I consider myself a problem solver and a passionate lifelong learner specializing in web 
@@ -31,11 +31,8 @@ class HomePage extends React.Component {
           <OutboundLink href={this.state.socialLinksMap.medium} target="_blank" rel="noopener noreferrer">Medium</OutboundLink>, 
           or around the local <OutboundLink href="https://www.pvdgeeks.org" target="_blank" rel="noopener noreferrer">Rhode Island Tech Meetup Community</OutboundLink>, so I hope to hear from you!</p>
 
-        <hr/>
+        <span><i>I want to help build your future.</i></span>
 
-        <span>I want to help build your future.</span>
-
-        <hr/>
       </div>
     )
   }
