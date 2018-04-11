@@ -18,6 +18,7 @@
     "src/components/**/*.{js,jsx}",
     "src/layouts/*.{js,jsx}",
     "src/pages/*.{js,jsx}",
+    "src/pages/blog/*.{js,jsx}",
     "src/services/**/*.{js,jsx}",
     "!src/**/**/*.spec.*"
   ],
