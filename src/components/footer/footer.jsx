@@ -7,6 +7,7 @@ const Footer = (props) => {
 
   return (
     <footer className="footer">
+      <hr/>
       <SocialIcons urls={props.links}/>
     </footer>
   );
