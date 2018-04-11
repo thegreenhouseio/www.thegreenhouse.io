@@ -1,0 +1,16 @@
+.blog-post p {
+  width: 60%;
+  margin: 10px auto;
+  padding: 10px
+}
+
+.blog-post .header {
+  background-repeat: no-repeat;
+  background-position: center;
+  line-height: 125px;
+  height: 200px;
+}
+
+.blog-post .header h1, .blog-post .header h1 {
+  display: inline-block;
+}
