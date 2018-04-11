@@ -12,11 +12,11 @@ const BlogPost = (props) => {
     <div className="blog-post">
 
       <div className="header" style={headerBackgroundStyle}>
-        <h1>{props.title}</h1>
-        <h5>Published: {props.date}</h5>
+        <h1 className="title">{props.title}</h1>
+        <h5 className="date">Published: {props.date}</h5>
       </div>
 
-      <div className="post">
+      <div className="content">
         { props.children }
       </div>
     
