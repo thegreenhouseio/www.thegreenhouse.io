@@ -62,13 +62,12 @@ describe('SocialLinksService', () => {
     let links;
 
     beforeEach(() => {
-      links = socialLinksService.getLinksAsMap();
+      links = socialLinksService.getLinksAsArray();
     });
 
     it('should be an array of four items', () => {
       expect(links.length).toBe(4);
     });
-
 
     it('should return the expected links from getLinks', () => {
       expect(links[0]).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');

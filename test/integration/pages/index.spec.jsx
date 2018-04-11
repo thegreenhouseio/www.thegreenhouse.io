@@ -14,7 +14,7 @@ describe('Home Page', () => {
 
   it('should be defined', () => {
     expect(home).toBeDefined();
-    expect(home.find('.home').length).toBe(1);
+    expect(home.find('#home').length).toBe(1);
   });
 
   it('should have some content', () => {
