@@ -13,15 +13,15 @@ class BlogPostPage extends React.Component {
     return (
       <BlogPost title='GitHub Dashboard 1.1.0 Released' date='04.22.2017' image={bannerImage}>
         <div>
-          <p>The Greenhouse is pleased to announce <OutboundLink href="https://github.com/thescientist13/github-dashboard/releases/tag/1.1.0">a new release of GitHub Dashboard</OutboundLink>! 
+          <p>The Greenhouse is pleased to announce <OutboundLink href="https://github.com/thescientist13/github-dashboard/releases/tag/1.1.0" target="_blank" rel="noopener noreferrer">a new release of GitHub Dashboard</OutboundLink>! 
           Now with the ability to filter displayed repositories by name.  This is a much more efficient way to navigate your list of repositories!</p> 
 
-          <p>On a side note, our <OutboundLink href="https://github.com/thescientist13/github-dashboard/issues/104">feature for highlighting a 
+          <p>On a side note, our <OutboundLink href="https://github.com/thescientist13/github-dashboard/issues/104" target="_blank" rel="noopener noreferrer">feature for highlighting a 
           repository row when the user is a requested reviewer on a pull request</OutboundLink> is being reconsidered in light of the
-          <OutboundLink href="https://developer.github.com/v3/pulls/reviews/"> GitHub Reviews API</OutboundLink> still being in development.</p>
+          <OutboundLink href="https://developer.github.com/v3/pulls/reviews/" target="_blank" rel="noopener noreferrer"> GitHub Reviews API</OutboundLink> still being in development.</p>
 
           <p>Please feel free to leave thoughts and feedback, bug reports, or feature requests by using the 
-            <OutboundLink href="https://github.com/thescientist13/github-dashboard/issues"> issue tracker.</OutboundLink></p>
+            <OutboundLink href="https://github.com/thescientist13/github-dashboard/issues" target="_blank" rel="noopener noreferrer"> issue tracker.</OutboundLink></p>
         </div>
       </BlogPost>
     );
