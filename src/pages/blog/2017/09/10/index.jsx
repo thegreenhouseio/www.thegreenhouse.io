@@ -11,7 +11,7 @@ class BlogPostPage extends React.Component {
   render() {
 
     return (
-      <BlogPost title='PHP API Seed' date='06.07.2017' image={bannerImage}>
+      <BlogPost title='Vue Webapp Seed' date='06.07.2017' image={bannerImage}>
         <div>
           <p>Hey everyone, just wanted to share a new Open Source project I put together. 
             It&apos;s <OutboundLink href="https://github.com/thegreenhouseio/vue-webapp-seed">a starter repository</OutboundLink> using the 
@@ -25,7 +25,7 @@ class BlogPostPage extends React.Component {
           </p>
     
           <p>Please feel free to leave thoughts and feedback, bug reports, or feature requests by using the 
-            <OutboundLink href="https://github.com/thegreenhouseio/php-api-seed/issues"> issue tracker.</OutboundLink></p>
+            <OutboundLink href="https://github.com/thegreenhouseio/vue-webapp-seed/issues"> issue tracker.</OutboundLink></p>
         </div>
       </BlogPost>
     );
