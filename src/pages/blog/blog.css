@@ -1,0 +1,24 @@
+#blog .blog-posts-list {
+  list-style-type: none;
+}
+
+#blog a {
+  text-decoration: none;
+}
+
+#blog p {
+  width: 60%;
+  margin: 10px auto;
+  padding: 10px
+}
+
+#blog .header {
+  background-repeat: no-repeat;
+  background-position: center;
+  line-height: 125px;
+  height: 200px;
+}
+
+#blog .header h1, #blog .header h1 {
+  display: inline-block;
+}

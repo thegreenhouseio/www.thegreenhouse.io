@@ -17,7 +17,7 @@ const typography = new Typography({
     'Segoe UI',
     'Helvetica',
     'Arial',
-    'sans-serif',
+    'sans-serif'
   ],
   bodyFontFamily: ['Avenir Next', 'serif']
 });
