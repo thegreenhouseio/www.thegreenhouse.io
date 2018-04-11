@@ -15,6 +15,7 @@
     "release": "node release.js"
   },
   "dependencies": {
+    "gatsby-plugin-google-analytics": "^1.0.28",
     "prop-types": "^15.6.1",
     "react-helmet": "^5.2.0",
     "react-social-icons": "^2.8.1",
