@@ -13,6 +13,14 @@ class BlogPage extends React.Component {
     return (
       <div id="blog">
 
+        <h2><u>2018</u></h2>
+        
+        <ul className="blog-posts-list">
+          <li><Link to="/blog/2018/01/24">A Case Study in Performance 📝</Link></li>
+        </ul>
+
+        <hr/>
+
         <h2><u>2017</u></h2>
         
         <ul className="blog-posts-list">
