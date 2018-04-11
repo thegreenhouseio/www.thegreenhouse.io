@@ -7,6 +7,9 @@ module.exports = {
   plugins: [
     'gatsby-plugin-typography', 
     {
+      resolve: 'gatsby-plugin-google-analytics',
+      trackingId: 'UA-117350131-1'
+    }, {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './src/favicon.jpg',

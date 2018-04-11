@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import ArticlesService from '../services/articles/articles-service';
 import PresentationsService from '../services/presentations/presentations-service';
 import SocialLinksService from '../services/social-links/social-links-service';
@@ -40,7 +41,7 @@ class PublicationsPage extends React.Component {
         content = 
           <div>
             <CardList className="content-writing" items={this.state.articles}/>
-            <span className="cta">Visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I&apos;ve done!</span>
+            <span className="cta">Visit my <OutboundLink target="_blank" href={this.state.socialLinksMap.medium}>Medium</OutboundLink> page for other articles I&apos;ve done!</span>
           </div>;
         break;
       default:
