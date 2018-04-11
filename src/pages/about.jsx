@@ -40,7 +40,7 @@ class PublicationsPage extends React.Component {
         content = 
           <div>
             <CardList className="content-writing" items={this.state.articles}/>
-            <span className="cta">Please feel free to visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I&amp;ve done!</span>
+            <span className="cta">Visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I&apos;ve done!</span>
           </div>;
         break;
       default:
