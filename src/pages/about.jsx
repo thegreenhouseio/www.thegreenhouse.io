@@ -22,10 +22,8 @@ class PublicationsPage extends React.Component {
   }
 
   setActiveSection(section) {
-    const state = this.state;
-
     this.setState({
-      ...state,
+      ...this.state,
       activeSection: section
     });
   }
@@ -34,14 +32,15 @@ class PublicationsPage extends React.Component {
     let content;
     
     switch (this.state.activeSection) {
+
       case this.SECTIONS.SPEAKING:
-        content = <CardList items={this.state.articles}/>;
+        content = <CardList className="content-speaking" items={this.state.presentations}/>;
         break;
       case this.SECTIONS.WRITING:
         content = 
           <div>
-            <CardList items={this.state.presentations}/>
-            <span className="cta">Please feel free to visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I've done!</span>
+            <CardList className="content-writing" items={this.state.articles}/>
+            <span className="cta">Please feel free to visit my <a target="_blank" href={this.state.socialLinksMap.medium}>Medium</a> page for other articles I&amp;ve done!</span>
           </div>;
         break;
       default:
@@ -60,8 +59,8 @@ class PublicationsPage extends React.Component {
           and presentations I&apos;ve worked on.</p>
 
         <div className="content-links">
-          <h2 onClick={() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
-          <h2 onClick={() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
+          <h2 className="link-speaking" onClick={() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
+          <h2 className="link-writing" onClick={() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
         </div>
 
         <div className="content-output">

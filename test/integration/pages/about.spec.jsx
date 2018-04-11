@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
-import CardList from '../../../src/components/card-list/card-list';
 import About from '../../../src/pages/about';
 
 configure({ adapter: new Adapter() });
@@ -13,26 +12,45 @@ describe('About Page', () => {
     about = mount(<About/>);
   });
 
-  it('should be defined', () => {
-    expect(about).toBeDefined();
-    expect(about.find('.about').length).toBe(1);
-  });
+  describe('default state', () => {
+  
+    it('should be defined', () => {
+      expect(about).toBeDefined();
+      expect(about.find('#about').length).toBe(1);
+    });
+  
+    it('should have a sub heading', () => {
+      const subHeading = about.find('.sub-heading');
+  
+      expect(subHeading.length).toBe(1);
+      expect(subHeading.text()).toBeDefined();
+    });
+  
+    it('should have sub nav links', () => {
+      const subHeading = about.find('.content-links');
+      const links = subHeading.find('h2');
+  
+      expect(subHeading.length).toBe(1);
+      expect(subHeading.text()).toBeDefined();
+      expect(links.length).toBe(2);
+    });
+  
+    it('should have a content section', () => {
+      const subHeading = about.find('.content-output');
+  
+      expect(subHeading.length).toBe(1);
+      expect(subHeading.text()).toBeDefined();
+    });
+  
+    it('should have the Speaking Content section be the active section by default', () => {
+      expect(about.state().activeSection).toBe('SPEAKING');
+      expect(about.find('.content-speaking').length).toBe(1);
+    });
 
-  it('should have a sub heading', () => {
-    const subHeading = about.find('p.sub-heading');
+    it('should NOT have any other content sections displayed by default', () => {
+      expect(about.find('.content-writing').length).toBe(0);
+    });
 
-    expect(subHeading.length).toBe(1);
-    expect(subHeading.text()).toBeDefined();
-  });
-
-  it('should have a call to action', () => {
-    const subHeading = about.find('span.cta');
-
-    expect(subHeading.length).toBe(1);
-    expect(subHeading.text()).toBeDefined();
-  });
-
-  describe('it should have content', () => {
     it('should have articles', () => {
       expect(about.state().articles.length).toBeGreaterThanOrEqual(1);
     });
@@ -46,19 +64,34 @@ describe('About Page', () => {
     });
   });
 
-  describe('Speaking section', () => {
-    let section;
+  describe('Speaking Content Section', () => {
+    it('should display the speaking content when the link is clicked after another click', () => {
+      about.find('.link-writing').simulate('click');
+      about.find('.link-speaking').simulate('click');
 
+      expect(about.find('.content-speaking').length).toBe(1);
+    });
+  });
+
+  describe('Writing Content Section', () => {
     beforeEach(() => {
-      section = about.find('div.speaking');
+      about.find('.link-writing').simulate('click');
     });
 
-    it('should have have a heading', () => {      
-      expect(section.length).toBe(1);
+    it('should display speaking content when the speaking link is clicked', () => {
+      about.find('.link-writing').simulate('click');
+
+      // test for a <CardList/> component here ideally
+      expect(about.find('.content-writing').length).toBe(1);
     });
 
-    it('should have a <CardList/>', () => {
-      expect(section.find(CardList).length).toBe(1);
+    it('should have a call to action when displayed', () => {
+      about.find('.link-writing').simulate('click');
+      
+      const cta = about.find('.cta');
+  
+      expect(cta.length).toBe(1);
+      expect(cta.text()).toBeDefined();
     });
   });
 
