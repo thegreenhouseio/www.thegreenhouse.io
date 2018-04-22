@@ -27,7 +27,7 @@ const AWS_CLOUDFRONT_DISTRIBUTION = {
   PROD: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID_PROD,
   STAGE: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID_STAGE,
   INVALIDATION_KEY: 'index.html',
-  INVALIDATION_PATHS: ['*']
+  INVALIDATION_PATHS: ['/*']
 };
 
 // used to determine whether to deploy to prod or stage
