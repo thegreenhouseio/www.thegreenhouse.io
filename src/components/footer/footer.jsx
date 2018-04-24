@@ -9,6 +9,7 @@ const Footer = (props) => {
     <footer className="footer">
       <hr/>
       <SocialIcons urls={props.links}/>
+      <span className="copyright">&copy; Owen Buckley / thegreenhouse.io</span>
     </footer>
   );
 

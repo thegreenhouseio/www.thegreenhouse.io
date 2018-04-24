@@ -36,13 +36,13 @@ class Layout extends React.Component {
   render() {
     return (
       <div className='layout'>
-        { /* TODO would be nice to not need a dependency for this */} 
         <Helmet>
           <title>The Greenhouse I/O</title>
           <meta name='viewport' content='width=device-width, initial-scale=1'/>
           <meta name='mobile-web-app-capable' content='yes'/>
           <meta name='apple-mobile-web-app-capable' content='yes'/>
           <meta name='apple-mobile-web-app-status-bar-style' content='black'/>
+          <meta name="description" content="Personal site, blog, and home base for Owen Buckley and The Greenhouse I/O"/>
         </Helmet>
  
         <section className='row'>
