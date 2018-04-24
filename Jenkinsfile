@@ -51,7 +51,7 @@ pipeline {
     }
 
     // Only deploy when building from the master branch
-    // stage by default, otherwise prod if IS_PRODUCTION_RELEASE is true manually
+    // stage by default, otherwise prod if IS_PRODUCTION_RELEASE is set to true manually
     stage('Deploy to Stage') {
       when {
         expression { 
