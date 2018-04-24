@@ -36,7 +36,6 @@ class Layout extends React.Component {
   render() {
     return (
       <div className='layout'>
-        { /* TODO would be nice to not need a dependency for this */} 
         <Helmet>
           <title>The Greenhouse I/O</title>
           <meta name='viewport' content='width=device-width, initial-scale=1'/>
