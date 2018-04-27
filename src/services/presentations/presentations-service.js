@@ -2,6 +2,12 @@ class PresentationsService {
   constructor() {
     // add new presentations at the top, i.e. FIFO
     this.presentations = [{
+      title: 'Seeing The Light: Acheiving Performant Web Applications',
+      abstract: `Presented at ProvJS, in this session I explored the motivations and implementations for why performance matters in modern
+                 web application.  Topics covered included Lighthouse, ES2015+, module bundling, and the Critical Rendering Path.`,
+      link: 'https://www.meetup.com/Prov-JS/events/249132270/',
+      date: '4/27/2018'
+    }, {
       title: 'Providence Geeks 2.0: Building a Website and a Community',
       abstract: `A presentation I did at a Kenzan Meetup on a project sponsored by Kenzan to redesign and rebuild the website for the local community 
                 meetup group Providence Geeks.  Covered the entire process from design to delivery, and everything in between.`,
