@@ -4,7 +4,7 @@ class PresentationsService {
     this.presentations = [{
       title: 'Seeing The Light: Acheiving Performant Web Applications',
       abstract: `Presented at ProvJS, in this session I explored the motivations and implementations for why performance matters in modern
-                 web application.  Topics covered included Lighthouse, ES2015+, module bundling, and the Critical Rendering Path.`,
+                 web applications.  Topics covered included Lighthouse, ES2015+, module bundling, and the Critical Rendering Path.`,
       link: 'https://www.meetup.com/Prov-JS/events/249132270/',
       date: '4/27/2018'
     }, {
