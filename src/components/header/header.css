@@ -3,10 +3,7 @@
 }
 
 header {
-  background-image: url('./banner.png');
-  background-size: cover;
-  background-color: #020202;
-  height: 300px;
+  display: none;
 }
 
 .caption {
@@ -15,4 +12,14 @@ header {
   color: #efefef;
   background-color: #020202;
   font-style: italic;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: block;
+    background-image: url('./banner.jpg');
+    background-size: cover;
+    background-color: #020202;
+    height: 300px;
+  }
 }
