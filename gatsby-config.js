@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-typography', 
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
