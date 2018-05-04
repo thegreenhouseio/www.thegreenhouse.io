@@ -44,7 +44,8 @@ class Layout extends React.Component {
           <meta name='apple-mobile-web-app-status-bar-style' content='black'/>
           <meta name="description" content="Personal site, blog, and home base for Owen Buckley and The Greenhouse I/O"/>
         </Helmet>
- 
+        <html lang="en" /> 
+
         <section className='row'>
           <Header/>
         </section>
