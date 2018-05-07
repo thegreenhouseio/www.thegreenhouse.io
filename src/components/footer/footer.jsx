@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SocialIcons from 'react-social-icons';
+import { SocialIcon } from 'react-social-icons';
 import './footer.css';
 
 const Footer = (props) => {
@@ -8,7 +8,12 @@ const Footer = (props) => {
   return (
     <footer className="footer">
       <hr/>
-      <SocialIcons urls={props.links}/>
+      {
+        props.links.map((link, idx) => {
+          return <SocialIcon key={idx} url={link}/>;
+        })
+      }
+      <br/>
       <span className="copyright">&copy; Owen Buckley / thegreenhouse.io</span>
     </footer>
   );

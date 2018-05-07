@@ -27,9 +27,9 @@ class HomePage extends React.Component {
           performant and maintainable (developer experience), automated in their delivery (CI / CD) and most importantly,
           enable great user experiences (UX).</p>
 
-        <p>I&apos;m always up to something online be it on <OutboundLink href={this.state.socialLinksMap.twitter} target="_blank" rel="noopener noreferrer">twitter</OutboundLink>, 
-          <OutboundLink href={this.state.socialLinksMap.medium} target="_blank" rel="noopener noreferrer">Medium</OutboundLink>, 
-          or around the local <OutboundLink href="https://www.pvdgeeks.org" target="_blank" rel="noopener noreferrer">Rhode Island Tech Meetup Community</OutboundLink>, so I hope to hear from you!</p>
+        <p>I&apos;m always up to something online be it on <OutboundLink href={this.state.socialLinksMap.twitter} target="_blank" rel="noopener">twitter</OutboundLink>, 
+          <OutboundLink href={this.state.socialLinksMap.medium} target="_blank" rel="noopener">Medium</OutboundLink>, 
+          or around the local <OutboundLink href="https://www.pvdgeeks.org" target="_blank" rel="noopener">Rhode Island Tech Meetup Community</OutboundLink>, so I hope to hear from you!</p>
 
         <span><i>I want to help build your future.</i></span>
 

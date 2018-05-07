@@ -13,7 +13,7 @@ class BlogPostPage extends React.Component {
       <BlogPost title='Teaching An Old Dog New Tricks!' date='03.30.2017' image={bannerImage}>
         <div>
           <p>Since not all existing AngularJS (1.x) projects can jump into using Angular (2+) and <i>ng-upgrade</i> may not 
-            be a feasible option for some, I created <OutboundLink href="https://github.com/thegreenhouseio/angularjs-webpack-seed" target="_blank" rel="noopener noreferrer">a seed repo in GitHub to 
+            be a feasible option for some, I created <OutboundLink href="https://github.com/thegreenhouseio/angularjs-webpack-seed" target="_blank" rel="noopener">a seed repo in GitHub to 
             demonstrate AngularJS working with webpack and ES2015+ syntax.</OutboundLink></p>
 
           <p>To me, ES2015+ syntax, in particular the introduction of modules (<i>import / export</i>) has ushered in a new 

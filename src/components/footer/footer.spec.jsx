@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
-import SocialIcons from 'react-social-icons';
+import { SocialIcon } from 'react-social-icons';
 import Footer from './footer';
 
 configure({ adapter: new Adapter() });
@@ -18,15 +18,16 @@ describe('Footer Component', () => {
     expect(footer.find('.footer').length).toEqual(1);
   });
 
-  it('should have a <SocialIcons/> component', () => {
-    expect(footer.find(SocialIcons).length).toEqual(1);
+  it('should have no <SocialIcon/> components', () => {
+    expect(footer.find(SocialIcon).length).toEqual(0);
   });
 
-  it('should have default urls prop set to <SocialIcons/>s urls prop', () => {
-    expect(footer.find(SocialIcons).prop('urls')).toEqual([]);
+  it('should display copyright text', () => {
+    expect(footer.find('.copyright').text()).toEqual('© Owen Buckley / thegreenhouse.io');
   });
 
-  it('should have passed urls prop set to <SocialIcons/>s urls prop', () => {
+  it('should display the correct <SocialIcon/> components based on urls prop', () => {
+    let socialIconElements = [];
     const mockUrls = [
       'it doesnt even',
       'really matter',
@@ -35,8 +36,13 @@ describe('Footer Component', () => {
     ];
 
     footer = mount(<Footer links={mockUrls}/>);
+    socialIconElements = footer.find(SocialIcon);
 
-    expect(footer.find(SocialIcons).prop('urls')).toEqual(mockUrls);
+    expect(socialIconElements.length).toEqual(mockUrls.length);
+
+    socialIconElements.map((element, idx) => {
+      expect(element.prop('url')).toEqual(mockUrls[idx]);
+    });
   });
 
 });
