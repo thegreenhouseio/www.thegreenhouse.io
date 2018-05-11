@@ -9,10 +9,17 @@ function slugifyDate(date) {
   return `${dateArray[2]}/${dateArray[1]}/${dateArray[0]}/`;
 }
 
+/*
+ * 
+ * Notes for social sharing:
+ * - <meta> data intentionally set to reference production
+ * - `props.date` needs to match the folder path of the blog post
+ * 
+ */
 const BlogPost = (props) => {
-  // <meta> data intentionally set to reference production
   const canonicalUrl = `https://www.thegreenhouse.io/blog/${slugifyDate(props.date)}`;
-  const canonicalImageUrl = `https://s3.amazonaws.com/www.thegreenhouse.io/static${props.image}`;
+  const canonicalImageUrl = `https://s3.amazonaws.com/www.thegreenhouse.io${props.image}`;
+  
   const headerBackgroundStyle = {
     backgroundImage: `url('${props.image}')`
   };
