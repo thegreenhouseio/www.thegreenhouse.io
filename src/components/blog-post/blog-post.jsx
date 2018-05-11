@@ -1,4 +1,3 @@
-import Helmet from 'react-helmet';
 import React from 'react';
 import PropTypes from 'prop-types';
 import './blog-post.css';
@@ -9,17 +8,9 @@ const BlogPost = (props) => {
     backgroundImage: `url('${props.image}')`
   };
 
-  // TODO how will this dynamic content work???
+  // TODO how will this work for dynamic <meta> content???
   return (
     <div>
-      {/* <Helmet>
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://www.thegreenhouse.io/XXXX" />
-        <meta property="og:image" content="${props.image}" />
-        <meta property="og:description" content="${props.title}" />
-
-        <meta name="twitter:card" content="${props.title}" />
-      </Helmet> */}
 
       <div className="blog-post">
 
