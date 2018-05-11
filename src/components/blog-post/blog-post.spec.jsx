@@ -57,7 +57,7 @@ describe('BlogPost Component', () => {
       expect(content.text()).toBe('Hello World');
     });
 
-    describe('Social Sharing', () => {
+    describe('<meta> tags for Social Sharing', () => {
       beforeEach(() => {
         post = mount(
           <BlogPost {...mockPost}>
