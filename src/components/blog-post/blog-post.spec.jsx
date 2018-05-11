@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
+import Helmet from 'react-helmet';
+import { slugifyDate } from './blog-post';
 import BlogPost from './blog-post';
 
 configure({ adapter: new Adapter() });
@@ -9,7 +11,7 @@ describe('BlogPost Component', () => {
   const mockPost = {
     title: 'Some title for this post',
     date: '04.11.2018',
-    image: 'http://www.domain.com/image.png'
+    image: 'image.png'
   };
   let post;
   
@@ -54,5 +56,73 @@ describe('BlogPost Component', () => {
       expect(content.length).toBe(1);
       expect(content.text()).toBe('Hello World');
     });
+
+    describe('<meta> tags for Social Sharing', () => {
+      beforeEach(() => {
+        post = mount(
+          <BlogPost {...mockPost}>
+            <p>Hello World</p>
+          </BlogPost>
+        );
+      });
+  
+      it('should have a <Helmet> component', () => {
+        const helmet = post.find(Helmet);
+  
+        expect(helmet.length).toBe(1);
+      });
+  
+      it('should have a <meta> tag for title', () => {
+        const helmet = Helmet.peek();
+        
+        helmet.metaTags.filter((tag) => {
+          if (tag.property === 'og:title') {
+            expect(tag.content).toBe('The Greenhouse I/O - Blog');
+          }
+        });
+      });
+
+      it('should have a <meta> tag for type', () => {
+        const helmet = Helmet.peek();
+        
+        helmet.metaTags.filter((tag) => {
+          if (tag.property === 'og:type') {
+            expect(tag.content).toBe('article');
+          }
+        });
+      });
+
+      it('should have a <meta> tag for url', () => {
+        const helmet = Helmet.peek();
+        const slugDate = slugifyDate(mockPost.date);
+
+        helmet.metaTags.filter((tag) => {
+          if (tag.property === 'og:url') {
+            expect(tag.content).toBe(`https://www.thegreenhouse.io/blog/${slugDate}`);
+          }
+        });
+      });
+
+      it('should have a <meta> tag for image', () => {
+        const helmet = Helmet.peek();
+        
+        helmet.metaTags.filter((tag) => {
+          if (tag.property === 'og:image') {
+            expect(tag.content).toBe(`https://s3.amazonaws.com/www.thegreenhouse.io${mockPost.image}`);
+          }
+        });
+      });
+
+      it('should have a <meta> tag for description', () => {
+        const helmet = Helmet.peek();
+        
+        helmet.metaTags.filter((tag) => {
+          if (tag.property === 'og:description') {
+            expect(tag.content).toBe(mockPost.title);
+          }
+        });
+      });
+    });
+
   });
 });

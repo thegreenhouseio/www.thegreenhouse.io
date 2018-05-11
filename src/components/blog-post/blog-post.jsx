@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import './blog-post.css';
 
-function slugifyDate(date) {
+export function slugifyDate(date) {
   const dateArray = date.split('.');
 
   return `${dateArray[2]}/${dateArray[1]}/${dateArray[0]}/`;
