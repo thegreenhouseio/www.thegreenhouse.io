@@ -24,6 +24,9 @@ const typography = new Typography({
 
 typography.injectStyles();
 
+// https://github.com/nfl/react-helmet/issues/79#issuecomment-299888528
+require('react-helmet/lib/HelmetConstants.js').HELMET_ATTRIBUTE = 'data-react';
+
 // TODO fix why bombs out because of <Link> being used in the component
 class Layout extends React.Component {
   
