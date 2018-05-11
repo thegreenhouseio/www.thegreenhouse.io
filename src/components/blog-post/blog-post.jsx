@@ -8,22 +8,18 @@ const BlogPost = (props) => {
     backgroundImage: `url('${props.image}')`
   };
 
-  // TODO how will this work for dynamic <meta> content???
   return (
-    <div>
+    <div className="blog-post">
 
-      <div className="blog-post">
-
-        <div className="header" style={headerBackgroundStyle}>
-          <h1 className="title">{props.title}</h1>
-          <h5 className="date">Published: {props.date}</h5>
-        </div>
-
-        <div className="content">
-          { props.children }
-        </div>
-      
+      <div className="header" style={headerBackgroundStyle}>
+        <h1 className="title">{props.title}</h1>
+        <h5 className="date">Published: {props.date}</h5>
       </div>
+
+      <div className="content">
+        { props.children }
+      </div>
+    
     </div>
   );
 };
