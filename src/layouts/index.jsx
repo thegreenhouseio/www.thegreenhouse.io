@@ -50,12 +50,10 @@ class Layout extends React.Component {
           <meta property="og:image" content="https://s3.amazonaws.com/www.thegreenhouse.io/static/banner.4b3f4ebd.jpg" />
           <meta property="og:description" content="Personal site and blog for Owen Buckley and The Greenhouse I/O.  Ideas are built here." />
 
-          <meta name="twitter:card" content="Personal site and blog for Owen Buckley and The Greenhouse I/O" />
           <meta name="twitter:site" content="@thegreenhouseio" />
           <meta name="twitter:creator" content="@thegreenhouseio" />
-          <meta property="og:url" content="https://www.thegreenhouse.io/" />
 
-          <html lang="en" />
+          <html lang="en" prefix="og:http://ogp.me/ns#"/>
         </Helmet>
 
         <section className='row'>
