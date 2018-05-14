@@ -3,6 +3,14 @@ class ArticlesService {
     // add new articles at the top, i.e. FIFO
     this.articles = [{
       heading: 'A PWA For Providence Geeks',
+      subHeading: 'A Case Study in Performance (pt. 3)',
+      abstract: `Part three in my performance focused series for the Providence Geeks website.  In this installment I detail upgrading to webpack 4 and route based 
+                code splitting + lazy loading.`,
+      link: 'https://medium.com/p/76f51e4b65b7/',
+      img: 'https://cdn-images-1.medium.com/max/2000/1*Itn_4AfT13qgCN-YcsuMsQ.png',
+      date: '5/15/2018'
+    }, {
+      heading: 'A PWA For Providence Geeks',
       subHeading: 'A Case Study in Performance (pt. 2)',
       abstract: `Part two in my performance focused series for the Providence Geeks website in which I go further into the technology used and the techniques 
                 implemented to improve the performance and user exprience of the website.`,

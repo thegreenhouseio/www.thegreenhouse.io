@@ -15,6 +15,14 @@ describe('BlogPost Component', () => {
   };
   let post;
   
+  describe('slugifyDate', () => {
+    it('should return a slugified date when the right format is provided', () => {
+      const slugifiedDate = slugifyDate(mockPost.date);
+
+      expect(slugifiedDate).toBe('2018/11/04/');
+    });
+  });
+
   describe('basic functionality', () => {
     beforeEach(() => {
       post = mount(

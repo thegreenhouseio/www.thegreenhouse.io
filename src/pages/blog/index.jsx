@@ -16,6 +16,7 @@ class BlogPage extends React.Component {
         <h2><u>2018</u></h2>
         
         <ul className="blog-posts-list">
+          <li><Link to="/blog/2018/05/15">A Case Study in Performance (cont.) 📝</Link></li>
           <li><Link to="/blog/2018/01/24">A Case Study in Performance 📝</Link></li>
         </ul>
 
