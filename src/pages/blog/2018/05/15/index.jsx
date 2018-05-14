@@ -20,9 +20,9 @@ class BlogPostPage extends React.Component {
             discuss the steps taken and gains achieved by:</p>
             
           <ul>
-            <li><u>Upgrading to webpack 4</u></li>
-            <li><u>Implementing route based code splitting + lazy loading</u></li>
-            <li><u>Improving header image loading</u></li>
+            <li><u>Upgraded to webpack 4!</u> 📦</li>
+            <li><u>Route based code splitting + lazy loading</u> ⚡</li>
+            <li><u>Improved header image loading</u> 📷</li>
           </ul>
 
           <p>I always welcome feedback! Please feel free to leave comments on the article, reach out to me on twitter, or visit the 
