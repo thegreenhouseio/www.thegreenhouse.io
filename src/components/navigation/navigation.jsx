@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import './navigation.css';
 
 // TODO fix why bombs out because of <Link> being used in the component
+// https://github.com/thegreenhouseio/www.thegreenhouse.io/issues/34
 const Naviagation = () => {
   return (
     <div className="navigation">

@@ -25,6 +25,7 @@ const typography = new Typography({
 typography.injectStyles();
 
 // TODO fix why bombs out because of <Link> being used in the component
+// https://github.com/thegreenhouseio/www.thegreenhouse.io/issues/34
 class Layout extends React.Component {
   
   constructor() {
