@@ -9,8 +9,6 @@ class HomePage extends React.Component {
     this.state = {
       socialLinksMap: new SocialLinksService().getLinksAsMap()
     };
-
-    console.log('state', this.state);
   }
   
   render() {
