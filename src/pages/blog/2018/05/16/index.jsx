@@ -16,7 +16,7 @@ class BlogPostPage extends React.Component {
           <p>I&apos;m <b>super</b> excited to announce the next installment of my ongoing article series detailing performance and web applications! </p>
             
           <p>In <OutboundLink href="https://medium.com/@thegreenhouseio/a-pwa-for-providence-geeks-a-case-study-in-performance-pt-3-76f51e4b65b7"
-            target="_blank" rel="noopener">this latest installement</OutboundLink>, I continue with my learning journey of incrementaly improving the performance metrics of 
+            target="_blank" rel="noopener">this latest installment</OutboundLink>, I continue with my learning journey of incrementally improving the performance metrics of 
             the <OutboundLink href="https://github.com/ProvidenceGeeks/website-frontend/issues" target="_blank" rel="noopener">Providence Geeks website</OutboundLink> and 
             discuss the steps taken and gains achieved by:</p>
             
