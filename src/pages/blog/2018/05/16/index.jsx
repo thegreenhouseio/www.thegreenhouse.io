@@ -11,23 +11,24 @@ class BlogPostPage extends React.Component {
   render() {
 
     return (
-      <BlogPost title='A Case Study in Performance (cont)' date='05.15.2018' image={bannerImage}>
+      <BlogPost title='A Case Study in Performance (cont)' date='05.16.2018' image={bannerImage}>
         <div>
           <p>I&apos;m <b>super</b> excited to announce the next installment of my ongoing article series detailing performance and web applications! </p>
             
-          <p>In this latest installement, I continue the learning process of incrementaly improving the performance metrics of 
+          <p>In <OutboundLink href="https://medium.com/@thegreenhouseio/a-pwa-for-providence-geeks-a-case-study-in-performance-pt-3-76f51e4b65b7"
+            target="_blank" rel="noopener">this latest installement</OutboundLink>, I continue with my learning journey of incrementaly improving the performance metrics of 
             the <OutboundLink href="https://github.com/ProvidenceGeeks/website-frontend/issues" target="_blank" rel="noopener">Providence Geeks website</OutboundLink> and 
             discuss the steps taken and gains achieved by:</p>
             
           <ul>
-            <li><u>Upgraded to webpack 4!</u> 📦</li>
-            <li><u>Route based code splitting + lazy loading</u> ⚡</li>
-            <li><u>Improved header image loading</u> 📷</li>
+            <li><u>Upgrading to webpack 4</u> 📦</li>
+            <li><u>Using route based code splitting + lazy loading</u> ⚡</li>
+            <li><u>Improving header image loading</u> 📷</li>
           </ul>
 
           <p>I always welcome feedback! Please feel free to leave comments on the article, reach out to me on twitter, or visit the 
             project&apos;s <OutboundLink href="https://github.com/ProvidenceGeeks/website-frontend/issues" target="_blank" rel="noopener">issue tracker</OutboundLink> and 
-            provide any bug reports and / or feature requests. ⭐</p>
+            provide any bug reports and / or feature requests. Let me know if you found this article helpful!  ⭐</p>
 
           <p><b>Also</b>, I was honored to speak recently at <OutboundLink href="https://www.meetup.com/Prov-JS/events/249132270/" target="_blank" rel="noopener">ProvJS </OutboundLink>
             to discuss web performance and have made my slides 
