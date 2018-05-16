@@ -12,7 +12,6 @@ xdescribe('Header Component', () => {
     header = mount(<Header/>);
   });
 
-  // TODO fix why bombs out because of <Link> being used in the component
   xit('should not be null', () => {
     expect(header).not.toBeNull();
     expect(header.find('.header').length).toEqual(1);
