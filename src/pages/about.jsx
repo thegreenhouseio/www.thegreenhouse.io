@@ -15,7 +15,7 @@ class PublicationsPage extends React.Component {
     };
 
     this.state = {
-      socialLinksMap: new SocialLinksService().getLinks(true),
+      socialLinksMap: new SocialLinksService().getLinksAsMap(),
       articles: new ArticlesService().getModeledArticles(),
       presentations: new PresentationsService().getModeledPresentations(),
       activeSection: this.SECTIONS.SPEAKING
@@ -41,7 +41,7 @@ class PublicationsPage extends React.Component {
         content = 
           <div>
             <CardList className="content-writing" items={this.state.articles}/>
-            <span className="cta">Visit my <OutboundLink target="_blank" href={this.state.socialLinksMap.medium}>Medium</OutboundLink> page for other articles I&apos;ve done!</span>
+            <span className="cta">Visit my <OutboundLink target="_blank" href={this.state.socialLinksMap.get('medium')}>Medium</OutboundLink> page for other articles I&apos;ve done!</span>
           </div>;
         break;
       default:

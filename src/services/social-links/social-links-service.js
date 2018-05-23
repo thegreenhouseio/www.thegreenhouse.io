@@ -20,10 +20,10 @@ class SocialLinksService {
   }
 
   getLinksAsMap() {
-    let linksMap = {};
+    let linksMap = new Map();
 
-    this.links.map(link => {
-      linksMap[link.name] = link.url;
+    this.links.forEach(link => {
+      linksMap.set(link.name, link.url);
     });
 
     return linksMap;
