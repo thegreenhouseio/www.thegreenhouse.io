@@ -25,8 +25,8 @@ class HomePage extends React.Component {
           user experiences (UX).  Simplicity and documentation are key to ensuring accessability to all the implementation details of 
           our <OutboundLink href={this.state.socialLinksMap.github} target="_blank" rel="noopener">shared GitHub repositories.</OutboundLink></p>
 
-        <p>I&apos;m always up to something online be it on <OutboundLink href={this.state.socialLinksMap.twitter} target="_blank" rel="noopener">twitter</OutboundLink>
-          , <OutboundLink href={this.state.socialLinksMap.medium} target="_blank" rel="noopener">Medium</OutboundLink>, 
+        <p>I&apos;m always up to something online be it on <OutboundLink href={this.state.socialLinksMap.get('twitter')} target="_blank" rel="noopener">twitter</OutboundLink>
+          , <OutboundLink href={this.state.socialLinksMap.get('medium')} target="_blank" rel="noopener">Medium</OutboundLink>, 
           or around the local <OutboundLink href="https://www.pvdgeeks.org" target="_blank" rel="noopener">Rhode Island Tech Meetup Community</OutboundLink>, so I hope to hear from you!</p>
 
         <span><i>I want to help build your future.</i></span>

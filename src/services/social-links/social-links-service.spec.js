@@ -45,15 +45,16 @@ describe('SocialLinksService', () => {
       links = socialLinksService.getLinksAsMap();
     });
 
-    it('should be a hash map', () => {
+    it('should be a Map', () => {
       expect(links).toBeDefined();
+      expect(typeof links).toBe(typeof new Map());
     });
 
     it('should return the expected links from getLinks', () => {
-      expect(links.linkedin).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');
-      expect(links.twitter).toBe('https://twitter.com/thegreenhouseio');
-      expect(links.medium).toBe('https://medium.com/@thegreenhouseio');
-      expect(links.github).toBe('https://github.com/thegreenhouseio');
+      expect(links.get('linkedin')).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');
+      expect(links.get('twitter')).toBe('https://twitter.com/thegreenhouseio');
+      expect(links.get('medium')).toBe('https://medium.com/@thegreenhouseio');
+      expect(links.get('github')).toBe('https://github.com/thegreenhouseio');
     });
 
   });
