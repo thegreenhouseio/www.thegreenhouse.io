@@ -2,9 +2,15 @@ class ProjectsService {
   constructor() {
     // add new projects at the top, i.e. FIFO
     this.projects = [{
+      name: 'Project Evergreen',
+      description: `Project Evergreen is an effort I started to provide clear, detailed, and practical resources to those looking to build 
+                    modern, dynamic, performant, and evergreen web applications.`,
+      link: 'https://project-evergreen.thegreenhouse.io/',
+      img: 'https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'
+    }, {
       name: 'Health Of Mind Enhanced (HOME)',
-      description: `Co-working space I co-own in Newport, RI focused on providing an open space to work, study, and collobrate in a health conscious work environment
-                    featuring standing desks and bike desks, all in a modern art gallery setting.  A great place to work from HOME!`,
+      description: `Co-working space I co-own in Newport, RI focused on providing an open space to work, study, and collobrate in a health conscious environment
+                    featuring standing desks and bike desks, all in a modern and comfortable setting.  A great place to work from HOME!`,
       link: 'https://healthofmindenhanced.com/'
     }, {
       name: 'Providence Geeks Website',
@@ -20,7 +26,8 @@ class ProjectsService {
     }, {
       name: 'GitHub Dashboard',
       description: 'A local webapp I built to manage your issues and PRs in GitHub.  It allows you to track issues and PRs assigned to you across all your repositories, both personal and subscribed.',
-      link: 'https://github.com/thescientist13/github-dashboard/'
+      link: 'https://github.com/thescientist13/github-dashboard/',
+      img: 'https://s3.amazonaws.com/uploads.thegreenhouse.io/oss/github-dashboard-v1.2.0.png'
     }, {
       name: 'Analog Studios',
       description: 'Local home music studio I co-run in Newport, RI with my friend.  A great place to come jam or lay down some tracks, but always keepin it reel.',
