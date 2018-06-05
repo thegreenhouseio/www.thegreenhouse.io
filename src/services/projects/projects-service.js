@@ -8,11 +8,11 @@ class ProjectsService {
       link: 'https://project-evergreen.thegreenhouse.io/',
       img: 'https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'
     }, {
-    //   name: 'Health Of Mind Enhanced (HOME)',
-    //   description: `Co-working space I co-own in Newport, RI focused on providing an open space to work, study, and collobrate in a health conscious work environment
-    //                 featuring standing desks and bike desks, all in a modern art gallery setting.  A great place to work from HOME!`,
-    //   link: 'https://healthofmindenhanced.com/'
-    // }, {
+      name: 'Health Of Mind Enhanced (HOME)',
+      description: `Co-working space I co-own in Newport, RI focused on providing an open space to work, study, and collobrate in a health conscious environment
+                    featuring standing desks and bike desks, all in a modern and comfortable setting.  A great place to work from HOME!`,
+      link: 'https://healthofmindenhanced.com/'
+    }, {
       name: 'Providence Geeks Website',
       description: `Open source website project for the local tech meetup community Providence Geeks, that I helped lead for Kenzan and continue to maintain and help develop.  
                     Currently working on making the site performant and consideration for becoming a Progressive Web Application (PWA).`,
