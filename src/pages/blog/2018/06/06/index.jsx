@@ -10,7 +10,12 @@ class BlogPostPage extends React.Component {
   render() {
 
     return (
-      <BlogPost title='Project Evergreen' date='06.06.2018' image='https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'>
+      <BlogPost 
+        title='Project Evergreen'
+        description='Project Evergreen: In Pursuit of Evergreen Web Applications'
+        date='06.06.2018' 
+        image='https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'>
+        
         <div>
           <p>Building modern web applications can be complex.  Balancing the delivery of great user experiences with supportive developer experiences is a constant balancing act.  
             Performance and security are a must. The JavaScript ecosystem is abundant with amazing tools and libraries.  So where to start?</p>
