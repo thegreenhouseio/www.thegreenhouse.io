@@ -17,8 +17,9 @@ export function slugifyDate(date) {
  * 
  */
 const BlogPost = (props) => {
+  const isRemoteUrl = props.image.includes('http');
   const canonicalUrl = `https://www.thegreenhouse.io/blog/${slugifyDate(props.date)}`;
-  const canonicalImageUrl = `https://s3.amazonaws.com/www.thegreenhouse.io${props.image}`;
+  const canonicalImageUrl = isRemoteUrl ? props.image : `https://s3.amazonaws.com/www.thegreenhouse.io${props.image}`;
   
   const headerBackgroundStyle = {
     backgroundImage: `url('${props.image}')`
