@@ -140,10 +140,11 @@ describe('BlogPost Component', () => {
     });
   });
 
-  describe('Extended Functionality', () => {
+  describe('Extended Meta Tag Functionality', () => {
     const mockPost = {
       title: 'Some title for this post',
       date: '04.11.2018',
+      description: 'An optional description',
       image: 'https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'
     };
 
@@ -159,8 +160,8 @@ describe('BlogPost Component', () => {
       const helmet = Helmet.peek();
       
       helmet.metaTags.filter((tag) => {
-        if (tag.property === 'og:image') {
-          expect(tag.content).toBe(mockPost.image);
+        if (tag.property === 'og:description') {
+          expect(tag.content).toBe(mockPost.description);
         }
       });
     });

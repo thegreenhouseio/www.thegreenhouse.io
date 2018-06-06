@@ -20,7 +20,7 @@ const BlogPost = (props) => {
   const isRemoteUrl = props.image.includes('http');
   const canonicalUrl = `https://www.thegreenhouse.io/blog/${slugifyDate(props.date)}`;
   const canonicalImageUrl = isRemoteUrl ? props.image : `https://s3.amazonaws.com/www.thegreenhouse.io${props.image}`;
-  
+  const description = props.description ? props.description : props.title;
   const headerBackgroundStyle = {
     backgroundImage: `url('${props.image}')`
   };
@@ -32,7 +32,7 @@ const BlogPost = (props) => {
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonicalUrl}/>
         <meta property="og:image" content={canonicalImageUrl} />
-        <meta property="og:description" content={props.title} />
+        <meta property="og:description" content={description} />
       </Helmet>
 
       <div className="blog-post">
@@ -53,6 +53,7 @@ const BlogPost = (props) => {
 
 BlogPost.propTypes = {
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
   date: PropTypes.string.isRequired,
   children: PropTypes.object.isRequired, 
   image: PropTypes.string.isRequired
