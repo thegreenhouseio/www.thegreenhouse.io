@@ -21,7 +21,6 @@ const BlogPost = (props) => {
   const canonicalUrl = `https://www.thegreenhouse.io/blog/${slugifyDate(props.date)}`;
   const canonicalImageUrl = isRemoteUrl ? props.image : `https://s3.amazonaws.com/www.thegreenhouse.io${props.image}`;
   const description = props.description ? props.description : props.title;
-
   const headerBackgroundStyle = {
     backgroundImage: `url('${props.image}')`
   };
