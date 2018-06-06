@@ -7,15 +7,15 @@ import BlogPost from './blog-post';
 
 configure({ adapter: new Adapter() });
 
-describe('BlogPost Component', () => {
-  const mockPost = {
-    title: 'Some title for this post',
-    date: '04.11.2018',
-    image: 'image.png'
-  };
-  let post;
+describe('BlogPost Component', () => {  
   
   describe('slugifyDate', () => {
+    const mockPost = {
+      title: 'Some title for this post',
+      date: '04.11.2018',
+      image: 'image.png'
+    };
+    
     it('should return a slugified date when the right format is provided', () => {
       const slugifiedDate = slugifyDate(mockPost.date);
 
@@ -24,6 +24,13 @@ describe('BlogPost Component', () => {
   });
 
   describe('basic functionality', () => {
+    const mockPost = {
+      title: 'Some title for this post',
+      date: '04.11.2018',
+      image: 'image.png'
+    };
+    let post;
+
     beforeEach(() => {
       post = mount(
         <BlogPost {...mockPost}>
@@ -51,7 +58,7 @@ describe('BlogPost Component', () => {
       expect(date.text()).toBe(`Published: ${mockPost.date}`);
     });
 
-    it('should display the correct image', () => {
+    it('should display the correct image if the image path is local', () => {
       const header = post.find('.header');
 
       expect(header.length).toBe(1);
@@ -111,7 +118,7 @@ describe('BlogPost Component', () => {
         });
       });
 
-      it('should have a <meta> tag for image', () => {
+      it('should have a <meta> tag for image with a remote path', () => {
         const helmet = Helmet.peek();
         
         helmet.metaTags.filter((tag) => {
@@ -131,6 +138,32 @@ describe('BlogPost Component', () => {
         });
       });
     });
-
   });
+
+  describe('Extended Functionality', () => {
+    const mockPost = {
+      title: 'Some title for this post',
+      date: '04.11.2018',
+      image: 'https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'
+    };
+
+    beforeEach(() => {
+      mount(
+        <BlogPost {...mockPost}>
+          <p>Hello World</p>
+        </BlogPost>
+      );
+    });
+
+    it('should have a <meta> tag for image with a remote URL / path when provided an external URL', () => {
+      const helmet = Helmet.peek();
+      
+      helmet.metaTags.filter((tag) => {
+        if (tag.property === 'og:image') {
+          expect(tag.content).toBe(mockPost.image);
+        }
+      });
+    });
+  });
+
 });
