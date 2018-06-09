@@ -29,7 +29,7 @@ class HomePage extends React.Component {
           , <OutboundLink href={this.state.socialLinksMap.get('medium')} target="_blank" rel="noopener">Medium</OutboundLink>, 
           or around the local <OutboundLink href="https://www.pvdgeeks.org" target="_blank" rel="noopener">Rhode Island Tech Meetup Community</OutboundLink>, so I hope to hear from you!</p>
 
-        <span><i>I want to help build your future.</i></span>
+        <span><i>Let&apos;s build something great!</i></span>
 
       </div>
     )
