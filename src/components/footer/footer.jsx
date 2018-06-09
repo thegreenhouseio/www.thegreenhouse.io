@@ -1,17 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { SocialIcon } from 'react-social-icons';
+// import PropTypes from 'prop-types';
+// import { SocialIcon } from 'react-social-icons';
 import './footer.css';
 
-const Footer = (props) => {
+// constructor() {
+//   super();
+  
+//   // TODO move this to footer component, shared services at the component level are fine
+//   this.links = new SocialLinksService().getLinksAsArray();
+// }
+
+const Footer = () => {
 
   return (
     <footer className="footer">
       <hr/>
       {
-        props.links.map((link, idx) => {
-          return <SocialIcon key={idx} url={link}/>;
-        })
+        // props.links.map((link, idx) => {
+        //   return <SocialIcon key={idx} url={link}/>;
+        // })
       }
       <br/>
       <span className="copyright">&copy; Owen Buckley / thegreenhouse.io</span>
@@ -20,12 +27,12 @@ const Footer = (props) => {
 
 };
 
-Footer.propTypes = {
-  links: PropTypes.array
-};
+// Footer.propTypes = {
+//   links: PropTypes.array
+// };
 
-Footer.defaultProps = {
-  links: []
-};
+// Footer.defaultProps = {
+//   links: []
+// };
 
 export default Footer;

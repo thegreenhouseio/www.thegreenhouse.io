@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import './navigation.css';
 
 // TODO fix why bombs out because of <Link> being used in the component
