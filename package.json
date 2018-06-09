@@ -32,7 +32,7 @@
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.7.0",
     "gatsby": "next",
-    "gatsby-cli": "next",
+    "gatsby-cli": "^1.1.58",
     "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sitemap": "next",
