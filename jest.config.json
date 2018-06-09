@@ -14,6 +14,11 @@
 
   "coverageDirectory": "<rootDir>/reports/test-coverage",
 
+  "transform": { 
+    "^.+\\.js$": "<rootDir>/test/jest-preprocess.js",
+    "^.+\\.jsx$": "<rootDir>/test/jest-preprocess.js"
+  },
+
   "collectCoverageFrom": [
     "src/components/**/*.{js,jsx}",
     "src/layouts/*.{js,jsx}",

@@ -5,6 +5,7 @@ import Typography from 'typography';
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import Navigation from '../navigation/navigation';
+import SocialLinksService from '../../services/social-links/social-links-service';
 import './layout.css';
 
 const typography = new Typography({
@@ -25,48 +26,57 @@ typography.injectStyles();
 
 // TODO fix why bombs out because of <Link> being used in the component
 // https://github.com/thegreenhouseio/www.thegreenhouse.io/issues/34
-const Layout = (props) => {
+class Layout extends React.Component {
 
-  return (
-    <div className='layout'>
-      <Helmet>
-        <title>The Greenhouse I/O</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'/>
-        <meta name='mobile-web-app-capable' content='yes'/>
-        <meta name='apple-mobile-web-app-capable' content='yes'/>
-        <meta name='apple-mobile-web-app-status-bar-style' content='black'/>
-        <meta name="description" content="Personal site and blog for Owen Buckley and The Greenhouse I/O"/>
-      
-        <meta property="og:title" content="The Greenhouse I/O" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.thegreenhouse.io/" />
-        <meta property="og:image" content="https://s3.amazonaws.com/www.thegreenhouse.io/static/banner.4b3f4ebd.jpg" />
-        <meta property="og:description" content="Personal site and blog for Owen Buckley and The Greenhouse I/O.  Ideas are built here." />
+  constructor() {
+    super();
 
-        <meta name="twitter:site" content="@thegreenhouseio" />
-        <meta name="twitter:creator" content="@thegreenhouseio" />
+    this.links = new SocialLinksService().getLinksAsArray();
+  }
 
-        <html lang="en" prefix="og:http://ogp.me/ns#"/>
-      </Helmet>
+  render() {
+    
+    return (
+      <div className='layout'>
+        <Helmet>
+          <title>The Greenhouse I/O</title>
+          <meta name='viewport' content='width=device-width, initial-scale=1'/>
+          <meta name='mobile-web-app-capable' content='yes'/>
+          <meta name='apple-mobile-web-app-capable' content='yes'/>
+          <meta name='apple-mobile-web-app-status-bar-style' content='black'/>
+          <meta name="description" content="Personal site and blog for Owen Buckley and The Greenhouse I/O"/>
+        
+          <meta property="og:title" content="The Greenhouse I/O" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.thegreenhouse.io/" />
+          <meta property="og:image" content="https://s3.amazonaws.com/www.thegreenhouse.io/static/banner.4b3f4ebd.jpg" />
+          <meta property="og:description" content="Personal site and blog for Owen Buckley and The Greenhouse I/O.  Ideas are built here." />
 
-      <section className='row'>
-        <Header/>
-      </section>
+          <meta name="twitter:site" content="@thegreenhouseio" />
+          <meta name="twitter:creator" content="@thegreenhouseio" />
 
-      <section className='row'>
-        <Navigation/>
-      </section>
+          <html lang="en" prefix="og:http://ogp.me/ns#"/>
+        </Helmet>
 
-      <section className='outlet row'>
-        <div>{ props.children }</div>
-      </section>
+        <section className='row'>
+          <Header/>
+        </section>
 
-      <section className='row'>
-        <Footer/>
-      </section>
-    </div>
-  );
-};
+        <section className='row'>
+          <Navigation/>
+        </section>
+
+        <section className='outlet row'>
+          <div>{ this.props.children }</div>
+        </section>
+
+        <section className='row'>
+          <Footer links={this.links}/>
+        </section>
+      </div>
+    );
+  }
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired
