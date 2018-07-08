@@ -5,7 +5,7 @@ import About from '../../../src/pages/about';
 
 configure({ adapter: new Adapter() });
 
-describe('About Page', () => {
+xdescribe('About Page', () => {
   let about;
 
   beforeEach(() => {
