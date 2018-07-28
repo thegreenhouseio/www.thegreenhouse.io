@@ -60,10 +60,6 @@ describe('About Page', () => {
   });
 
   describe('Speaking Content Section', () => {
-    // global.___loader = {
-    //   enqueue: jest.fn()
-    // };
-
     it('should display the speaking content when the link is clicked after another click', () => {
       about.find('.link-writing').simulate('click');
       about.find('.link-speaking').simulate('click');
