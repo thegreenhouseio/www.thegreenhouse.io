@@ -1,16 +1,25 @@
 import * as React from 'react';
 import { mount, configure } from 'enzyme';
+import { MemoryRouter } from 'react-router-dom';
 import CardList from '../../../src/components/card-list/card-list';
 import Projects from '../../../src/pages/projects';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
 
-xdescribe('Projects Page', () => {
+describe('Projects Page', () => {
   let about;
 
+  global.___loader = {
+    enqueue: jest.fn()
+  };
+
   beforeEach(() => {
-    about = mount(<Projects/>);
+    about = mount(
+      <MemoryRouter>
+        <Projects/>
+      </MemoryRouter>
+    ).children();
   });
 
   it('should be defined', () => {
@@ -25,12 +34,6 @@ xdescribe('Projects Page', () => {
     expect(subHeading.text()).toBeDefined();
   });
 
-  describe('it should have content', () => {
-    it('should have projects', () => {
-      expect(about.state().projects.length).toBeGreaterThanOrEqual(1);
-    });
-  });
-
   describe('Projects section', () => {
     let section;
 
@@ -39,7 +42,7 @@ xdescribe('Projects Page', () => {
     });
 
     it('should have a <CardList/>', () => {
-      expect(section.find(CardList).length).toBe(1);
+      expect(section.find(CardList).length).toBeGreaterThanOrEqual(1);
     });
   });
 

@@ -27,8 +27,7 @@ describe('CardList Component', () => {
       expect(cardList.find(<Card/>).length).toEqual(mockItems.length);
     });
   
-    // TODO fix why this count comes back as 0
-    xit('should display two <Card> components when two items are passed as props', () => {
+    it('should display two <Card> components when two items are passed as props', () => {
       const mockItems = [{
         title: 'A PWA For Providence Geeks pt. 1',
         abstract: `Part two in my performance focused series for the Providence Geeks website in which I go further into the technology used and the techniques 
@@ -46,7 +45,7 @@ describe('CardList Component', () => {
 
       cardList = mount(<CardList items={mockItems}/>);
 
-      expect(cardList.find(<Card/>).length).toEqual(mockItems.length);
+      expect(cardList.find('Card').length).toEqual(mockItems.length);
     });
   
   });

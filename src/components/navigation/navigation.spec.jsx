@@ -2,11 +2,11 @@ import * as React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { MemoryRouter } from 'react-router-dom';
-import Header from './header';
+import Navigation from './navigation';
 
 configure({ adapter: new Adapter() });
 
-describe('Header Component', () => {
+describe('Navigation Component', () => {
   let header;
 
   global.___loader = {
@@ -16,14 +16,14 @@ describe('Header Component', () => {
   beforeEach(() => {
     header = mount(
       <MemoryRouter>
-        <Header/>
+        <Navigation/>
       </MemoryRouter>
     ).children();
   });
 
   it('should not be null', () => {
     expect(header).not.toBeNull();
-    expect(header.find('.header').length).toEqual(1);
+    expect(header.find('.navigation').length).toEqual(1);
   });
 
 });

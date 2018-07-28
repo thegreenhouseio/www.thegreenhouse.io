@@ -55,8 +55,8 @@ describe('Card Component', () => {
       expect(card.find('.card-content').text()).toEqual(mockItem.abstract);
     });
 
-    xit('should have a link set in a SocialLink component', () => {
-      expect(card.find(<SocialIcon/>).length).toEqual(1);
+    it('should have a link set in a SocialLink component', () => {
+      expect(card.find('SocialIcon').length).toEqual(1);
     });
   });
 
