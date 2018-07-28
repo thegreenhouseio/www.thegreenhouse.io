@@ -5,21 +5,27 @@
     "raf/polyfill"
   ],
 
-  "coverageReporters": ["html", "json", "lcov", "cobertura"],
+  "testRegex": "/.*(__tests__\\/.*)|(.*(test|spec))\\.jsx?$",
+  "testPathIgnorePatterns": [
+    "<rootDir>[/\\\\](\\.cache|node_modules)[/\\\\]",
+    ".cache"
+  ],
 
   "moduleNameMapper": {
-    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/empty-module.js",
-    "\\.(css|scss)$": "<rootDir>/test/__mocks__/empty-module.js",
-    "pages.json$": "<rootDir>/test/__mocks__/pages.json"
+    ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/empty-module.js"
   },
-
-  "coverageDirectory": "<rootDir>/reports/test-coverage",
 
   "transform": { 
     "^.+\\.js$": "<rootDir>/test/jest-preprocess.js",
     "^.+\\.jsx$": "<rootDir>/test/jest-preprocess.js"
   },
+  "transformIgnorePatterns": [
+    "node_modules/(?!(gatsby)/)"
+  ],
 
+  "coverageReporters": ["html", "json", "lcov", "cobertura"],
+  "coverageDirectory": "<rootDir>/reports/test-coverage",
   "collectCoverageFrom": [
     "src/components/**/*.{js,jsx}",
     "src/layouts/*.{js,jsx}",
@@ -28,11 +34,6 @@
     "src/services/**/*.{js,jsx}",
     "!src/**/**/*.spec.*"
   ],
-
-  "testPathIgnorePatterns": [
-    "<rootDir>[/\\\\](\\.cache|node_modules)[/\\\\]"
-  ],
-
   "coverageThreshold": {
     "global": {
       "branches": 75,
@@ -41,4 +42,5 @@
       "statements": 70
     }
   }
+
 }

@@ -2,14 +2,19 @@ import * as React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import About from '../../../src/pages/about';
+import { MemoryRouter } from 'react-router-dom';
 
 configure({ adapter: new Adapter() });
 
-xdescribe('About Page', () => {
+describe('About Page', () => {
   let about;
 
   beforeEach(() => {
-    about = mount(<About/>);
+    about = mount(
+      <MemoryRouter>
+        <About/>
+      </MemoryRouter>
+    );
   });
 
   describe('default state', () => {
