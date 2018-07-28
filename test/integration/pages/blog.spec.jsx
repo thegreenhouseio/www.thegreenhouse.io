@@ -9,7 +9,7 @@ configure({ adapter: new Adapter() });
 describe('BlogPage', () => {
   let blog;
 
-  global.___loader = {
+  global.___loader = { // eslint-disable-line no-underscore-dangle
     enqueue: jest.fn()
   };
 

@@ -9,7 +9,7 @@ configure({ adapter: new Adapter() });
 describe('Header Component', () => {
   let header;
 
-  global.___loader = {
+  global.___loader = { // eslint-disable-line no-underscore-dangle
     enqueue: jest.fn()
   };
   

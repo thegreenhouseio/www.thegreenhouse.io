@@ -9,7 +9,7 @@ configure({ adapter: new Adapter() });
 describe('About Page', () => {
   let about;
 
-  global.___loader = {
+  global.___loader = { // eslint-disable-line no-underscore-dangle
     enqueue: jest.fn()
   };
   
@@ -57,24 +57,12 @@ describe('About Page', () => {
     it('should NOT have any other content sections displayed by default', () => {
       expect(about.find('.content-writing').length).toBe(0);
     });
-
-    // it('should have articles', () => {
-    //   expect(about.state().articles.length).toBeGreaterThanOrEqual(1);
-    // });
-
-    // it('should have presentations', () => {
-    //   expect(about.state().presentations.length).toBeGreaterThanOrEqual(1);
-    // });
-
-    // it('should have social links', () => {
-    //   expect(about.state().socialLinksMap).toBeDefined();
-    // });
   });
 
   describe('Speaking Content Section', () => {
-    global.___loader = {
-      enqueue: jest.fn()
-    };
+    // global.___loader = {
+    //   enqueue: jest.fn()
+    // };
 
     it('should display the speaking content when the link is clicked after another click', () => {
       about.find('.link-writing').simulate('click');
@@ -97,7 +85,6 @@ describe('About Page', () => {
     });
     
     it('should display speaking content when the speaking link is clicked', () => {
-      // test for a <CardList/> component here ideally
       expect(about.find('.content-writing').length).toBe(1);
       expect(about.find('.content-speaking').length).toBe(0);
     });

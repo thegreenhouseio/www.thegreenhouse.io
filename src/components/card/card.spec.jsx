@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { SocialIcon } from 'react-social-icons';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import Card from './card';

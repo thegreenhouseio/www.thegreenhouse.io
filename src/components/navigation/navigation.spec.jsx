@@ -10,7 +10,7 @@ describe('Navigation Component', () => {
   const navLength = 3;
   let navigation;
 
-  global.___loader = {
+  global.___loader = { // eslint-disable-line no-underscore-dangle
     enqueue: jest.fn()
   };
   
