@@ -9,10 +9,6 @@ configure({ adapter: new Adapter() });
 describe('BlogPage', () => {
   let blog;
 
-  global.___loader = { // eslint-disable-line no-underscore-dangle
-    enqueue: jest.fn()
-  };
-
   beforeEach(() => {
     blog = mount(
       <MemoryRouter>

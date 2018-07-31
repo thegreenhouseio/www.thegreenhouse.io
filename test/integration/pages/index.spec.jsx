@@ -9,10 +9,6 @@ configure({ adapter: new Adapter() });
 describe('Home Page', () => {
   let home;
 
-  global.___loader = { // eslint-disable-line no-underscore-dangle
-    enqueue: jest.fn()
-  };
-
   beforeEach(() => {
     home = mount(
       <MemoryRouter>

@@ -9,10 +9,6 @@ configure({ adapter: new Adapter() });
 describe('Navigation Component', () => {
   const navLength = 3;
   let navigation;
-
-  global.___loader = { // eslint-disable-line no-underscore-dangle
-    enqueue: jest.fn()
-  };
   
   beforeEach(() => {
     navigation = mount(

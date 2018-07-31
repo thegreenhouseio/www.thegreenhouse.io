@@ -10,10 +10,6 @@ configure({ adapter: new Adapter() });
 describe('Projects Page', () => {
   let about;
 
-  global.___loader = { // eslint-disable-line no-underscore-dangle
-    enqueue: jest.fn()
-  };
-
   beforeEach(() => {
     about = mount(
       <MemoryRouter>

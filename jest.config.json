@@ -1,7 +1,12 @@
 {
   "verbose": true,
 
+  "globals": {
+    "__PATH_PREFIX__": ""
+  },
+
   "setupFiles": [
+    "<rootDir>/test/loader-shim.js",
     "raf/polyfill"
   ],
 

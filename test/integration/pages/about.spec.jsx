@@ -8,10 +8,6 @@ configure({ adapter: new Adapter() });
 
 describe('About Page', () => {
   let about;
-
-  global.___loader = { // eslint-disable-line no-underscore-dangle
-    enqueue: jest.fn()
-  };
   
   beforeEach(() => {
     about = mount(
