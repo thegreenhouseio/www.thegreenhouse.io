@@ -16,7 +16,7 @@ class HomePage extends React.Component {
       <div id="home">      
         <p>Hello, I&apos;m <b>Owen</b>! 👋</p>
 
-        <p>I find myself most passionate about helping people learn more about technology and how it can help them make their ideas a reality.  I like to do so through 
+        <p>I find myself most passionate about helping people learn more about technology and how to improve their process and workflows.  I like to do so through 
           software projects that are well designed, tested, performant, and maintained in a way that advocates for both user <i>and</i> developer experiences.  My broad range 
           of technical knowledge and capabilities, creativity, interpersonal skills, and a good splash of entrepreneurial spirit make me a valuable contributor to any project.</p>
 
