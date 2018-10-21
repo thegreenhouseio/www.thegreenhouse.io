@@ -22,6 +22,12 @@
   text-align: left;
 }
 
+.card-slides {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #020202;
+}
+
 .card-footer img {
   
 }

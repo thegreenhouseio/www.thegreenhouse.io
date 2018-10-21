@@ -25,6 +25,12 @@ const Card = (props) => {
               ? <span className="card-date"><b>Date: {props.item.date}</b></span>
               : ''
           }
+
+          {
+            props.item.slides 
+              ? <a href={props.item.slides} target="_blank" className="card-slides">📎 (slides)</a>
+              : ''
+          }
         </div>
 
         <div className="card-content">
@@ -55,6 +61,7 @@ Card.propTypes = {
     date: PropTypes.string,
     img: PropTypes.string,
     link: PropTypes.string.isRequired,
+    slides: PropTypes.string,
     title: PropTypes.string.isRequired,
     video: PropTypes.string
   })
