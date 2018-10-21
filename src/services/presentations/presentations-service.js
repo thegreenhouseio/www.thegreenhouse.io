@@ -13,9 +13,10 @@ class PresentationsService {
                 meetup group Providence Geeks.  Covered the entire process from design to delivery, and everything in between.`,
       link: 'https://www.meetup.com/Kenzan-Providence-Hack-Nights/events/246620015/',
       date: '1/18/2018',
-      video: 'https://www.youtube.com/embed/_23QLTJ-eIw'
+      video: 'https://www.youtube.com/embed/_23QLTJ-eIw',
+      slides: 'https://docs.google.com/presentation/d/111An87jpLHBLAM1EMaTu9DlIcWKy6ekyyu4dqqogXso/edit?usp=sharing'
     }, {
-      title: 'Cultivating Developer Experience in the Age of Digitial Transformation',
+      title: 'Cultivating Developer Experience in the Age of Digital Transformation',
       abstract: `A talk I gave at BrooklynJS highlighting the need to cultivate developer experiences that value training, knowledge transfer, educational
                  support and professional development to fuel digital transformations and yield better products and stronger technical teams.`,
       link: 'https://github.com/brooklynjs/brooklynjs.github.io/issues/410',
@@ -51,7 +52,8 @@ class PresentationsService {
         abstract: presentation.abstract,
         link: presentation.link,
         date: presentation.date,
-        video: presentation.video
+        video: presentation.video,
+        slides: presentation.slides
       };
     });
   }
