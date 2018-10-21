@@ -105,4 +105,29 @@ describe('Card Component', () => {
     });
   });
 
+  describe('rendering an item with slides', () => {
+    const mockItemWithSlides = {
+      ...mockItem,
+      slides: 'https://drive.google.com/##123213##'
+    };
+    let link;
+
+    beforeEach(() => {
+      card = mount(<Card item={mockItemWithSlides}/>);
+      link = card.find('a.card-slides');
+    });
+
+    it('should have an tag with the link set', () => {
+      expect(link.prop('href')).toEqual(mockItemWithSlides.slides);
+    });
+
+    it('should open in a new browser tab', () => {
+      expect(link.prop('target')).toEqual('_blank');
+    });
+
+    it('should display link text for the user', () => {
+      expect(link.text()).toEqual('📎 (slides)');
+    });
+  });
+
 });
