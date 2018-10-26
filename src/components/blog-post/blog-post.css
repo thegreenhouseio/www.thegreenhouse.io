@@ -19,3 +19,10 @@
 .blog-post ul {
   list-style-type: none;
 }
+
+.blog-post pre {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
