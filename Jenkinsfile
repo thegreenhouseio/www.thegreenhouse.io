@@ -12,6 +12,10 @@ pipeline {
     nodejs "node-8.9.4"
   }
 
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '10', daysToKeepStr: '20'))
+  }
+
   parameters {
     booleanParam(
       defaultValue: false, 
