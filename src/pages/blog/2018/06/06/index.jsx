@@ -1,12 +1,15 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import Layout from '../../../../../components/layout/layout';
 import BlogPost from '../../../../../components/blog-post/blog-post';
 
-const BlogPostPage = () => {
+class BlogPostPage extends React.Component {
+  constructor() {
+    super();
+  }
 
-  return (
-    <Layout>
+  render() {
+
+    return (
       <BlogPost 
         title='Project Evergreen'
         description='Project Evergreen: In Pursuit of Evergreen Web Applications'
@@ -38,9 +41,8 @@ const BlogPostPage = () => {
 
         </div>
       </BlogPost>
-    </Layout>
-  );
-  
-};
+    );
+  }
+}
 
 export default BlogPostPage;

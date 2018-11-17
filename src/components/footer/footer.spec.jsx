@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { mount, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import Adapter from 'enzyme-adapter-react-15';
 import { SocialIcon } from 'react-social-icons';
 import Footer from './footer';
 

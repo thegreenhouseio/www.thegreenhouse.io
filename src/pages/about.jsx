@@ -1,6 +1,5 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import Layout from '../components/layout/layout';
 import ArticlesService from '../services/articles/articles-service';
 import PresentationsService from '../services/presentations/presentations-service';
 import SocialLinksService from '../services/social-links/social-links-service';
@@ -56,22 +55,20 @@ class PublicationsPage extends React.Component {
   render() {
 
     return (
-      <Layout>
-        <div id="about">
-          <p className="sub-heading">I think the best way to tell you about myself is to show you what I am passionate about.  Below are some featured articles
-            and presentations I&apos;ve worked on.</p>
+      <div id="about">
+        <p className="sub-heading">I think the best way to tell you about myself is to show you what I am passionate about.  Below are some featured articles
+          and presentations I&apos;ve worked on.</p>
 
-          <div className="content-links">
-            <h2 className="link-speaking" onClick={() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
-            <h2 className="link-writing" onClick={() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
-          </div>
-
-          <div className="content-output">
-            { this.getContent() }
-          </div>
-        
+        <div className="content-links">
+          <h2 className="link-speaking" onClick={() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
+          <h2 className="link-writing" onClick={() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
         </div>
-      </Layout>
+
+        <div className="content-output">
+          { this.getContent() }
+        </div>
+      
+      </div>
     );
   }
 }

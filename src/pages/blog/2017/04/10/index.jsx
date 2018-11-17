@@ -1,13 +1,16 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import Layout from '../../../../../components/layout/layout';
 import BlogPost from '../../../../../components/blog-post/blog-post';
 import bannerImage from '../../../images/github.png';
 
-const BlogPostPage = () => {
+class BlogPostPage extends React.Component {
+  constructor() {
+    super();
+  }
 
-  return (
-    <Layout>
+  render() {
+
+    return (
       <BlogPost title='GitHub Dashboard 1.0 Released! 🎉' date='04.10.2017' image={bannerImage}>
         <div>
           <p>The Greenhouse is happy to announce the 1.0.0 release of GitHub Dashboard!  Since the last RC, the focus was on unit testing, 
@@ -20,8 +23,8 @@ const BlogPostPage = () => {
             <OutboundLink href="https://github.com/thescientist13/github-dashboard/issues" target="_blank" rel="noopener"> issue tracker.</OutboundLink></p>
         </div>
       </BlogPost>
-    </Layout>
-  );
-};
+    );
+  }
+}
 
 export default BlogPostPage;

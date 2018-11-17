@@ -1,13 +1,16 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import Layout from '../../../../../components/layout/layout';
 import BlogPost from '../../../../../components/blog-post/blog-post';
 import bannerImage from '../../../images/pwa-lighthouse.png';
 
-const BlogPostPage = () => {
+class BlogPostPage extends React.Component {
+  constructor() {
+    super();
+  }
 
-  return (
-    <Layout>
+  render() {
+
+    return (
       <BlogPost title='A Case Study in Performance' date='01.24.2018' image={bannerImage}>
         <div>
           <p>I&apos;m excited to announce the start of an article series detailing performance in web applications!  
@@ -27,8 +30,8 @@ const BlogPostPage = () => {
             <OutboundLink href="https://github.com/ProvidenceGeeks/website-frontend/issues" target="_blank" rel="noopener"> issue tracker.</OutboundLink></p>
         </div>
       </BlogPost>
-    </Layout>
-  );
-};
+    );
+  }
+}
 
 export default BlogPostPage;

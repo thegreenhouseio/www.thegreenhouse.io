@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Typography from 'typography';
-import Footer from '../footer/footer';
-import Header from '../header/header';
-import Navigation from '../navigation/navigation';
-import SocialLinksService from '../../services/social-links/social-links-service';
-import './layout.css';
+import SocialLinksService from '../services/social-links/social-links-service';
+import Footer from '../components/footer/footer';
+import Header from '../components/header/header';
+import Navigation from '../components/navigation/navigation';
+import './index.css';
 
 const typography = new Typography({
   baseFontSize: '18px',
@@ -24,16 +24,17 @@ const typography = new Typography({
 
 typography.injectStyles();
 
+// TODO fix why bombs out because of <Link> being used in the component
+// https://github.com/thegreenhouseio/www.thegreenhouse.io/issues/34
 class Layout extends React.Component {
-
+  
   constructor() {
     super();
-
+    
     this.links = new SocialLinksService().getLinksAsArray();
   }
 
   render() {
-    
     return (
       <div className='layout'>
         <Helmet>
@@ -43,7 +44,7 @@ class Layout extends React.Component {
           <meta name='apple-mobile-web-app-capable' content='yes'/>
           <meta name='apple-mobile-web-app-status-bar-style' content='black'/>
           <meta name="description" content="Personal site and blog for Owen Buckley and The Greenhouse I/O"/>
-        
+       
           <meta property="og:title" content="The Greenhouse I/O" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.thegreenhouse.io/" />
@@ -65,7 +66,7 @@ class Layout extends React.Component {
         </section>
 
         <section className='outlet row'>
-          <div>{ this.props.children }</div>
+          { this.props.children() }
         </section>
 
         <section className='row'>
@@ -77,7 +78,7 @@ class Layout extends React.Component {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.func.isRequired
 };
 
 export default Layout;
