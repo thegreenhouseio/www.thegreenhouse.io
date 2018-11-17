@@ -1,36 +1,19 @@
 {
   "verbose": true,
 
-  "globals": {
-    "__PATH_PREFIX__": ""
-  },
-
   "setupFiles": [
-    "<rootDir>/test/loader-shim.js",
     "raf/polyfill"
   ],
 
-  "testRegex": "/.*(__tests__\\/.*)|(.*(test|spec))\\.jsx?$",
-  "testPathIgnorePatterns": [
-    "<rootDir>[/\\\\](\\.cache|node_modules)[/\\\\]",
-    ".cache"
-  ],
+  "coverageReporters": ["html", "json", "lcov", "cobertura"],
 
   "moduleNameMapper": {
-    ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
-    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/empty-module.js"
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/empty-module.js",
+    "\\.(css|scss)$": "<rootDir>/test/__mocks__/empty-module.js"
   },
 
-  "transform": { 
-    "^.+\\.js$": "<rootDir>/test/jest-preprocess.js",
-    "^.+\\.jsx$": "<rootDir>/test/jest-preprocess.js"
-  },
-  "transformIgnorePatterns": [
-    "node_modules/(?!(gatsby)/)"
-  ],
-
-  "coverageReporters": ["html", "json", "lcov", "cobertura"],
   "coverageDirectory": "<rootDir>/reports/test-coverage",
+
   "collectCoverageFrom": [
     "src/components/**/*.{js,jsx}",
     "src/layouts/*.{js,jsx}",
@@ -39,13 +22,17 @@
     "src/services/**/*.{js,jsx}",
     "!src/**/**/*.spec.*"
   ],
+
+  "testPathIgnorePatterns": [
+    "<rootDir>[/\\\\](\\.cache|node_modules)[/\\\\]"
+  ],
+
   "coverageThreshold": {
     "global": {
-      "branches": 90,
-      "functions": 95,
-      "lines": 95,
-      "statements": 95
+      "branches": 75,
+      "functions": 80,
+      "lines": 70,
+      "statements": 70
     }
   }
-
 }

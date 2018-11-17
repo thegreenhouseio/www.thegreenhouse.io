@@ -14,6 +14,23 @@ module.exports = {
         trackingId: 'UA-117350131-1',
         head: true
       }
+    }, {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: './src/favicon.jpg',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
+      }
     }
   ]
 };

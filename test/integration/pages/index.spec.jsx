@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { mount, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { MemoryRouter } from 'react-router-dom';
+import Adapter from 'enzyme-adapter-react-15';
 import Home from '../../../src/pages/index';
 
 configure({ adapter: new Adapter() });
@@ -10,11 +9,7 @@ describe('Home Page', () => {
   let home;
 
   beforeEach(() => {
-    home = mount(
-      <MemoryRouter>
-        <Home/>
-      </MemoryRouter>
-    ).children();
+    home = mount(<Home/>);
   });
 
   it('should be defined', () => {

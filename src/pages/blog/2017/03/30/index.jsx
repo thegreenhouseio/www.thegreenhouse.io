@@ -1,13 +1,15 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import Layout from '../../../../../components/layout/layout';
 import BlogPost from '../../../../../components/blog-post/blog-post';
 import bannerImage from '../../../images/angular-shield.jpg';
 
-const BlogPostPage = () => {
+class BlogPostPage extends React.Component {
+  constructor() {
+    super();
+  }
 
-  return (
-    <Layout>
+  render() {
+    return (
       <BlogPost title='Teaching An Old Dog New Tricks!' date='03.30.2017' image={bannerImage}>
         <div>
           <p>Since not all existing AngularJS (1.x) projects can jump into using Angular (2+) and <i>ng-upgrade</i> may not 
@@ -27,8 +29,8 @@ const BlogPostPage = () => {
           <p>Hope to hear your thoughts and feedback!</p>
         </div>
       </BlogPost>
-    </Layout>
-  );
-};
+    );
+  }
+}
 
 export default BlogPostPage;
