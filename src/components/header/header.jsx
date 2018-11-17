@@ -1,9 +1,7 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import './header.css';
 
-// TODO fix why bombs out because of <Link> being used in the component
-// https://github.com/thegreenhouseio/www.thegreenhouse.io/issues/34
 const Header = () => {
   return (
     <div className="header"> 

@@ -1,15 +1,20 @@
 import * as React from 'react';
 import { mount, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-15';
+import Adapter from 'enzyme-adapter-react-16';
+import { MemoryRouter } from 'react-router-dom';
 import BlogPage from '../../../src/pages/blog/index.jsx';
 
 configure({ adapter: new Adapter() });
 
-xdescribe('BlogPage', () => {
+describe('BlogPage', () => {
   let blog;
 
   beforeEach(() => {
-    blog = mount(<BlogPage/>);
+    blog = mount(
+      <MemoryRouter>
+        <BlogPage/>
+      </MemoryRouter>
+    ).children();
   });
 
   describe('default state', () => {

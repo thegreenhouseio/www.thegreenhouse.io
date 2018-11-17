@@ -40,13 +40,13 @@ const Card = (props) => {
         <div className="card-footer">
           {
             props.item.img 
-              ? <img className="card-image" src={props.item.img}/> 
+              ? <img className="card-image" src={props.item.img} alt={props.item.abstract}/> 
               : ''
           }
 
           {
             props.item.video 
-              ? <iframe className="card-video" width="100%" height="315" src={props.item.video} frameBorder="0" allowFullScreen/>
+              ? <iframe title={props.item.abstract} className="card-video" width="100%" height="315" src={props.item.video} frameBorder="0" allowFullScreen/>
               : ''
           }
         </div>

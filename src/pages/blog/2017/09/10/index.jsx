@@ -1,16 +1,13 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import Layout from '../../../../../components/layout/layout';
 import BlogPost from '../../../../../components/blog-post/blog-post';
 import bannerImage from '../../../images/vue.png';
 
-class BlogPostPage extends React.Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-
-    return (
+const BlogPostPage = () => {
+  
+  return (
+    <Layout>
       <BlogPost title='Vue Webapp Seed' date='06.07.2017' image={bannerImage}>
         <div>
           <p>Hey everyone, just wanted to share a new Open Source project I put together. 
@@ -28,8 +25,9 @@ class BlogPostPage extends React.Component {
             <OutboundLink href="https://github.com/thegreenhouseio/vue-webapp-seed/issues" target="_blank" rel="noopener"> issue tracker.</OutboundLink></p>
         </div>
       </BlogPost>
-    );
-  }
-}
+    </Layout>
+    
+  );
+};
 
 export default BlogPostPage;

@@ -1,16 +1,13 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import Layout from '../../../../../components/layout/layout';
 import BlogPost from '../../../../../components/blog-post/blog-post';
 import bannerImage from '../../../images/pwa-lighthouse.png';
 
-class BlogPostPage extends React.Component {
-  constructor() {
-    super();
-  }
+const BlogPostPage = () => {
 
-  render() {
-
-    return (
+  return (
+    <Layout>
       <BlogPost title='A Case Study in Performance (cont)' date='05.16.2018' image={bannerImage}>
         <div>
           <p>I&apos;m <b>super</b> excited to announce the next installment of my ongoing article series detailing performance and web applications! </p>
@@ -21,9 +18,9 @@ class BlogPostPage extends React.Component {
             discuss the steps taken and gains achieved by:</p>
             
           <ul>
-            <li><u>Upgrading to webpack 4</u> 📦</li>
-            <li><u>Using route based code splitting + lazy loading</u> ⚡</li>
-            <li><u>Improving header image loading</u> 📷</li>
+            <li><u>Upgrading to webpack 4</u> <span role="img" aria-label="package-emoji">📦</span></li>
+            <li><u>Using route based code splitting + lazy loading</u> <span role="img" aria-label="lightning-bolt-emoji">⚡</span></li>
+            <li><u>Improving header image loading</u> <span role="img" aria-label="camera-emoji">📷</span></li>
           </ul>
 
           <p>I always welcome feedback! Please feel free to leave comments on the article, reach out to me on twitter, or visit the 
@@ -36,8 +33,9 @@ class BlogPostPage extends React.Component {
         
         </div>
       </BlogPost>
-    );
-  }
-}
+    </Layout>
+  );
+  
+};
 
 export default BlogPostPage;
