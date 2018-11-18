@@ -13,7 +13,7 @@ class BlogPostPage extends React.Component {
       <BlogPost 
         title='Contributary'
         description='A project for helping connect open source with the open source community.'
-        date='11.18.2018' 
+        date='11.19.2018' 
         image='https://s3.amazonaws.com/hosted.contributary.community/media/contributary-logo-invert.png'>
 
         <div>            
