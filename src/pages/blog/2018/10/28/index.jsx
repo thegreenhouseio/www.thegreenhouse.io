@@ -26,7 +26,7 @@ class BlogPostPage extends React.Component {
           <OutboundLink target="_blank" href="https://docs.google.com/presentation/d/1vPwqGmbAqy6zjQ7JaqbMoS1I_8oMfFYcgXf6setvMcI/edit?usp=sharing">📎 (slides)</OutboundLink>
           <iframe className="card-video" width="100%" height="455" src="https://www.youtube.com/embed/Hj0hXuiz7Io" frameBorder="0" allowFullScreen/>
 
-          <p>The project is <OutboundLink target="_blank" href="thegreenhouseio/docker-ssr">open source</OutboundLink> so contributions weclome!</p>
+          <p>The project is <OutboundLink target="_blank" href="https://github.com/thegreenhouseio/docker-ssr">open source</OutboundLink> so contributions weclome!</p>
         </div>
       </BlogPost>
     );

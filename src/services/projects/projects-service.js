@@ -2,6 +2,11 @@ class ProjectsService {
   constructor() {
     // add new projects at the top, i.e. FIFO
     this.projects = [{
+      name: 'Contributary',
+      description: 'A project for helping connect open source with the open source community.',
+      link: 'https://www.contributary.community/',
+      img: 'https://s3.amazonaws.com/hosted.contributary.community/media/contributary-screenshot-0.2.0.png'
+    }, {
       name: 'Project Evergreen',
       description: `Project Evergreen is an effort I started to provide clear, detailed, and practical resources to those looking to build 
                     modern, dynamic, performant, and evergreen web applications.`,
