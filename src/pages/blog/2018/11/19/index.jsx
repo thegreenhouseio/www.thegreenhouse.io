@@ -29,8 +29,8 @@ class BlogPostPage extends React.Component {
 
           <img src="https://s3.amazonaws.com/hosted.contributary.community/media/contributary-screenshot-0.2.0.png" alt="Contributary screeshot"/>
 
-          <p>Contributary has only just recently launched in an early release phase and is easger to look for its own set of contributors.  The project 
-            is <OutboundLink target="_blank" href="https://github.com/ContributaryCommunity">open source</OutboundLink> so use Contributary to find ways to contribute to Contributary (much meta)! 🤓</p>
+          <p>Contributary has only just recently launched in an early release phase and is eager to look for its own set of contributors.  The project 
+            is <OutboundLink target="_blank" href="https://github.com/ContributaryCommunity">open source</OutboundLink> so you can use Contributary to find ways to contribute to Contributary (much meta)! 🤓</p>
         </div>
       </BlogPost>
     );
