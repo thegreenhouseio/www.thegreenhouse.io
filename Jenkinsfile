@@ -13,7 +13,7 @@ pipeline {
   }
 
   options {
-    buildDiscarder(logRotator(numToKeepStr: '10', daysToKeepStr: '20'))
+    buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '10'))
   }
 
   parameters {
