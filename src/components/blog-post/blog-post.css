@@ -26,3 +26,8 @@
   margin: 0 auto;
   text-align: left;
 }
+
+.blog-post img {
+  display: inline-block;
+  width: 70%;
+}
