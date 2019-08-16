@@ -18,11 +18,12 @@ After cloning the repo, do the following to get up and running
 1. Install [NodeJS](https://nodejs.org/en/) (LTS)
 1. Install [Yarn](https://yarnpkg.com/en/) (>= 1.x)
 1. Run `yarn install`
+1. Add `127.0.0.1 local.thegreenhouse.io` to your `/etc/hosts` file (optional)
 
 ### Tasks
-- `yarn develop` - start local development server with file watching, live reload, etc
-- `yarn build` - build the site for production deployment
-- `yarn serve` - builds the site for production and starts a server locally (useful for a local demo)
+- `yarn develop` - Start a local development server with file watching, live reload, etc
+- `yarn build` - Build the site for production deployment
+- `yarn serve` - Build the site for production and start a server locally (useful for a local demo)
 
 ## Release Management
 The project is hosted by [Netlify](https://www.netlify.com/) and is setup to deploy continously on every merge to master in GitHub.
