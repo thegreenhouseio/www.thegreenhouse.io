@@ -7,11 +7,12 @@
   "author": "owen@thegreenhouse.io",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf ./reports && rimraf ./public",
     "develop": "gatsby develop",
-    "build": "yarn lint && rimraf ./public && gatsby build",
+    "build": "yarn lint && yarn clean && gatsby build",
     "lint": "eslint *.js src/**/**/*.js* test/**/**/*.jsx",
     "serve": "yarn build && gatsby serve",
-    "test": "rimraf ./reports && jest --config ./jest.config.json",
+    "test": "yarn clean && jest --config ./jest.config.json",
     "release": "node release.js"
   },
   "dependencies": {

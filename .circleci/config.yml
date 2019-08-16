@@ -29,5 +29,5 @@ jobs:
           command: yarn test
 
       - run:
-          name: Run CLI Script (index.js)
-          command: yarn clean && yarn build
+          name: Run The Build
+          command: yarn build
