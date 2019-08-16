@@ -4,5 +4,5 @@
 public/
 node_modules/
 reports/
-src/bak
+bak/
 .greenwood/

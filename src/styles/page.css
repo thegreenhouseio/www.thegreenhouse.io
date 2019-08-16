@@ -1,0 +1,41 @@
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  color: red;
+}
+
+.layout {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+.layout .outlet {
+  margin: 0 0 20px;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+/* About Page */
+#about .sub-heading {
+  width: 60%;
+  margin: 10px auto 30px;
+  text-align: center;
+}
+
+#about .content-links h2 {
+  width: 50%;
+  cursor: pointer;
+  display: inline;
+  margin: 10px;
+}
+
+#about .content-output {
+  margin: 20px auto;
+}

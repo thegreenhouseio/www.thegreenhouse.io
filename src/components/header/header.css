@@ -12,6 +12,7 @@ header {
   color: #efefef;
   background-color: #020202;
   font-style: italic;
+  margin: 0;
 }
 
 @media (min-width: 768px) {

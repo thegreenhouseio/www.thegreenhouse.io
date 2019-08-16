@@ -16,14 +16,14 @@ class HeaderComponent extends HTMLElement {
   getTemplate() {
     return `
       <style>
-        ${headerCss}
+        ${ headerCss }
       </style>
 
-      <div className="header"> 
-        <Link to="/">
+      <div class="header"> 
+        <a href="/">
           <header></header>
-          <h2 className="caption">A DREAMER BY DESIGN</h2>
-        </Link>
+          <h2 class="caption">A DREAMER BY DESIGN</h2>
+        </a>
       </div>
     `;
   }

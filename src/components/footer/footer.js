@@ -14,20 +14,22 @@ class FooterComponent extends HTMLElement {
   getTemplate() {
     return `
       <style>
-        footer a {
-          margin: 10px 10px;
+        footer {
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
         }
         
-        footer .copyright {
+        .copyright {
           display: inline-block;
           margin: 20px auto 10px;
         }
       </style>
 
-      <footer className="footer">
+      <footer>
         <!-- Social Icons --> 
         <br/>
-        <span className="copyright">&copy; Owen Buckley / thegreenhouse.io</span>
+        <span class="copyright">&copy; Owen Buckley / thegreenhouse.io</span>
       </footer>
     `;
   }
