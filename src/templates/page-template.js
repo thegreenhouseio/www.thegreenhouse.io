@@ -23,7 +23,7 @@ class PageTemplate extends LitElement {
           font-size: 20px;
         }
 
-        section p.cta {
+        p.cta {
           text-align: center;
         }
 

@@ -1,4 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+/* @import url('//fonts.googleapis.com/css?family=Avenir+Next&display=swap'); */
 
 * {
   box-sizing: border-box;
@@ -9,6 +9,11 @@
 /* Layout / Global */
 body {
   background-color: rgb(0, 122, 204);
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height:1.4;
+  font-family: 'Avenir Next', sans-serif;
+  line-height: 1.45;
+  font-size: '18px';
+}
+
+h1, h2, h4, h5, h6 {
+  line-height: 1.4;
 }
