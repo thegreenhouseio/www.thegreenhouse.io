@@ -25,10 +25,12 @@ class SocialIconLinkComponent extends LitElement {
     let detectedLink = '';
 
     if (link && !name) {
-      if (link.indexOf('meetup') >= 0) {
-        detectedName = 'meetup';
+      if (link.indexOf('github') >= 0) {
+        detectedName = 'github';
       } else if (link.indexOf('medium') >= 0) {
         detectedName = 'medium';
+      } else if (link.indexOf('meetup') >= 0) {
+        detectedName = 'meetup';
       } else {
         detectedName = 'default';
       }
