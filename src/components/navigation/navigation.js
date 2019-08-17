@@ -25,6 +25,7 @@ class NavigationComponent extends HTMLElement {
           list-style: none;
           margin: 0 auto;
           width: 80%;
+          padding: 0;
         }
         
         .navigation li {
