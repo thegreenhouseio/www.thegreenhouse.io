@@ -61,7 +61,7 @@ class AboutTemplate extends LitElement {
           <div>
             <app-card-list class="content-writing" .items=${this.articles}></app-card-list>
 
-            <span class="cta">Visit my <a target="_blank" href="https://medium.com/@thegreenhouseio">Medium</a> page for other articles Ive done!</span>
+            <p class="cta">Visit my <a target="_blank" href="https://medium.com/@thegreenhouseio">Medium</a> page for other articles Ive done!</p>
           </div>
         `;
         break;
@@ -84,44 +84,27 @@ class AboutTemplate extends LitElement {
 
         p {
           text-align: center;
+          width: 50%;
+          margin: 20px auto;
+          font-size: 1.1em;
         }
 
-        .sub-heading {
-          width: 60%;
-          margin: 10px auto 30px;
-          text-align: center;
+        .content-links {
+          width: 400px;
+          margin: 0 auto;
         }
 
         .content-links h2 {
-          width: 50%;
           cursor: pointer;
-          display: inline;
-          margin: 10px;
-        }
-
-        .content-output {
-          margin: 20px auto;
-        }
-
-        /* h2 {
-          padding-left: 17.25%;
-        }
-        
-        p {
-          width: 65%;
-          margin: 20px auto;
-          text-align: left;
-          font-size: 20px;
-        }
-
-        p.cta {
+          display: inline-block;
           text-align: center;
+          width: 49%;
         }
 
-        hr {
-          width: 15%;
-          margin: 5px auto;
-        }*/
+        img {
+          display: block;
+          margin: 0 10px;
+        }
       </style>
 
       <div class="layout">
@@ -136,6 +119,11 @@ class AboutTemplate extends LitElement {
         <section class="outlet row">  
           <entry></entry>
 
+          <div class="content-links">
+            <h2 class="link-speaking" @click=${() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
+            <h2 class="link-writing" @click=${() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
+          </div>
+
           ${ content }
         </section>
 
@@ -148,8 +136,3 @@ class AboutTemplate extends LitElement {
 }
 
 customElements.define('page-template', AboutTemplate);
-
-/* <div class="content-links">
-<h2 class="link-speaking" onClick={() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
-<h2 class="link-writing" onClick={() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
-</div> */

@@ -26,10 +26,10 @@ class CardComponent extends LitElement {
       ? html`<a href=${item.slides} target="_blank" class="card-slides">📎 (slides)</a>`
       : ''; 
     const img = item.img 
-      ? html`<img className="card-image" src="${item.img}"/>`
+      ? html`<img class="card-image" src="${item.img}"/>`
       : ''; 
     const video = item.video
-      ? html`<iframe className="card-video" width="100%" height="315" src="${item.video}" frameBorder="0" allowFullScreen/>`
+      ? html`<iframe class="card-video" width="100%" height="315" src="${item.video}" frameBorder="0" allowFullScreen/>`
       : '';
 
     return html`
