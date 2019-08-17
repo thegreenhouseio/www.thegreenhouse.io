@@ -15,7 +15,7 @@
     "test": "echo OOPS!!!!!"
   },
   "devDependencies": {
-    "@greenwood/cli": "^0.3.4",
+    "@greenwood/cli": "^0.3.5",
     "eslint": "^6.1.0"
   }
 }
