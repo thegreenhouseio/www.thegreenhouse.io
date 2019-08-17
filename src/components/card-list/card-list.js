@@ -28,7 +28,7 @@ class CardListComponent extends LitElement {
     });
 
     return html`
-      ${cards}
+      ${ cards }
     `;
   }
 
