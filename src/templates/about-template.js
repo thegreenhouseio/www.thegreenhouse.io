@@ -61,7 +61,7 @@ class AboutTemplate extends LitElement {
           <div>
             <app-card-list class="content-writing" .items=${this.articles}></app-card-list>
 
-            <span class="cta">Visit my <a target="_blank" href="#medium">Medium</a> page for other articles Ive done!</span>
+            <span class="cta">Visit my <a target="_blank" href="https://medium.com/@thegreenhouseio">Medium</a> page for other articles Ive done!</span>
           </div>
         `;
         break;

@@ -48,7 +48,6 @@ class PageTemplate extends LitElement {
         </section>
 
         <section class="outlet row">
-          <h1>Home Page</h1>
           <entry></entry>
         </section>
 

@@ -1,5 +1,6 @@
 import { html, LitElement } from 'lit-element';
 
+import '../social-icon-link/social-icon-link';
 import cardCss from './card.css';
 
 class CardComponent extends LitElement {
@@ -40,7 +41,9 @@ class CardComponent extends LitElement {
     
         <div class="wrapper">    
           <div class="card-header-icon">
-            <!-- <SocialIcon url={props.item.link}/> -->
+            <app-social-icon-link 
+              .link="${item.link}"
+            ></app-social-icon-link>
           </div>
 
           <div class="card-header">
