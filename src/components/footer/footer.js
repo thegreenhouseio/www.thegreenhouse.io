@@ -49,7 +49,8 @@ class FooterComponent extends HTMLElement {
             <a
               rel="noopener"
               target="_blank" 
-              href="https://www.linkedin.com/in/owen-buckley-91393447/">
+              href="https://www.linkedin.com/in/owen-buckley-91393447/"
+            >
               <img src="/assets/logos/linkedin.svg">
             </a>
           </li>
@@ -58,7 +59,8 @@ class FooterComponent extends HTMLElement {
             <a
               rel="noopener"
               target="_blank" 
-              href="https://twitter.com/thegreenhouseio/">
+              href="https://twitter.com/thegreenhouseio/"
+            >
               <img src="/assets/logos/twitter.svg">
             </a>
           </li>
@@ -67,7 +69,8 @@ class FooterComponent extends HTMLElement {
             <a
               rel="noopener"
               target="_blank" 
-              href="https://medium.com/@thegreenhouseio/">
+              href="https://medium.com/@thegreenhouseio/"
+            >
               <img src="/assets/logos/medium.svg">
             </a>
           </li>
@@ -76,7 +79,8 @@ class FooterComponent extends HTMLElement {
             <a
               rel="noopener"
               target="_blank" 
-              href="https://github.com/thegreenhouseio/">
+              href="https://github.com/thegreenhouseio/"
+            >
               <img src="/assets/logos/github.svg">
             </a>
           </li>
