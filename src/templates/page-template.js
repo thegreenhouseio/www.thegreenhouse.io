@@ -1,6 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import '../components/footer/footer';
 import '../components/header/header';
+import '../components/navigation/navigation';
 import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
@@ -16,6 +17,10 @@ class PageTemplate extends LitElement {
       <style>
         ${pageCss}
 
+        h2 {
+          padding-left: 17.25%;
+        }
+        
         p {
           width: 65%;
           margin: 20px auto;
@@ -38,11 +43,9 @@ class PageTemplate extends LitElement {
           <app-header></app-header>
         </section>
         
-        <!--
-        <section className='row'>
-          <Navigation/>
+        <section class='row'>
+          <app-navigation></app-navigation>
         </section>
-        -->
 
         <section class="outlet row">
           <entry></entry>
