@@ -1,18 +1,13 @@
-class FooterComponent extends HTMLElement {
+import { html, LitElement } from 'lit-element';
+import '../social-icon-link/social-icon-link';
+
+class FooterComponent extends LitElement {
   constructor() {
     super();
-
-    this.root = this.attachShadow({ mode: 'closed' });
   }
 
-  // run some code when the component is ready
-  connectedCallback() {
-    this.root.innerHTML = this.getTemplate();
-  }
-
-  // create templates that interpolate variables and HTML!
-  getTemplate() {
-    return `
+  render() {
+    return html`
       <style>
         footer {
           width: 50%;
@@ -29,13 +24,6 @@ class FooterComponent extends HTMLElement {
         li {
           display: inline-block;
         }
-
-        img {
-          display: block;
-          height: 60px;
-          width: 60px;
-          margin: 0 10px;
-        }
         
         .copyright {
           display: inline-block;
@@ -46,43 +34,19 @@ class FooterComponent extends HTMLElement {
       <footer>
         <ul>
           <li>
-            <a
-              rel="noopener"
-              target="_blank" 
-              href="https://www.linkedin.com/in/owen-buckley-91393447/"
-            >
-              <img src="/assets/logos/linkedin.svg">
-            </a>
+            <app-social-icon-link name="linkedin"></app-social-icon-link>
           </li>
 
           <li>
-            <a
-              rel="noopener"
-              target="_blank" 
-              href="https://twitter.com/thegreenhouseio/"
-            >
-              <img src="/assets/logos/twitter.svg">
-            </a>
+            <app-social-icon-link name="twitter"></app-social-icon-link>
           </li>
 
           <li>
-            <a
-              rel="noopener"
-              target="_blank" 
-              href="https://medium.com/@thegreenhouseio/"
-            >
-              <img src="/assets/logos/medium.svg">
-            </a>
+            <app-social-icon-link name="medium"></app-social-icon-link>
           </li>
 
           <li>
-            <a
-              rel="noopener"
-              target="_blank" 
-              href="https://github.com/thegreenhouseio/"
-            >
-              <img src="/assets/logos/github.svg">
-            </a>
+            <app-social-icon-link name="github"></app-social-icon-link>
           </li>
         <ul>
         
