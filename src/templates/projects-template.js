@@ -31,8 +31,6 @@ class ProjectsTemplate extends LitElement {
   render() {
     const { projects } = this;
 
-    console.log('projects', projects);
-
     return html`
       METAELEMENT
 
