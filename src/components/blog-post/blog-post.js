@@ -41,7 +41,7 @@ class BlogPostComponent extends LitElement {
 
   render() {
     const { date, image, title } = this;
-    const headerBackgroundStyle = `background-image: url("${image}")`;
+    const headerBackgroundStyle = image ? `background-image: url("${image}")` : '';
 
     return html`
       <style>

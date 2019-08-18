@@ -14,7 +14,7 @@ template: 'blog'
 
     <p>On a side note, our <a href="https://github.com/thescientist13/github-dashboard/issues/104" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thescientist13/github-dashboard/issues/104'); return false;">feature for highlighting a repository row when the user is a requested reviewer on a pull request</a> is being reconsidered in light of the <a href="https://developer.github.com/v3/pulls/reviews/" target="_blank" rel="noopener" onclick="captureOutboundLink('https://developer.github.com/v3/pulls/reviews/'); return false;">GitHub Reviews API</a> still being in development.</p>
 
-    <p>Please feel free to leave thoughts and feedback, bug reports, or feature requests by using the <a href="https://github.com/thescientist13/github-dashboard/issues" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thescientist13/github-dashboard/issues'); return false;"> issue tracker.</a></p>
+    <p>Please feel free to leave thoughts and feedback, bug reports, or feature requests by using the <a href="https://github.com/thescientist13/github-dashboard/issues" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thescientist13/github-dashboard/issues'); return false;">issue tracker.</a></p>
   
   </div>
 </app-blog-post>

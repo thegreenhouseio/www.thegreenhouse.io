@@ -4,7 +4,7 @@ class HeaderComponent extends HTMLElement {
   constructor() {
     super();
 
-    this.root = this.attachShadow({ mode: 'closed' });
+    this.root = this.attachShadow({ mode: 'open' });
   }
 
   // run some code when the component is ready
@@ -20,7 +20,7 @@ class HeaderComponent extends HTMLElement {
       </style>
 
       <div class="header"> 
-        <a href="/">
+        <a href="https://www.greenwoodjs.io/">
           <header></header>
           <h2 class="caption">A DREAMER BY DESIGN</h2>
         </a>

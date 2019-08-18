@@ -24,6 +24,8 @@ After cloning the repo, do the following to get up and running
 - `yarn develop` - Start a local development server with file watching, live reload, etc
 - `yarn build` - Build the site for production deployment
 - `yarn serve` - Build the site for production and start a server locally (useful for a local demo)
+- `yarn test:tdd` - Run tests in watch mode
+- `yarn test` - Run all tests in a single run (used for CI)
 
 ## Release Management
 The project is hosted by [Netlify](https://www.netlify.com/) and is setup to deploy continously on every merge to master in GitHub.

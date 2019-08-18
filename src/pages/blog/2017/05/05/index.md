@@ -14,7 +14,7 @@ template: 'blog'
     
     <p>Big shout out to JP Osorio (<a href="https://github.com/jpoo90" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/jpoo90'); return false;">GitHub</a> / <a href="https://twitter.com/jpoo90" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/jpoo90'); return false;">Twitter</a>) for being the sole contributor to this release, fixing bugs and adding features!  Thanks for helping out! 👏</p>
            
-    <p>Please feel free to leave thoughts and feedback, bug reports, or feature requests by using the <a href="https://github.com/thescientist13/github-dashboard/issues" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thescientist13/github-dashboard/issues'); return false;"> issue tracker.</a></p>
+    <p>Please feel free to leave thoughts and feedback, bug reports, or feature requests by using the <a href="https://github.com/thescientist13/github-dashboard/issues" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thescientist13/github-dashboard/issues'); return false;">issue tracker.</a></p>
     
   </div>
 </app-blog-post>

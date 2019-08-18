@@ -19,16 +19,19 @@ class CardComponent extends LitElement {
 
   render() {
     const { item } = this;
-    const date = item.date 
+    const link = item && item.link ? item.link : '';
+    const title = item && item.title ? item.title : '';
+    const abstract = item && item.abstract ? item.abstract : '';
+    const date = item && item.date 
       ? html`<span class="card-date"><b>Date: ${item.date}</b></span>`
       : ''; 
-    const slides = item.slides 
-      ? html`<a href=${item.slides} target="_blank" class="card-slides" onclick="captureOutboundLink(${item.slides}); return false;">📎 (slides)</a>`
+    const slides = item && item.slides 
+      ? html`<a href=${item.slides} target="_blank" class="card-slides">📎 (slides)</a>`
       : ''; 
-    const img = item.img 
+    const img = item && item.img 
       ? html`<img class="card-image" src="${item.img}"/>`
       : ''; 
-    const video = item.video
+    const video = item && item.video
       ? html`<iframe class="card-video" width="100%" height="315" src="${item.video}" frameBorder="0" allowFullScreen/>`
       : '';
 
@@ -41,28 +44,28 @@ class CardComponent extends LitElement {
     
         <div class="wrapper">    
           <div class="card-header-icon">
-            <app-social-icon-link 
-              .link="${item.link}"
+            <app-social-icon-link
+              .link="${link}"
             ></app-social-icon-link>
           </div>
 
           <div class="card-header">
             
             <h3 class="card-header-heading">
-              <a class="card-header-heading-link" onclick="captureOutboundLink(${item.link}); return false;" target="_blank" href="${item.link}">${item.title}</a>
+              <a class="card-header-heading-link" target="_blank" rel="noopener" @onclick="captureOutboundLink('${link}'); return false;" href="${link}">${title}</a>
             </h3>
 
-            ${ date }
-            ${ slides }
+            <span class="date">${ date }</span>
+            <span class="slides">${ slides }</span>
           </div>
 
           <div class="card-content">
-            <article>${item.abstract}</article>
+            <article>${abstract}</article>
           </div>
           
           <div class="card-footer">
-            ${ img }
-            ${ video }
+            <span class="image">${ img }</a>
+            <span class="video">${ video }</a>
           </div>
         </div>
       </div>

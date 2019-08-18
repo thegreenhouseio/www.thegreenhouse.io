@@ -14,7 +14,7 @@ template: 'blog'
     
     <p>It definitely has some room for some refactoring improvements, and I&apos;m always open to feedback, in particular around security.</p>
     
-    <p>Please feel free to leave thoughts and feedback, bug reports, or feature requests by using the <a href="https://github.com/thegreenhouseio/php-api-seed/issues" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thegreenhouseio/php-api-seed/issues'); return false;"> issue tracker.</a></p>
+    <p>Please feel free to leave thoughts and feedback, bug reports, or feature requests by using the <a href="https://github.com/thegreenhouseio/php-api-seed/issues" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thegreenhouseio/php-api-seed/issues'); return false;">issue tracker.</a></p>
   
   </div>
 </app-blog-post>

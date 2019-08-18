@@ -21,8 +21,8 @@ class SocialIconLinkComponent extends LitElement {
 
   render() {
     const { link, name } = this;
-    let detectedName = '';
-    let detectedLink = '';
+    let detectedName = 'default';
+    let detectedLink = '/';
 
     if (link && !name) {
       if (link.indexOf('github') >= 0) {
@@ -31,8 +31,6 @@ class SocialIconLinkComponent extends LitElement {
         detectedName = 'medium';
       } else if (link.indexOf('meetup') >= 0) {
         detectedName = 'meetup';
-      } else {
-        detectedName = 'default';
       }
     } else if (name) {
       detectedName = name;
@@ -54,7 +52,7 @@ class SocialIconLinkComponent extends LitElement {
         }
       </style>
 
-      <a rel="noopener" target="_blank" href="${detectedLink}" @onclick="captureOutboundLink(\'${detectedLink}\'); return false;">
+      <a rel="noopener" target="_blank" href="${detectedLink}" @onclick="captureOutboundLink('${detectedLink}'); return false;">
         <img src="/assets/logos/${detectedName}.svg">
       </a>
     `;

@@ -9,6 +9,7 @@ template: 'blog'
   image="/assets/blog-post-images/angular-shield.jpg">
 
   <div>
+
     <p>Since not all existing AngularJS (1.x) projects can jump into using Angular (2+) and <i>ng-upgrade</i> may not be a feasible option for some, I created <a href="https://github.com/thegreenhouseio/angularjs-webpack-seed" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thegreenhouseio/angularjs-webpack-seed'); return false;">a seed repo in GitHub to demonstrate AngularJS working with webpack and ES2015+ syntax.</a></p>
 
     <p>To me, ES2015+ syntax, in particular the introduction of modules (<i>import / export</i>) has ushered in a new era of writing JavaScript applications, including our good friend AngularJS.</p>
