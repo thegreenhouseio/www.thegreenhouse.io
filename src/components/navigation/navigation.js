@@ -1,4 +1,5 @@
 class NavigationComponent extends HTMLElement {
+  
   constructor() {
     super();
 

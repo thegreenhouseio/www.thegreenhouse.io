@@ -44,7 +44,7 @@ class CardComponent extends LitElement {
     
         <div class="wrapper">    
           <div class="card-header-icon">
-            <app-social-icon-link 
+            <app-social-icon-link
               .link="${link}"
             ></app-social-icon-link>
           </div>
@@ -52,7 +52,7 @@ class CardComponent extends LitElement {
           <div class="card-header">
             
             <h3 class="card-header-heading">
-              <a class="card-header-heading-link" target="_blank" href="${link}">${title}</a>
+              <a class="card-header-heading-link" target="_blank" rel="noopener" @onclick="captureOutboundLink('${link}'); return false;" href="${link}">${title}</a>
             </h3>
 
             <span class="date">${ date }</span>

@@ -18,11 +18,18 @@ template: 'blog'
     <h4><p>This project is just getting started but moving quickly to flesh things out, and we would love to hear <i>how</i> and <i>what</i> you want to develop for the web, and how Project Evergreen can help.  Feeback, engagement, and participation are highly encouraged and so we hope to hear from you to let us know what you think, and most importanty, what excites you about developing for the web!  👋</p></h4>
           
     <ul>
-      <li><a target="_blank" href="https://projectevergreen.github.io/">Website</a></li>
-      <li><a target="_blank" href="https://github.com/ProjectEvergreen">GitHub Organization</a></li>
-      <li><a target="_blank" href="https://github.com/ProjectEvergreen/project-evergreen/milestones">Roadmap</a></li>
-      <li><a target="_blank" href="https://twitter.com/PrjEvergreen">Twitter</a><span> | </span>
-        <a target="_blank" href="https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTFkNzY2NDQwOTg0MjRiYmY1ZDYyOGE1YzM0ZmQwNTgxZWI0NWU0YmYxZDhkNDQ3Y2Q3ODhjZTdiMTEwNzY5MTk">Slack</a>
+      <li>
+        <a target="_blank" rel="noopener" href="https://projectevergreen.github.io/" onclick="captureOutboundLink('https://projectevergreen.github.io/'); return false;">Website</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener"  href="https://github.com/ProjectEvergreen" onclick="captureOutboundLink('https://github.com/ProjectEvergreen'); return false;">GitHub Organization</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener"  href="https://github.com/ProjectEvergreen/project-evergreen/milestones" onclick="captureOutboundLink('https://github.com/ProjectEvergreen/project-evergreen/milestones'); return false;">Roadmap</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener"  href="https://twitter.com/PrjEvergreen" onclick="captureOutboundLink('https://twitter.com/PrjEvergreen'); return false;">Twitter</a><span> | </span>
+        <a target="_blank" rel="noopener" href="https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTFkNzY2NDQwOTg0MjRiYmY1ZDYyOGE1YzM0ZmQwNTgxZWI0NWU0YmYxZDhkNDQ3Y2Q3ODhjZTdiMTEwNzY5MTk" onclick="captureOutboundLink('https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTFkNzY2NDQwOTg0MjRiYmY1ZDYyOGE1YzM0ZmQwNTgxZWI0NWU0YmYxZDhkNDQ3Y2Q3ODhjZTdiMTEwNzY5MTk'); return false;">Slack</a>
       </li>
     </ul>
   
