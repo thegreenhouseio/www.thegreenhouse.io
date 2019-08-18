@@ -9,6 +9,7 @@ template: 'blog'
   image="/assets/blog-post-images/php.png">
   
   <div>
+
     <p>Just wanted to share a new OSS project I just put out over the weekend; <a href="https://github.com/thegreenhouseio/php-api-seed" target="_blank" rel="noopener" onclick="captureOutboundLink('https://github.com/thegreenhouseio/php-api-seed'); return false;">php-api-seed</a>.  It&apos;s a RESTful API backend written in PHP that powers some of my personal sites, like <a href="https://www.analogstudios.net" target="_blank" rel="noopener" onclick="captureOutboundLink('https://www.analogstudios.net'); return false;">Analog Studios.</a>  It uses Slim as the micro-framework, JWT for authentication, and can be deployed as a phar.</p>
     
     <p>It definitely has some room for some refactoring improvements, and I&apos;m always open to feedback, in particular around security.</p>
