@@ -102,11 +102,10 @@ describe('Card component', () => {
       expect(wrapper.length).toBe(1);
     });
 
-    // TODO test .link
+    // TODO test .link attribute
     xit('should have the expect social icon link with link', () => {
       const socialIconLink = card.shadowRoot.querySelectorAll('app-social-icon-link');
 
-      console.log(socialIconLink[0]);
       expect(socialIconLink.length).toBe(1);
       expect(socialIconLink[0].getAttribute('.link')).toBe(mockCard.link);
     });
