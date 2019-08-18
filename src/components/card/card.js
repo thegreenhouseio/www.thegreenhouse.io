@@ -23,7 +23,7 @@ class CardComponent extends LitElement {
       ? html`<span class="card-date"><b>Date: ${item.date}</b></span>`
       : ''; 
     const slides = item.slides 
-      ? html`<a href=${item.slides} target="_blank" class="card-slides">📎 (slides)</a>`
+      ? html`<a href=${item.slides} target="_blank" class="card-slides" onclick="captureOutboundLink(${item.slides}); return false;">📎 (slides)</a>`
       : ''; 
     const img = item.img 
       ? html`<img class="card-image" src="${item.img}"/>`
@@ -49,7 +49,7 @@ class CardComponent extends LitElement {
           <div class="card-header">
             
             <h3 class="card-header-heading">
-              <a class="card-header-heading-link" target="_blank" href="${item.link}">${item.title}</a>
+              <a class="card-header-heading-link" onclick="captureOutboundLink(${item.link}); return false;" target="_blank" href="${item.link}">${item.title}</a>
             </h3>
 
             ${ date }
