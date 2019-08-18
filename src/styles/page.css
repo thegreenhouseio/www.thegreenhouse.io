@@ -1,0 +1,22 @@
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.layout {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+.layout .outlet {
+  margin: 0 0 20px;
+}
+
+.clear-fix {
+  clear: both;
+}

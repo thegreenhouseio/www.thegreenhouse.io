@@ -21,6 +21,10 @@ jobs:
           command: yarn install --frozen-lockfile
 
       - run:
+          name: Run vacuum cleaner
+          command: yarn clean
+
+      - run:
           name: Run Linter
           command: yarn lint
 

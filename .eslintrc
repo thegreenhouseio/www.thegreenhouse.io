@@ -7,14 +7,10 @@
     },
     "sourceType": "module"
   },
-  "extends": [
-    "plugin:react/recommended"
-  ],
   "env": {
     "browser": true,
     "node": true
   },
-  "plugins": ["react"],
   "rules": {
     "comma-dangle": [2,"never"],
     "no-cond-assign": 2,
