@@ -12,7 +12,7 @@ module.exports = function (config) {
     preprocessors: {
       './src/**/*.spec.js': ['webpack']
     },
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', 'webpack'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
