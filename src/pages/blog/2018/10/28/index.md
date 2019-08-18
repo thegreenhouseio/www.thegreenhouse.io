@@ -18,7 +18,7 @@ template: 'blog'
     
     <iframe className="card-video" width="100%" height="455" src="https://www.youtube.com/embed/Hj0hXuiz7Io" frameBorder="0" allowFullScreen/>
 
-    <p>The project is <OutboundLink target="_blank" href="https://github.com/thegreenhouseio/docker-ssr">open source</OutboundLink> so contributions weclome!</p>
+    <p>The project is <a target="_blank" href="https://github.com/thegreenhouseio/docker-ssr">open source</a> so contributions weclome!</p>
         
   </div>
 <app-blog-post>
