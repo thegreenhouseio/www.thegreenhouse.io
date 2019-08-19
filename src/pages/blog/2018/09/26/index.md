@@ -20,7 +20,7 @@ template: 'blog'
     <pre>$ npm install</pre>
     <pre>$ npm start</pre>
 
-    <p>Check out <a target="_blank" href="https://github.com/ProjectEvergreen/project-evergreen/wiki" onclick="captureOutboundLink('https://github.com/ProjectEvergreen/project-evergreen/wiki'); return false;">the wiki docs</a> for more info on build evegreen apps!</p>
+    <p>Check out <a target="_blank" href="https://github.com/ProjectEvergreen/project-evergreen/wiki" @onclick="captureOutboundLink('https://github.com/ProjectEvergreen/project-evergreen/wiki'); return false;">the wiki docs</a> for more info on build evegreen apps!</p>
 
   </div>
 
