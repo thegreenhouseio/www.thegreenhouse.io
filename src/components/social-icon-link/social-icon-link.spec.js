@@ -48,6 +48,10 @@ describe('SocialIconLink Component', () => {
     it('should have default <img> tag with src', () => {
       expect(img[0].src).toContain('/assets/logos/default.svg');
     });
+
+    it('should have default <img> tag with alt', () => {
+      expect(img[0].alt).toContain('default logo');
+    });
   });
 
   describe('GitHub link', () => {
@@ -83,12 +87,16 @@ describe('SocialIconLink Component', () => {
       expect(link[0].target).toBe('_blank');
     });
 
-    it('should have one <img> tag inside the <a> tag', () => {
+    it('should have <img> tag inside the <a> tag', () => {
       expect(img.length).toBe(1);
     });
 
-    it('should have default <img> tag with src', () => {
+    it('should have <img> tag with github logo for src', () => {
       expect(img[0].src).toContain('/assets/logos/github.svg');
+    });
+
+    it('should have <img> tag with github looo for alt', () => {
+      expect(img[0].alt).toContain('github logo');
     });
 
   });
@@ -126,12 +134,16 @@ describe('SocialIconLink Component', () => {
       expect(link[0].target).toBe('_blank');
     });
 
-    it('should have one <img> tag inside the <a> tag', () => {
+    it('should have <img> tag inside the <a> tag', () => {
       expect(img.length).toBe(1);
     });
 
-    it('should have default <img> tag with src', () => {
+    it('should have <img> tag with meetup logo for src', () => {
       expect(img[0].src).toContain('/assets/logos/meetup.svg');
+    });
+
+    it('should have <img> tag with meetup looo for alt', () => {
+      expect(img[0].alt).toContain('meetup logo');
     });
 
   });
@@ -169,12 +181,16 @@ describe('SocialIconLink Component', () => {
       expect(link[0].target).toBe('_blank');
     });
 
-    it('should have one <img> tag inside the <a> tag', () => {
+    it('should have <img> tag inside the <a> tag', () => {
       expect(img.length).toBe(1);
     });
 
-    it('should have default <img> tag with src', () => {
+    it('should have <img> tag with medium logo for src', () => {
       expect(img[0].src).toContain('/assets/logos/medium.svg');
+    });
+
+    it('should have <img> tag with medium looo for alt', () => {
+      expect(img[0].alt).toContain('medium logo');
     });
 
   });

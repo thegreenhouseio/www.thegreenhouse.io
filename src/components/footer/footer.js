@@ -48,7 +48,7 @@ class FooterComponent extends LitElement {
           <li>
             <app-social-icon-link name="github"></app-social-icon-link>
           </li>
-        <ul>
+        </ul>
         
         <span class="copyright">&copy; Owen Buckley / thegreenhouse.io</span>
       </footer>

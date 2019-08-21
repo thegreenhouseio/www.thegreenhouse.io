@@ -16,7 +16,7 @@
     "test:tdd": "yarn clean && karma start"
   },
   "devDependencies": {
-    "@greenwood/cli": "^0.3.5",
+    "@greenwood/cli": "^0.3.6",
     "eslint": "^6.1.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine": "^3.3.1",
