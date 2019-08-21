@@ -29,7 +29,7 @@ class CardComponent extends LitElement {
       ? html`<a href=${item.slides} target="_blank" class="card-slides">📎 (slides)</a>`
       : ''; 
     const img = item && item.img 
-      ? html`<img class="card-image" src="${item.img}"/>`
+      ? html`<img class="card-image" src="${item.img}" alt="${title}"/>`
       : ''; 
     const video = item && item.video
       ? html`<iframe class="card-video" width="100%" height="315" src="${item.video}" frameBorder="0" allowFullScreen/>`
