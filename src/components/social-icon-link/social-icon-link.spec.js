@@ -189,7 +189,7 @@ describe('SocialIconLink Component', () => {
       expect(img[0].src).toContain('/assets/logos/medium.svg');
     });
 
-    it('should have <img> tag with meetup looo for alt', () => {
+    it('should have <img> tag with medium looo for alt', () => {
       expect(img[0].alt).toContain('medium logo');
     });
 
