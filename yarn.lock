@@ -652,10 +652,10 @@
   dependencies:
     lit-element "^2.0.1"
 
-"@greenwood/cli@^0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.3.5.tgz#6be819589e8fb272fc1eaf92f62d9698e5f8f4f1"
-  integrity sha512-XgoJnhCFTcmmVCTc8VBeDQuMKGk9d6jpMJeuSi6xBs9S/u6tSQTcC6YbyEzi93+RFRMEHdredGohvGcZT3Nwww==
+"@greenwood/cli@^0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.3.6.tgz#01cdf3fb2d6d21acfb4c0a3bf36991a32b98c134"
+  integrity sha512-cUPPAwLtvtNG1NTCtmEUkRaBJiXHggMeCDbIhnMDOJtDUsJQ53cSee5Aurdh4Fpk18KhSN8iZ26dQmvQ60SnJA==
   dependencies:
     "@babel/core" "^7.4.0"
     "@babel/preset-env" "^7.4.1"
