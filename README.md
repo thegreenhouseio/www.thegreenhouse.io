@@ -1,10 +1,9 @@
 # www.thegreenhouse.io
 [![CircleCI](https://circleci.com/gh/thegreenhouseio/www.thegreenhouse.io/tree/master.svg?style=svg)](https://circleci.com/gh/thegreenhouseio/www.thegreenhouse.io/tree/master)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2c9b7dc5-c01a-43eb-86a4-094f7720e2fd/deploy-status)](https://app.netlify.com/sites/silly-snyder-ece0b2/deploys)
-[![GitHub release](https://img.shields.io/github/tag/ProjectEvergreen/greenwood.svg)](https://github.com/ProjectEvergreen/greenwood/tags)
-[![GitHub issues](https://img.shields.io/github/issues-raw/ProjectEvergreen/greenwood.svg)](https://github.com/ProjectEvergreen/greenwood/issues)
-[![GitHub issues](https://img.shields.io/github/issues-pr-raw/ProjectEvergreen/greenwood.svg)](https://github.com/ProjectEvergreen/greenwood/issues)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ProjectEvergreen/greenwood/master/LICENSE.md)
+[![GitHub release](https://img.shields.io/github/tag/thegreenhouseio/www.thegreenhouse.io.svg)](https://github.com/thegreenhouseio/www.thegreenhouse.io/tags)
+[![GitHub issues](https://img.shields.io/github/issues-raw/thegreenhouseio/www.thegreenhouse.io.svg)](https://github.com/thegreenhouseio/www.thegreenhouse.io/issues)
+[![GitHub issues](https://img.shields.io/github/issues-pr-raw/thegreenhouseio/www.thegreenhouse.io.svg)](https://github.com/thegreenhouseio/www.thegreenhouse.io/issues)
 
 
 ## Overview
