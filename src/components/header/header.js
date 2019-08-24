@@ -1,24 +1,44 @@
-import headerCss from './header.css';
+import { css, html, LitElement } from 'lit-element';
 
-class HeaderComponent extends HTMLElement {
+class HeaderComponent extends LitElement {
+  
   constructor() {
     super();
-
-    this.root = this.attachShadow({ mode: 'open' });
   }
 
-  // run some code when the component is ready
-  connectedCallback() {
-    this.root.innerHTML = this.getTemplate();
-  }
+  static get styles() {
+    return css`
+      :host .header {
+        width: 100%;
+      }
+      
+      :host header {
+        display: none;
+      }
+      
+      :host .caption {
+        width: 100%;
+        text-align: center;
+        color: #efefef;
+        background-color: #020202;
+        font-style: italic;
+        margin: 0;
+      }
+      
+      @media (min-width: 768px) {
+        :host header {
+          display: block;
+          background-image: url('/assets/banner.jpg');
+          background-size: cover;
+          background-color: #020202;
+          height: 300px;
+        }
+      }
+    `;
+  } 
 
-  // create templates that interpolate variables and HTML!
-  getTemplate() {
-    return `
-      <style>
-        ${ headerCss }
-      </style>
-
+  render() {
+    return html`
       <div class="header"> 
         <a href="https://www.greenwoodjs.io/">
           <header></header>

@@ -1,36 +1,39 @@
-import { html, LitElement } from 'lit-element';
+import { css, html, LitElement } from 'lit-element';
 import '../social-icon-link/social-icon-link';
 
 class FooterComponent extends LitElement {
+  
   constructor() {
     super();
   }
 
+  static get styles() {
+    return css`
+      :host footer {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      :host ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      :host li {
+        display: inline-block;
+      }
+      
+      :host .copyright {
+        display: inline-block;
+        margin: 10px auto;
+      }
+    `;
+  } 
+
   render() {
     return html`
-      <style>
-        footer {
-          width: 50%;
-          margin: 0 auto;
-          text-align: center;
-        }
-
-        ul {
-          list-style: none;
-          padding: 0;
-          margin-top: 10px;
-        }
-
-        li {
-          display: inline-block;
-        }
-        
-        .copyright {
-          display: inline-block;
-          margin: 10px auto;
-        }
-      </style>
-
       <footer>
         <ul>
           <li>
