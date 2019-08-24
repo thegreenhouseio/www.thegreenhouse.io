@@ -37,7 +37,16 @@ class ArticlesService {
       abstract: `An article to accompany my presentation on GitHub best practices for Kenzan that goes through a number of the features that can be implemted to 
                 enable better contributor and maintainer experiences when managing an open source project in GitHub.`,
       link: 'https://techblog.kenzan.com/managing-open-source-project-github/',
+      img: 'https://techblog.kenzan.com/wp-content/uploads/2015/11/cropped-techblogheader.jpg',
       date: '2/2017'
+    }, {
+      heading: 'To ES∞ and Beyond: Bulletproof Front-End JavaScript',
+      abstract: `Among the plethora of amazing open source tools out there, new changes to the JavaScript language itself have 
+                allowed for the writing and maintening of cleaner and more elegant code, making code written today in ES2015+ more
+                immune to churn and less likely to become “legacy,” even after a few years.`,
+      link: 'https://techblog.kenzan.com/to-es%e2%88%9e-and-beyond-bulletproof-front-end-javascript/',
+      img: 'https://techblog.kenzan.com/wp-content/uploads/2015/11/cropped-techblogheader.jpg',
+      date: '5/2016'
     }];
   }
 
