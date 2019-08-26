@@ -34,7 +34,7 @@ describe('Header Component', () => {
     it('should have a link to the project website', () => { 
       const link = header.shadowRoot.querySelectorAll('.header a')[0];
 
-      expect(link.href).toBe('https://www.greenwoodjs.io/');
+      expect(link.href).toBe('https://www.thegreenhouse.io/');
     });
   });
 
