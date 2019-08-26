@@ -2,6 +2,15 @@ class PresentationsService {
   constructor() {
     // add new presentations at the top, i.e. FIFO
     this.presentations = [{
+      title: 'Eureka! ... Now What?',
+      abstract: `For anyone who has always had that “lightbulb” moment but not sure how to realize it, this talk
+                aims to help everyone realize a way to craft their own workflow and become a stronger advocate
+                for their own success.`,
+      link: 'https://www.meetup.com/CloudRI/events/263842768/',
+      video: 'https://www.youtube.com/embed/ldgWLdzVGVg',
+      slides: 'https://docs.google.com/presentation/d/1fZL4uoUUuhZEskn1-wpkL2DvU4hNjdI_vCcHFQeaIOs/edit?usp=sharing',
+      date: '8/22/2019'
+    }, {
       title: 'Building A Better Mouse Trap: Docker + SSR',
       abstract: `In this presentation, I discussed how Docker can help soften some of the thornier parts of implementing SSR, 
                 while maintaining great User Experiences (UX) and just as importantly, promoting good Developer Experiences (DX).`,
