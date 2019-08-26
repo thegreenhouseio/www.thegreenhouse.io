@@ -11,7 +11,7 @@ module.exports = {
     { name: 'twitter:site', content: '@thegreenhouseio' },
     { property: 'og:title', content: TITLE },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://www.greenwoodjs.io' },
+    { property: 'og:url', content: 'https://www.thegreenhouse.io' },
     { property: 'og:image', content: 'https://s3.amazonaws.com/www.thegreenhouse.io/static/banner.4b3f4ebd.jpg' },
     { property: 'og:description', content: DESCRIPTION },
     { rel: 'shortcut icon', href: FAVICON_HREF },

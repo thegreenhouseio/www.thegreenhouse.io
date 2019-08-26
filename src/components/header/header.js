@@ -20,7 +20,7 @@ class HeaderComponent extends HTMLElement {
       </style>
 
       <div class="header"> 
-        <a href="https://www.greenwoodjs.io/">
+        <a href="https://www.thegreenhouse.io/">
           <header></header>
           <h2 class="caption">A DREAMER BY DESIGN</h2>
         </a>
