@@ -1,5 +1,4 @@
 import { css, html, unsafeCSS, LitElement } from 'lit-element';
-
 import '../social-icon-link/social-icon-link';
 import cardCss from './card.css';
 

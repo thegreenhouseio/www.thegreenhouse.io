@@ -1,5 +1,6 @@
-import { css, html, LitElement } from 'lit-element';
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import '../social-icon-link/social-icon-link';
+import footerCss from './footer.css';
 
 class FooterComponent extends LitElement {
   
@@ -9,26 +10,7 @@ class FooterComponent extends LitElement {
 
   static get styles() {
     return css`
-      :host footer {
-        width: 50%;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      :host ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 10px;
-      }
-
-      :host li {
-        display: inline-block;
-      }
-      
-      :host .copyright {
-        display: inline-block;
-        margin: 10px auto;
-      }
+      ${ unsafeCSS(footerCss) }
     `;
   } 
 
