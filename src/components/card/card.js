@@ -1,5 +1,4 @@
-import { html, LitElement } from 'lit-element';
-
+import { css, html, unsafeCSS, LitElement } from 'lit-element';
 import '../social-icon-link/social-icon-link';
 import cardCss from './card.css';
 
@@ -16,6 +15,12 @@ class CardComponent extends LitElement {
       }
     };
   }
+
+  static get styles() {
+    return css`
+      ${ unsafeCSS(cardCss) }
+    `;
+  } 
 
   render() {
     const { item } = this;
@@ -36,10 +41,6 @@ class CardComponent extends LitElement {
       : '';
 
     return html`
-      <style>
-        ${ cardCss }
-      </style>
-
       <div class="card">
     
         <div class="wrapper">    

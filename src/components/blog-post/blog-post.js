@@ -1,7 +1,5 @@
 
-import { html, LitElement } from 'lit-element';
-
-import blogPostCss from './blog-post.css';
+import { css, html, LitElement } from 'lit-element';
 
 export function slugifyDate(date) {
   const dateArray = date.split('.');
@@ -39,15 +37,26 @@ class BlogPostComponent extends LitElement {
     };
   }
 
+  static get styles() {
+    return css`
+      :host .header {
+        background-repeat: no-repeat;
+        background-position: center;
+        line-height: 125px;
+        height: 200px;
+      }
+        
+      :host .header h1, :host .header h5 {
+        text-align: center;
+      }
+    `;
+  } 
+
   render() {
     const { date, image, title } = this;
     const headerBackgroundStyle = image ? `background-image: url("${image}")` : '';
 
     return html`
-      <style>
-        ${ blogPostCss }
-      </style>
-
       <article class="blog-post">
 
         <div class="header" style="${headerBackgroundStyle}">

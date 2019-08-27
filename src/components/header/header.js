@@ -1,24 +1,20 @@
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import headerCss from './header.css';
 
-class HeaderComponent extends HTMLElement {
+class HeaderComponent extends LitElement {
+  
   constructor() {
     super();
-
-    this.root = this.attachShadow({ mode: 'open' });
   }
 
-  // run some code when the component is ready
-  connectedCallback() {
-    this.root.innerHTML = this.getTemplate();
-  }
+  static get styles() {
+    return css`
+      ${ unsafeCSS(headerCss) }
+    `;
+  } 
 
-  // create templates that interpolate variables and HTML!
-  getTemplate() {
-    return `
-      <style>
-        ${ headerCss }
-      </style>
-
+  render() {
+    return html`
       <div class="header"> 
         <a href="https://www.thegreenhouse.io/">
           <header></header>

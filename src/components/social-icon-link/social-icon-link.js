@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { css, html, LitElement } from 'lit-element';
 
 import SocialLinksService from '../../services/social-links/social-links-service';
 
@@ -18,6 +18,17 @@ class SocialIconLinkComponent extends LitElement {
       }
     };
   }
+
+  static get styles() {
+    return css`
+      :host img {
+        display: block;
+        height: 60px;
+        width: 60px;
+        margin: 0 10px;
+      }
+    `;
+  } 
 
   render() {
     const { link, name } = this;
@@ -43,15 +54,6 @@ class SocialIconLinkComponent extends LitElement {
     }
 
     return html`
-      <style>
-        img {
-          display: block;
-          height: 60px;
-          width: 60px;
-          margin: 0 10px;
-        }
-      </style>
-
       <a rel="noopener" target="_blank" href="${detectedLink}" @onclick="captureOutboundLink('${detectedLink}'); return false;">
         <img src="/assets/logos/${detectedName}.svg" alt="${detectedName} logo">
       </a>

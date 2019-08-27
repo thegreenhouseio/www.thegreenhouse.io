@@ -1,22 +1,24 @@
-.header {
-  width: 100%;
-}
+:host {
+  & .header {
+    width: 100%;
+  }
 
-header {
-  display: none;
-}
+  & header {
+    display: none;
+  }
 
-.caption {
-  width: 100%;
-  text-align: center;
-  color: #efefef;
-  background-color: #020202;
-  font-style: italic;
-  margin: 0;
+  & .caption {
+    width: 100%;
+    text-align: center;
+    color: #efefef;
+    background-color: #020202;
+    font-style: italic;
+    margin: 0;
+  }
 }
 
 @media (min-width: 768px) {
-  header {
+  :host header {
     display: block;
     background-image: url('/assets/banner.jpg');
     background-size: cover;

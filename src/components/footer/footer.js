@@ -1,36 +1,21 @@
-import { html, LitElement } from 'lit-element';
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import '../social-icon-link/social-icon-link';
+import footerCss from './footer.css';
 
 class FooterComponent extends LitElement {
+  
   constructor() {
     super();
   }
 
+  static get styles() {
+    return css`
+      ${ unsafeCSS(footerCss) }
+    `;
+  } 
+
   render() {
     return html`
-      <style>
-        footer {
-          width: 50%;
-          margin: 0 auto;
-          text-align: center;
-        }
-
-        ul {
-          list-style: none;
-          padding: 0;
-          margin-top: 10px;
-        }
-
-        li {
-          display: inline-block;
-        }
-        
-        .copyright {
-          display: inline-block;
-          margin: 10px auto;
-        }
-      </style>
-
       <footer>
         <ul>
           <li>
