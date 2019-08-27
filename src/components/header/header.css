@@ -1,18 +1,20 @@
-:host .header {
-  width: 100%;
-}
+:host {
+  & .header {
+    width: 100%;
+  }
 
-:host header {
-  display: none;
-}
+  & header {
+    display: none;
+  }
 
-:host .caption {
-  width: 100%;
-  text-align: center;
-  color: #efefef;
-  background-color: #020202;
-  font-style: italic;
-  margin: 0;
+  & .caption {
+    width: 100%;
+    text-align: center;
+    color: #efefef;
+    background-color: #020202;
+    font-style: italic;
+    margin: 0;
+  }
 }
 
 @media (min-width: 768px) {

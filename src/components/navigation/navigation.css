@@ -1,23 +1,25 @@
- :host .navigation {
-  display: block;
-  width: 40%;
-  margin: 25px auto;
-  text-align: center;
-}
+ :host {
+  & .navigation {
+    display: block;
+    width: 40%;
+    margin: 25px auto;
+    text-align: center;
+  }
 
-:host .navigation ul {
-  list-style: none;
-  margin: 0 auto;
-  width: 80%;
-  padding: 0;
-}
+  & .navigation ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0;
+  }
 
-:host .navigation li {
-  display: inline-block;
-  width: 100px;
-}
+  & .navigation li {
+    display: inline-block;
+    width: 100px;
+  }
 
-:host .navigation a {
-  color: #020202;
-  font-size: 1.5em;
+  & .navigation a {
+    color: #020202;
+    font-size: 1.5em;
+  }
 }

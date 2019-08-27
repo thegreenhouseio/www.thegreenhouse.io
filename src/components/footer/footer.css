@@ -1,20 +1,22 @@
-:host footer {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
+:host {
+  & footer {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-:host ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-}
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
 
-:host li {
-  display: inline-block;
-}
+  & li {
+    display: inline-block;
+  }
 
-:host .copyright {
-  display: inline-block;
-  margin: 10px auto;
+  & .copyright {
+    display: inline-block;
+    margin: 10px auto;
+  }
 }
