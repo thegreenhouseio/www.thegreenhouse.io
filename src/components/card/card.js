@@ -1,6 +1,7 @@
-import { css, html, LitElement } from 'lit-element';
+import { css, html, unsafeCSS, LitElement } from 'lit-element';
 
 import '../social-icon-link/social-icon-link';
+import cardCss from './card.css';
 
 class CardComponent extends LitElement {
 
@@ -18,76 +19,7 @@ class CardComponent extends LitElement {
 
   static get styles() {
     return css`
-      :host .card {
-        width: 70%;
-        margin: 0 auto 35px;
-        max-width: 1024px;
-        min-width: 320px;
-        border: 2px solid #020202;
-        border-radius: 5px;
-        padding: 10px;
-      }
-      
-      :host .wrapper {
-        display: grid;
-        grid-template-columns: repeat(12, [col-start] 1fr);
-        grid-gap: 20px;
-      }
-      
-      :host .wrapper > * {
-        grid-column: col-start / span 12;
-      }
-      
-      :host .card-header, :host .card-content {
-        text-align: left;
-      }
-      
-      :host .card-slides {
-        margin-left: 20px;
-        text-decoration: none;
-        color: #020202;
-      }
-      
-      :host .card-footer img {
-        width: 100%;
-      }
-      
-      @media (min-width: 500px) {
-        :host .card-header-icon {
-          display: none;
-        }
-      
-        :host .card {
-          border: none;
-        }
-      }
-      
-      @media (min-width: 300px) {
-        :host .card-header-icon {
-          display: none;
-        }
-      
-        :host .card {
-          border: none;
-        }
-      }
-      
-      @media (min-width: 700px) {
-        :host .card {
-          border: 2px solid #020202;
-        }
-        
-        :host .card-header-icon {
-          display: inline;
-          grid-column: col-start / span 2;
-          grid-row: 1 / 6;  /* autoprefixer: off */
-        }
-      
-        :host .card-header {
-          grid-column: col-start 3 / span 10;
-          grid-row: 1 / 6; /* autoprefixer: off */
-        }
-      }
+      ${ unsafeCSS(cardCss) }
     `;
   } 
 
