@@ -1,3 +1,5 @@
+const pluginGoogleAnalytics = require('@greenwood/plugin-google-analytics');
+const pluginPolyfills = require('@greenwood/plugin-polyfills');
 const DESCRIPTION = 'Personal site and blog for Owen Buckley and The Greenhouse I/O.  Ideas are built here.';
 const FAVICON_HREF = '/assets/favicon.ico';
 const TITLE = 'The Greenhouse I/O';
@@ -21,6 +23,14 @@ module.exports = {
   devServer: {
     port: 1981,
     host: 'local.thegreenhouse.io'
-  }
+  },
+
+  plugins: [
+    ...pluginGoogleAnalytics({
+      analyticsId: 'UA-147204327-1'
+    }),
+
+    ...pluginPolyfills()
+  ]
 
 };
