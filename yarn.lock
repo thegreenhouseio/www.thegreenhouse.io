@@ -128,6 +128,13 @@
   dependencies:
     "@babel/types" "^7.0.0"
 
+"@babel/helper-module-imports@^7.7.4":
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-module-imports/-/helper-module-imports-7.7.4.tgz#e5a92529f8888bf319a6376abfbd1cebc491ad91"
+  integrity sha512-dGcrX6K9l8258WFjyDLJwuVKxR4XZfU0/vTUgOQYWEnRD8mgr+p4d6fCUMq/ys0h4CCt/S5JhbvtyErjWouAUQ==
+  dependencies:
+    "@babel/types" "^7.7.4"
+
 "@babel/helper-module-transforms@^7.1.0", "@babel/helper-module-transforms@^7.4.4":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/helper-module-transforms/-/helper-module-transforms-7.5.5.tgz#f84ff8a09038dcbca1fd4355661a500937165b4a"
@@ -523,6 +530,16 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
+"@babel/plugin-transform-runtime@^7.6.2":
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.7.4.tgz#51fe458c1c1fa98a8b07934f4ed38b6cd62177a6"
+  integrity sha512-O8kSkS5fP74Ad/8pfsCMGa8sBRdLxYoSReaARRNSz3FbFQj3z/QUvoUmJ28gn9BO93YfnXc3j+Xyaqe8cKDNBQ==
+  dependencies:
+    "@babel/helper-module-imports" "^7.7.4"
+    "@babel/helper-plugin-utils" "^7.0.0"
+    resolve "^1.8.1"
+    semver "^5.5.1"
+
 "@babel/plugin-transform-shorthand-properties@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-shorthand-properties/-/plugin-transform-shorthand-properties-7.2.0.tgz#6333aee2f8d6ee7e28615457298934a3b46198f0"
@@ -625,6 +642,13 @@
     js-levenshtein "^1.1.3"
     semver "^5.5.0"
 
+"@babel/runtime@^7.7.2":
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.4.tgz#b23a856751e4bf099262f867767889c0e3fe175b"
+  integrity sha512-r24eVUUr0QqNZa+qrImUk8fn5SPhHq+IfYvIoIMg0do3GdK9sMdiLKP3GYVVaxpPKORgm8KRKaNTEhAjgIpLMw==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.0", "@babel/template@^7.4.4":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.4.4.tgz#f4b88d1225689a08f5bc3a17483545be9e4ed237"
@@ -691,24 +715,36 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@babel/types@^7.7.4":
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.7.4.tgz#516570d539e44ddf308c07569c258ff94fde9193"
+  integrity sha512-cz5Ji23KCi4T+YIE/BolWosrJuSmoZeN1EFnRtBwF+KKLi8GG/Z2c2hOJJeCXPk4mwk4QFvTmwIodJowXgttRA==
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.13"
+    to-fast-properties "^2.0.0"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@greenwood/cli@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.4.0.tgz#9d680000f1e245df2db875c9cad2d467415ee7bf"
-  integrity sha512-3fGWzKxJa+J1hKjRNGq7MnHQ0tiPIpQ+voz6HNQrmZc45CRrKofHV7n137JXDDGAXi7Olr+0E9GzgpCcK2XMtg==
+"@greenwood/cli@0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.4.2.tgz#43300ed3647b74d264fdbe78f4d71d3a00a8e099"
+  integrity sha512-SJypyIbGo3zmaQONxFWsdhn8dWuPd6WgqdHBfT72voUWCVEOjMykrk+i4FwvwRRNm5qogSsMteLhY4uXYUO7Vw==
   dependencies:
     "@babel/core" "^7.6.0"
+    "@babel/plugin-transform-runtime" "^7.6.2"
     "@babel/preset-env" "^7.6.0"
+    "@babel/runtime" "^7.7.2"
     "@webcomponents/webcomponentsjs" "^2.3.0"
     babel-loader "^8.0.5"
     chalk "^2.4.2"
     colors "^1.3.3"
     commander "^2.20.0"
     copy-webpack-plugin "^5.0.3"
+    core-js "^3.4.1"
     css-loader "^2.1.1"
     css-to-string-loader "^0.1.3"
     cssnano "^4.1.10"
@@ -736,15 +772,15 @@
     webpack-manifest-plugin "^2.0.4"
     webpack-merge "^4.2.1"
 
-"@greenwood/plugin-google-analytics@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.4.0.tgz#144ba05a8912ae1508240f666d19ddca6a5189de"
-  integrity sha512-OFaF/rQTeMnAblppkNrxKZvKL6DKtfJEnY5u3g4RK9dqhIl4fXprysZ/9pC1erpZGSuAzFwXafE8oKrW4IYuJg==
+"@greenwood/plugin-google-analytics@0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.4.2.tgz#47ec6b1bd5f1db58be106497bd64783da79186e9"
+  integrity sha512-NM1QiZr+0ieJYbcGsENKWs/mDaJJG3ywa/WGfubEakdF3HO90AHdff6JR01PiHE/Pv535n4GhTVST3jyonI3Nw==
 
-"@greenwood/plugin-polyfills@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-polyfills/-/plugin-polyfills-0.4.0.tgz#15a7f187921053078e43627e88886d0739680d8d"
-  integrity sha512-UJ7Tp+r/CLe1WtS5n4wJ59bQpyU9c2/zTZVhzsDbGmJILHgvySrttQHgsIwWnubbWTUqhkp/ZoRP0t5pMbcUrw==
+"@greenwood/plugin-polyfills@0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-polyfills/-/plugin-polyfills-0.4.2.tgz#fff46f47034ac356810d480a3937d5c1d9a3201d"
+  integrity sha512-jUnX+EFSPUyZRwtDTGMAcbP/H3tZa2Lb2SACFeD8VuDiWbI4Tqez+Fn9eYgkmXamuLUGKVjBbNoFvA1JMqaCDg==
   dependencies:
     "@webcomponents/webcomponentsjs" "^2.3.0"
 
@@ -2465,6 +2501,11 @@ core-js@^3.1.3:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.2.1.tgz#cd41f38534da6cc59f7db050fe67307de9868b09"
   integrity sha512-Qa5XSVefSVPRxy2XfUC13WbvqkxhkwB3ve+pgCQveNgYzbM/UxZeu1dcOX/xr4UmfUd+muuvsaxilQzCyUurMw==
+
+core-js@^3.4.1:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.4.3.tgz#09ea102412a368d5f73d24f082e41ac90c633a49"
+  integrity sha512-BVvHidX8uAmLCYPfLpXTEex7jz1uZJ1mW+shhIsBdA716O8Fg6TOwSgenSyO/bvEtnGdOTpKRZPSh4bSVI1k9w==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -8099,6 +8140,11 @@ regenerator-runtime@^0.11.0:
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
 
+regenerator-runtime@^0.13.2:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
+  integrity sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
+
 regenerator-transform@^0.14.0:
   version "0.14.1"
   resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.14.1.tgz#3b2fce4e1ab7732c08f665dfdb314749c7ddd2fb"
@@ -8282,6 +8328,13 @@ resolve@^1.3.2:
   dependencies:
     path-parse "^1.0.6"
 
+resolve@^1.8.1:
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.13.1.tgz#be0aa4c06acd53083505abb35f4d66932ab35d16"
+  integrity sha512-CxqObCX8K8YtAhOBRg+lrcdn+LK+WYOS8tSjqSFbjtrI5PnS63QPhZl4+yKfrU9tdsbMu9Anr/amegT87M9Z6w==
+  dependencies:
+    path-parse "^1.0.6"
+
 restore-cursor@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/restore-cursor/-/restore-cursor-3.1.0.tgz#39f67c54b3a7a58cea5236d95cf0034239631f7e"
@@ -8430,7 +8483,7 @@ selfsigned@^1.10.4:
   dependencies:
     node-forge "0.7.5"
 
-semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.6.0:
+semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
