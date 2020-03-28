@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'Project Evergreen'
 ---
 
 ```render

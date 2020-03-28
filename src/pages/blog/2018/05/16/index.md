@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'A Case Study in Performance (cont)' 
 ---
 
 ```render

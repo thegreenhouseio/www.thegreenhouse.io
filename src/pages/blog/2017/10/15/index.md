@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'Publishing My First Docker Image'
 ---
 
 ```render

@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'Vue Webapp Seed'
 ---
 
 ```render
