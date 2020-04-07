@@ -3,7 +3,7 @@ template: 'blog'
 ---
 
 ## 2020
-- [GitHub Explorer 🔍](/blog/2020/04/07)
+- [Git Explorer 🔍](/blog/2020/04/07)
 
 ## 2018
 - [Contributary 💡](/blog/2018/11/19)
