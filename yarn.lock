@@ -851,10 +851,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@greenwood/cli@0.5.0-alpha.2":
-  version "0.5.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.5.0-alpha.2.tgz#7d29d0da6bbcd2e7f2dfecb55849d7e663866a2e"
-  integrity sha512-RgIJSXrQErv2PBbB3P2NFmTUYAt0VPr8Cfvuv1rCiGDvWRUJ2jjwZFLPb2YoGfPLHuJaHHqXXl8nxZQxHXUJFA==
+"@greenwood/cli@0.5.0-alpha.3":
+  version "0.5.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.5.0-alpha.3.tgz#a8fe9f5cee694c70e33de2f56a3b2f5682738f5c"
+  integrity sha512-Jnp3PMCT4PqYP1aTSEBa4f++L+XY6fjWCDwqL75RLhtCwsu93qlKykIx0VlWAO3d9Bm0EzkMGpfDALf67jDFbA==
   dependencies:
     "@babel/core" "^7.8.3"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
@@ -903,15 +903,15 @@
     webpack-manifest-plugin "^2.0.4"
     webpack-merge "^4.2.1"
 
-"@greenwood/plugin-google-analytics@0.5.0-alpha.2":
-  version "0.5.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.5.0-alpha.2.tgz#a6a5a3e6e9e5d4f6653491cbd9eebe1e086a2f8f"
-  integrity sha512-LsRKlzhvt/IjHNMnShKv7GTrPNuCkhSb5TFg08O1z/mvh3R4JTh37Y2yhz/OgGU8U+n47zW8L8PxqZo18EgnpQ==
+"@greenwood/plugin-google-analytics@0.5.0-alpha.3":
+  version "0.5.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.5.0-alpha.3.tgz#06e8938096a04f4e1482c9e345301c66cd1aa482"
+  integrity sha512-am88iz7kfSCykxeg0LDV0nUuvowm/+w6xzLXRa23+Ur4rlfWj0jigc7nUZBg/wSlny7kaGIK5MTL86DNA2ZfQQ==
 
-"@greenwood/plugin-polyfills@0.5.0-alpha.2":
-  version "0.5.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-polyfills/-/plugin-polyfills-0.5.0-alpha.2.tgz#bcfe284b52b9ea260cdfff8bd2d6856d7eb54750"
-  integrity sha512-NKJpHgtbNJ329/DqfBqbU0MI4PVi921jUZRl/CPch7MIC0tb9P59WJ4eJwCg4JwsJ2o5E38QcCEetOd8HeRTMQ==
+"@greenwood/plugin-polyfills@0.5.0-alpha.3":
+  version "0.5.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-polyfills/-/plugin-polyfills-0.5.0-alpha.3.tgz#137fd8b6528a0be377fdd5a42997dd72d0911733"
+  integrity sha512-5Lm8qBjowONO9hClG6jiKco3zmJf/WkPOA08Gul5q65PtJeldbuBruvyzYwNQcyDI8EaB4DKWshkcKNftlB38w==
   dependencies:
     "@webcomponents/webcomponentsjs" "^2.3.0"
 
