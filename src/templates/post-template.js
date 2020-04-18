@@ -1,4 +1,6 @@
 import { html, LitElement } from 'lit-element';
+import client from '@greenwood/cli/data/client';
+import gql from 'graphql-tag';
 
 import '../components/blog-post/blog-post';
 import '../components/footer/footer';
@@ -9,20 +11,57 @@ import '../styles/theme.css';
 
 MDIMPORT;
 
-// TODO
-// 1. ~~wire up post to new template, mock data~~
-// 2. pull in real data
-// 3. fiX CSS
-// 4. upgrade all pages
-// 5. remove app-blog-post from blog-template, unused CSS
-// 6. Other PR, pull in ToC from data?
-class BlogTemplate extends LitElement {
+class PostTemplate extends LitElement {
+
+  static get properties() {
+    return {
+      post: {
+        type: Object
+      }
+    };
+  }
 
   constructor() {
     super();
+
+    this.post = {
+      title: '',
+      data: {
+        date: '',
+        image: ''
+      }
+    };
+  }
+
+  async connectedCallback() {
+    super.connectedCallback();
+    let route = window.location.pathname;
+    const response = await client.query({
+      query: gql`query {
+        graph {
+          title,
+          link,
+          data {
+            date,
+            image
+          }
+        }
+      }`
+    });
+
+    if (route.lastIndexOf('/') !== route.length - 1) {
+      route = `${route}/`;
+    }
+
+    this.post = response.data.graph.filter((page) => {
+      return page.link.lastIndexOf(route) >= 0;
+    })[0];
   }
 
   render() {
+    const { title } = this.post;
+    const { date, image } = this.post.data;
+
     return html`
       <style>
         ${ pageCss }
@@ -80,13 +119,16 @@ class BlogTemplate extends LitElement {
         </section>
 
         <section class="outlet row">
+          
           <app-blog-post 
-            title='Git Explorer' 
-            date='04.07.2020' 
-            image="/assets/blog-post-images/git.png">
-            
+            title="${title}"
+            date="${date}"
+            image="${image}">
+          
             <entry></entry>
+          
           </app-blog-post>
+
         </section>
 
         <section class="row">
@@ -97,4 +139,4 @@ class BlogTemplate extends LitElement {
   }
 }
 
-customElements.define('page-template', BlogTemplate);
+customElements.define('page-template', PostTemplate);
