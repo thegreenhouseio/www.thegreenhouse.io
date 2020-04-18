@@ -1,7 +1,10 @@
 ---
 template: 'post'
+title: 'Git Explorer'
+date: '04.07.2020'
+image: '/assets/blog-post-images/git.png'
 ---
-  
+
 Made this a little while ago but felt it would be fun to share, called 
 
 ```render 
