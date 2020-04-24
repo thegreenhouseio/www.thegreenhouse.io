@@ -851,10 +851,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@greenwood/cli@0.5.0-alpha.5":
-  version "0.5.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.5.0-alpha.5.tgz#4626303fda60a279a8256ffd9db9b2cd2abf84b6"
-  integrity sha512-vZxqeOwkCnCRY0kmzh7ts4KuRfhoMZuReVsUGPQ/e2IPcMqJi+VleI85jo4BAf3VbkEhBgRMvuIEpovDQI1zNA==
+"@greenwood/cli@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.5.0.tgz#be629b0ea80f2c9c0bff66a367116a58f261cd35"
+  integrity sha512-Y7BWvIwhrw/6IIpW6i8hxT+vWiOagjYZxZLrobTRTilkgQwSh6OXwmwOXgmtI+NnFHK+N9mKj8YRNvU5SEMKSw==
   dependencies:
     "@babel/core" "^7.8.3"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
@@ -897,22 +897,22 @@
     redux "^4.0.1"
     redux-thunk "^2.3.0"
     style-loader "^0.23.1"
-    wc-markdown-loader "^0.1.2"
+    wc-markdown-loader "~0.1.2"
     webpack "^4.29.6"
     webpack-cli "^3.3.0"
     webpack-dev-server "^3.2.1"
     webpack-manifest-plugin "^2.0.4"
     webpack-merge "^4.2.1"
 
-"@greenwood/plugin-google-analytics@0.5.0-alpha.5":
-  version "0.5.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.5.0-alpha.5.tgz#3fbda4df6269f647141cd2554332fd1e7435edb8"
-  integrity sha512-e2xs4Du091DMMzeXUgNudUGTN5/C9J+C5f0vlD/CZB4u1c8l3EJjwApCdNPG5dvnSY170N8CWB2jbuRHDFvl3w==
+"@greenwood/plugin-google-analytics@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.5.0.tgz#ddd7f3bbfeaa522261872b9bc9abca8c463aab7f"
+  integrity sha512-7vtifuQkTVQdCl9Ks7j2as6DXsHX/3ppwK9fq7Z1ddE3EgAWm5VKkGV3HOgJ1A2yLRoRpanF1O9fO2vF+5qSHA==
 
-"@greenwood/plugin-polyfills@0.5.0-alpha.5":
-  version "0.5.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-polyfills/-/plugin-polyfills-0.5.0-alpha.5.tgz#38a11fddf057428776f613c9fcc03313a10d125c"
-  integrity sha512-9YmL4jWaKLotYtuPh984sfBO52jRUjrdTtYNTGZF3Xm3o02gOmKu+xUETuPKxPj0o9N53cjUg8ZNgwNpdllyXg==
+"@greenwood/plugin-polyfills@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-polyfills/-/plugin-polyfills-0.5.0.tgz#989ac454c7f0a1a207e9256a1682f2c0c26bff14"
+  integrity sha512-Yn1yclzr5LjvGSHgd5H25vQ8yp1xBcEzd/y/rGsAuFBvuqpasHYhEXsxk2+x5GtJtEssXyyoWoIl4LtFKkbx/w==
   dependencies:
     "@webcomponents/webcomponentsjs" "^2.3.0"
 
@@ -10648,10 +10648,10 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-wc-markdown-loader@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/wc-markdown-loader/-/wc-markdown-loader-0.1.2.tgz#9cc578082049960a60e0c0dc49fe3f83f2ea0ad7"
-  integrity sha512-7r0+TXZGhBLXfLEDSeGa8cvkREHnxnfP560//RXRqls3eRJzd84Ru4HRhdt8dzh586hh9YctaDpzFt0ORLJOHQ==
+wc-markdown-loader@~0.1.2:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/wc-markdown-loader/-/wc-markdown-loader-0.1.5.tgz#ec1db0841f343d8f8dc4f4e1e346937a0ec45513"
+  integrity sha512-t7/dvwK/vwkth2e/41MRBVwm+FGrNyJaRLQqY5hx1jVbtmtWfr6QsUBLT9JcupSE7Bfh1oLUz0k1jmBAIbAadQ==
   dependencies:
     camelize "^1.0.0"
     except "^0.1.3"
