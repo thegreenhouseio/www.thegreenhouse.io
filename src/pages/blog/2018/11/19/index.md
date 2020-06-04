@@ -3,7 +3,6 @@ template: 'blog'
 title: 'Contributary'
 ---
 
-```render
  <app-blog-post
   title='Contributary'
   description='A project for helping connect open source with the open source community.'
@@ -22,4 +21,3 @@ title: 'Contributary'
   </div>
   
 </app-blog-post>
-```

@@ -7,7 +7,5 @@ of technical knowledge and capabilities, creativity, interpersonal skills, and a
 
 I'm always up to something online be it on [twitter](https://twitter.com/thegreenhouseio) [Medium](https://medium.com/@thegreenhouseio), or around the local [Rhode Island Tech Meetup Community](https://www.pvdgeeks.org), so I hope to hear from you!
 
-```render
 <p class="cta"><i>Let's build something great!</i></p>
 <hr/>
-```
