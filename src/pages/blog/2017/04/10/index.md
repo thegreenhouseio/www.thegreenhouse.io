@@ -3,7 +3,6 @@ template: 'blog'
 title: 'GitHub Dashboard 1.0 Released! 🎉'
 ---
 
-
 <app-blog-post
   title='GitHub Dashboard 1.0 Released! 🎉' 
   date='04.10.2017' 

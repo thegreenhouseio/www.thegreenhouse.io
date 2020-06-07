@@ -3,6 +3,10 @@ template: 'blog'
 title: 'Project Evergreen'
 ---
 
+<<<<<<< HEAD
+=======
+```
+>>>>>>> 0.6.0 upgrade
 <app-blog-post
   title='Project Evergreen'
   description='Project Evergreen: In Pursuit of Evergreen Web Applications'

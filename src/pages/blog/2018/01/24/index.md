@@ -2,7 +2,7 @@
 template: 'blog'
 title: 'A Case Study in Performance'
 ---
-  
+
 <app-blog-post 
   title='A Case Study in Performance' 
   date='01.24.2018' 
