@@ -3,7 +3,7 @@ template: 'blog'
 title: 'A Case Study in Performance'
 ---
   
-```render
+```
 <app-blog-post 
   title='A Case Study in Performance' 
   date='01.24.2018' 

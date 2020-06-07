@@ -3,7 +3,7 @@ template: 'blog'
 title: 'Project Evergreen'
 ---
 
-```render
+```
 <app-blog-post
   title='Project Evergreen'
   description='Project Evergreen: In Pursuit of Evergreen Web Applications'

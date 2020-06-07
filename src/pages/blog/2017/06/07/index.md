@@ -3,7 +3,7 @@ template: 'blog'
 title: 'PHP API Seed' 
 ---
 
-```render
+```
 <app-blog-post
   title='PHP API Seed' 
   date='06.07.2017' 

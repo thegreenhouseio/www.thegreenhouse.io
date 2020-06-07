@@ -3,7 +3,7 @@ template: 'blog'
 title: 'Vue Webapp Seed'
 ---
 
-```render
+```
 <app-blog-post
   title='Vue Webapp Seed' 
   date='06.07.2017'

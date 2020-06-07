@@ -3,7 +3,7 @@ template: 'blog'
 title: 'Publishing My First Docker Image'
 ---
 
-```render
+```
 <app-blog-post
   title='Publishing My First Docker Image' 
   date='10.15.2017' 

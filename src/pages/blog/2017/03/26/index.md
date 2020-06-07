@@ -3,7 +3,7 @@ template: 'blog'
 title: 'Minecraft In The Cloud'
 ---
 
-```render
+```
 <app-blog-post
   title='Minecraft In The Cloud' 
   date='03.26.2017' 

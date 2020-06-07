@@ -3,8 +3,7 @@ template: 'blog'
 title: 'Contributary'
 ---
 
-```render
- <app-blog-post
+<app-blog-post
   title='Contributary'
   description='A project for helping connect open source with the open source community.'
   date='11.19.2018' 
@@ -22,4 +21,3 @@ title: 'Contributary'
   </div>
   
 </app-blog-post>
-```

@@ -3,7 +3,7 @@ template: 'blog'
 title: 'Building A Better Mouse Trap'
 ---
 
-```render
+```
 <app-blog-post
   title='Building A Better Mouse Trap'
   description='My presentation at Node+JS Interactive 2018 on Docker and Server-Side Rendering.'

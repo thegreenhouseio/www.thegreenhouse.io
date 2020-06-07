@@ -5,11 +5,7 @@ date: '04.07.2020'
 image: '/assets/blog-post-images/git.png'
 ---
 
-Made this a little while ago but felt it would be fun to share, called 
-
-```render 
-<a href="https://github.com/thescientist13/git-explorer" target="_blank" rel="noopener" @onclick="captureOutboundLink('https://github.com/thescientist13/git-explorer'); return false;"><b>Git Explorer</b>.</a>
-```
+Made this a little while ago but felt it would be fun to share, called <a href="https://github.com/thescientist13/git-explorer" target="_blank" rel="noopener" @onclick="captureOutboundLink('https://github.com/thescientist13/git-explorer'); return false;"><b>Git Explorer</b>.</a>
 
 It is a NodeJS package you can install from NPM that will provide a nice browser based comparison tool for any `git` repo on your local machine.
 
