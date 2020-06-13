@@ -19,17 +19,17 @@ template: 'blog'
           
     <ul>
       <li>
-        <a target="_blank" rel="noopener" href="https://projectevergreen.github.io/" onclick="return getOutboundLink('https://projectevergreen.github.io/'); return false;">Website</a>
+        <a target="_blank" rel="noopener" href="https://projectevergreen.github.io/" onclick="getOutboundLink('https://projectevergreen.github.io/');">Website</a>
       </li>
       <li>
-        <a target="_blank" rel="noopener"  href="https://github.com/ProjectEvergreen" onclick="return getOutboundLink('https://github.com/ProjectEvergreen'); return false;">GitHub Organization</a>
+        <a target="_blank" rel="noopener"  href="https://github.com/ProjectEvergreen" onclick="getOutboundLink('https://github.com/ProjectEvergreen');">GitHub Organization</a>
       </li>
       <li>
-        <a target="_blank" rel="noopener"  href="https://github.com/ProjectEvergreen/project-evergreen/milestones" onclick="return getOutboundLink('https://github.com/ProjectEvergreen/project-evergreen/milestones'); return false;">Roadmap</a>
+        <a target="_blank" rel="noopener"  href="https://github.com/ProjectEvergreen/project-evergreen/milestones" onclick="getOutboundLink('https://github.com/ProjectEvergreen/project-evergreen/milestones');">Roadmap</a>
       </li>
       <li>
-        <a target="_blank" rel="noopener"  href="https://twitter.com/PrjEvergreen" onclick="return getOutboundLink('https://twitter.com/PrjEvergreen'); return false;">Twitter</a><span> | </span>
-        <a target="_blank" rel="noopener" href="https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTFkNzY2NDQwOTg0MjRiYmY1ZDYyOGE1YzM0ZmQwNTgxZWI0NWU0YmYxZDhkNDQ3Y2Q3ODhjZTdiMTEwNzY5MTk" onclick="return getOutboundLink('https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTFkNzY2NDQwOTg0MjRiYmY1ZDYyOGE1YzM0ZmQwNTgxZWI0NWU0YmYxZDhkNDQ3Y2Q3ODhjZTdiMTEwNzY5MTk'); return false;">Slack</a>
+        <a target="_blank" rel="noopener"  href="https://twitter.com/PrjEvergreen" onclick="getOutboundLink('https://twitter.com/PrjEvergreen');">Twitter</a><span> | </span>
+        <a target="_blank" rel="noopener" href="https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTFkNzY2NDQwOTg0MjRiYmY1ZDYyOGE1YzM0ZmQwNTgxZWI0NWU0YmYxZDhkNDQ3Y2Q3ODhjZTdiMTEwNzY5MTk" onclick="getOutboundLink('https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTFkNzY2NDQwOTg0MjRiYmY1ZDYyOGE1YzM0ZmQwNTgxZWI0NWU0YmYxZDhkNDQ3Y2Q3ODhjZTdiMTEwNzY5MTk');">Slack</a>
       </li>
     </ul>
   

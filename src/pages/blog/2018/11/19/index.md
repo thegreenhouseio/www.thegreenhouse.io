@@ -17,7 +17,7 @@ template: 'blog'
 
     <img src="https://s3.amazonaws.com/hosted.contributary.community/media/contributary-screenshot-0.2.0.png" alt="Contributary screeshot"/>
 
-    <p>Contributary has only just recently launched in an early release phase and is eager to look for its own set of contributors.  The project is <a target="_blank" href="https://github.com/ContributaryCommunity" onclick="return getOutboundLink('https://github.com/ContributaryCommunity'); return false;">open source</a> so you can use Contributary to find ways to contribute to Contributary (much meta)! 🤓</p>
+    <p>Contributary has only just recently launched in an early release phase and is eager to look for its own set of contributors.  The project is <a target="_blank" href="https://github.com/ContributaryCommunity" onclick="getOutboundLink('https://github.com/ContributaryCommunity');">open source</a> so you can use Contributary to find ways to contribute to Contributary (much meta)! 🤓</p>
   </div>
   
 </app-blog-post>
