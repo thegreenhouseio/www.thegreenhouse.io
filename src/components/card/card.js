@@ -53,7 +53,7 @@ class CardComponent extends LitElement {
           <div class="card-header">
             
             <h3 class="card-header-heading">
-              <a class="card-header-heading-link" target="_blank" rel="noopener" @onclick="captureOutboundLink('${link}'); return false;" href="${link}">${title}</a>
+              <a class="card-header-heading-link" target="_blank" rel="noopener" click="getOutboundLink('${link}');" href="${link}">${title}</a>
             </h3>
 
             <span class="date">${ date }</span>
