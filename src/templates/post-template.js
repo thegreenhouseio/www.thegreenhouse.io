@@ -86,21 +86,6 @@ class PostTemplate extends LitElement {
           text-align: center;
         }
 
-        li {
-          margin: 10px 0;
-        }
-
-        h2 {
-          text-decoration: underline;
-          margin: 10px auto;
-          width: 20%;
-          text-align: center;
-        }
-
-        ul a {
-          text-decoration: none!important;
-        }
-
         pre {
           width: 400px;
           display: block;
