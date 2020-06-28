@@ -21,7 +21,7 @@ jobs:
         node-version: 12.x
     - name: Installing project dependencies
       run: |
-        yarn install --frozen-lockfile && yarn lerna bootstrap
+        yarn install --frozen-lockfile
     - name: Lint
       run: |
         yarn lint
@@ -31,5 +31,3 @@ jobs:
     - name: Build
       run: |
         yarn clean && yarn build
-      env:
-        CI: true
