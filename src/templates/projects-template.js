@@ -9,8 +9,6 @@ import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
 MDIMPORT;
-METAIMPORT;
-METADATA;
 
 class ProjectsTemplate extends LitElement {
 
@@ -32,8 +30,6 @@ class ProjectsTemplate extends LitElement {
     const { projects } = this;
 
     return html`
-      METAELEMENT
-
       <style>
         ${ pageCss }
 

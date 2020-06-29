@@ -8,8 +8,6 @@ import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
 MDIMPORT;
-METAIMPORT;
-METADATA;
 
 class BlogTemplate extends LitElement {
 
@@ -19,8 +17,6 @@ class BlogTemplate extends LitElement {
 
   render() {
     return html`
-      METAELEMENT
-
       <style>
         ${ pageCss }
 
