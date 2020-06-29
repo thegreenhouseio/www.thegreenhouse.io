@@ -11,8 +11,6 @@ import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
 MDIMPORT;
-METAIMPORT;
-METADATA;
 
 class AboutTemplate extends LitElement {
 
@@ -77,8 +75,6 @@ class AboutTemplate extends LitElement {
     const content = this.getContent();
 
     return html`
-      METAELEMENT
-
       <style>
         ${ pageCss }
 

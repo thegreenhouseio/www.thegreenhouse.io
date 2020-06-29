@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'PHP API Seed' 
 ---
 
 ```render
