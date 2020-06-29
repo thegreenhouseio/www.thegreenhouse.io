@@ -15,7 +15,7 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 10.x
     - name: Installing project dependencies
       run: |
         yarn install --frozen-lockfile
