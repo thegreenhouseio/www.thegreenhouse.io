@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'Minecraft In The Cloud'
 ---
 
 ```render

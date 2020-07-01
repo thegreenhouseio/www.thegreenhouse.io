@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'Introducing Create Evergreen App!'
 ---
 
 ```render

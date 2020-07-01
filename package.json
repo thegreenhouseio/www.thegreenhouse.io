@@ -1,6 +1,6 @@
 {
   "name": "www.thegreenhouse.io",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Personal / portfolio website for The Greenhouse.",
   "repository": "https://github.com/thegreenhouseio/www.thegreenhouse.io",
   "author": "owen@thegreenhouse.io",
@@ -16,9 +16,9 @@
     "test:tdd": "yarn clean && karma start"
   },
   "devDependencies": {
-    "@greenwood/cli": "0.4.2",
-    "@greenwood/plugin-google-analytics": "0.4.2",
-    "@greenwood/plugin-polyfills": "0.4.2",
+    "@greenwood/cli": "0.5.1",
+    "@greenwood/plugin-google-analytics": "0.5.1",
+    "@greenwood/plugin-polyfills": "0.5.1",
     "eslint": "^6.1.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine": "^3.3.1",

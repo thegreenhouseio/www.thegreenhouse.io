@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'GitHub Dashboard 1.0 Released! 🎉'
 ---
 
 ```render

@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'Building A Better Mouse Trap'
 ---
 
 ```render

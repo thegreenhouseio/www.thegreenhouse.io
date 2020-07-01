@@ -1,5 +1,6 @@
 ---
 template: 'blog'
+title: 'Teaching An Old Dog New Tricks!'
 ---
 
 ```render

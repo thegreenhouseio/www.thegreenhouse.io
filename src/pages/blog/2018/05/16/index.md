@@ -1,12 +1,13 @@
 ---
 template: 'blog'
+title: 'A Case Study in Performance (cont)' 
 ---
 
 ```render
 <app-blog-post
   title='A Case Study in Performance (cont)' 
   date='05.16.2018' 
-  image="/assets/images/pwa-lighthouse.png">
+  image="/assets/blog-post-images/pwa-lighthouse.png">
   
   <div>
     <p>I&apos;m <b>super</b> excited to announce the next installment of my ongoing article series detailing performance and web applications! </p>
