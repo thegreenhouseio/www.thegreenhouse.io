@@ -3,7 +3,7 @@ template: 'post'
 title: 'A Case Study in Performance (cont)'
 date: '05.16.2018'
 description: 'Ongoing article series on web application performance.'
-image: '/assets/images/pwa-lighthouse.png'
+image: '/assets/blog-post-images/pwa-lighthouse.png'
 ---
 
 I'm **super** excited to announce the next installment of my ongoing article series detailing performance and web applications!
