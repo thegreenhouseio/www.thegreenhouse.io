@@ -6,11 +6,7 @@ description: 'Local git repository viewer'
 image: '/assets/blog-post-images/git.png'
 ---
 
-<<<<<<< HEAD
 Made this a little while ago but felt it would be fun to share, called <a href="https://github.com/thescientist13/git-explorer" target="_blank" rel="noopener" onclick="getOutboundLink('https://github.com/thescientist13/git-explorer');"><b>Git Explorer</b>.</a>
-=======
-Made this a little while ago but felt it would be fun to share, called <a href="https://github.com/thescientist13/git-explorer" target="_blank" rel="noopener" onclick="getOutboundLink('https://github.com/thescientist13/git-explorer');"><b>Git Explorer</b>.</a>
->>>>>>> convert 2018 posts to just markdown
 
 It is a NodeJS package you can install from NPM that will provide a nice browser based comparison tool for any `git` repo on your local machine.
 
