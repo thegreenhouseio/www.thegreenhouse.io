@@ -1,6 +1,5 @@
 import { html, LitElement } from 'lit-element';
 
-import '../components/blog-post/blog-post';
 import '../components/footer/footer';
 import '../components/header/header';
 import '../components/navigation/navigation';
@@ -19,18 +18,6 @@ class BlogTemplate extends LitElement {
     return html`
       <style>
         ${ pageCss }
-
-        p {
-          width: 60%;
-          margin: 10px auto;
-          padding: 10px;
-        }
-
-        img {
-          display: block;
-          width: 70%;
-          margin: 0 auto;
-        }
 
         ul {
           list-style-type: none;
@@ -53,13 +40,6 @@ class BlogTemplate extends LitElement {
 
         ul a {
           text-decoration: none!important;
-        }
-
-        pre {
-          width: 400px;
-          display: block;
-          margin: 0 auto;
-          text-align: left;
         }
       </style>
 

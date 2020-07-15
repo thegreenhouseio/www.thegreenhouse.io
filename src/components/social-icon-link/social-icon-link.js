@@ -54,7 +54,7 @@ class SocialIconLinkComponent extends LitElement {
     }
 
     return html`
-      <a rel="noopener" target="_blank" href="${detectedLink}" @onclick="captureOutboundLink('${detectedLink}'); return false;">
+      <a rel="noopener" target="_blank" href="${detectedLink}" click="getOutboundLink('${detectedLink}');">
         <img src="/assets/logos/${detectedName}.svg" alt="${detectedName} logo">
       </a>
     `;
