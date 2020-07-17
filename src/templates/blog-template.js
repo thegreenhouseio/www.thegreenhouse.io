@@ -110,8 +110,6 @@ class BlogTemplate extends LitElement {
               return this.getPostsByYear(year);
             })
           }
-          <hr/>
-        
         </section>
 
         <section class="row">
