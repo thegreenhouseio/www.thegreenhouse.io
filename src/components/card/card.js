@@ -1,13 +1,13 @@
-import { css, html, unsafeCSS, LitElement } from 'lit-element';
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import '../social-icon-link/social-icon-link';
 import cardCss from './card.css';
 
 class CardComponent extends LitElement {
-
+  
   constructor() {
     super();
   }
-
+  
   static get properties() {
     return {
       item: {

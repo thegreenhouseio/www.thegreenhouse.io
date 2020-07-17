@@ -1,5 +1,4 @@
-import { html, LitElement } from 'lit-element';
-
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import '../components/card-list/card-list';
 import '../components/footer/footer';
 import '../components/header/header';
@@ -12,6 +11,12 @@ MDIMPORT;
 
 class ProjectsTemplate extends LitElement {
 
+  constructor() {
+    super();
+
+    this.projects = new ProjectsService().getModeledProjects();
+  }
+  
   static get properties() {
     return {
       project: {
@@ -20,27 +25,23 @@ class ProjectsTemplate extends LitElement {
     };
   }
 
-  constructor() {
-    super();
+  static get styles() {
+    return css`
+      ${ unsafeCSS(pageCss) }
 
-    this.projects = new ProjectsService().getModeledProjects();
+      p {
+        text-align: center;
+        width: 50%;
+        margin: 20px auto;
+        font-size: 1.1em;
+      }
+    `;
   }
 
   render() {
     const { projects } = this;
 
     return html`
-      <style>
-        ${ pageCss }
-
-        p {
-          text-align: center;
-          width: 50%;
-          margin: 20px auto;
-          font-size: 1.1em;
-        }
-      </style>
-
       <div class="layout">
         <section class="row">
           <app-header></app-header>

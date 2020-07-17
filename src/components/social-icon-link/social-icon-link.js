@@ -1,5 +1,4 @@
 import { css, html, LitElement } from 'lit-element';
-
 import SocialLinksService from '../../services/social-links/social-links-service';
 
 class SocialIconLinkComponent extends LitElement {
@@ -28,7 +27,7 @@ class SocialIconLinkComponent extends LitElement {
         margin: 0 10px;
       }
     `;
-  } 
+  }
 
   render() {
     const { link, name } = this;
