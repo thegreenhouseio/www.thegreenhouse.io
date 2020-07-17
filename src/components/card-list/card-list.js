@@ -1,5 +1,4 @@
 import { html, LitElement } from 'lit-element';
-
 import '../card/card';
 
 class CardListComponent extends LitElement {
@@ -7,7 +6,7 @@ class CardListComponent extends LitElement {
   constructor() {
     super();
   }
-
+  
   static get properties() {
     return {
       items: {
