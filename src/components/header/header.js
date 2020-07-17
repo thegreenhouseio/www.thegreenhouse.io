@@ -16,7 +16,7 @@ class HeaderComponent extends LitElement {
   render() {
     return html`
       <div class="header"> 
-        <a href="https://www.thegreenhouse.io/">
+        <a href="/" title="Return to the the home page">
           <header></header>
           <h2 class="caption">A DREAMER BY DESIGN</h2>
         </a>
