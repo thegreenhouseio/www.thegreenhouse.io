@@ -6,7 +6,7 @@ class SocialIconLinkComponent extends LitElement {
   constructor() {
     super();
   }
-  
+
   static get properties() {
     return {
       link: {
