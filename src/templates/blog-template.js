@@ -1,5 +1,4 @@
-import { html, LitElement } from 'lit-element';
-
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import '../components/footer/footer';
 import '../components/header/header';
 import '../components/navigation/navigation';
@@ -10,38 +9,37 @@ MDIMPORT;
 
 class BlogTemplate extends LitElement {
 
-  constructor() {
-    super();
+  static get styles() {
+    return css`
+      ${ unsafeCSS(pageCss) }
+
+      ul {
+        list-style-type: none;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+
+      h2 {
+        text-decoration: underline;
+        margin: 10px auto;
+        width: 20%;
+        text-align: center;
+      }
+
+      ul a {
+        text-decoration: none!important;
+      }
+    `;
   }
 
   render() {
     return html`
-      <style>
-        ${ pageCss }
-
-        ul {
-          list-style-type: none;
-          width: 70%;
-          margin: 0 auto;
-          padding: 0;
-          text-align: center;
-        }
-
-        li {
-          margin: 10px 0;
-        }
-
-        h2 {
-          text-decoration: underline;
-          margin: 10px auto;
-          width: 20%;
-          text-align: center;
-        }
-
-        ul a {
-          text-decoration: none!important;
-        }
-      </style>
 
       <div class="layout">
         <section class="row">

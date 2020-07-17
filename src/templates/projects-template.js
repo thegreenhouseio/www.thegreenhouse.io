@@ -1,5 +1,4 @@
-import { html, LitElement } from 'lit-element';
-
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import '../components/card-list/card-list';
 import '../components/footer/footer';
 import '../components/header/header';
@@ -20,6 +19,19 @@ class ProjectsTemplate extends LitElement {
     };
   }
 
+  static get styles() {
+    return css`
+      ${ unsafeCSS(pageCss) }
+
+      p {
+        text-align: center;
+        width: 50%;
+        margin: 20px auto;
+        font-size: 1.1em;
+      }
+    `;
+  }
+
   constructor() {
     super();
 
@@ -30,17 +42,6 @@ class ProjectsTemplate extends LitElement {
     const { projects } = this;
 
     return html`
-      <style>
-        ${ pageCss }
-
-        p {
-          text-align: center;
-          width: 50%;
-          margin: 20px auto;
-          font-size: 1.1em;
-        }
-      </style>
-
       <div class="layout">
         <section class="row">
           <app-header></app-header>

@@ -1,7 +1,6 @@
-import { html, LitElement } from 'lit-element';
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import client from '@greenwood/cli/data/client';
 import gql from 'graphql-tag';
-
 import '../components/blog-post/blog-post';
 import '../components/footer/footer';
 import '../components/header/header';
@@ -19,6 +18,39 @@ class PostTemplate extends LitElement {
         type: Object
       }
     };
+  }
+
+  static get styles() {
+    return css`
+      ${ unsafeCSS(pageCss) }
+
+      p {
+        width: 60%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+
+      img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      ul {
+        list-style-type: none;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+      }
+
+      pre {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+      }
+    `;
   }
 
   constructor() {
@@ -63,37 +95,6 @@ class PostTemplate extends LitElement {
     const { date, image } = this.post.data;
 
     return html`
-      <style>
-        ${ pageCss }
-
-        p {
-          width: 60%;
-          margin: 10px auto;
-          padding: 10px;
-        }
-
-        img {
-          display: block;
-          width: 70%;
-          margin: 0 auto;
-        }
-
-        ul {
-          list-style-type: none;
-          width: 70%;
-          margin: 0 auto;
-          padding: 0;
-          text-align: center;
-        }
-
-        pre {
-          width: 400px;
-          display: block;
-          margin: 0 auto;
-          text-align: left;
-        }
-      </style>
-
       <div class="layout">
         <section class="row">
           <app-header></app-header>

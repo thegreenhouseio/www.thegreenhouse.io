@@ -1,12 +1,7 @@
 import { css, html, LitElement } from 'lit-element';
-
 import SocialLinksService from '../../services/social-links/social-links-service';
 
 class SocialIconLinkComponent extends LitElement {
-
-  constructor() {
-    super();
-  }
 
   static get properties() {
     return {

@@ -2,10 +2,6 @@ import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import navigationCss from './navigation.css';
 
 class NavigationComponent extends LitElement {
-  
-  constructor() {
-    super();
-  }
 
   static get styles() {
     return css`

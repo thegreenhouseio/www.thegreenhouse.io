@@ -1,12 +1,10 @@
-import { html, LitElement } from 'lit-element';
-
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import '../components/card-list/card-list';
 import '../components/footer/footer';
 import '../components/header/header';
 import '../components/navigation/navigation';
 import ArticlesService from '../services/articles/articles-service';
 import PresentationsService from '../services/presentations/presentations-service';
-
 import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
@@ -26,6 +24,36 @@ class AboutTemplate extends LitElement {
         type: String
       }
     };
+  }
+
+  static get styles() {
+    return css`
+      ${ unsafeCSS(pageCss) }
+
+      p {
+        text-align: center;
+        width: 50%;
+        margin: 20px auto;
+        font-size: 1.1em;
+      }
+
+      .content-links {
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      .content-links h2 {
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        width: 49%;
+      }
+
+      img {
+        display: block;
+        margin: 0 10px;
+      }
+    `;
   }
 
   constructor() {
@@ -75,34 +103,6 @@ class AboutTemplate extends LitElement {
     const content = this.getContent();
 
     return html`
-      <style>
-        ${ pageCss }
-
-        p {
-          text-align: center;
-          width: 50%;
-          margin: 20px auto;
-          font-size: 1.1em;
-        }
-
-        .content-links {
-          width: 400px;
-          margin: 0 auto;
-        }
-
-        .content-links h2 {
-          cursor: pointer;
-          display: inline-block;
-          text-align: center;
-          width: 49%;
-        }
-
-        img {
-          display: block;
-          margin: 0 10px;
-        }
-      </style>
-
       <div class="layout">
         <section class="row">
           <app-header></app-header>
