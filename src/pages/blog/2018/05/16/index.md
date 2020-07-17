@@ -1,6 +1,6 @@
 ---
 template: 'post'
-title: 'A Case Study in Performance (cont)'
+title: 'A Case Study in Performance (cont) 📝'
 date: '05.16.2018'
 description: 'Ongoing article series on web application performance.'
 image: '/assets/blog-post-images/pwa-lighthouse.png'
