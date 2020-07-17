@@ -12,6 +12,20 @@ MDIMPORT;
 
 class AboutTemplate extends LitElement {
 
+  constructor() {
+    super();
+
+    this.SECTIONS = {
+      SPEAKING: 'SPEAKING',
+      WRITING: 'WRITING'
+    };
+
+    this.socialLinksMap = []; // new SocialLinksService().getLinksAsMap(),
+    this.articles = new ArticlesService().getModeledArticles(),
+    this.presentations = new PresentationsService().getModeledPresentations(),
+    this.activeSection = this.SECTIONS.SPEAKING;
+  }
+  
   static get properties() {
     return {
       articles: {
@@ -54,20 +68,6 @@ class AboutTemplate extends LitElement {
         margin: 0 10px;
       }
     `;
-  }
-
-  constructor() {
-    super();
-
-    this.SECTIONS = {
-      SPEAKING: 'SPEAKING',
-      WRITING: 'WRITING'
-    };
-
-    this.socialLinksMap = []; // new SocialLinksService().getLinksAsMap(),
-    this.articles = new ArticlesService().getModeledArticles(),
-    this.presentations = new PresentationsService().getModeledPresentations(),
-    this.activeSection = this.SECTIONS.SPEAKING;
   }
 
   setActiveSection(section) {

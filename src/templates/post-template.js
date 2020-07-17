@@ -12,6 +12,18 @@ MDIMPORT;
 
 class PostTemplate extends LitElement {
 
+  constructor() {
+    super();
+
+    this.post = {
+      title: '',
+      data: {
+        date: '',
+        image: ''
+      }
+    };
+  }
+  
   static get properties() {
     return {
       post: {
@@ -51,18 +63,6 @@ class PostTemplate extends LitElement {
         text-align: left;
       }
     `;
-  }
-
-  constructor() {
-    super();
-
-    this.post = {
-      title: '',
-      data: {
-        date: '',
-        image: ''
-      }
-    };
   }
 
   async connectedCallback() {

@@ -3,6 +3,10 @@ import SocialLinksService from '../../services/social-links/social-links-service
 
 class SocialIconLinkComponent extends LitElement {
 
+  constructor() {
+    super();
+  }
+  
   static get properties() {
     return {
       link: {
@@ -23,7 +27,7 @@ class SocialIconLinkComponent extends LitElement {
         margin: 0 10px;
       }
     `;
-  } 
+  }
 
   render() {
     const { link, name } = this;

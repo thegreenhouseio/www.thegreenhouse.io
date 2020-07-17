@@ -9,6 +9,10 @@ MDIMPORT;
 
 class PageTemplate extends LitElement {
   
+  constructor() {
+    super();
+  }
+  
   static get styles() {
     return css`
       ${ unsafeCSS(pageCss) }

@@ -3,6 +3,10 @@ import headerCss from './header.css';
 
 class HeaderComponent extends LitElement {
 
+  constructor() {
+    super();
+  }
+  
   static get styles() {
     return css`
       ${ unsafeCSS(headerCss) }

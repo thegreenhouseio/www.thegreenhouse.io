@@ -16,6 +16,10 @@ export function slugifyDate(date) {
  */
 class BlogPostComponent extends LitElement {
 
+  constructor() {
+    super();
+  }
+  
   static get properties() {
     return {
       date: {

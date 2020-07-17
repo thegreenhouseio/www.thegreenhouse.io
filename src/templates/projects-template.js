@@ -11,6 +11,12 @@ MDIMPORT;
 
 class ProjectsTemplate extends LitElement {
 
+  constructor() {
+    super();
+
+    this.projects = new ProjectsService().getModeledProjects();
+  }
+  
   static get properties() {
     return {
       project: {
@@ -30,12 +36,6 @@ class ProjectsTemplate extends LitElement {
         font-size: 1.1em;
       }
     `;
-  }
-
-  constructor() {
-    super();
-
-    this.projects = new ProjectsService().getModeledProjects();
   }
 
   render() {

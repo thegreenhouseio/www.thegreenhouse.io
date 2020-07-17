@@ -4,6 +4,10 @@ import cardCss from './card.css';
 
 class CardComponent extends LitElement {
   
+  constructor() {
+    super();
+  }
+  
   static get properties() {
     return {
       item: {

@@ -3,6 +3,10 @@ import '../card/card';
 
 class CardListComponent extends LitElement {
 
+  constructor() {
+    super();
+  }
+  
   static get properties() {
     return {
       items: {
