@@ -4,7 +4,7 @@
   }
 
   & .header a {
-    color: none;
+    text-decoration: none;
   }
 
   & header {
