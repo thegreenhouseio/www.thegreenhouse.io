@@ -1,6 +1,6 @@
 ---
 template: 'post'
-title: 'Vue Webapp Seed'
+title: 'Vue Webapp Seed 💡'
 date: '06.07.2017'
 description: 'Expirementing with the frontend framework Vue.'
 image: '/assets/blog-post-images/vue.png'

@@ -1,6 +1,6 @@
 ---
 template: 'post'
-title: 'Introducing Create Evergreen App!'
+title: 'Create Evergreen App! ♻️'
 date: '09.26.2018'
 description: 'Introducing Create Evergreen App!'
 image: 'https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'

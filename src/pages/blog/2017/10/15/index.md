@@ -1,6 +1,6 @@
 ---
 template: 'post'
-title: 'Publishing My First Docker Image'
+title: 'Publishing My First Docker Image 📝'
 date: '10.15.2017' 
 description: 'Expirementing with Docker and Docker Hub publishing.'
 image: '/assets/blog-post-images/docker.png'

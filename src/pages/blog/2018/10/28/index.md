@@ -1,6 +1,6 @@
 ---
 template: 'post'
-title: 'Building A Better Mouse Trap'
+title: 'Building A Better Mouse Trap 🧀'
 date: '10.28.2018'
 description: 'My presentation at Node+JS Interactive 2018 on Docker and Server-Side Rendering.'
 image: 'https://events.linuxfoundation.jp/wp-content/uploads/2017/12/logo_node_js_int18.png'

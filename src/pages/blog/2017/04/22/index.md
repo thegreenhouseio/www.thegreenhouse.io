@@ -1,6 +1,6 @@
 ---
 template: 'post'
-title: 'GitHub Dashboard 1.1.0 Released'
+title: 'GitHub Dashboard 1.1.0 Released 🎉'
 date: '04.22.2017' 
 description: 'Open Source project release.'
 image: '/assets/blog-post-images/github.png'
