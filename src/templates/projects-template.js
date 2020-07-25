@@ -1,10 +1,6 @@
-import { css, html, LitElement, unsafeCSS } from 'lit-element';
+import { css, html, LitElement } from 'lit-element';
 import '../components/card-list/card-list';
-import '../components/footer/footer';
-import '../components/header/header';
-import '../components/navigation/navigation';
 import ProjectsService from '../services/projects/projects-service';
-import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
 class ProjectsTemplate extends LitElement {
@@ -25,8 +21,6 @@ class ProjectsTemplate extends LitElement {
 
   static get styles() {
     return css`
-      ${ unsafeCSS(pageCss) }
-
       p {
         text-align: center;
         width: 50%;
@@ -40,26 +34,12 @@ class ProjectsTemplate extends LitElement {
     const { projects } = this;
 
     return html`
-      <div class="layout">
-        <section class="row">
-          <app-header></app-header>
-        </section>
-        
-        <section class='row'>
-          <app-navigation></app-navigation>
-        </section>
+      <div>
+        <entry></entry>
 
-        <section class="outlet row">  
-          <entry></entry>
-
-          <div class="projects">
-            <app-card-list .items=${projects}></app-card-list>
-          </div>
-        </section>
-
-        <section class="row">
-          <app-footer></app-footer>
-        </section>
+        <div class="projects">
+          <app-card-list .items=${projects}></app-card-list>
+        </div>
       </div>
     `;
   }

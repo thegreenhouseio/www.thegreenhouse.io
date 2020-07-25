@@ -1,11 +1,7 @@
-import { css, html, LitElement, unsafeCSS } from 'lit-element';
+import { css, html, LitElement } from 'lit-element';
 import '../components/card-list/card-list';
-import '../components/footer/footer';
-import '../components/header/header';
-import '../components/navigation/navigation';
 import ArticlesService from '../services/articles/articles-service';
 import PresentationsService from '../services/presentations/presentations-service';
-import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
 class AboutTemplate extends LitElement {
@@ -40,8 +36,6 @@ class AboutTemplate extends LitElement {
 
   static get styles() {
     return css`
-      ${ unsafeCSS(pageCss) }
-
       p {
         text-align: center;
         width: 50%;
@@ -101,29 +95,15 @@ class AboutTemplate extends LitElement {
     const content = this.getContent();
 
     return html`
-      <div class="layout">
-        <section class="row">
-          <app-header></app-header>
-        </section>
-        
-        <section class='row'>
-          <app-navigation></app-navigation>
-        </section>
+      <div>
+        <entry></entry>
 
-        <section class="outlet row">  
-          <entry></entry>
+        <div class="content-links">
+          <h2 class="link-speaking" @click=${() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
+          <h2 class="link-writing" @click=${() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
+        </div>
 
-          <div class="content-links">
-            <h2 class="link-speaking" @click=${() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
-            <h2 class="link-writing" @click=${() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
-          </div>
-
-          ${ content }
-        </section>
-
-        <section class="row">
-          <app-footer></app-footer>
-        </section>
+        ${ content }
       </div>
     `;
   }
