@@ -7,8 +7,6 @@ import '../components/navigation/navigation';
 import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
-MDIMPORT;
-
 class BlogTemplate extends LitElement {
 
   constructor() {

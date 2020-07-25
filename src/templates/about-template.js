@@ -8,8 +8,6 @@ import PresentationsService from '../services/presentations/presentations-servic
 import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
-MDIMPORT;
-
 class AboutTemplate extends LitElement {
 
   constructor() {

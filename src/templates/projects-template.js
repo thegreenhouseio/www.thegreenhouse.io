@@ -7,8 +7,6 @@ import ProjectsService from '../services/projects/projects-service';
 import pageCss from '../styles/page.css';
 import '../styles/theme.css';
 
-MDIMPORT;
-
 class ProjectsTemplate extends LitElement {
 
   constructor() {
