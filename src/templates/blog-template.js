@@ -1,13 +1,7 @@
-import { css, html, LitElement, unsafeCSS } from 'lit-element';
+import { css, html, LitElement } from 'lit-element';
 import client from '@greenwood/cli/data/client';
 import ChildrenQuery from '@greenwood/cli/data/queries/children';
-import '../components/footer/footer';
-import '../components/header/header';
-import '../components/navigation/navigation';
-import pageCss from '../styles/page.css';
 import '../styles/theme.css';
-
-MDIMPORT;
 
 class BlogTemplate extends LitElement {
 
@@ -26,8 +20,6 @@ class BlogTemplate extends LitElement {
   
   static get styles() {
     return css`
-      ${ unsafeCSS(pageCss) }
-
       ul {
         list-style-type: none;
         width: 70%;
@@ -94,27 +86,12 @@ class BlogTemplate extends LitElement {
     });
 
     return html`
-
-      <div class="layout">
-        <section class="row">
-          <app-header></app-header>
-        </section>
-        
-        <section class='row'>
-          <app-navigation></app-navigation>
-        </section>
-
-        <section class="outlet row">  
-          ${
-            Object.keys(years).reverse().map(year => {
-              return this.getPostsByYear(year);
-            })
-          }
-        </section>
-
-        <section class="row">
-          <app-footer></app-footer>
-        </section>
+      <div>
+        ${
+          Object.keys(years).reverse().map(year => {
+            return this.getPostsByYear(year);
+          })
+        }
       </div>
     `;
   }

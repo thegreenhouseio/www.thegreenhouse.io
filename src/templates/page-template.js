@@ -1,11 +1,5 @@
-import { css, html, LitElement, unsafeCSS } from 'lit-element';
-import '../components/footer/footer';
-import '../components/header/header';
-import '../components/navigation/navigation';
-import pageCss from '../styles/page.css';
+import { css, html, LitElement } from 'lit-element';
 import '../styles/theme.css';
-
-MDIMPORT;
 
 class PageTemplate extends LitElement {
   
@@ -15,8 +9,6 @@ class PageTemplate extends LitElement {
   
   static get styles() {
     return css`
-      ${ unsafeCSS(pageCss) }
-
       h2 {
         padding-left: 17.25%;
       }
@@ -41,22 +33,8 @@ class PageTemplate extends LitElement {
 
   render() {
     return html`
-      <div class="layout">
-        <section class="row">
-          <app-header></app-header>
-        </section>
-        
-        <section class='row'>
-          <app-navigation></app-navigation>
-        </section>
-
-        <section class="outlet row">
-          <entry></entry>
-        </section>
-
-        <section class="row">
-          <app-footer></app-footer>
-        </section>
+      <div>
+        <entry></entry>
       </div>
     `;
   }

@@ -1,14 +1,8 @@
-import { css, html, LitElement, unsafeCSS } from 'lit-element';
+import { css, html, LitElement } from 'lit-element';
 import client from '@greenwood/cli/data/client';
 import gql from 'graphql-tag';
 import '../components/blog-post/blog-post';
-import '../components/footer/footer';
-import '../components/header/header';
-import '../components/navigation/navigation';
-import pageCss from '../styles/page.css';
 import '../styles/theme.css';
-
-MDIMPORT;
 
 class PostTemplate extends LitElement {
 
@@ -34,8 +28,6 @@ class PostTemplate extends LitElement {
 
   static get styles() {
     return css`
-      ${ unsafeCSS(pageCss) }
-
       p {
         width: 60%;
         margin: 10px auto;
@@ -95,31 +87,17 @@ class PostTemplate extends LitElement {
     const { date, image } = this.post.data;
 
     return html`
-      <div class="layout">
-        <section class="row">
-          <app-header></app-header>
-        </section>
+      <div>
+
+        <app-blog-post 
+          title="${title}"
+          date="${date}"
+          image="${image}">
         
-        <section class='row'>
-          <app-navigation></app-navigation>
-        </section>
+          <entry></entry>
+        
+        </app-blog-post>
 
-        <section class="outlet row">
-          
-          <app-blog-post 
-            title="${title}"
-            date="${date}"
-            image="${image}">
-          
-            <entry></entry>
-          
-          </app-blog-post>
-
-        </section>
-
-        <section class="row">
-          <app-footer></app-footer>
-        </section>
       </div>
     `;
   }
