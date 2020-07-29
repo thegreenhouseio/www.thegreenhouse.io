@@ -10,7 +10,7 @@ class AppComponent extends LitElement {
     return css`
       ${unsafeCSS(pageCss)}
 
-      .gwd-content-outlet {
+      .outlet {
         min-height: 100vh
       }
     `;
