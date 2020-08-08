@@ -16,9 +16,8 @@
     "test:tdd": "yarn clean && karma start"
   },
   "devDependencies": {
-    "@greenwood/cli": "^0.8.0",
-    "@greenwood/plugin-google-analytics": "^0.8.0",
-    "@greenwood/plugin-polyfills": "^0.8.0",
+    "@greenwood/cli": "^0.9.0",
+    "@greenwood/plugin-google-analytics": "^0.9.0",
     "eslint": "^6.1.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine": "^3.3.1",
