@@ -47,32 +47,32 @@
 }
 
 @media (min-width: 300px) {
-  :host {
-    & .card-header-icon {
-      display: none;
+  :host .card {
+    & .wrapper {
+      border: none;
     }
 
-    & .card {
-      border: none;
+    & .card-header-icon {
+      display: none;
     }
   }
 }
 
 @media (min-width: 700px) {
-  :host {
-    & .card {
+  :host .card {
+    & .wrapper {
       border: 2px solid #020202;
     }
   
     & .card-header-icon {
       display: inline;
       grid-column: col-start / span 2;
-      grid-row: 1 / 6;  /* autoprefixer: off */
+      grid-row: 1 / 6;
     }
 
     & .card-header {
       grid-column: col-start 3 / span 10;
-      grid-row: 1 / 6; /* autoprefixer: off */
+      grid-row: 1 / 6;
     }
   }
 }
