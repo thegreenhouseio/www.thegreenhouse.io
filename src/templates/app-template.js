@@ -11,7 +11,7 @@ class AppComponent extends LitElement {
       ${unsafeCSS(pageCss)}
 
       .outlet {
-        min-height: 100vh
+        min-height: 50vh
       }
     `;
   }
