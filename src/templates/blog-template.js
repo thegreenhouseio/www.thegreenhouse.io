@@ -68,6 +68,7 @@ class BlogTemplate extends LitElement {
         .map((post) => {
           return html`<li><a href="${post.link}">${post.title}</a></li>`;
         })
+        .reverse()
       }
       </ul>
     `;
