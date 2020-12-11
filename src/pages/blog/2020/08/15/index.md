@@ -6,7 +6,7 @@ description: 'Quickly copy dot files with a single command'
 image: '//raw.githubusercontent.com/thescientist13/copy-dots/master/.github/assets/dots.jpg'
 ---
 
-Every once in a while I get that itch to automate something that I find myself repeating frequently over the course of a year; which is starting new little open source projects.  (just like the one I'm about to tell you! 😎)
+Every once in a while I get that itch to automate something that I find myself repeating frequently over the course of my new development; which is starting new open source projects.  (just like the one I'm about to tell you about! 😎)
 
 Whenever I start a new (JavaScript) project, there's usually a common set of tools that I bring along for the ride with me each time.  Awesome tools **ESLint**, **Mocha**, and more!  Often times I find myself just copy / pasting the dot and config files from one repository directory to another one.  Essentially just doing this everytime
 
