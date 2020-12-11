@@ -19,7 +19,8 @@
     grid-column: col-start / span 12;
   }
 
-  & .card-header, & .card-content {
+  & .card-header,
+  & .card-content {
     text-align: left;
   }
 
@@ -63,7 +64,7 @@
     & .wrapper {
       border: 2px solid #020202;
     }
-  
+
     & .card-header-icon {
       display: inline;
       grid-column: col-start / span 2;

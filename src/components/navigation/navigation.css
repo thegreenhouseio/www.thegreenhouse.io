@@ -1,4 +1,4 @@
- :host {
+:host {
   & .navigation {
     display: block;
     width: 40%;

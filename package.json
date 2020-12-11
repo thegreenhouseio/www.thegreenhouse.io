@@ -9,7 +9,9 @@
     "clean": "rimraf ./reports && rimraf ./public",
     "develop": "greenwood develop",
     "build": "yarn clean && greenwood build",
-    "lint": "eslint \"*.js\" \"src/**/**/*.js\"",
+    "lint": "ls-lint && yarn lint:js && yarn lint:css",
+    "lint:js": "eslint \"*.js\" \"src/**/**/*.js\"",
+    "lint:css": "stylelint \"./src/**/*.js\", \"./src/**/*.css\"",
     "serve": "yarn build && ws -d ./public",
     "start": "yarn develop",
     "test": "export CI_RUN=true && yarn clean && karma start",
@@ -18,6 +20,7 @@
   "devDependencies": {
     "@greenwood/cli": "^0.9.0",
     "@greenwood/plugin-google-analytics": "^0.9.0",
+    "@ls-lint/ls-lint": "^1.9.2",
     "eslint": "^6.1.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine": "^3.3.1",
@@ -29,6 +32,9 @@
     "karma-junit-reporter": "^1.2.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^5.0.0-alpha.3.0",
-    "puppeteer": "^1.19.0"
+    "puppeteer": "^1.19.0",
+    "stylelint": "^13.8.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
