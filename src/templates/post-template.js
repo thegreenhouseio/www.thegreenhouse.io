@@ -1,7 +1,8 @@
-import { css, html, LitElement } from 'lit-element';
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import client from '@greenwood/cli/data/client';
 import gql from 'graphql-tag';
 import '../components/blog-post/blog-post';
+import postCss from '../styles/post.css';
 import '../styles/theme.css';
 
 class PostTemplate extends LitElement {
@@ -28,6 +29,8 @@ class PostTemplate extends LitElement {
 
   static get styles() {
     return css`
+      ${unsafeCSS(postCss)}
+
       p {
         width: 60%;
         margin: 10px auto;
@@ -48,8 +51,8 @@ class PostTemplate extends LitElement {
         text-align: center;
       }
 
-      pre {
-        width: 400px;
+      :host pre {
+        width: 60%;
         display: block;
         margin: 0 auto;
         text-align: left;
