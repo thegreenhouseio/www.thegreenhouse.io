@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'Contributary 💡'
+title: 'Contributary'
+emoji: '💡'
 date: '11.19.2018' 
 description: 'A project for helping connect open source with the open source community.'
 image: 'https://s3.amazonaws.com/hosted.contributary.community/media/contributary-logo-invert.png'

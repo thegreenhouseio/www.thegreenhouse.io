@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'A Case Study in Performance 📝'
+title: 'A Case Study in Performance'
+emoji: '📝'
 date: '01.24.2018'
 description: 'Introducing Create Evergreen App!'
 image: '/assets/blog-post-images/pwa-lighthouse.png'

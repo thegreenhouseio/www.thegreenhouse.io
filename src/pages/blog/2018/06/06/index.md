@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'Project Evergreen 💡'
+title: 'Project Evergreen'
+emoji: '💡'
 date: '06.06.2018'
 description: 'Project Evergreen: In Pursuit of Evergreen Web Applications'
 image: 'https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'

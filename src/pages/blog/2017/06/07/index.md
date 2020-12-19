@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'PHP API Seed 💡'
+title: 'PHP API Seed'
+emoji: '💡'
 date: '06.07.2017'
 description: 'Starter kit for PHP based APIs using Slim.'
 image: '/assets/blog-post-images/php.png'

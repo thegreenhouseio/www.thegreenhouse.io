@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'Teaching An Old Dog New Tricks! 📝'
+title: 'Teaching An Old Dog New Tricks!'
+emoji: '📝'
 date: '03.30.2017' 
 description: 'Using ES2015 with AngularJS.'
 image: '/assets/blog-post-images/angular-shield.jpg'

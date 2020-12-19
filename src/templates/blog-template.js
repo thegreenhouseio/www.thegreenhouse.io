@@ -1,6 +1,6 @@
 import { css, html, LitElement } from 'lit-element';
 import client from '@greenwood/cli/data/client';
-import ChildrenQuery from '@greenwood/cli/data/queries/children';
+import ChildrenQuery from '../queries/children';
 import '../styles/theme.css';
 
 class BlogTemplate extends LitElement {
@@ -66,7 +66,7 @@ class BlogTemplate extends LitElement {
           return post.link.includes(year);
         })
         .map((post) => {
-          return html`<li><a href="${post.link}">${post.title}</a></li>`;
+          return html`<li><a href="${post.link}">${post.title} ${post.data.emoji}</a></li>`;
         })
         .reverse()
       }

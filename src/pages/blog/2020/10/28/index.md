@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'Gallinago 💡'
+title: 'Gallinago'
+emoji: '💡'
 date: '10.28.2020'
 description: 'NodeJS package for running and testing of CLIs.'
 image: '//raw.githubusercontent.com/thescientist13/gallinago/master/.github/assets/gallinago.jpg'
