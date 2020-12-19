@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'Copy Dots 💡'
+title: 'Copy Dots'
+emoji: '💡'
 date: '08.15.2020'
 description: 'Quickly copy dot files with a single command'
 image: '//raw.githubusercontent.com/thescientist13/copy-dots/master/.github/assets/dots.jpg'

@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'Minecraft In The Cloud 📝'
+title: 'Minecraft In The Cloud'
+emoji: '📝'
 date: '03.26.2017' 
 description: 'Using AWS to setup a shared Minecraft server.'
 image: '/assets/blog-post-images/minecraft-cloud.png'

@@ -1,6 +1,7 @@
 ---
 template: 'post'
-title: 'Git Explorer 💡'
+title: 'Git Explorer'
+emoji: '💡'
 date: '04.07.2020'
 description: 'Local git repository viewer'
 image: '/assets/blog-post-images/git.png'

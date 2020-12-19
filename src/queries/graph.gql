@@ -1,0 +1,10 @@
+query {
+  graph {
+    title,
+    link,
+    data {
+      date,
+      image
+    }
+  }
+}
