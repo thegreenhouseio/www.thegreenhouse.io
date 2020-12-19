@@ -1,5 +1,5 @@
 # www.thegreenhouse.io
-[![CircleCI](https://circleci.com/gh/thegreenhouseio/www.thegreenhouse.io/tree/master.svg?style=svg)](https://circleci.com/gh/thegreenhouseio/www.thegreenhouse.io/tree/master)
+![GitHub Actions status](https://github.com/thegreenhouseio/www.thegreenhouse.io/workflows/Master%20Integration/badge.svg)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2c9b7dc5-c01a-43eb-86a4-094f7720e2fd/deploy-status)](https://app.netlify.com/sites/silly-snyder-ece0b2/deploys)
 [![GitHub release](https://img.shields.io/github/tag/thegreenhouseio/www.thegreenhouse.io.svg)](https://github.com/thegreenhouseio/www.thegreenhouse.io/tags)
 [![GitHub issues](https://img.shields.io/github/issues-raw/thegreenhouseio/www.thegreenhouse.io.svg)](https://github.com/thegreenhouseio/www.thegreenhouse.io/issues)
