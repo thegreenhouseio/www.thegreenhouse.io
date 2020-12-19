@@ -1,6 +1,6 @@
 import { css, html, LitElement } from 'lit-element';
 import client from '@greenwood/cli/data/client';
-import gql from 'graphql-tag';
+import GraphQuery from '../queries/graph';
 import '../components/blog-post/blog-post';
 import '../styles/theme.css';
 
@@ -61,16 +61,7 @@ class PostTemplate extends LitElement {
     super.connectedCallback();
     let route = window.location.pathname;
     const response = await client.query({
-      query: gql`query {
-        graph {
-          title,
-          link,
-          data {
-            date,
-            image
-          }
-        }
-      }`
+      query: GraphQuery
     });
 
     if (route.lastIndexOf('/') !== route.length - 1) {
