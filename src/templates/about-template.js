@@ -1,17 +1,23 @@
-import { css, html, LitElement } from 'lit-element';
-import '../components/card-list/card-list';
-import ArticlesService from '../services/articles/articles-service';
-import PresentationsService from '../services/presentations/presentations-service';
-import '../styles/theme.css';
+import { css, html, LitElement, unsafeCSS } from 'lit-element';
+import '../components/card-list/card-list.js';
+import ArticlesService from '../services/articles/articles-service.js';
+import PresentationsService from '../services/presentations/presentations-service.js';
+import pageCss from '../styles/page.css';
 
 class AboutTemplate extends LitElement {
 
   constructor() {
     super();
 
+    this.SECTIONS = {
+      SPEAKING: 'SPEAKING',
+      WRITING: 'WRITING'
+    };
+
     this.socialLinksMap = [];
     this.articles = new ArticlesService().getModeledArticles(),
-    this.presentations = new PresentationsService().getModeledPresentations();
+    this.presentations = new PresentationsService().getModeledPresentations(),
+    this.activeSection = this.SECTIONS.SPEAKING;
   }
   
   static get properties() {
@@ -21,12 +27,17 @@ class AboutTemplate extends LitElement {
       },
       presentations: {
         type: Array
+      },
+      activeSection: {
+        type: String
       }
     };
   }
 
   static get styles() {
     return css`
+      ${ unsafeCSS(pageCss) }
+
       p {
         text-align: center;
         width: 50%;
@@ -50,51 +61,54 @@ class AboutTemplate extends LitElement {
         display: block;
         margin: 0 10px;
       }
-
-      .hidden {
-        display: none;
-      }
     `;
   }
 
-  render() {
-    return html`
-      <script>
-        function setVisibleContent(activeContent) {
-          if (activeContent === 'speaking') {
-            document.querySelector('.content-speaking').classList.remove('hidden');
-            document.querySelector('.content-writing').classList.add('hidden');
-          } else if (activeContent === 'writing'){
-            document.querySelector('.content-speaking').classList.add('hidden');
-            document.querySelector('.content-writing').classList.remove('hidden');
-          }
-        }
-      </script>
+  setActiveSection(section) {
+    this.activeSection = section;
+  }
 
-      <div>
-        <entry></entry>
+  getContent() {
+    let content = this.activeSection;
 
-        <div class="content-links">
-          <h2 class="link-speaking" onclick="setVisibleContent('speaking')"><u>Speaking</u></h2>
-          <h2 class="link-writing" onclick="setVisibleContent('writing');"><u>Writing</u></h2>
-        </div>
+    switch (this.activeSection) {
 
-        <div class="content-blocks">
-          
-          <div class="content-speaking">
-            <app-card-list class="content-speaking" .items=${this.presentations}></app-card-list>
-          </div>
-
-          <div class="content-writing hidden">
+      case this.SECTIONS.SPEAKING:
+        content = html`<app-card-list class="content-speaking" .items=${this.presentations}></app-card-list>`;
+        break;
+      case this.SECTIONS.WRITING:
+        content = html`
+          <div>
             <app-card-list class="content-writing" .items=${this.articles}></app-card-list>
+
             <p class="cta">Visit my <a target="_blank" href="https://medium.com/@thegreenhouseio">Medium</a> page for other articles Ive done!</p>
           </div>
-          
-        </div>
+        `;
+        break;
+      default:
+        content = '';
+    
+    }
 
+    return content;
+  }
+
+  render() {
+    const content = this.getContent();
+
+    return html`
+      <div class="layout">
+        <section class="outlet row">
+          <div class="content-links">
+            <h2 class="link-speaking" @click=${() => this.setActiveSection(this.SECTIONS.SPEAKING)}><u>Speaking</u></h2>
+            <h2 class="link-writing" @click=${() => this.setActiveSection(this.SECTIONS.WRITING)}><u>Writing</u></h2>
+          </div>
+
+          ${ content }
+        </section>
       </div>
     `;
   }
 }
 
-customElements.define('page-template', AboutTemplate);
+customElements.define('app-page-about', AboutTemplate);

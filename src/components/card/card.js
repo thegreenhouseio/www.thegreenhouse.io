@@ -1,5 +1,5 @@
 import { css, html, LitElement, unsafeCSS } from 'lit-element';
-import '../social-icon-link/social-icon-link';
+import '../social-icon-link/social-icon-link.js';
 import cardCss from './card.css';
 
 class CardComponent extends LitElement {

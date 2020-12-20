@@ -1,7 +1,6 @@
 import { css, html, LitElement } from 'lit-element';
-import client from '@greenwood/cli/data/client';
-import ChildrenQuery from '../queries/children';
-import '../styles/theme.css';
+// import client from '@greenwood/cli/data/client';
+// import ChildrenQuery from '../queries/children';
 
 class BlogTemplate extends LitElement {
 
@@ -47,14 +46,20 @@ class BlogTemplate extends LitElement {
 
   async connectedCallback() {
     super.connectedCallback();
-    const response = await client.query({
-      query: ChildrenQuery,
-      variables: {
-        parent: 'blog'
-      }
-    });
 
-    this.posts = response.data.children;
+    const data = await fetch('/graph.json')
+      .then(resp => resp.json());
+
+    this.posts = data
+      .filter(page => page.route.indexOf(/blog[0-9]{4}/));
+
+    // TODO
+    // const response = await client.query({
+    //   query: ChildrenQuery,
+    //   variables: {
+    //     parent: 'blog'
+    //   }
+    // });
   }
 
   /* eslint-disable indent */
@@ -63,10 +68,10 @@ class BlogTemplate extends LitElement {
       <h2>${year}</h2>
       <ul>
       ${this.posts.filter((post) => {
-          return post.link.includes(year);
+          return post.route.includes(year);
         })
         .map((post) => {
-          return html`<li><a href="${post.link}">${post.title} ${post.data.emoji}</a></li>`;
+          return html`<li><a href="${post.route}">${post.title} ${post.data.emoji}</a></li>`;
         })
         .reverse()
       }
@@ -79,7 +84,7 @@ class BlogTemplate extends LitElement {
     let years = [];
     
     posts.forEach(post => {
-      const year = post.link.split('/')[2];
+      const year = post.route.split('/')[2];
 
       if (year && !years[year]) {
         years[year] = year;
@@ -99,4 +104,4 @@ class BlogTemplate extends LitElement {
 }
 /* eslint-enable indent */
 
-customElements.define('page-template', BlogTemplate);
+customElements.define('app-page-blog', BlogTemplate);

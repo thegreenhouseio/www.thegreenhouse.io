@@ -1,8 +1,7 @@
 import { css, html, LitElement } from 'lit-element';
-import client from '@greenwood/cli/data/client';
-import GraphQuery from '../queries/graph';
-import '../components/blog-post/blog-post';
-import '../styles/theme.css';
+// TODO import client from '@greenwood/cli/data/client';
+// import GraphQuery from '../queries/graph';
+import '../components/blog-post/blog-post.js';
 
 class PostTemplate extends LitElement {
 
@@ -60,17 +59,26 @@ class PostTemplate extends LitElement {
   async connectedCallback() {
     super.connectedCallback();
     let route = window.location.pathname;
-    const response = await client.query({
-      query: GraphQuery
-    });
+    const data = await fetch('/graph.json')
+      .then(resp => resp.json());
+    // const response = await client.query({
+    //   query: GraphQuery
+    // });
+    // this.post = response.data.graph.filter((page) => {
+    //   return page.link.lastIndexOf(route) >= 0;
+    // })[0];
 
     if (route.lastIndexOf('/') !== route.length - 1) {
       route = `${route}/`;
     }
 
-    this.post = response.data.graph.filter((page) => {
-      return page.link.lastIndexOf(route) >= 0;
-    })[0];
+    this.post = data
+      .filter((page) => {
+        return page.route.lastIndexOf(route) >= 0;
+      })[0];
+
+    console.debug(this.post);
+    console.table(this.post);
   }
 
   render() {
@@ -85,7 +93,7 @@ class PostTemplate extends LitElement {
           date="${date}"
           image="${image}">
         
-          <entry></entry>
+          <content-outlet></content-outlet>
         
         </app-blog-post>
 
@@ -94,4 +102,4 @@ class PostTemplate extends LitElement {
   }
 }
 
-customElements.define('page-template', PostTemplate);
+customElements.define('app-page-post', PostTemplate);

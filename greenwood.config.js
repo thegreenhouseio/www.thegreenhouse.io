@@ -1,10 +1,10 @@
-const pluginGoogleAnalytics = require('@greenwood/plugin-google-analytics');
+// const pluginGoogleAnalytics = require('@greenwood/plugin-google-analytics');
 const DESCRIPTION = 'Personal site and blog for Owen Buckley and The Greenhouse I/O.  Ideas are built here.';
 const FAVICON_HREF = '/assets/favicon.ico';
 const TITLE = 'The Greenhouse I/O';
 
 module.exports = {
-  optimization: 'strict',
+  // optimization: 'strict',
 
   title: TITLE,
 
@@ -19,17 +19,17 @@ module.exports = {
     { property: 'og:description', content: DESCRIPTION },
     { rel: 'shortcut icon', href: FAVICON_HREF },
     { rel: 'icon', href: FAVICON_HREF }
-  ],
-
-  devServer: {
-    port: 1981,
-    host: 'local.thegreenhouse.io'
-  },
-
-  plugins: [
-    ...pluginGoogleAnalytics({
-      analyticsId: 'UA-147204327-1'
-    })
   ]
+
+  // devServer: {
+  //   port: 1981,
+  //   host: 'local.thegreenhouse.io'
+  // },
+
+  // plugins: [
+  //   ...pluginGoogleAnalytics({
+  //     analyticsId: 'UA-147204327-1'
+  //   })
+  // ]
 
 };

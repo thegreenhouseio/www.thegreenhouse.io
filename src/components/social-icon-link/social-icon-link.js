@@ -1,5 +1,5 @@
 import { css, html, LitElement } from 'lit-element';
-import SocialLinksService from '../../services/social-links/social-links-service';
+import SocialLinksService from '../../services/social-links/social-links-service.js';
 
 class SocialIconLinkComponent extends LitElement {
 

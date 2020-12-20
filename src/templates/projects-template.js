@@ -1,7 +1,6 @@
 import { css, html, LitElement } from 'lit-element';
-import '../components/card-list/card-list';
-import ProjectsService from '../services/projects/projects-service';
-import '../styles/theme.css';
+import '../components/card-list/card-list.js';
+import ProjectsService from '../services/projects/projects-service.js';
 
 class ProjectsTemplate extends LitElement {
 
@@ -45,4 +44,4 @@ class ProjectsTemplate extends LitElement {
   }
 }
 
-customElements.define('page-template', ProjectsTemplate);
+customElements.define('app-page-projects', ProjectsTemplate);

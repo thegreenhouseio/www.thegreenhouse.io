@@ -1,5 +1,5 @@
 import { html, LitElement } from 'lit-element';
-import '../card/card';
+import '../card/card.js';
 
 class CardListComponent extends LitElement {
 
