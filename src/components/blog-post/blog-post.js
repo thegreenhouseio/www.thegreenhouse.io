@@ -14,7 +14,7 @@ export function slugifyDate(date) {
  * - `props.date` needs to match the folder path of the blog post
  * 
  */
-class BlogPostComponent extends LitElement {
+class BlogPostDetailsComponent extends LitElement {
 
   constructor() {
     super();
@@ -73,4 +73,4 @@ class BlogPostComponent extends LitElement {
   }
 }
 
-customElements.define('app-blog-post', BlogPostComponent);
+customElements.define('app-blog-post-details', BlogPostDetailsComponent);

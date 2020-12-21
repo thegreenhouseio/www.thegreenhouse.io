@@ -68,17 +68,10 @@ class PostTemplate extends LitElement {
     //   return page.link.lastIndexOf(route) >= 0;
     // })[0];
 
-    if (route.lastIndexOf('/') !== route.length - 1) {
-      route = `${route}/`;
-    }
-
     this.post = data
       .filter((page) => {
-        return page.route.lastIndexOf(route) >= 0;
+        return route.indexOf(page.route) >= 0 && page.route.match(/blog\/[0-9]{4}\//);
       })[0];
-
-    // console.debug(this.post);
-    // console.table(this.post);
   }
 
   render() {
@@ -88,14 +81,15 @@ class PostTemplate extends LitElement {
     return html`
       <div>
 
-        <app-blog-post 
+        <app-blog-post-details
           title="${title}"
           date="${date}"
           image="${image}">
         
-          <content-outlet></content-outlet>
+          <!-- TODO multiple slot render, down through <app-blog-post-details> :/ -->
+          <slot></slot>
         
-        </app-blog-post>
+        </app-blog-post-details>
 
       </div>
     `;
