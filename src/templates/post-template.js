@@ -77,8 +77,8 @@ class PostTemplate extends LitElement {
         return page.route.lastIndexOf(route) >= 0;
       })[0];
 
-    console.debug(this.post);
-    console.table(this.post);
+    // console.debug(this.post);
+    // console.table(this.post);
   }
 
   render() {

@@ -12,10 +12,13 @@
     "lint": "ls-lint && yarn lint:js && yarn lint:css",
     "lint:js": "eslint \"*.js\" \"src/**/**/*.js\"",
     "lint:css": "stylelint \"./src/**/*.js\", \"./src/**/*.css\"",
-    "serve": "yarn build && ws -d ./public",
+    "serve": "yarn clean && greenwood serve",
     "start": "yarn develop",
     "test": "export CI_RUN=true && yarn clean && karma start",
     "test:tdd": "yarn clean && karma start"
+  },
+  "dependencies": {
+    "lit-element": "^2.4.0"
   },
   "devDependencies": {
     "@greenwood/cli": "0.10.0-alpha.1",
@@ -36,8 +39,5 @@
     "stylelint": "^13.8.0",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-standard": "^20.0.0"
-  },
-  "dependencies": {
-    "lit-element": "^2.4.0"
   }
 }
