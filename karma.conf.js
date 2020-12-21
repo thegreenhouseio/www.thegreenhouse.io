@@ -27,7 +27,7 @@ module.exports = function (config) {
       module: {
         rules: [
           { test: /\.js/, exclude: /node_modules/, loader: 'babel-loader' },
-          { test: /\.css/, exclude: /node_modules/, loader: 'css-loader' },
+          { test: /\.css/, exclude: /node_modules/, loader: 'css-loader?url=false' }, // ignores url in CSS files
           { test: /\.js$/, enforce: 'post',
             exclude: [/\.spec.js$/, /node_modules/, /karma-test-shim.js$/],
             loader: 'istanbul-instrumenter-loader',
