@@ -1,5 +1,5 @@
-import { slugifyDate } from './blog-post';
-import './blog-post';
+import { slugifyDate } from './blog-post-details';
+import './blog-post-details';
 
 describe('BlogPostDetails', () => {
   let blogPost;

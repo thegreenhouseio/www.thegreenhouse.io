@@ -1,7 +1,7 @@
 import { css, html, LitElement } from 'lit-element';
 // TODO import client from '@greenwood/cli/data/client';
 // import GraphQuery from '../queries/graph';
-import '../components/blog-post/blog-post.js';
+import '../components/blog-post-details/blog-post-details.js';
 
 class PostTemplate extends LitElement {
 
