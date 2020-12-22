@@ -2,14 +2,17 @@
 <html lang="en" prefix="og:http://ogp.me/ns#">
 
   <head>
-    <script type="module" src="/templates/post-template.js"></script>
+    <script type="module" src="/templates/post.js"></script>
   </head>
 
   <body>
 
-    <app-page-post>
+    <!-- TODO: could move markdown content into here -->
+    <!-- or could move <app-blog-post> to components and / or markdown using frontmatter import -->
+    <!-- or when nested paths work -->
+    <app-blog-post>
       <content-outlet></content-outlet>
-    </app-page-post>
+    </app-blog-post>
 
   </body>
 

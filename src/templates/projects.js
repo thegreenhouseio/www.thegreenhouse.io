@@ -2,7 +2,7 @@ import { css, html, LitElement } from 'lit-element';
 import '../components/card-list/card-list.js';
 import ProjectsService from '../services/projects/projects-service.js';
 
-class ProjectsTemplate extends LitElement {
+class ProjectsListComponent extends LitElement {
 
   constructor() {
     super();
@@ -44,4 +44,4 @@ class ProjectsTemplate extends LitElement {
   }
 }
 
-customElements.define('app-page-projects', ProjectsTemplate);
+customElements.define('app-projects-list', ProjectsListComponent);

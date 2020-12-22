@@ -3,7 +3,7 @@ import { css, html, LitElement } from 'lit-element';
 // import GraphQuery from '../queries/graph';
 import '../components/blog-post-details/blog-post-details.js';
 
-class PostTemplate extends LitElement {
+class BlogPostComponent extends LitElement {
 
   constructor() {
     super();
@@ -96,4 +96,4 @@ class PostTemplate extends LitElement {
   }
 }
 
-customElements.define('app-page-post', PostTemplate);
+customElements.define('app-blog-post', BlogPostComponent);

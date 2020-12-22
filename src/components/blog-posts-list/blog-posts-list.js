@@ -2,7 +2,7 @@ import { css, html, LitElement } from 'lit-element';
 // import client from '@greenwood/cli/data/client';
 // import ChildrenQuery from '../queries/children';
 
-class BlogTemplate extends LitElement {
+class BlogPostsListComponent extends LitElement {
 
   constructor() {
     super();
@@ -104,4 +104,4 @@ class BlogTemplate extends LitElement {
 }
 /* eslint-enable indent */
 
-customElements.define('app-page-blog', BlogTemplate);
+customElements.define('app-blog-posts-list', BlogPostsListComponent);

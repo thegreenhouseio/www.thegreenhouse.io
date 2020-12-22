@@ -4,7 +4,7 @@ import ArticlesService from '../services/articles/articles-service.js';
 import PresentationsService from '../services/presentations/presentations-service.js';
 import pageCss from '../styles/page.css';
 
-class AboutTemplate extends LitElement {
+class ContentListComponent extends LitElement {
 
   constructor() {
     super();
@@ -111,4 +111,4 @@ class AboutTemplate extends LitElement {
   }
 }
 
-customElements.define('app-page-about', AboutTemplate);
+customElements.define('app-content-list', ContentListComponent);
