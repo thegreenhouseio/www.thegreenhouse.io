@@ -11,9 +11,10 @@
     <!-- or could move <app-blog-post> to components and / or markdown using frontmatter import -->
     <!-- or when nested paths work -->
     <app-blog-post>
-      <content-outlet></content-outlet>
+      <article slot="contentoutlet">
+        <content-outlet></content-outlet>
+      </article>
     </app-blog-post>
-
   </body>
 
 </html>

@@ -77,21 +77,15 @@ class BlogPostComponent extends LitElement {
   render() {
     const { title } = this.post;
     const { date, image } = this.post.data;
+    const headerBackgroundStyle = image ? `background-image: url("${image}")` : '';
 
     return html`
-      <div>
-
-        <app-blog-post-details
-          title="${title}"
-          date="${date}"
-          image="${image}">
-        
-          <!-- TODO multiple slot render, down through <app-blog-post-details> :/ -->
-          <slot></slot>
-        
-        </app-blog-post-details>
-
+      <div class="header" style="${headerBackgroundStyle}">
+        <h1 class="title">${title}</h1>
+        <h5 class="date">Published: ${date}</h5>
       </div>
+
+      <slot name="contentoutlet" slot="postoutlet"></slot>
     `;
   }
 }
