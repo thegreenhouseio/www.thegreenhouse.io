@@ -21,8 +21,8 @@
     "lit-element": "^2.4.0"
   },
   "devDependencies": {
-    "@greenwood/cli": "0.10.0-alpha.1",
-    "@greenwood/plugin-google-analytics": "0.10.0-alpha.1",
+    "@greenwood/cli": "0.10.0-alpha.2",
+    "@greenwood/plugin-google-analytics": "0.10.0-alpha.2",
     "@ls-lint/ls-lint": "^1.9.2",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
@@ -37,6 +37,7 @@
     "karma-junit-reporter": "^1.2.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^5.0.0-alpha.3.0",
+    "postcss-nested": "^4.2.3",
     "puppeteer": "^1.19.0",
     "stylelint": "^13.8.0",
     "stylelint-a11y": "^1.2.3",

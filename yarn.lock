@@ -237,10 +237,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@greenwood/cli@0.10.0-alpha.1":
-  version "0.10.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.10.0-alpha.1.tgz#574c47d7c830a6e5b010b7087770ef12bb8f0dfd"
-  integrity sha512-I0NRayYudHRzT1rkkH4Z0JOPv6/rGZrV0lLV7FK4TwWt5wuKBS29ldMJ/Hp7173rkFzXy2G8TmwEPwKLrdwjeg==
+"@greenwood/cli@0.10.0-alpha.2":
+  version "0.10.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.10.0-alpha.2.tgz#aa76ab354a684a1562d88542238d2016267ba3c4"
+  integrity sha512-2CuDkedH7UPTfrim472k+TF5xjh7j8RITxIbkYh/Svr/3GWjg7WpB3mtJwrYZYSmAhZFkb+r4MlgO8qByFjdWg==
   dependencies:
     "@rollup/plugin-json" "^4.1.0"
     "@rollup/plugin-node-resolve" "^9.0.0"
@@ -269,10 +269,10 @@
     rollup-plugin-terser "^7.0.0"
     unified "^9.2.0"
 
-"@greenwood/plugin-google-analytics@0.10.0-alpha.1":
-  version "0.10.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.10.0-alpha.1.tgz#7fc4aa1e01c478a6a1758c192bdcf8947dcd323f"
-  integrity sha512-oKLhUX5fyRIb0P/apRK93odijnpflV8fnh1pRdNNc2RW+QnAigEvdkQXvV2xPMGbW9razxViKSgAfK/oogZCMQ==
+"@greenwood/plugin-google-analytics@0.10.0-alpha.2":
+  version "0.10.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.10.0-alpha.2.tgz#14fd21cf1cf0d90799124e1fe6f83035cdbf104e"
+  integrity sha512-ZfnOFaVmlpWf1nnSR8KWdouKlwHZUo6xygg2d4u/ZIyA8RB1DBt90LJIEW/z72oEGA2zdWjX9AhhMchUOjgLRQ==
 
 "@ls-lint/ls-lint@^1.9.2":
   version "1.9.2"
@@ -5688,6 +5688,14 @@ postcss-modules@^2.0.0:
     lodash.camelcase "^4.3.0"
     postcss "^7.0.1"
     string-hash "^1.1.1"
+
+postcss-nested@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/postcss-nested/-/postcss-nested-4.2.3.tgz#c6f255b0a720549776d220d00c4b70cd244136f6"
+  integrity sha512-rOv0W1HquRCamWy2kFl3QazJMMe1ku6rCFoAAH+9AcxdbpDeBr6k968MLWuLjvjMcGEip01ak09hKOEgpK9hvw==
+  dependencies:
+    postcss "^7.0.32"
+    postcss-selector-parser "^6.0.2"
 
 postcss-normalize-charset@^4.0.1:
   version "4.0.1"
