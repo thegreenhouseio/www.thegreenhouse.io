@@ -21,8 +21,8 @@
     "lit-element": "^2.4.0"
   },
   "devDependencies": {
-    "@greenwood/cli": "0.10.0-alpha.3",
-    "@greenwood/plugin-google-analytics": "0.10.0-alpha.3",
+    "@greenwood/cli": "0.10.0-alpha.4",
+    "@greenwood/plugin-google-analytics": "0.10.0-alpha.4",
     "@ls-lint/ls-lint": "^1.9.2",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",

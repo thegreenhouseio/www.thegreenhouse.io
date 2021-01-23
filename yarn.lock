@@ -237,10 +237,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@greenwood/cli@0.10.0-alpha.3":
-  version "0.10.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.10.0-alpha.3.tgz#9a5617ee18b4eec18fa07ce7f8126217097d011a"
-  integrity sha512-Fh6cdPQQBKA9bFl/oRsD/5TiuUqiB2/2Xp+wFNwCgep7lT4xlJExC9zR7JCJSXUUVqcpLrVKRZUobRZd3/VWeQ==
+"@greenwood/cli@0.10.0-alpha.4":
+  version "0.10.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.10.0-alpha.4.tgz#e1ad160e2ff4ddcdc2271489ecedcec99cf89c09"
+  integrity sha512-nov3+uNIqYI/Yl6Ba2EbjAhk+N0UDNzleCsGMvlZeZ24q/rhiBz0+sDhA5sQXlPe87hNXTaB1S7lJy06M54NCA==
   dependencies:
     "@rollup/plugin-json" "^4.1.0"
     "@rollup/plugin-node-resolve" "^9.0.0"
@@ -269,10 +269,10 @@
     rollup-plugin-terser "^7.0.0"
     unified "^9.2.0"
 
-"@greenwood/plugin-google-analytics@0.10.0-alpha.3":
-  version "0.10.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.10.0-alpha.3.tgz#9db4ec0d4705da16fdc8a656a780af871391dfaa"
-  integrity sha512-0/Npfh/P8LYZ0MsgyjsfRm2ulMEATiPY8fgIKiQ2DDfryRRHrB8JrazMd/piT1cBxlNBfG2v2+ZrP24e8TwEeg==
+"@greenwood/plugin-google-analytics@0.10.0-alpha.4":
+  version "0.10.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.10.0-alpha.4.tgz#f9788358942f97b847bbe1941d88cb6a7d5bfba8"
+  integrity sha512-eJZtWHeYiAj7do8THh3PtZy8r2jqa0gr0UqguCJhqw7KcCxYnP+K9b6bkrfADDWyYToARZiaetrWFgzNY3IKyw==
 
 "@ls-lint/ls-lint@^1.9.2":
   version "1.9.2"
