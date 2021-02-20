@@ -1,4 +1,6 @@
 const pluginGoogleAnalytics = require('@greenwood/plugin-google-analytics');
+const pluginImportCSS = require('@greenwood/plugin-import-css');
+const pluginPostcss = require('@greenwood/plugin-postcss');
 const DESCRIPTION = 'Personal site and blog for Owen Buckley and The Greenhouse I/O.  Ideas are built here.';
 const FAVICON_HREF = '/assets/favicon.ico';
 const TITLE = 'The Greenhouse I/O';
@@ -28,7 +30,9 @@ module.exports = {
   plugins: [
     pluginGoogleAnalytics({
       analyticsId: 'UA-147204327-1'
-    })
+    }),
+    pluginPostcss(),
+    ...pluginImportCSS()
   ]
 
 };
