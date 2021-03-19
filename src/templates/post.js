@@ -1,6 +1,6 @@
 import { css, html, LitElement } from 'lit-element';
-// TODO import client from '@greenwood/cli/data/client';
-// import GraphQuery from '../queries/graph';
+import client from '@greenwood/plugin-graphql/core/client';
+import GraphQuery from '../queries/graph.gql';
 import '../components/blog-post-details/blog-post-details.js';
 
 class BlogPostComponent extends LitElement {
@@ -58,20 +58,14 @@ class BlogPostComponent extends LitElement {
 
   async connectedCallback() {
     super.connectedCallback();
-    let route = window.location.pathname;
-    const data = await fetch('/graph.json')
-      .then(resp => resp.json());
-    // const response = await client.query({
-    //   query: GraphQuery
-    // });
-    // this.post = response.data.graph.filter((page) => {
-    //   return page.link.lastIndexOf(route) >= 0;
-    // })[0];
+    const currentRoute = window.location.pathname;
+    const response = await client.query({
+      query: GraphQuery
+    });
 
-    this.post = data
-      .filter((page) => {
-        return route.indexOf(page.route) >= 0 && page.route.match(/blog\/[0-9]{4}\//);
-      })[0];
+    this.post = response.data.graph.filter((page) => {
+      return page.route.lastIndexOf(currentRoute) >= 0;
+    })[0];
   }
 
   render() {

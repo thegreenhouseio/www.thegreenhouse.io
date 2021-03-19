@@ -1,6 +1,6 @@
 import { css, html, LitElement } from 'lit-element';
-// import client from '@greenwood/cli/data/client';
-// import ChildrenQuery from '../queries/children';
+import client from '@greenwood/plugin-graphql/core/client';
+import ChildrenQuery from '../../queries/children.gql';
 
 class BlogPostsListComponent extends LitElement {
 
@@ -47,19 +47,14 @@ class BlogPostsListComponent extends LitElement {
   async connectedCallback() {
     super.connectedCallback();
 
-    const data = await fetch('/graph.json')
-      .then(resp => resp.json());
+    const response = await client.query({
+      query: ChildrenQuery,
+      variables: {
+        parent: 'blog'
+      }
+    });
 
-    this.posts = data
-      .filter(page => page.route.indexOf(/blog[0-9]{4}/));
-
-    // TODO
-    // const response = await client.query({
-    //   query: ChildrenQuery,
-    //   variables: {
-    //     parent: 'blog'
-    //   }
-    // });
+    this.posts = response.data.children;
   }
 
   /* eslint-disable indent */
