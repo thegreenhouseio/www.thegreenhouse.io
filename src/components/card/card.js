@@ -65,8 +65,8 @@ class CardComponent extends LitElement {
           </div>
           
           <div class="card-footer">
-            <span class="image">${ img }</a>
-            <span class="video">${ video }</a>
+            <span class="image">${ img }</span>
+            <span class="video">${ video }</span>
           </div>
         </div>
       </div>
