@@ -21,3 +21,10 @@ h5,
 h6 {
   line-height: 1.4;
 }
+
+p {
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+  font-size: 1.1em;
+}

@@ -1,7 +1,7 @@
 import { css, html, LitElement } from 'lit-element';
 import client from '@greenwood/plugin-graphql/core/client';
 import GraphQuery from '../queries/graph.gql';
-import '../components/blog-post-details/blog-post-details.js';
+// import '../components/blog-post-details/blog-post-details.js';
 
 class BlogPostComponent extends LitElement {
 
@@ -27,6 +27,17 @@ class BlogPostComponent extends LitElement {
 
   static get styles() {
     return css`
+      :host .header {
+        background-repeat: no-repeat;
+        background-position: center;
+        line-height: 125px;
+        height: 200px;
+      }
+        
+      :host .header h1, :host .header h5 {
+        text-align: center;
+      }
+
       p {
         width: 60%;
         margin: 10px auto;
