@@ -1,4 +1,4 @@
-/* @import url('//fonts.googleapis.com/css?family=Avenir+Next&display=swap'); */
+@import url('//fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 /* Layout / Global */
 body {
   background-color: #036;
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   line-height: 1.45;
   font-size: '18px';
 }
