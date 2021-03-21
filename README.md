@@ -29,4 +29,4 @@ After cloning the repo, do the following to get up and running
 ## Release Management
 The project is hosted by [Netlify](https://www.netlify.com/) and is setup to deploy continously on every merge to master in GitHub.
 
-CircleCI is used for continuous integration on PRs and Netlify will deploy preview builds for all PRs.
+[GitHub Actions](https://github.com/thegreenhouseio/www.thegreenhouse.io/actions) are used for continuous integration on PRs and Netlify will deploy preview builds for all PRs.
