@@ -1,3 +1,6 @@
+/* https://prismjs.com/examples.html */
+@import url('../../node_modules/prismjs/themes/prism-tomorrow.css');
+
 p {
   width: 60%;
   margin: 10px auto;
@@ -19,8 +22,9 @@ ul {
 }
 
 pre {
-  width: 400px;
+  width: 90%;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto!important;
   text-align: left;
+  padding-left: 30%!important;
 }
