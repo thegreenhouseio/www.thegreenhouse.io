@@ -11,7 +11,7 @@ Every once in a while I get that itch to automate something that I find myself r
 
 Whenever I start a new (JavaScript) project, there's usually a common set of tools that I bring along for the ride with me each time.  Awesome tools **ESLint**, **Mocha**, and more!  Often times I find myself just copy / pasting the dot and config files from one repository directory to another one.  Essentially just doing this everytime
 
-```
+```bash
 $ cp -r /path/to/some/project .
 ```
 
