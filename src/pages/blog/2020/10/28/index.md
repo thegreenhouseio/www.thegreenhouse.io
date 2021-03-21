@@ -20,7 +20,8 @@ In this way, given a user's config and content, **Greenwood** can ensure critica
 <a href="https://github.com/thescientist13/gallinago" target="_blank" rel="noopener" onclick="getOutboundLink('https://github.com/thescientist13/gallinago');"><b>Gallinago</b></a> is the standalone tool I created that allows one to essentially stub out an entire user's "workspace" and then run your CLI against it, and see (and test!) what the output is.
 
 For example, if a user had a directory for their project like this in **Greenwood**:
-```
+
+```bash
 src/
   pages/
     index.md
@@ -32,7 +33,8 @@ src/
 ```
 
 The generated output should be something like this:
-```
+
+```bash
 public/
   index.html
   blog/
