@@ -1,11 +1,11 @@
-import { slugifyDate } from './blog-post';
-import './blog-post';
+import { slugifyDate } from './blog-post-details';
+import './blog-post-details';
 
-describe('BlogPost', () => {
+describe('BlogPostDetails', () => {
   let blogPost;
 
   beforeEach(async () => {
-    blogPost = document.createElement('app-blog-post');
+    blogPost = document.createElement('app-blog-post-details');
 
     document.body.appendChild(blogPost);
 
@@ -73,7 +73,7 @@ describe('BlogPost', () => {
     };
 
     beforeEach(async () => {
-      blogPost = document.createElement('app-blog-post');
+      blogPost = document.createElement('app-blog-post-details');
       blogPost.image = mockPost.image;
       blogPost.date = mockPost.date;
       blogPost.title = mockPost.title;

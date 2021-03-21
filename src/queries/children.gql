@@ -1,7 +1,7 @@
 query($parent: String!) {
   children(parent: $parent) {
     title,
-    link,
+    route,
     data {
       emoji
     }

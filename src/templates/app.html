@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og:http://ogp.me/ns#">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta-outlet></meta-outlet>
+  
+    <script type="module" src="/components/footer/footer.js"></script>
+    <script type="module" src="/components/header/header.js"></script>
+    <script type="module" src="/components/navigation/navigation.js"></script>
+
+    <link rel="stylesheet" href="/styles/theme.css"></link>
+    <link rel="stylesheet" href="/styles/page.css"></link>
+    
+    <style>
+      .outlet {
+        min-height: 50vh
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="layout">
+      <section class="row">
+        <app-header></app-header>
+      </section>
+      
+      <section class='row'>
+        <app-navigation></app-navigation>
+      </section>
+
+      <section class="outlet row">  
+        <page-outlet></page-outlet>
+      </section>
+
+      <section class="row">
+        <app-footer></app-footer>
+      </section>
+    </div>
+
+  </body>
+
+</html>

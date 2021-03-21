@@ -7,7 +7,6 @@ description: 'NodeJS package for running and testing of CLIs.'
 image: '//raw.githubusercontent.com/thescientist13/gallinago/master/.github/assets/gallinago.jpg'
 ---
 
-
 In my free time when working on open source projects, I typically find myself working on build tools and CLI type projects.  These kind of projects, unlike the web apps I help build by day, typically take a combination of a user configuration file and some source code, and then generates some sort of output from that.  
 
 For the [Greenwood](https://www.greenwoodjs.io/) project, which is a site builder, the output of that project is going to be HTML, CSS and JavaScript, all based on the user's source code (e.g. markdown files).  To help ensure we don't break anything as we go, and taking influence from **webpack** and how they setup their tests, the majority of the project's test coverage is predominently made up of test "cases"; wherein fixtures and files are used to recreate what a users folder structure might actually look like while using the tool.  (I think this would fall under the umbrealla of [_BDD_](https://en.wikipedia.org/wiki/Behavior-driven_development), but don't quote me on that)
