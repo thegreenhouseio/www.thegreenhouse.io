@@ -7,7 +7,7 @@ const FAVICON_HREF = '/assets/favicon.ico';
 const TITLE = 'The Greenhouse I/O';
 
 module.exports = {
-  // optimization: 'strict',
+  // TODO optimization: 'strict',
 
   title: TITLE,
 
@@ -38,6 +38,12 @@ module.exports = {
     ...pluginImportCSS(),
 
     ...pluginGraphQL()
-  ]
+  ],
+
+  markdown: {
+    plugins: [
+      '@mapbox/rehype-prism'
+    ]
+  }
 
 };
