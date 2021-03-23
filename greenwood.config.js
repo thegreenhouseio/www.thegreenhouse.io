@@ -1,4 +1,3 @@
-const pluginGoogleAnalytics = require('@greenwood/plugin-google-analytics');
 const pluginGraphQL = require('@greenwood/plugin-graphql');
 const pluginImportCSS = require('@greenwood/plugin-import-css');
 const pluginPostcss = require('@greenwood/plugin-postcss');
@@ -29,9 +28,6 @@ module.exports = {
   },
 
   plugins: [
-    pluginGoogleAnalytics({
-      analyticsId: 'UA-147204327-1'
-    }),
 
     pluginPostcss(),
     

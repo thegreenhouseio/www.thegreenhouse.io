@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@greenwood/cli": "0.10.0-alpha.9",
-    "@greenwood/plugin-google-analytics": "0.10.0-alpha.9",
     "@greenwood/plugin-graphql": "^0.10.0-alpha.9",
     "@greenwood/plugin-import-css": "^0.10.0-alpha.9",
     "@greenwood/plugin-postcss": "^0.10.0-alpha.9",
