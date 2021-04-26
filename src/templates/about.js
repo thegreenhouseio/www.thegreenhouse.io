@@ -8,7 +8,7 @@ class ContentListComponent extends LitElement {
 
   constructor() {
     super();
-
+    const hashSelection = window.location.hash.replace('#', '').toUpperCase();
     this.SECTIONS = {
       SPEAKING: 'SPEAKING',
       WRITING: 'WRITING'
@@ -17,7 +17,9 @@ class ContentListComponent extends LitElement {
     this.socialLinksMap = [];
     this.articles = new ArticlesService().getModeledArticles(),
     this.presentations = new PresentationsService().getModeledPresentations(),
-    this.activeSection = this.SECTIONS.SPEAKING;
+    this.activeSection = this.SECTIONS[hashSelection]
+      ? hashSelection
+      : this.SECTIONS.SPEAKING;
   }
   
   static get properties() {
@@ -75,6 +77,8 @@ class ContentListComponent extends LitElement {
 
       case this.SECTIONS.SPEAKING:
         content = html`<app-card-list class="content-speaking" .items=${this.presentations}></app-card-list>`;
+        
+        window.location.hash = this.SECTIONS.SPEAKING.toLowerCase();
         break;
       case this.SECTIONS.WRITING:
         content = html`
@@ -84,6 +88,8 @@ class ContentListComponent extends LitElement {
             <p class="cta">Visit my <a target="_blank" href="https://medium.com/@thegreenhouseio">Medium</a> page for other articles Ive done!</p>
           </div>
         `;
+
+        window.location.hash = this.SECTIONS.WRITING.toLowerCase();
         break;
       default:
         content = '';
