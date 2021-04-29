@@ -7,7 +7,7 @@ const FAVICON_HREF = '/assets/favicon.ico';
 const TITLE = 'The Greenhouse I/O';
 
 module.exports = {
-  // TODO optimization: 'strict',
+  optimization: 'static',
 
   title: TITLE,
 
