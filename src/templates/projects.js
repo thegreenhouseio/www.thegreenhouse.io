@@ -34,8 +34,6 @@ class ProjectsListComponent extends LitElement {
 
     return html`
       <div>
-        <entry></entry>
-
         <div class="projects">
           <app-card-list .items=${projects}></app-card-list>
         </div>
