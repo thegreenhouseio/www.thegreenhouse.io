@@ -2,20 +2,18 @@
 <html lang="en" prefix="og:http://ogp.me/ns#">
 
   <head>
-    <script type="module" src="/templates/post.js"></script>
-    <link rel="stylesheet" href="/styles/post-details.css"></script>
+    <script type="module" src="../components/blog-post/blog-post.js"></script>
+    <link rel="stylesheet" href="../styles/post-details.css"></script>
   </head>
 
   <body>
 
-    <!-- TODO: could move markdown content into here -->
-    <!-- or could move <app-blog-post> to components and / or markdown using frontmatter import -->
-    <!-- or when nested paths work -->
     <app-blog-post>
       <article slot="contentoutlet">
         <content-outlet></content-outlet>
       </article>
     </app-blog-post>
+
   </body>
 
 </html>

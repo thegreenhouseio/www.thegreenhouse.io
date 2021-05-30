@@ -1,8 +1,8 @@
 import { css, html, LitElement, unsafeCSS } from 'lit-element';
-import '../components/card-list/card-list.js';
-import ArticlesService from '../services/articles/articles-service.js';
-import PresentationsService from '../services/presentations/presentations-service.js';
-import pageCss from '../styles/page.css';
+import '../card-list/card-list.js';
+import ArticlesService from '../../services/articles/articles-service.js';
+import PresentationsService from '../../services/presentations/presentations-service.js';
+import pageCss from '../../styles/page.css';
 
 class ContentListComponent extends LitElement {
 
