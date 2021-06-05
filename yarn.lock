@@ -305,12 +305,11 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.0.tgz#0eee6373e11418bfe0b5638f654df7a4ca6a3950"
   integrity sha512-wYn6r8zVZyQJ6rQaALBEln5B1pzxb9shV5Ef97kTvn6yVGrqyXVnDqnU24MXnFubR+rZjBY9NWuxX3FB2sTsjg==
 
-"@greenwood/cli@0.12.3":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.12.3.tgz#ba191afca7839bc11ffda5609c4401ab84bbc8f0"
-  integrity sha512-0h//+OzwRQpQuNHFmmrxt6ap4F/N0u5jQovTnmF/CCBod+IgKoE1IndyPGojxgBP7MoNlcjBtPhmYC6cAGkhUw==
+"@greenwood/cli@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.13.0.tgz#b7efb8170d170e286524db943c51e39ea50d4550"
+  integrity sha512-qULX+1dMGAfEPIK7XgbhdTJyrpCDVkjtK4x2/R86TFT0ATCBxJyIMrPgOaKAx923A0UEKenR5C8SXlPWxZy4aA==
   dependencies:
-    "@rollup/plugin-json" "^4.1.0"
     "@rollup/plugin-node-resolve" "^9.0.0"
     "@rollup/plugin-replace" "^2.3.4"
     "@webcomponents/webcomponentsjs" "^2.4.4"
@@ -333,19 +332,18 @@
     remark-parse "^8.0.3"
     remark-rehype "^7.0.0"
     rollup "^2.34.1"
-    rollup-plugin-multi-input "^1.3.1"
     rollup-plugin-terser "^7.0.0"
     unified "^9.2.0"
 
-"@greenwood/plugin-google-analytics@0.12.3":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.12.3.tgz#67763da0afbabf9411f9585bc5354370c89f1b89"
-  integrity sha512-XTUMGXoNV0xoXLi1wv4+lct0+9UCW3Us6dqDP8kHEeDaQ2KXj75RXcXaGZKDmjgYYXniNDLR/xruSLurc7/dAw==
+"@greenwood/plugin-google-analytics@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.13.0.tgz#593305d59b86736402dfb0a70c08cf1b1b4b462f"
+  integrity sha512-SxYVWjaSDb70iQXxrHaEgl0bmHZH8eWFAlgT2Fz6a6s+A86rsm6q2bqRnNSbbX4+ATo/meqJWrx/KNr5+Mjnwg==
 
-"@greenwood/plugin-graphql@^0.12.3":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-graphql/-/plugin-graphql-0.12.3.tgz#462ef248223c49b0e16f7c39a0d585a3dcb0a5d7"
-  integrity sha512-IBnnNIuRt3xCTZA9M6XycKej9vmB6DpvbNU8LuV18yGP6pZ/L802opoz+0CDoirvrA2DeKdS8mr3zipWJh96ug==
+"@greenwood/plugin-graphql@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-graphql/-/plugin-graphql-0.13.0.tgz#cb1a45cfe4b419453f44ec73eddc40cf1dc42845"
+  integrity sha512-kcOIp3fCvsLnVj75Syum6VV0S/gsmd77XS1a9A1pjggJ05EiUaZan0bGJFVIxrYQedipdthngLdg7e//537jUQ==
   dependencies:
     "@apollo/client" "^3.3.11"
     "@rollup/plugin-alias" "^3.1.2"
@@ -353,17 +351,17 @@
     graphql "^15.5.0"
     graphql-tag "^2.10.1"
 
-"@greenwood/plugin-import-css@^0.12.3":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-import-css/-/plugin-import-css-0.12.3.tgz#a77f25f47dbe63232ef7fc571d55aad700b9ff2f"
-  integrity sha512-7Ra+TlydptFFrW0VwXT0tBHuuoGkiKulNO94SmsVY9kyPoitWI7SDMre3dAhUXLP5z3KpPgpbsgYK2YgttP6TA==
+"@greenwood/plugin-import-css@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-import-css/-/plugin-import-css-0.13.0.tgz#7d5cb014f9d5ca1f2eab8b4fac94d4c35dabc21a"
+  integrity sha512-BN5M9i/RZNkjuVJV2KzV5f/uCroz2pWVfD06hRcMguKMMe7P85eskOtIRxs6Q6kZqwWtUWiLDKlIHImcBSruiA==
   dependencies:
     rollup-plugin-postcss "^3.1.5"
 
-"@greenwood/plugin-postcss@^0.12.3":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-postcss/-/plugin-postcss-0.12.3.tgz#aec55d4b26a2f71983bae49aaddfbb00ae4c4adb"
-  integrity sha512-kz+ZJRO747AUQCScQ67VggQFlae7ruLXD3aHLh8k6QuMmCqlU7W6AKT1N9bG36n0o2ZfMdmeM7cwX/lsyOuXYw==
+"@greenwood/plugin-postcss@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-postcss/-/plugin-postcss-0.13.0.tgz#438456a8811dccd5538876e521afc97e417cb17b"
+  integrity sha512-rijflp85hupLCmK8Ac6OjVzXEbbI1a93Svw2qSlcBjlUExca8fc4T+idj3ibdJu7VpAOlu3LbbpGood6ZecGIA==
   dependencies:
     postcss-preset-env "^6.7.0"
 
@@ -462,13 +460,6 @@
   dependencies:
     slash "^3.0.0"
 
-"@rollup/plugin-json@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-json/-/plugin-json-4.1.0.tgz#54e09867ae6963c593844d8bd7a9c718294496f3"
-  integrity sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==
-  dependencies:
-    "@rollup/pluginutils" "^3.0.8"
-
 "@rollup/plugin-node-resolve@^9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-9.0.0.tgz#39bd0034ce9126b39c1699695f440b4b7d2b62e6"
@@ -489,7 +480,7 @@
     "@rollup/pluginutils" "^3.1.0"
     magic-string "^0.25.7"
 
-"@rollup/pluginutils@^3.0.8", "@rollup/pluginutils@^3.1.0":
+"@rollup/pluginutils@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
   integrity sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
@@ -2387,11 +2378,6 @@ core-js@^3.0.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.9.1.tgz#cec8de593db8eb2a85ffb0dbdeb312cb6e5460ae"
   integrity sha512-gSjRvzkxQc1zjM/5paAmL4idJBFzuJoo+jDjF1tStYFMV2ERfD02HhahhCGXUyHxQRG4yFKVSdO6g62eoRMcDg==
 
-core-js@^3.1.3:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.1.tgz#f51523668ac8a294d1285c3b9db44025fda66d47"
-  integrity sha512-9Id2xHY1W7m8hCl8NkhQn5CufmF/WuR30BTRewvCXc1aZd3kMECwNZ69ndLbekKfakw9Rf2Xyc+QR6E7Gg+obg==
-
 core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -3500,7 +3486,7 @@ fast-deep-equal@^3.1.1:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
-fast-glob@^3.0.0, fast-glob@^3.1.1, fast-glob@^3.2.4:
+fast-glob@^3.1.1, fast-glob@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.4.tgz#d20aefbf99579383e7f3cc66529158c9b98554d3"
   integrity sha512-kr/Oo6PX51265qeuCYsyGypiO5uJFgBS0jksyG7FUeCyQzNwYnzrNIMR1NXfkZXsMYXYLRAHgISHBz8gQcxKHQ==
@@ -5426,7 +5412,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.16, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.4:
+lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.16, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.4:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -7763,15 +7749,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
-
-rollup-plugin-multi-input@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-multi-input/-/rollup-plugin-multi-input-1.3.1.tgz#07b903b618c005871fea1bd0c4efae7d1aac4fa1"
-  integrity sha512-bPsxHR6dUney7zsCAAlfkq7lbuy5xph2CvUstSv88oqhtRiLWXwVjiA1Gb4HVjC6I9sJI2eZeQlozXa+GXJKDA==
-  dependencies:
-    core-js "^3.1.3"
-    fast-glob "^3.0.0"
-    lodash "^4.17.11"
 
 rollup-plugin-postcss@^3.1.5:
   version "3.1.8"
