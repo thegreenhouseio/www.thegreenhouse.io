@@ -1,7 +1,6 @@
 import { css, html, LitElement } from 'lit-element';
 import client from '@greenwood/plugin-graphql/core/client';
-import GraphQuery from '../queries/graph.gql';
-// import '../components/blog-post-details/blog-post-details.js';
+import GraphQuery from '../../queries/graph.gql';
 
 class BlogPostComponent extends LitElement {
 

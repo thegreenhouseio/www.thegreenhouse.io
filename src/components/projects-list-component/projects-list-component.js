@@ -1,6 +1,6 @@
 import { css, html, LitElement } from 'lit-element';
-import '../components/card-list/card-list.js';
-import ProjectsService from '../services/projects/projects-service.js';
+import '../card-list/card-list.js';
+import ProjectsService from '../../services/projects/projects-service.js';
 
 class ProjectsListComponent extends LitElement {
 
