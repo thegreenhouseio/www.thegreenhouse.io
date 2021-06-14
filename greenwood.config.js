@@ -18,7 +18,7 @@ module.exports = {
     { property: 'og:title', content: TITLE },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://www.thegreenhouse.io' },
-    { property: 'og:image', content: 'https://s3.amazonaws.com/www.thegreenhouse.io/static/banner.4b3f4ebd.jpg' },
+    { property: 'og:image', content: '/assets/og-meta-preview.png' },
     { property: 'og:description', content: DESCRIPTION },
     { rel: 'shortcut icon', href: FAVICON_HREF },
     { rel: 'icon', href: FAVICON_HREF }
