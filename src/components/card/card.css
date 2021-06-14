@@ -4,12 +4,10 @@
     margin: 0 auto 35px;
     max-width: 1024px;
     min-width: 320px;
-    border: 2px solid #020202;
-    border-radius: 5px;
-    padding: 10px;
   }
 
   & .wrapper {
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
     grid-gap: 20px;
@@ -63,6 +61,7 @@
   :host .card {
     & .wrapper {
       border: 2px solid #020202;
+      border-radius: 12px;
     }
 
     & .card-header-icon {
