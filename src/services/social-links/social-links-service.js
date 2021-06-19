@@ -11,7 +11,7 @@ class SocialLinksService {
       url: 'https://medium.com/@thegreenhouseio'
     }, {
       name: 'github',
-      url: 'https://github.com/thegreenhouseio'
+      url: 'https://github.com/thescientist13'
     }];
   }
 

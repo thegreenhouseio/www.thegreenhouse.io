@@ -33,7 +33,7 @@ describe('SocialLinksService', () => {
       expect(links[2].url).toBe('https://medium.com/@thegreenhouseio');
   
       expect(links[3].name).toBe('github');
-      expect(links[3].url).toBe('https://github.com/thegreenhouseio');
+      expect(links[3].url).toBe('https://github.com/thescientist13');
     });
 
   });
@@ -54,7 +54,7 @@ describe('SocialLinksService', () => {
       expect(links.get('linkedin')).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');
       expect(links.get('twitter')).toBe('https://twitter.com/thegreenhouseio');
       expect(links.get('medium')).toBe('https://medium.com/@thegreenhouseio');
-      expect(links.get('github')).toBe('https://github.com/thegreenhouseio');
+      expect(links.get('github')).toBe('https://github.com/thescientist13');
     });
 
   });
@@ -74,7 +74,7 @@ describe('SocialLinksService', () => {
       expect(links[0]).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');
       expect(links[1]).toBe('https://twitter.com/thegreenhouseio');
       expect(links[2]).toBe('https://medium.com/@thegreenhouseio');
-      expect(links[3]).toBe('https://github.com/thegreenhouseio');
+      expect(links[3]).toBe('https://github.com/thescientist13');
     });
 
   });
