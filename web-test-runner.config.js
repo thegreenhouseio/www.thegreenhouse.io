@@ -43,7 +43,7 @@ module.exports = {
       const { url } = context.request;
 
       if (url.indexOf('/assets') === 0) {
-        context.request.url = path.join(__dirname, 'src', url);
+        context.request.url = path.join(process.cwd(), 'src', url);
       }
 
       return next();
