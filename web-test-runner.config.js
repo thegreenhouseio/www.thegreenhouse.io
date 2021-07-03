@@ -1,7 +1,9 @@
 const { defaultReporter } = require('@web/test-runner');
-const fs = require('fs');
+const greenwoodPluginImportCss = require('@greenwood/plugin-import-css/src/index');
 const { junitReporter } = require('@web/test-runner-junit-reporter');
-const path = require('path');
+
+// create a direct instance of ImportCssResource
+const importCssResource = greenwoodPluginImportCss()[0].provider({});
 
 module.exports = {
   files: './src/**/*.spec.js',
@@ -18,16 +20,18 @@ module.exports = {
   },
   plugins: [{
     name: 'import-css',
-    transform(context) {
-      if (context.response.is('css')) {
-        const { url } = context.request;
-        const body = fs.readFileSync(path.join(__dirname, url), 'utf-8');
-        const cssInJsBody = `const css = "${body.replace(/\r?\n|\r/g, ' ')}";\nexport default css;`;
+    async transform(context) {
+      const { url } = context.request;
+      const shouldIntercept = await importCssResource.shouldIntercept(url, context.body, { request: context.headers });
+      
+      if (shouldIntercept) {
+        const cssResource = await importCssResource.intercept(url, context.body);
+        const { body, contentType } = cssResource;
 
         return {
-          body: cssInJsBody,
+          body,
           headers: {
-            'content-type': 'text/javascript'
+            'content-type': contentType
           }
         };
       }
