@@ -6,7 +6,7 @@
   "author": "owen@thegreenhouse.io",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf ./reports && rimraf ./public",
+    "clean": "rimraf ./reports ./public",
     "develop": "greenwood develop",
     "build": "yarn clean && greenwood build",
     "lint": "ls-lint && yarn lint:js && yarn lint:css",
