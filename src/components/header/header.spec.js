@@ -21,7 +21,7 @@ describe('Header Component', () => {
     it('should have a greeting', () => { 
       const greeting = header.shadowRoot.querySelectorAll('div.header h2')[0];
 
-      expect(greeting.innerHTML).toMatch('A DREAMER BY DESIGN');
+      expect(greeting.textContent).equal('A DREAMER BY DESIGN');
     });
 
     it('should have a logo', () => { 
@@ -35,7 +35,7 @@ describe('Header Component', () => {
     it('should have a link to the project website', () => { 
       const link = header.shadowRoot.querySelectorAll('.header a')[0];
 
-      expect(link.href.replace('http://localhost:9876', '')).to.equal('/');
+      expect(link.href.replace('http://localhost:8000', '')).to.equal('/');
     });
   });
 
