@@ -1,3 +1,4 @@
+import { expect } from '@esm-bundle/chai';
 import './footer.js';
 
 describe('Footer Component', () => {
@@ -18,7 +19,7 @@ describe('Footer Component', () => {
 
   describe('Default Behavior', () => {
     it('should not be null', () => {
-      expect(footer).not.toBeNull();
+      expect(footer).not.toNull();
       expect(footer.shadowRoot.querySelectorAll('footer').length).toEqual(1);
     });
   
@@ -36,25 +37,25 @@ describe('Footer Component', () => {
       it('should have a linkedin icon', () => {
         const linkedin = footer.shadowRoot.querySelectorAll('ul li app-social-icon-link[name="linkedin"]');
        
-        expect(linkedin.length).toBe(1);
+        expect(linkedin.length).to.equal(1);
       });
 
       it('should have a twitter icon', () => {
         const twitter = footer.shadowRoot.querySelectorAll('ul li app-social-icon-link[name="twitter"]');
        
-        expect(twitter.length).toBe(1);
+        expect(twitter.length).to.equal(1);
       });
 
       it('should have a medium icon', () => {
         const medium = footer.shadowRoot.querySelectorAll('ul li app-social-icon-link[name="medium"]');
        
-        expect(medium.length).toBe(1);
+        expect(medium.length).to.equal(1);
       });
 
       it('should have a github icon', () => {
         const github = footer.shadowRoot.querySelectorAll('ul li app-social-icon-link[name="github"]');
        
-        expect(github.length).toBe(1);
+        expect(github.length).to.equal(1);
       });
     });
   });

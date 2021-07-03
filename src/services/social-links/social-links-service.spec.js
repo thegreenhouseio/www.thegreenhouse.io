@@ -1,3 +1,4 @@
+import { expect } from '@esm-bundle/chai';
 import SocialLinksService from './social-links-service';
 
 describe('SocialLinksService', () => {
@@ -8,7 +9,7 @@ describe('SocialLinksService', () => {
   });
 
   it('should be defined', () => {
-    expect(socialLinksService).toBeDefined();
+    expect(socialLinksService).to.not.equal(undefined);
   });
 
   describe('getLinks (default)', () => {
@@ -19,21 +20,21 @@ describe('SocialLinksService', () => {
     });
 
     it('should have 4 links', () => {
-      expect(links.length).toBe(4);
+      expect(links.length).to.equal(4);
     });
 
     it('should return the expected links from getLinks', () => {
-      expect(links[0].name).toBe('linkedin');
-      expect(links[0].url).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');
+      expect(links[0].name).to.equal('linkedin');
+      expect(links[0].url).to.equal('https://www.linkedin.com/in/owen-buckley-91393447/');
   
-      expect(links[1].name).toBe('twitter');
-      expect(links[1].url).toBe('https://twitter.com/thegreenhouseio');
+      expect(links[1].name).to.equal('twitter');
+      expect(links[1].url).to.equal('https://twitter.com/thegreenhouseio');
   
-      expect(links[2].name).toBe('medium');
-      expect(links[2].url).toBe('https://medium.com/@thegreenhouseio');
+      expect(links[2].name).to.equal('medium');
+      expect(links[2].url).to.equal('https://medium.com/@thegreenhouseio');
   
-      expect(links[3].name).toBe('github');
-      expect(links[3].url).toBe('https://github.com/thescientist13');
+      expect(links[3].name).to.equal('github');
+      expect(links[3].url).to.equal('https://github.com/thescientist13');
     });
 
   });
@@ -46,15 +47,15 @@ describe('SocialLinksService', () => {
     });
 
     it('should be a Map', () => {
-      expect(links).toBeDefined();
-      expect(typeof links).toBe(typeof new Map());
+      expect(links).to.not.equal(undefined);
+      expect(typeof links).to.equal(typeof new Map());
     });
 
     it('should return the expected links from getLinks', () => {
-      expect(links.get('linkedin')).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');
-      expect(links.get('twitter')).toBe('https://twitter.com/thegreenhouseio');
-      expect(links.get('medium')).toBe('https://medium.com/@thegreenhouseio');
-      expect(links.get('github')).toBe('https://github.com/thescientist13');
+      expect(links.get('linkedin')).to.equal('https://www.linkedin.com/in/owen-buckley-91393447/');
+      expect(links.get('twitter')).to.equal('https://twitter.com/thegreenhouseio');
+      expect(links.get('medium')).to.equal('https://medium.com/@thegreenhouseio');
+      expect(links.get('github')).to.equal('https://github.com/thescientist13');
     });
 
   });
@@ -67,14 +68,14 @@ describe('SocialLinksService', () => {
     });
 
     it('should be an array of four items', () => {
-      expect(links.length).toBe(4);
+      expect(links.length).to.equal(4);
     });
 
     it('should return the expected links from getLinks', () => {
-      expect(links[0]).toBe('https://www.linkedin.com/in/owen-buckley-91393447/');
-      expect(links[1]).toBe('https://twitter.com/thegreenhouseio');
-      expect(links[2]).toBe('https://medium.com/@thegreenhouseio');
-      expect(links[3]).toBe('https://github.com/thescientist13');
+      expect(links[0]).to.equal('https://www.linkedin.com/in/owen-buckley-91393447/');
+      expect(links[1]).to.equal('https://twitter.com/thegreenhouseio');
+      expect(links[2]).to.equal('https://medium.com/@thegreenhouseio');
+      expect(links[3]).to.equal('https://github.com/thescientist13');
     });
 
   });

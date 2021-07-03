@@ -1,4 +1,5 @@
-import './card-list';
+import { expect } from '@esm-bundle/chai';
+import './card-list.js';
 
 describe('CardList Component', () => {
   let cardList;
@@ -20,7 +21,7 @@ describe('CardList Component', () => {
     it('should display zero <app-card> components when zero items are passed as props', () => {
       const card = cardList.shadowRoot.querySelectorAll('app-card');
 
-      expect(card.length).toBe(0);
+      expect(card.length).to.equal(0);
     });
   });
 
@@ -37,7 +38,7 @@ describe('CardList Component', () => {
     it('should display 4 <app-card> components when 4 items are passed as props', () => {
       const card = cardList.shadowRoot.querySelectorAll('app-card');
 
-      expect(card.length).toBe(cardList.items.length);
+      expect(card.length).to.equal(cardList.items.length);
     });
   });
 });
