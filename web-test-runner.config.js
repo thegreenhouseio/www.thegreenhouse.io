@@ -1,6 +1,7 @@
 const { defaultReporter } = require('@web/test-runner');
 const greenwoodPluginImportCss = require('@greenwood/plugin-import-css/src/index');
 const { junitReporter } = require('@web/test-runner-junit-reporter');
+const path = require('path');
 
 // create a direct instance of ImportCssResource
 const importCssResource = greenwoodPluginImportCss()[0].provider({});
@@ -36,5 +37,16 @@ module.exports = {
         };
       }
     }
-  }]
+  }],
+  middleware: [
+    function rewriteIndex(context, next) {
+      const { url } = context.request;
+
+      if (url.indexOf('/assets') === 0) {
+        context.request.url = path.join(__dirname, 'src', url);
+      }
+
+      return next();
+    }
+  ]
 };
