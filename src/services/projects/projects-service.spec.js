@@ -1,3 +1,4 @@
+import { expect } from '@esm-bundle/chai';
 import ProjectsService from './projects-service';
 
 describe('ProjectsService', () => {
@@ -8,22 +9,22 @@ describe('ProjectsService', () => {
   });
 
   it('should be defined', () => {
-    expect(projectsService).toBeDefined();
+    expect(projectsService).to.not.equal(undefined);
   });
 
   it('should return some projects from getProjects', () => {
     const projects = projectsService.getProjects();
 
-    expect(projects.length).toBeGreaterThan(1);
+    expect(projects.length).greaterThan(1);
   });
 
   it('should return modeled projects from getModeledProjects with basic properties', () => {
     const projects = projectsService.getModeledProjects();
 
     projects.map(project => {
-      expect(project.title).toBeDefined();
-      expect(project.abstract).toBeDefined();
-      expect(project.link).toBeDefined();
+      expect(project.title).to.not.equal(undefined);
+      expect(project.abstract).to.not.equal(undefined);
+      expect(project.link).to.not.equal(undefined);
     });
   });
 });

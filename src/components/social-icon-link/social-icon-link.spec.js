@@ -1,4 +1,5 @@
-import '../social-icon-link/social-icon-link';
+import { expect } from '@esm-bundle/chai';
+import '../social-icon-link/social-icon-link.js';
 
 describe('SocialIconLink Component', () => {
   let socialIconLink;
@@ -26,31 +27,31 @@ describe('SocialIconLink Component', () => {
     });
 
     it('should have one <a> tag', () => {
-      expect(link.length).toBe(1);
+      expect(link.length).to.equal(1);
     });
 
     it('should have default <a> tag href', () => {
-      expect(link[0].href).toContain('/');
+      expect(link[0].href).contain('/');
     });
 
     it('should have default <a> tag rel', () => {
-      expect(link[0].rel).toBe('noopener');
+      expect(link[0].rel).to.equal('noopener');
     });
 
     it('should have default <a> tag target', () => {
-      expect(link[0].target).toBe('_blank');
+      expect(link[0].target).to.equal('_blank');
     });
 
     it('should have one <img> tag inside the <a> tag', () => {
-      expect(img.length).toBe(1);
+      expect(img.length).to.equal(1);
     });
 
     it('should have default <img> tag with src', () => {
-      expect(img[0].src).toContain('/assets/logos/default.svg');
+      expect(img[0].src).contain('/assets/logos/default.svg');
     });
 
     it('should have default <img> tag with alt', () => {
-      expect(img[0].alt).toContain('default logo');
+      expect(img[0].alt).contain('default logo');
     });
   });
 
@@ -72,31 +73,31 @@ describe('SocialIconLink Component', () => {
     });
 
     it('should have one <a> tag', () => {
-      expect(link.length).toBe(1);
+      expect(link.length).to.equal(1);
     });
 
     it('should have default <a> tag href', () => {
-      expect(link[0].href).toContain(mockLink);
+      expect(link[0].href).contain(mockLink);
     });
 
     it('should have default <a> tag rel', () => {
-      expect(link[0].rel).toBe('noopener');
+      expect(link[0].rel).to.equal('noopener');
     });
 
     it('should have default <a> tag target', () => {
-      expect(link[0].target).toBe('_blank');
+      expect(link[0].target).to.equal('_blank');
     });
 
     it('should have <img> tag inside the <a> tag', () => {
-      expect(img.length).toBe(1);
+      expect(img.length).to.equal(1);
     });
 
     it('should have <img> tag with github logo for src', () => {
-      expect(img[0].src).toContain('/assets/logos/github.svg');
+      expect(img[0].src).contain('/assets/logos/github.svg');
     });
 
     it('should have <img> tag with github looo for alt', () => {
-      expect(img[0].alt).toContain('github logo');
+      expect(img[0].alt).contain('github logo');
     });
 
   });
@@ -119,31 +120,31 @@ describe('SocialIconLink Component', () => {
     });
 
     it('should have one <a> tag', () => {
-      expect(link.length).toBe(1);
+      expect(link.length).to.equal(1);
     });
 
     it('should have default <a> tag href', () => {
-      expect(link[0].href).toContain(mockLink);
+      expect(link[0].href).contain(mockLink);
     });
 
     it('should have default <a> tag rel', () => {
-      expect(link[0].rel).toBe('noopener');
+      expect(link[0].rel).to.equal('noopener');
     });
 
     it('should have default <a> tag target', () => {
-      expect(link[0].target).toBe('_blank');
+      expect(link[0].target).to.equal('_blank');
     });
 
     it('should have <img> tag inside the <a> tag', () => {
-      expect(img.length).toBe(1);
+      expect(img.length).to.equal(1);
     });
 
     it('should have <img> tag with meetup logo for src', () => {
-      expect(img[0].src).toContain('/assets/logos/meetup.svg');
+      expect(img[0].src).contain('/assets/logos/meetup.svg');
     });
 
     it('should have <img> tag with meetup looo for alt', () => {
-      expect(img[0].alt).toContain('meetup logo');
+      expect(img[0].alt).contain('meetup logo');
     });
 
   });
@@ -166,31 +167,31 @@ describe('SocialIconLink Component', () => {
     });
 
     it('should have one <a> tag', () => {
-      expect(link.length).toBe(1);
+      expect(link.length).to.equal(1);
     });
 
     it('should have default <a> tag href', () => {
-      expect(link[0].href).toContain(mockLink);
+      expect(link[0].href).contain(mockLink);
     });
 
     it('should have default <a> tag rel', () => {
-      expect(link[0].rel).toBe('noopener');
+      expect(link[0].rel).to.equal('noopener');
     });
 
     it('should have default <a> tag target', () => {
-      expect(link[0].target).toBe('_blank');
+      expect(link[0].target).to.equal('_blank');
     });
 
     it('should have <img> tag inside the <a> tag', () => {
-      expect(img.length).toBe(1);
+      expect(img.length).to.equal(1);
     });
 
     it('should have <img> tag with medium logo for src', () => {
-      expect(img[0].src).toContain('/assets/logos/medium.svg');
+      expect(img[0].src).contain('/assets/logos/medium.svg');
     });
 
     it('should have <img> tag with medium looo for alt', () => {
-      expect(img[0].alt).toContain('medium logo');
+      expect(img[0].alt).contain('medium logo');
     });
 
   });
