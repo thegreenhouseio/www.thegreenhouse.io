@@ -1,3 +1,4 @@
+import { expect } from '@esm-bundle/chai';
 import './navigation';
 
 describe('Navigation Component', () => {
@@ -20,28 +21,28 @@ describe('Navigation Component', () => {
     it('should have three static links', () => {
       const links = navigation.shadowRoot.querySelectorAll('.navigation a');
 
-      expect(links.length).toBe(3);
+      expect(links.length).to.equal(3);
     });
 
     it('should have an about link', () => {
       const links = navigation.shadowRoot.querySelectorAll('nav ul li a')[0];
 
-      expect(links.href).toContain('/about/');
-      expect(links.innerHTML).toBe('About');
+      expect(links.href).contain('/about/');
+      expect(links.innerHTML).to.equal('About');
     });
 
     it('should have a projects link', () => {
       const links = navigation.shadowRoot.querySelectorAll('nav ul li a')[1];
 
-      expect(links.href).toContain('/projects/');
-      expect(links.innerHTML).toBe('Projects');
+      expect(links.href).contain('/projects/');
+      expect(links.innerHTML).to.equal('Projects');
     });
 
     it('should have a blogs link', () => {
       const links = navigation.shadowRoot.querySelectorAll('nav ul li a')[2];
 
-      expect(links.href).toContain('/blog/');
-      expect(links.innerHTML).toBe('Blog');
+      expect(links.href).contain('/blog/');
+      expect(links.innerHTML).to.equal('Blog');
     });
   });
 
