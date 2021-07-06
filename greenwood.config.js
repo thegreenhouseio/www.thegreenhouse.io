@@ -30,7 +30,7 @@ module.exports = {
 
   plugins: [
     pluginGoogleAnalytics({
-      analyticsId: 'UA-147204327-1'
+      analyticsId: 'UA-117350131-1'
     }),
 
     pluginPostcss(),
