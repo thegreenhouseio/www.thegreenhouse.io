@@ -302,10 +302,10 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.0.tgz#0eee6373e11418bfe0b5638f654df7a4ca6a3950"
   integrity sha512-wYn6r8zVZyQJ6rQaALBEln5B1pzxb9shV5Ef97kTvn6yVGrqyXVnDqnU24MXnFubR+rZjBY9NWuxX3FB2sTsjg==
 
-"@greenwood/cli@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.13.0.tgz#b7efb8170d170e286524db943c51e39ea50d4550"
-  integrity sha512-qULX+1dMGAfEPIK7XgbhdTJyrpCDVkjtK4x2/R86TFT0ATCBxJyIMrPgOaKAx923A0UEKenR5C8SXlPWxZy4aA==
+"@greenwood/cli@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.14.0.tgz#836b8464794fde36605c84e31789521a6b54297b"
+  integrity sha512-/hdnqdAML3d4uX2RT6Guu9UKjFtgRyGhsfCB0fW0JokSKJPGQSdIkM7XmrBMJ/fZUo12qvnRGpfs7GaYYZqJig==
   dependencies:
     "@rollup/plugin-node-resolve" "^9.0.0"
     "@rollup/plugin-replace" "^2.3.4"
