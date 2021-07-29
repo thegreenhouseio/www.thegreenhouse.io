@@ -1,4 +1,4 @@
-import { css, html, LitElement } from 'lit-element';
+import { css, html, LitElement } from 'lit';
 import client from '@greenwood/plugin-graphql/core/client';
 import ChildrenQuery from '../../queries/children.gql';
 

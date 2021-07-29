@@ -37,42 +37,42 @@ describe('Card component', () => {
 
       expect(headingLink.length).to.equal(1);
       expect(headingLink[0].href).contain('');
-      expect(headingLink[0].innerHTML).contain('');
+      expect(headingLink[0].textContent).contain('');
     });
 
     it('should have an empty date display', () => {
       const date = card.shadowRoot.querySelectorAll('.wrapper .date');
 
       expect(date.length).to.equal(1);
-      expect(date[0].innerHTML).contain('');
+      expect(date[0].textContent).contain('');
     });
 
     it('should have an slides link', () => {
       const slides = card.shadowRoot.querySelectorAll('.wrapper .slides');
 
       expect(slides.length).to.equal(1);
-      expect(slides[0].innerHTML).contain('');
+      expect(slides[0].textContent).contain('');
     });
 
     it('should have an empty abstract link', () => {
       const content = card.shadowRoot.querySelectorAll('.wrapper .card-content article');
 
       expect(content.length).to.equal(1);
-      expect(content[0].innerHTML).contain('');
+      expect(content[0].textContent).contain('');
     });
 
     it('should have an empty image in the footer', () => {
       const image = card.shadowRoot.querySelectorAll('.wrapper .card-footer .image');
 
       expect(image.length).to.equal(1);
-      expect(image[0].innerHTML).contain('');
+      expect(image[0].textContent).contain('');
     });
 
     it('should have an empty video in the footer', () => {
       const video = card.shadowRoot.querySelectorAll('.wrapper .card-footer .video');
 
       expect(video.length).to.equal(1);
-      expect(video[0].innerHTML).contain('');
+      expect(video[0].textContent).contain('');
     });
 
   });
@@ -116,14 +116,14 @@ describe('Card component', () => {
 
       expect(headingLink.length).to.equal(1);
       expect(headingLink[0].href).to.equal(mockCard.link);
-      expect(headingLink[0].innerHTML).contain(mockCard.title);
+      expect(headingLink[0].textContent).contain(mockCard.title);
     });
 
     it('should have the expected date display', () => {
       const date = card.shadowRoot.querySelectorAll('.wrapper .card-header .date');
 
       expect(date.length).to.equal(1);
-      expect(date[0].innerHTML).contain(`Date: ${mockCard.date}`);
+      expect(date[0].textContent).contain(`Date: ${mockCard.date}`);
     });
 
     it('should have the expected slide link', () => {
@@ -137,7 +137,7 @@ describe('Card component', () => {
       const content = card.shadowRoot.querySelectorAll('.wrapper .card-content article');
 
       expect(content.length).to.equal(1);
-      expect(content[0].innerHTML).contain(mockCard.abstract);
+      expect(content[0].textContent).contain(mockCard.abstract);
     });
 
     it('should have the expected image in the footer', () => {

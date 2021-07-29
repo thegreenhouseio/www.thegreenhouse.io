@@ -1,4 +1,4 @@
-import { css, html, LitElement, unsafeCSS } from 'lit-element';
+import { css, html, LitElement, unsafeCSS } from 'lit';
 import '../social-icon-link/social-icon-link.js';
 import footerCss from './footer.css';
 
