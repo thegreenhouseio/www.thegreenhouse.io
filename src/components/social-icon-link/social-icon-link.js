@@ -35,11 +35,11 @@ class SocialIconLinkComponent extends LitElement {
     let detectedLink = '/';
 
     if (link && !name) {
-      if (link.indexOf('github') >= 0) {
+      if (link.indexOf('github.com') >= 0 || link.indexOf('github.io') >= 0) {
         detectedName = 'github';
-      } else if (link.indexOf('medium') >= 0) {
+      } else if (link.indexOf('medium.com') >= 0) {
         detectedName = 'medium';
-      } else if (link.indexOf('meetup') >= 0) {
+      } else if (link.indexOf('meetup.com') >= 0) {
         detectedName = 'meetup';
       }
     } else if (name) {
