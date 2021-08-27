@@ -10,7 +10,7 @@ class ProjectsService {
       name: 'Project Evergreen',
       description: `Project Evergreen is an effort I started to provide clear, detailed, and practical resources to those looking to build 
                     modern, dynamic, performant, and evergreen web applications.`,
-      link: 'https://project-evergreen.thegreenhouse.io/',
+      link: 'https://projectevergreen.github.io/',
       img: 'https://s3.amazonaws.com/uploads.thegreenhouse.io/project-evergreen/logo-small.png'
     }, {
       name: 'Health Of Mind Enhanced (HOME)',
