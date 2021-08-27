@@ -2,6 +2,14 @@ class ArticlesService {
   constructor() {
     // add new articles at the top, i.e. FIFO
     this.articles = [{
+      heading: 'Always Bet on HTML',
+      abstract: `Inspired by my own experiences over the past couple years working on my project GreenwoodJS, this article 
+        is a reflection of development in a time where JavaScript meta frameworks are all the rage, and how maybe writing a 
+        little more HTML, and less JavaScript, might not actually be as bad as it can be made out to be.`,
+      link: 'https://projectevergreen.github.io/blog/always-bet-on-html/',
+      img: '/assets/logos/project-evergreen-logo.png',
+      date: '8/2021'
+    }, {
       heading: 'A PWA For Providence Geeks',
       subHeading: 'A Case Study in Performance (pt. 3)',
       abstract: `Part three in my performance focused series for the Providence Geeks website.  In this installment I detail upgrading to webpack 4 and route based 
