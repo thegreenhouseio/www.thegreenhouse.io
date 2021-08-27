@@ -7,7 +7,7 @@ class PresentationsService {
                   developer exprience should be seen as a spectrum.  Not every project needs the same tools and complex solutions sll the time.  
                   My hope in this talk is that we can all come out of it thinking about our relationship with technology and productivity and how we can better balance the user experience.`,
       link: 'https://reliablewebsummit.com/session/knowing-your-tco-total-cost-of-ownership/',
-      video: 'http://www.youtube.com',
+      video: 'https://www.youtube.com',
       slides: 'https://github.com/thescientist13/knowing-your-tco',
       date: '8/27/2021'
     }, {
