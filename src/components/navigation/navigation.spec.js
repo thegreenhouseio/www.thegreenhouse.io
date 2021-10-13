@@ -28,21 +28,21 @@ describe('Navigation Component', () => {
       const links = navigation.shadowRoot.querySelectorAll('nav ul li a')[0];
 
       expect(links.href).contain('/about/');
-      expect(links.innerHTML).to.equal('About');
+      expect(links.textContent).to.equal('About');
     });
 
     it('should have a projects link', () => {
       const links = navigation.shadowRoot.querySelectorAll('nav ul li a')[1];
 
       expect(links.href).contain('/projects/');
-      expect(links.innerHTML).to.equal('Projects');
+      expect(links.textContent).to.equal('Projects');
     });
 
     it('should have a blogs link', () => {
       const links = navigation.shadowRoot.querySelectorAll('nav ul li a')[2];
 
       expect(links.href).contain('/blog/');
-      expect(links.innerHTML).to.equal('Blog');
+      expect(links.textContent).to.equal('Blog');
     });
   });
 

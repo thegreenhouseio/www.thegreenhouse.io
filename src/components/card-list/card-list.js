@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import '../card/card.js';
 
 class CardListComponent extends LitElement {

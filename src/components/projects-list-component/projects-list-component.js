@@ -1,4 +1,4 @@
-import { css, html, LitElement } from 'lit-element';
+import { css, html, LitElement } from 'lit';
 import '../card-list/card-list.js';
 import ProjectsService from '../../services/projects/projects-service.js';
 

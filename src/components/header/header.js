@@ -1,4 +1,4 @@
-import { css, html, LitElement, unsafeCSS } from 'lit-element';
+import { css, html, LitElement, unsafeCSS } from 'lit';
 import headerCss from './header.css';
 
 class HeaderComponent extends LitElement {
