@@ -1,12 +1,12 @@
-const pluginGoogleAnalytics = require('@greenwood/plugin-google-analytics');
-const pluginGraphQL = require('@greenwood/plugin-graphql');
-const pluginImportCSS = require('@greenwood/plugin-import-css');
-const pluginPostcss = require('@greenwood/plugin-postcss');
+import { greenwoodPluginGoogleAnalytics } from '@greenwood/plugin-google-analytics';
+import { greenwoodPluginGraphQL } from '@greenwood/plugin-graphql';
+import { greenwoodPluginImportCss } from '@greenwood/plugin-import-css';
+import { greenwoodPluginPostCss } from '@greenwood/plugin-postcss';
 const DESCRIPTION = 'Personal site and blog for Owen Buckley and The Greenhouse I/O.  Ideas are built here.';
 const FAVICON_HREF = '/assets/favicon.ico';
 const TITLE = 'The Greenhouse I/O';
 
-module.exports = {
+export default {
   // TODO optimization: 'strict',
 
   title: TITLE,
@@ -29,15 +29,15 @@ module.exports = {
   },
 
   plugins: [
-    pluginGoogleAnalytics({
+    greenwoodPluginGoogleAnalytics({
       analyticsId: 'UA-117350131-1'
     }),
 
-    pluginPostcss(),
+    greenwoodPluginPostCss(),
     
-    ...pluginImportCSS(),
+    ...greenwoodPluginImportCss(),
 
-    ...pluginGraphQL()
+    ...greenwoodPluginGraphQL()
   ],
 
   markdown: {
