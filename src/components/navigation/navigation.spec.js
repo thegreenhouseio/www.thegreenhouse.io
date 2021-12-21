@@ -21,7 +21,7 @@ describe('Navigation Component', () => {
     it('should have three static links', () => {
       const links = navigation.shadowRoot.querySelectorAll('.navigation a');
 
-      expect(links.length).to.equal(3);
+      expect(links.length).to.equal(4);
     });
 
     it('should have an about link', () => {
@@ -43,6 +43,13 @@ describe('Navigation Component', () => {
 
       expect(links.href).contain('/blog/');
       expect(links.innerHTML).to.equal('Blog');
+    });
+
+    it('should have a Contact link', () => {
+      const links = navigation.shadowRoot.querySelectorAll('nav ul li a')[3];
+
+      expect(links.href).contain('/contact/');
+      expect(links.innerHTML).to.equal('Contact');
     });
   });
 
