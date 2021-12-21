@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <style>
+      p {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      form {
+        margin: 20px auto;
+        width: 500px;
+      }
+
+      label {
+        display: block;
+      }
+
+      input {
+        width: 70%;
+        margin: 0 auto 20px;
+        padding: 5px;
+      }
+
+      textarea {
+        width: 100%;
+        margin: 0 auto 20px;
+        padding: 5px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Feel free to reach out if you have questions or like anything you see.</p>
+    <p>All projects are open to contributions! ✌️</p>
+    
+    <form name="contact" method="post" data-netlify="true">
+      <label for="subject">Subject</label>
+      <input name="subject" type="text" required/>
+
+      <label for="email">Email</label>
+      <input name="email" type="email" required/>
+      
+      <label for="message">Message</label>
+      <textarea name="message" required></textarea>
+    </form>
+  </body>
+</html>
