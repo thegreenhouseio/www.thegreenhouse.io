@@ -3,11 +3,11 @@ class PresentationsService {
     // add new presentations at the top, i.e. FIFO
     this.presentations = [{
       title: 'Knowing Your TCO',
-      abstract: `TCO stands for Total Cost of Ownership, and in this talk I specfically call out to the web development community and posit that
-                  developer exprience should be seen as a spectrum.  Not every project needs the same tools and complex solutions sll the time.  
+      abstract: `TCO stands for Total Cost of Ownership, and in this talk I specifically call out to the web development community and posit that
+                  developer experience should be seen as a spectrum.  Not every project needs the same tools and complex solutions all the time.  
                   My hope in this talk is that we can all come out of it thinking about our relationship with technology and productivity and how we can better balance the user experience.`,
       link: 'https://reliablewebsummit.com/session/knowing-your-tco-total-cost-of-ownership/',
-      video: 'https://www.youtube.com',
+      video: 'https://www.youtube.com/embed/qINz-hKUX2s',
       slides: 'https://github.com/thescientist13/knowing-your-tco',
       date: '8/27/2021'
     }, {
