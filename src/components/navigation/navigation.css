@@ -25,6 +25,6 @@
 
 @media (max-width: 780px) {
   .navigation ul {
-    column-count: 2
+    column-count: 2;
   }
 }
