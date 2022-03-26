@@ -6,6 +6,8 @@ import { greenwoodPluginPostCss } from '@greenwood/plugin-postcss';
 export default {
   // TODO optimization: 'strict',
 
+  prerender: true,
+
   devServer: {
     port: 51201
   },
