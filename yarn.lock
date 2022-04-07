@@ -315,10 +315,10 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.0.tgz#0eee6373e11418bfe0b5638f654df7a4ca6a3950"
   integrity sha512-wYn6r8zVZyQJ6rQaALBEln5B1pzxb9shV5Ef97kTvn6yVGrqyXVnDqnU24MXnFubR+rZjBY9NWuxX3FB2sTsjg==
 
-"@greenwood/cli@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.24.0.tgz#3137a1d63503b283bfb97462430611ac9cb4e502"
-  integrity sha512-cY3JUvkwPhwypKpXRsWMDnB8jwQNw976fJO50zVyhEQRX7TtLnVxe7PPXgh7g4Tnq6s5Ov5Fo4uoGPNttU6SiA==
+"@greenwood/cli@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.25.0.tgz#b0b29513258a3009bbe7e7cca92874a056501fb5"
+  integrity sha512-JIsgYMPTkdNgCN8GtG9Us/g1lw5V4uE9PawszyTPmEav2m0hGAfhLAhhLDAZOgrIm7DUX+k+7oc4nD6Ermt8hA==
   dependencies:
     "@rollup/plugin-node-resolve" "^13.0.0"
     "@rollup/plugin-replace" "^2.3.4"
@@ -336,7 +336,6 @@
     node-html-parser "^1.2.21"
     postcss "^8.3.11"
     postcss-import "^13.0.0"
-    puppeteer "^10.2.0"
     rehype-raw "^5.0.0"
     rehype-stringify "^8.0.0"
     remark-frontmatter "^2.0.0"
@@ -346,15 +345,15 @@
     rollup-plugin-terser "^7.0.0"
     unified "^9.2.0"
 
-"@greenwood/plugin-google-analytics@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.24.0.tgz#2a45cbd111962cc300bb07f3ca30b5a5ed6fefbd"
-  integrity sha512-DkBt5lJxFt3wVIdQQm67CfMnaaCZCYEwmlLGm0ePLGWzmdeciyENv+8EstyYXr/llk5ukprj7Uc6V7gbpBAFxg==
+"@greenwood/plugin-google-analytics@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.25.0.tgz#cd6f39d910b77aefef0f25a4f7cdfe78426112f1"
+  integrity sha512-JC4ZXqDR/6iJbyq+sNkokv1h1Hu6gXy2mDTkezWsgozqlPuaMAwUMZxxGqxx1sFfwQp8MorDLjP3bBG+YUgJSA==
 
-"@greenwood/plugin-graphql@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-graphql/-/plugin-graphql-0.24.0.tgz#0b4fd7bc75ebbef608920cc5ba6ed8823e06cd99"
-  integrity sha512-5ICbW4VoDGMGrsGX6qvZV9Cj/WoGGoBpbeDr+wubxcCbvz31/4diZw88BYvRmfCvtWgjVQZHwXtnqGOtT/bHuw==
+"@greenwood/plugin-graphql@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-graphql/-/plugin-graphql-0.25.0.tgz#eba68dd49c7ce6a43209578be619242d6de00c9b"
+  integrity sha512-02Y0xEo3NJBBcU+kmrPTYoMdswf/wpxoV2is9I2zznnvOP9U+rmXd47HBDoxzUvr2hV2DRwPMdu79VprPe354Q==
   dependencies:
     "@apollo/client" "^3.3.11"
     "@rollup/plugin-alias" "^3.1.2"
@@ -363,17 +362,17 @@
     graphql-tag "^2.10.1"
     node-fetch "^2.6.1"
 
-"@greenwood/plugin-import-css@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-import-css/-/plugin-import-css-0.24.0.tgz#77c7cde533698d48324f5f46cea34033d1c9f3aa"
-  integrity sha512-5F06zHWyUG8iXOrw2aN1iZKaGW7JxWr/hybSIRnm9gzDoVqiL+PCIMjKRwvQngXHS5J0a7SW6hh4C6eqFlvvxQ==
+"@greenwood/plugin-import-css@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-import-css/-/plugin-import-css-0.25.0.tgz#ec3bb385f4154cff72235321cf5af238c0f69967"
+  integrity sha512-Z4y2wj5KaAVsQ/BiPqim3bGe6iB/n4N/q+pt/kqFDJab5aj7ROhRe4OoMOm5FWOc8g11u56aSw+qVf2oH1u3CA==
   dependencies:
     rollup-plugin-postcss "^4.0.2"
 
-"@greenwood/plugin-postcss@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-postcss/-/plugin-postcss-0.24.0.tgz#d8ef705eccd77f6d6fef6dadd79c55232bcac16c"
-  integrity sha512-5NyqleaiU7fNLGHG/KmaupsxMWi9/9V5HeRBPGNPFQgmYtnMS86vrv9pS6Z6B68iaIbxRzeQge2bX60Ea5+rsA==
+"@greenwood/plugin-postcss@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-postcss/-/plugin-postcss-0.25.0.tgz#c66475a96822b64b50c7fb917ae381909e6c14b1"
+  integrity sha512-YfxjXjwGZ+HYT9m3wBUi8F0He2oei11i8nvxER2ftZsJYZgtc9mDxfupgi9J7nG9xsJXheCXPutTaiaHKqT7OA==
   dependencies:
     cssnano "^5.0.11"
     postcss-preset-env "^7.0.1"
@@ -4420,6 +4419,11 @@ minimist@^1.2.0, minimist@^1.2.5:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
+minimist@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
+
 mixin-deep@^1.1.3:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
@@ -4433,7 +4437,14 @@ mkdirp-classic@^0.5.2:
   resolved "https://registry.yarnpkg.com/mkdirp-classic/-/mkdirp-classic-0.5.3.tgz#fa10c9115cc6d8865be221ba47ee9bed78601113"
   integrity sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==
 
-mkdirp@^0.5.1, mkdirp@^0.5.5:
+mkdirp@^0.5.1:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.6.tgz#7def03d2432dcae4ba1d611445c48396062255f6"
+  integrity sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==
+  dependencies:
+    minimist "^1.2.6"
+
+mkdirp@^0.5.5:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.5.tgz#d91cefd62d1436ca0f41620e251288d420099def"
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
@@ -5518,9 +5529,9 @@ puppeteer-core@^13.1.3:
     ws "8.5.0"
 
 puppeteer@^10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-10.2.0.tgz#7d8d7fda91e19a7cfd56986e0275448e6351849e"
-  integrity sha512-OR2CCHRashF+f30+LBOtAjK6sNtz2HEyTr5FqAvhf8lR/qB3uBRoIZOwQKgwoyZnMBsxX7ZdazlyBgGjpnkiMw==
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-10.4.0.tgz#a6465ff97fda0576c4ac29601406f67e6fea3dc7"
+  integrity sha512-2cP8mBoqnu5gzAVpbZ0fRaobBWZM8GEUF4I1F6WbgHrKV/rz7SX8PG2wMymZgD0wo0UBlg2FBPNxlF/xlqW6+w==
   dependencies:
     debug "4.3.1"
     devtools-protocol "0.0.901419"
