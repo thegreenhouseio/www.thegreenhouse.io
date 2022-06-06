@@ -4,10 +4,10 @@ class PresentationsService {
     this.presentations = [{
       title: 'Knowing Your TCO',
       abstract: `TCO stands for Total Cost of Ownership, and in this talk I specifically call out to the web development community and posit that
-                  developer experience should be seen as a spectrum.  Not every project needs the same tools and complex solutions all the time.  
+                  developer experience should be seen as a spectrum.  Not every project needs the same tools and complex solutions all the time.
                   My hope in this talk is that we can all come out of it thinking about our relationship with technology and productivity and how we can better balance the user experience.`,
       link: 'https://reliablewebsummit.com/session/knowing-your-tco-total-cost-of-ownership/',
-      video: 'https://www.youtube.com/embed/qINz-hKUX2s',
+      video: 'https://www.youtube.com/embed/6QBf5QCRSPI',
       slides: 'https://github.com/thescientist13/knowing-your-tco',
       date: '8/27/2021'
     }, {
@@ -21,7 +21,7 @@ class PresentationsService {
       date: '8/22/2019'
     }, {
       title: 'Building A Better Mouse Trap: Docker + SSR',
-      abstract: `In this presentation, I discussed how Docker can help soften some of the thornier parts of implementing SSR, 
+      abstract: `In this presentation, I discussed how Docker can help soften some of the thornier parts of implementing SSR,
                 while maintaining great User Experiences (UX) and just as importantly, promoting good Developer Experiences (DX).`,
       link: 'https://jsi2018.sched.com/event/F76V?iframe=no',
       video: 'https://www.youtube.com/embed/Hj0hXuiz7Io',
@@ -42,7 +42,7 @@ class PresentationsService {
       date: '3/3/2018'
     }, {
       title: 'Providence Geeks 2.0: Building a Website and a Community',
-      abstract: `A presentation I did at a Kenzan Meetup on a project sponsored by Kenzan to redesign and rebuild the website for the local community 
+      abstract: `A presentation I did at a Kenzan Meetup on a project sponsored by Kenzan to redesign and rebuild the website for the local community
                 meetup group Providence Geeks.  Covered the entire process from design to delivery, and everything in between.`,
       link: 'https://www.meetup.com/Kenzan-Providence-Hack-Nights/events/246620015/',
       date: '1/18/2018',
@@ -55,7 +55,7 @@ class PresentationsService {
       date: '9/21/2017'
     }, {
       title: 'A JavaScript Stack to Build On: Intersecting UX and DX',
-      abstract: `Presentation I gave at ProvJS based on my article series for Kenzan that covered modern frontend development with Yarn, webpack and TypeScript.  
+      abstract: `Presentation I gave at ProvJS based on my article series for Kenzan that covered modern frontend development with Yarn, webpack and TypeScript.
                 Included a code walkthrough on a webpack based React project.`,
       link: 'https://www.meetup.com/Prov-JS/events/241787664/',
       date: '8/3/2017'
@@ -63,7 +63,7 @@ class PresentationsService {
       title: 'JavaScript in 2017',
       abstract: 'Kenzan Meetup presentation on the current state of JavaScript in 2017.  Covered the history of JavaScript, ES2015+, package management, module bundling, and more.',
       link: 'https://www.meetup.com/Kenzan-Providence-Hack-Nights/events/237147005/',
-      date: '8/3/2017', 
+      date: '8/3/2017',
       video: 'https://www.youtube.com/embed/HlHTaBUmfUQ'
     }, {
       title: 'Managing an Open Source Project in GitHub',
@@ -89,7 +89,7 @@ class PresentationsService {
       };
     });
   }
-  
+
 }
 
 export default PresentationsService;
