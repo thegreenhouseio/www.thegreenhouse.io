@@ -1,18 +1,17 @@
-import { css, html, LitElement, unsafeCSS } from 'lit-element';
-import '../social-icon-link/social-icon-link.js';
-import footerCss from './footer.css';
+import { css, html, LitElement, unsafeCSS } from "lit-element";
+import "../social-icon-link/social-icon-link.js";
+import footerCss from "./footer.css";
 
 class FooterComponent extends LitElement {
-  
   constructor() {
     super();
   }
-  
+
   static get styles() {
     return css`
-      ${ unsafeCSS(footerCss) }
+      ${unsafeCSS(footerCss)}
     `;
-  } 
+  }
 
   render() {
     return html`
@@ -33,12 +32,15 @@ class FooterComponent extends LitElement {
           <li>
             <app-social-icon-link name="github"></app-social-icon-link>
           </li>
+          <li>
+            <app-social-icon-link name="youtube"></app-social-icon-link>
+          </li>
         </ul>
-        
+
         <span class="copyright">&copy; Owen Buckley / thegreenhouse.io</span>
       </footer>
     `;
   }
 }
 
-customElements.define('app-footer', FooterComponent);
+customElements.define("app-footer", FooterComponent);
