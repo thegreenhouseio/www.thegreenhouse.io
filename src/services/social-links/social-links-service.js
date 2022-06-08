@@ -12,6 +12,9 @@ class SocialLinksService {
     }, {
       name: 'github',
       url: 'https://github.com/thescientist13'
+    }, {
+      name: 'youtube',
+      url: 'https://youtube.com/playlist?list=PLRGBdE7KCzCfav_C807DsKaydedc6qq13'
     }];
   }
 

@@ -21,17 +21,17 @@ class FooterComponent extends LitElement {
           <li>
             <app-social-icon-link name="linkedin"></app-social-icon-link>
           </li>
-
           <li>
             <app-social-icon-link name="twitter"></app-social-icon-link>
           </li>
-
           <li>
             <app-social-icon-link name="medium"></app-social-icon-link>
           </li>
-
           <li>
             <app-social-icon-link name="github"></app-social-icon-link>
+          </li>
+          <li>
+            <app-social-icon-link name="youtube"></app-social-icon-link>
           </li>
         </ul>
         

@@ -19,8 +19,8 @@ describe('SocialLinksService', () => {
       links = socialLinksService.getLinks();
     });
 
-    it('should have 4 links', () => {
-      expect(links.length).to.equal(4);
+    it('should have 5 links', () => {
+      expect(links.length).to.equal(5);
     });
 
     it('should return the expected links from getLinks', () => {
@@ -35,6 +35,9 @@ describe('SocialLinksService', () => {
   
       expect(links[3].name).to.equal('github');
       expect(links[3].url).to.equal('https://github.com/thescientist13');
+      
+      expect(links[4].name).to.equal('youtube');
+      expect(links[4].url).to.equal('https://youtube.com/playlist?list=PLRGBdE7KCzCfav_C807DsKaydedc6qq13');
     });
 
   });
@@ -56,6 +59,7 @@ describe('SocialLinksService', () => {
       expect(links.get('twitter')).to.equal('https://twitter.com/thegreenhouseio');
       expect(links.get('medium')).to.equal('https://medium.com/@thegreenhouseio');
       expect(links.get('github')).to.equal('https://github.com/thescientist13');
+      expect(links.get('youtube')).to.equal('https://youtube.com/playlist?list=PLRGBdE7KCzCfav_C807DsKaydedc6qq13');
     });
 
   });
@@ -67,8 +71,8 @@ describe('SocialLinksService', () => {
       links = socialLinksService.getLinksAsArray();
     });
 
-    it('should be an array of four items', () => {
-      expect(links.length).to.equal(4);
+    it('should be an array of five items', () => {
+      expect(links.length).to.equal(5);
     });
 
     it('should return the expected links from getLinks', () => {
@@ -76,6 +80,7 @@ describe('SocialLinksService', () => {
       expect(links[1]).to.equal('https://twitter.com/thegreenhouseio');
       expect(links[2]).to.equal('https://medium.com/@thegreenhouseio');
       expect(links[3]).to.equal('https://github.com/thescientist13');
+      expect(links[4]).to.equal('https://youtube.com/playlist?list=PLRGBdE7KCzCfav_C807DsKaydedc6qq13');
     });
 
   });

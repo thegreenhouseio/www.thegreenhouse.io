@@ -41,6 +41,8 @@ class SocialIconLinkComponent extends LitElement {
         detectedName = 'medium';
       } else if (link.indexOf('meetup.com') >= 0) {
         detectedName = 'meetup';
+      } else if (link.indexOf('youtube.com') >= 0) {
+        detectedName = 'youtube';
       }
     } else if (name) {
       detectedName = name;

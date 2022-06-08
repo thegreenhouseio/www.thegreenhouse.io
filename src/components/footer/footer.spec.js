@@ -23,8 +23,8 @@ describe('Footer Component', () => {
       expect(footer.shadowRoot.querySelectorAll('footer').length).equal(1);
     });
   
-    it('should have four <app-social-icon-link/> components in a list', () => {
-      expect(footer.shadowRoot.querySelectorAll('ul li app-social-icon-link').length).equal(4);
+    it('should have five <app-social-icon-link/> components in a list', () => {
+      expect(footer.shadowRoot.querySelectorAll('ul li app-social-icon-link').length).equal(5);
     });
   
     it('should display copyright text', () => {
@@ -56,6 +56,12 @@ describe('Footer Component', () => {
         const github = footer.shadowRoot.querySelectorAll('ul li app-social-icon-link[name="github"]');
        
         expect(github.length).equal(1);
+      });
+
+      it('should have a youtube icon', () => {
+        const youtube = footer.shadowRoot.querySelectorAll('ul li app-social-icon-link[name="youtube"]');
+       
+        expect(youtube.length).equal(1);
       });
     });
   });
