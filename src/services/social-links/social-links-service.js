@@ -1,27 +1,21 @@
 class SocialLinksService {
   constructor() {
-    this.links = [
-      {
-        name: "linkedin",
-        url: "https://www.linkedin.com/in/owen-buckley-91393447/",
-      },
-      {
-        name: "twitter",
-        url: "https://twitter.com/thegreenhouseio",
-      },
-      {
-        name: "medium",
-        url: "https://medium.com/@thegreenhouseio",
-      },
-      {
-        name: "github",
-        url: "https://github.com/thescientist13",
-      },
-      {
-        name: "youtube",
-        url: "https://youtube.com/playlist?list=PLRGBdE7KCzCfav_C807DsKaydedc6qq13",
-      },
-    ];
+    this.links = [{
+      name: 'linkedin',
+      url: 'https://www.linkedin.com/in/owen-buckley-91393447/'
+    }, {
+      name: 'twitter',
+      url: 'https://twitter.com/thegreenhouseio'
+    }, {
+      name: 'medium',
+      url: 'https://medium.com/@thegreenhouseio'
+    }, {
+      name: 'github',
+      url: 'https://github.com/thescientist13'
+    }, {
+      name: 'youtube',
+      url: 'https://youtube.com/playlist?list=PLRGBdE7KCzCfav_C807DsKaydedc6qq13'
+    }];
   }
 
   getLinks() {
@@ -31,7 +25,7 @@ class SocialLinksService {
   getLinksAsMap() {
     let linksMap = new Map();
 
-    this.links.forEach((link) => {
+    this.links.forEach(link => {
       linksMap.set(link.name, link.url);
     });
 
@@ -41,12 +35,13 @@ class SocialLinksService {
   getLinksAsArray() {
     let links = [];
 
-    this.links.forEach((link) => {
+    this.links.forEach(link => {
       links.push(link.url);
     });
 
     return links;
   }
+
 }
 
 export default SocialLinksService;
