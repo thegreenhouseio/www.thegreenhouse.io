@@ -7,6 +7,7 @@ class PresentationsService {
                  the Web Components we write for the web and push them all the way to the edge through server rendering,
                  all while getting more HTML from our JavaScript!`,
       link: 'https://sched.co/11loQ',
+      video: 'https://www.youtube.com/embed/ba83Zo8kf68',
       slides: 'https://github.com/thescientist13/web-components-at-the-edge',
       date: '6/8/2022'
     }, {
