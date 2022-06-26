@@ -2,6 +2,15 @@ class PresentationsService {
   constructor() {
     // add new presentations at the top, i.e. FIFO
     this.presentations = [{
+      title: 'Web Components at the Edge',
+      abstract: `It's time for the web to have some fun! Together, let's look at how we can take
+                 the Web Components we write for the web and push them all the way to the edge through server rendering,
+                 all while getting more HTML from our JavaScript!`,
+      link: 'https://sched.co/11loQ',
+      video: 'https://www.youtube.com/embed/ba83Zo8kf68',
+      slides: 'https://github.com/thescientist13/web-components-at-the-edge',
+      date: '6/8/2022'
+    }, {
       title: 'Knowing Your TCO',
       abstract: `TCO stands for Total Cost of Ownership, and in this talk I specifically call out to the web development community and posit that
                   developer experience should be seen as a spectrum.  Not every project needs the same tools and complex solutions all the time.
