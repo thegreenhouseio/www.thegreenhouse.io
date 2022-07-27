@@ -2,11 +2,10 @@ import { greenwoodPluginGoogleAnalytics } from '@greenwood/plugin-google-analyti
 import { greenwoodPluginGraphQL } from '@greenwood/plugin-graphql';
 import { greenwoodPluginImportCss } from '@greenwood/plugin-import-css';
 import { greenwoodPluginPostCss } from '@greenwood/plugin-postcss';
+import { greenwoodPluginRendererPuppeteer } from '@greenwood/plugin-renderer-puppeteer';
 
 export default {
   // TODO optimization: 'strict',
-
-  prerender: true,
 
   devServer: {
     port: 51201
@@ -21,7 +20,9 @@ export default {
     
     ...greenwoodPluginImportCss(),
 
-    ...greenwoodPluginGraphQL()
+    ...greenwoodPluginGraphQL(),
+
+    ...greenwoodPluginRendererPuppeteer()
   ],
 
   markdown: {
