@@ -315,10 +315,10 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.0.tgz#0eee6373e11418bfe0b5638f654df7a4ca6a3950"
   integrity sha512-wYn6r8zVZyQJ6rQaALBEln5B1pzxb9shV5Ef97kTvn6yVGrqyXVnDqnU24MXnFubR+rZjBY9NWuxX3FB2sTsjg==
 
-"@greenwood/cli@^0.27.0-alpha.0":
-  version "0.27.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.27.0-alpha.0.tgz#6953061d16c1c9d9dfa627aced46e681c28cc171"
-  integrity sha512-9Fn5gYZ4ZrK4QmDNczUXMaWZUVOK7fAxSS91wD8zBvecZTMkGZwXLhjPvMpQEAzEiKVhgaZCTleO3khuZpd29w==
+"@greenwood/cli@^0.27.0-alpha.1":
+  version "0.27.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.27.0-alpha.1.tgz#26c814174dee8371715f642475388fb03edd913d"
+  integrity sha512-/18+49fd4G4UeGV7rpw8U8dJHBlNrwsOnvrnCQ7PZJpxiuMjI9KlKiWcMPbjTYnDyX5/Yq0EASPY+HEpga3R5A==
   dependencies:
     "@rollup/plugin-node-resolve" "^13.0.0"
     "@rollup/plugin-replace" "^2.3.4"
@@ -345,15 +345,15 @@
     unified "^9.2.0"
     wc-compiler "~0.5.0"
 
-"@greenwood/plugin-google-analytics@^0.27.0-alpha.0":
-  version "0.27.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.27.0-alpha.0.tgz#bf05ec3746aea5dc845476f747b799247fb175d9"
-  integrity sha512-Ju6wym4eX8j708CIQK+pL88Aws/wOIq1shkHI45pd8sjnStUI+tlp3bLxqH9E9IJGiTR+9hVtQemvYpY2nPpTQ==
+"@greenwood/plugin-google-analytics@^0.27.0-alpha.1":
+  version "0.27.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.27.0-alpha.1.tgz#87f60c253cf59807ef822bfc7368f1d2b2ee4aad"
+  integrity sha512-YiV4TFCGbuYCmspKhiCdMz1sDjexbKBfe2p391nnKQZ2DXqdAj+GHzhXWV6g7gk043cSPmZeEhwn56+tiFo2iw==
 
-"@greenwood/plugin-graphql@^0.27.0-alpha.0":
-  version "0.27.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-graphql/-/plugin-graphql-0.27.0-alpha.0.tgz#494276770ace282b61f7c45f31c7eb3b2075aa1e"
-  integrity sha512-cGUIvUVoqHsFaoRBIk7jq3B02pkUXiwTKTQSaazlDG0pF1Coa7/kpjnfNlOQO3yxQ4cKjzpt6N8QfbxMf++Lew==
+"@greenwood/plugin-graphql@^0.27.0-alpha.1":
+  version "0.27.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-graphql/-/plugin-graphql-0.27.0-alpha.1.tgz#fafc5f41ae14171a27ae31d13705eb3fc1a7955d"
+  integrity sha512-QByFeiqdJrt/OtB87ZzalxbN5dc1QqrlYBZ/8oggsMKzCvlxTb4SOsnTBIGrxgITH4knGl+tkoaJOy1+cdUaZA==
   dependencies:
     "@apollo/client" "^3.3.11"
     "@rollup/plugin-alias" "^3.1.2"
@@ -362,23 +362,23 @@
     graphql-tag "^2.10.1"
     node-fetch "^2.6.1"
 
-"@greenwood/plugin-import-css@^0.27.0-alpha.0":
-  version "0.27.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-import-css/-/plugin-import-css-0.27.0-alpha.0.tgz#52c50f5fe1b38b166aacaa127a1193aec5d035db"
-  integrity sha512-OH2/n0sgOYNPFiprJ6Si3ZhdvnNRNJ0xmD8Uouip0j2VbqU6omyZ9O7c+Z7Z3KozJ2JmkR062QrzlcB+EhE33A==
+"@greenwood/plugin-import-css@^0.27.0-alpha.1":
+  version "0.27.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-import-css/-/plugin-import-css-0.27.0-alpha.1.tgz#2d13ce1a90667c824d908121fc88f9eb1c93bb69"
+  integrity sha512-WzXNK5IeP9x2TDR+EoK7Lt1cdrx1A4LzMJd/l2Ue19id3xrHdJdaxMyit6UhDZyDPdwSP8A2HXj2HCPUfU3arg==
 
-"@greenwood/plugin-postcss@^0.27.0-alpha.0":
-  version "0.27.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-postcss/-/plugin-postcss-0.27.0-alpha.0.tgz#b4ba09e03a864f34247a7e9f4d8670b9c01ef8de"
-  integrity sha512-865+HtZIyO6w7Ab6KNXPAkd2H5DMr4XjGQzhPmw5B/PHMzflBDo38+HPiL4KxjL4as/rdmOCBqYSpXEnhQNzNw==
+"@greenwood/plugin-postcss@^0.27.0-alpha.1":
+  version "0.27.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-postcss/-/plugin-postcss-0.27.0-alpha.1.tgz#78522b9057be88831071c3b1e94fea292d6865b7"
+  integrity sha512-x6PULBBM+yDMQHwbL+atAqRfKsysjpyz0cUQrHBpQgze2xvRt0jMVf43RYo9z5VLVAtjKuFlbig550Iu3DyEyA==
   dependencies:
     cssnano "^5.0.11"
     postcss-preset-env "^7.0.1"
 
-"@greenwood/plugin-renderer-puppeteer@^0.27.0-alpha.0":
-  version "0.27.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-renderer-puppeteer/-/plugin-renderer-puppeteer-0.27.0-alpha.0.tgz#02486507e5e22b527d1f56633dfde4622abbab98"
-  integrity sha512-oVFgJzIzSLsG/dk7inlUkypdZvXQS8MSKLazW1rc7JH5nfKDOfg3975f0OxlRNUcJDFBS/M4d0mxB2cuNkp+4A==
+"@greenwood/plugin-renderer-puppeteer@^0.27.0-alpha.1":
+  version "0.27.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-renderer-puppeteer/-/plugin-renderer-puppeteer-0.27.0-alpha.1.tgz#06d859d01ff44c1f085b4b841b598d7b9c0a165c"
+  integrity sha512-NaPznRdJKK/MN/5ugSXmZWjQnrsQLcMCu1fzP1jAXbeSGnN8D1uIngt3+wht3XPEHICLZJ8Me8mMixRJvYOncQ==
   dependencies:
     "@webcomponents/webcomponentsjs" "^2.6.0"
     puppeteer "^15.3.2"
