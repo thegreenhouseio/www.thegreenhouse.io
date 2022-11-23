@@ -1,6 +1,6 @@
 import { css, html, LitElement, unsafeCSS } from 'lit-element';
 import '../social-icon-link/social-icon-link.js';
-import footerCss from './footer.css';
+import footerCss from './footer.css?type=css';
 
 class FooterComponent extends LitElement {
   

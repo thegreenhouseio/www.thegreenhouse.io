@@ -12,17 +12,13 @@ export default {
   },
 
   plugins: [
+    greenwoodPluginPostCss(),
+    greenwoodPluginImportCss(),
+    greenwoodPluginGraphQL(),
+    greenwoodPluginRendererPuppeteer(),
     greenwoodPluginGoogleAnalytics({
       analyticsId: 'UA-117350131-1'
-    }),
-
-    greenwoodPluginPostCss(),
-    
-    ...greenwoodPluginImportCss(),
-
-    ...greenwoodPluginGraphQL(),
-
-    ...greenwoodPluginRendererPuppeteer()
+    })
   ],
 
   markdown: {
@@ -30,5 +26,4 @@ export default {
       '@mapbox/rehype-prism'
     ]
   }
-
 };
