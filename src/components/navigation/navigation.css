@@ -3,6 +3,7 @@
     display: block;
     margin: 25px auto;
     text-align: center;
+    width: 90%;
   }
 
   & .navigation ul {
@@ -15,6 +16,7 @@
   & .navigation li {
     display: inline-block;
     width: 100px;
+    margin: 5px 0;
   }
 
   & .navigation a {

@@ -2,7 +2,7 @@
 @import url('../../node_modules/prismjs/themes/prism-tomorrow.css');
 
 p {
-  width: 60%;
+  width: 90%;
   margin: 10px auto;
   padding: 10px;
 }
@@ -27,4 +27,10 @@ pre {
   margin: 0 auto!important;
   text-align: left;
   padding-left: 30%!important;
+}
+
+@media (min-width: 800px) {
+  p {
+    width: 60%;
+  }
 }

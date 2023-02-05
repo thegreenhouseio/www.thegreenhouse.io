@@ -19,3 +19,9 @@
 .clear-fix {
   clear: both;
 }
+
+@media (max-width: 768px) {
+  .layout {
+    width: 90%;
+  }
+}
