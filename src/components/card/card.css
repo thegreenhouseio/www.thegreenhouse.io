@@ -1,11 +1,4 @@
 :host {
-  & .card {
-    width: 70%;
-    margin: 0 auto 35px;
-    max-width: 1024px;
-    min-width: 320px;
-  }
-
   & .wrapper {
     padding: 10px;
     display: grid;
@@ -59,6 +52,11 @@
 
 @media (min-width: 700px) {
   :host .card {
+    width: 70%;
+    margin: 0 auto 35px;
+    max-width: 1024px;
+    min-width: 320px;
+
     & .wrapper {
       border: 2px solid #020202;
       border-radius: 12px;
