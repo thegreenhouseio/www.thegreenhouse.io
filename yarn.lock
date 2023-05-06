@@ -315,10 +315,10 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.0.tgz#0eee6373e11418bfe0b5638f654df7a4ca6a3950"
   integrity sha512-wYn6r8zVZyQJ6rQaALBEln5B1pzxb9shV5Ef97kTvn6yVGrqyXVnDqnU24MXnFubR+rZjBY9NWuxX3FB2sTsjg==
 
-"@greenwood/cli@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.28.0.tgz#c4964622ab4b6759224fa425572e4b053e137fb4"
-  integrity sha512-vRUDGnfbyBBZCDPa2ShWyh8iZ1buD37okAqebKqcnum7u/tcjHiLd2AwMjrkihMSn2Oxobx9F2aD1QL7/E/AOQ==
+"@greenwood/cli@^0.28.2":
+  version "0.28.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/cli/-/cli-0.28.2.tgz#4ff180bdc45ff2dc5e91ada1baa25e912c045311"
+  integrity sha512-MD7zC3EmNYCIZKR3zJSjBld6v3X22AWXMlt9KeXeX5sU8im+qDBl9uIKFLvYGZw8P0Wx8baFSJdHsF5Ziy/kqg==
   dependencies:
     "@rollup/plugin-commonjs" "^21.0.0"
     "@rollup/plugin-node-resolve" "^13.0.0"
@@ -344,15 +344,15 @@
     unified "^9.2.0"
     wc-compiler "~0.8.0"
 
-"@greenwood/plugin-google-analytics@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.28.0.tgz#647df4509a8ec7f5cdb67034e52d667dc15c7100"
-  integrity sha512-C2WrE+VRAG2Lj1Epob/Jlq5t5wigut47wxytJaPLMAYyyCFxpZLEofTdFfYmsQKg6BVmYMWhSnpdmcvRAwq1sg==
+"@greenwood/plugin-google-analytics@^0.28.2":
+  version "0.28.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-google-analytics/-/plugin-google-analytics-0.28.2.tgz#1b0bb914da765898af487d44734bc3974ab3856b"
+  integrity sha512-xzoQuMe38q3Y1jGfFofwm59pRkd5zeUCCHw901rAA7ZdcvmmQj9qaLQXUizeINWBx6iF1l/q71NKvhG4nUaXZg==
 
-"@greenwood/plugin-graphql@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-graphql/-/plugin-graphql-0.28.0.tgz#48ab6a52c16d2ab63ea34170b70b37324a14e3ad"
-  integrity sha512-0XGEiiEtIhbWTeVUDUBm12Ri+l13JsgDKoHUha3cnx3ckqPxToNW+91E3Zh84j0gciXBFzc+h42zFMwjgFoYwA==
+"@greenwood/plugin-graphql@^0.28.2":
+  version "0.28.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-graphql/-/plugin-graphql-0.28.2.tgz#f59d3b6848306547fcfaf260efe77cd8fb373490"
+  integrity sha512-8RC6OfDe2J6PCupWIpuaClJwIDBXd6yt4MkPpjHUDmLHRGWVuB852VZPJB8tjhQz0eptVgX4ACT2kDIH5ArIGQ==
   dependencies:
     "@apollo/client" "^3.3.11"
     "@rollup/plugin-alias" "^3.1.2"
@@ -360,24 +360,24 @@
     graphql "^15.5.0"
     graphql-tag "^2.10.1"
 
-"@greenwood/plugin-import-css@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-import-css/-/plugin-import-css-0.28.0.tgz#5d904295c1731d1a992d962ab025ce5d292eeeb5"
-  integrity sha512-WBaSfnIXAHf1ogwzUsMl4lE85DAbqb5PNQHc/6VoAZOUhcNRR2VyJsfjiIUCjtmeulmUw+VTo3CXAavBLFNGHQ==
+"@greenwood/plugin-import-css@^0.28.2":
+  version "0.28.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-import-css/-/plugin-import-css-0.28.2.tgz#e12ad59a3280f48209fff4e53fa067e2fd2cb052"
+  integrity sha512-6lQ3HoB08+3F8Jia/5KAb09ZUtpQHUddlXBIlL0pJGAXcG1D69n61KzFBE7PQLFjLzo0wROz2UG6l9NKphbjdQ==
 
-"@greenwood/plugin-postcss@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-postcss/-/plugin-postcss-0.28.0.tgz#fd6ebebb9c675fcbcc4c62f79da8a394eaf6cdac"
-  integrity sha512-laDXCrpAUTkdf23ov3RJBXjQvji80Fd1l/ECweYZ21y3g+chFlRsd+AVnW/7DFKgAdefYXP3OIXWCLS/LlMnlQ==
+"@greenwood/plugin-postcss@^0.28.2":
+  version "0.28.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-postcss/-/plugin-postcss-0.28.2.tgz#0484b9f762990b5bb75dfd7c611bbf8c0c6c2764"
+  integrity sha512-rpoFkB/HW8fGUYj51RPlhe8PsGcd8Wndnm1xEW97be3/NQ9B6mC50hbQ5c4yj6PxMEEPRfM1osmVGvLiPz0Iiw==
   dependencies:
     postcss "^8.3.11"
     postcss-import "^13.0.0"
     postcss-preset-env "^7.0.1"
 
-"@greenwood/plugin-renderer-puppeteer@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@greenwood/plugin-renderer-puppeteer/-/plugin-renderer-puppeteer-0.28.0.tgz#cea5c37a2db00bc58f1f03a495effdc4527da48c"
-  integrity sha512-DWmUbSgOVM4LakBwB/ZSP/tjl9/QzzBLU2URsE2FsEfnpFtlgoAq/4XXaD0k831Z+nLAGaMz3kjArsckMPT8zQ==
+"@greenwood/plugin-renderer-puppeteer@^0.28.2":
+  version "0.28.2"
+  resolved "https://registry.yarnpkg.com/@greenwood/plugin-renderer-puppeteer/-/plugin-renderer-puppeteer-0.28.2.tgz#a6fbfae20816a41d5f59a7a6c5c51f317847eaa6"
+  integrity sha512-Utj0sngqA9FHKAHlkgb9l8FVBCsPZTMD4YNiI0sp37Q2qtG8sM8fmJ51LNPySUGnjf8sz634O+wcmNyzIAbMqg==
   dependencies:
     "@webcomponents/webcomponentsjs" "^2.6.0"
     puppeteer "^15.3.2"
