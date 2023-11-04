@@ -1,5 +1,5 @@
 import { css, html, LitElement } from 'lit-element';
-import client from '@greenwood/plugin-graphql/core/client';
+import client from '@greenwood/plugin-graphql/src/core/client.js';
 import ChildrenQuery from '../../queries/children.gql';
 
 class BlogPostsListComponent extends LitElement {
@@ -50,7 +50,7 @@ class BlogPostsListComponent extends LitElement {
     const response = await client.query({
       query: ChildrenQuery,
       variables: {
-        parent: 'blog'
+        parent: '/blog'
       }
     });
 
