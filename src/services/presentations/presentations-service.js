@@ -2,6 +2,14 @@ class PresentationsService {
   constructor() {
     // add new presentations at the top, i.e. FIFO
     this.presentations = [{
+      title: 'Embracing Web Standards',
+      abstract: `Owen introduces Greenwood, a project focused on leveraging web standards and simplifying web development. Throughout the episode,
+                  they explore Greenwood's evolution, capabilities, and unique approach to application scaffolding and local development.
+                  From the emphasis on HTML and web components to Greenwood's seamless integration with HTMX, they uncover the project's
+                  vision to provide an onramp close to web standards.`,
+      video: 'https://www.youtube.com/embed/UV0QTv6qT0g',
+      date: '4/15/2024'
+    }, {
       title: 'Web Components at the Edge',
       abstract: `It's time for the web to have some fun! Together, let's look at how we can take
                  the Web Components we write for the web and push them all the way to the edge through server rendering,
