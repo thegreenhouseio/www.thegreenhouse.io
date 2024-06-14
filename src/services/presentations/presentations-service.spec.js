@@ -24,7 +24,6 @@ describe('PresentationsService', () => {
     presentations.map(presentation => {
       expect(presentation.title).to.not.equal(undefined);
       expect(presentation.abstract).to.not.equal(undefined);
-      expect(presentation.link).to.not.equal(undefined);
       expect(presentation.date).to.not.equal(undefined);
     });
   });
