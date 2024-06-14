@@ -8,15 +8,15 @@
   "type": "module",
   "scripts": {
     "clean": "rimraf ./reports ./public ./greenwood",
-    "develop": "greenwood develop",
-    "build": "yarn clean && greenwood build",
-    "lint": "ls-lint && yarn lint:js && yarn lint:css",
+    "dev": "greenwood develop",
+    "build": "npm run clean && greenwood build",
+    "lint": "ls-lint && npm run lint:js && npm run lint:css",
     "lint:js": "eslint \"*.js\" \"src/**/**/*.js\"",
     "lint:css": "stylelint \"./src/**/*.js\", \"./src/**/*.css\"",
-    "serve": "yarn clean && yarn build && greenwood serve",
-    "start": "yarn develop",
+    "serve": "npm run clean && npm run build && greenwood serve",
+    "start": "npm run dev",
     "test": "wtr",
-    "test:tdd": "yarn test --watch"
+    "test:tdd": "npm run test -- --watch"
   },
   "dependencies": {
     "lit-element": "^2.4.0",

@@ -15,16 +15,14 @@ Stuff to do / run. 🏃‍♂️
 ### Setup
 After cloning the repo, do the following to get up and running
 1. Install [NodeJS](https://nodejs.org/en/) (LTS)
-1. Install [Yarn](https://yarnpkg.com/en/) (>= 1.x)
-1. Run `yarn install`
-1. Add `127.0.0.1 local.thegreenhouse.io` to your `/etc/hosts` file (optional)
+1. Run `npm ci`
 
 ### Tasks
-- `yarn develop` - Start a local development server with file watching, live reload, etc
-- `yarn build` - Build the site for production deployment
-- `yarn serve` - Build the site for production and start a server locally (useful for a local demo)
-- `yarn test:tdd` - Run tests in watch mode
-- `yarn test` - Run all tests in a single run (used for CI)
+- `npm run dev` - Start a local development server with file watching, live reload, etc
+- `npm run build` - Build the site for production deployment
+- `npm run serve` - Build the site for production and start a server locally (useful for a local demo)
+- `npm run test:tdd` - Run tests in watch mode
+- `npm run test` - Run all tests in a single run (used for CI)
 
 ## Release Management
 The project is hosted by [Netlify](https://www.netlify.com/) and is setup to deploy continously on every merge to master in GitHub.

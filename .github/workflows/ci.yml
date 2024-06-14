@@ -12,19 +12,19 @@ jobs:
     - name: Install Chromium Library Dependencies
       run: |
         sh ./.github/workflows/chromium-lib-install.sh
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 18.12.1
     - name: Installing project dependencies
       run: |
-        yarn install --frozen-lockfile
+        npm ci
     - name: Lint
       run: |
-        yarn lint
+        npm run lint
     - name: Test
       run: |
-        yarn test
+        npm run test
     - name: Build
       run: |
-        yarn clean && yarn build
+        npm run build
