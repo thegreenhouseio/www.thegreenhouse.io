@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Publishing My First Docker Image'
 emoji: '📝'
 date: '10.15.2017'

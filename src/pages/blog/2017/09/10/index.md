@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Vue Webapp Seed'
 emoji: '💡'
 date: '06.07.2017'

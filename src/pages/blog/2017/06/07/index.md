@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'PHP API Seed'
 emoji: '💡'
 date: '06.07.2017'

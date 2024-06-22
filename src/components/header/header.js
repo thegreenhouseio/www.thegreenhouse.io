@@ -1,5 +1,5 @@
 import { css, html, LitElement, unsafeCSS } from 'lit-element';
-import headerCss from './header.css?type=css';
+import headerCss from './header.css?type=raw';
 
 class HeaderComponent extends LitElement {
 
