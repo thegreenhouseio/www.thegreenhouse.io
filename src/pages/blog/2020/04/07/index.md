@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Git Explorer'
 emoji: '💡'
 date: '04.07.2020'

@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Project Evergreen'
 emoji: '💡'
 date: '06.06.2018'

@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'GitHub Dashboard 1.1.0 Released!'
 emoji: '🎉'
 date: '04.22.2017' 

@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Building A Better Mouse Trap'
 emoji:  '🧀'
 date: '10.28.2018'

@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'A Case Study in Performance (cont)'
 emoji: '📝'
 date: '05.16.2018'
