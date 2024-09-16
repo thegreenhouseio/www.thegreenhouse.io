@@ -2,6 +2,11 @@ class ProjectsService {
   constructor() {
     // add new projects at the top, i.e. FIFO
     this.projects = [{
+      name: 'Tuesday\'s Tunes',
+      description: 'A live music stream every other Tuesday hosted by Dave Flamand live from Analog Studios.',
+      link: 'https://www.tuesdaystunes.tv/',
+      img: 'https://www.tuesdaystunes.tv/assets/tunesy.webp'
+    }, {
       name: 'Contributary',
       description: 'A project for helping connect open source with the open source community.',
       link: 'https://www.contributary.community/',
