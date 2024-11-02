@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Minecraft In The Cloud'
 emoji: '📝'
 date: '03.26.2017' 

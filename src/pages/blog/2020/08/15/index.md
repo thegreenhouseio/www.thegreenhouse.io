@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Copy Dots'
 emoji: '💡'
 date: '08.15.2020'

@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Contributary'
 emoji: '💡'
 date: '11.19.2018'

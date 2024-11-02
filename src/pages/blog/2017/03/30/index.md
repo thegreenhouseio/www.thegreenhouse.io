@@ -1,5 +1,5 @@
 ---
-template: 'post'
+layout: 'post'
 title: 'Teaching An Old Dog New Tricks!'
 emoji: '📝'
 date: '03.30.2017' 

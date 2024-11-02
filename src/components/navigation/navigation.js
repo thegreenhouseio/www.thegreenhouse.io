@@ -1,5 +1,5 @@
 import { css, html, LitElement, unsafeCSS } from 'lit-element';
-import navigationCss from './navigation.css?type=css';
+import navigationCss from './navigation.css?type=raw';
 
 class NavigationComponent extends LitElement {
   
