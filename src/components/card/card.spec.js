@@ -123,7 +123,8 @@ describe('Card component', () => {
       const date = card.shadowRoot.querySelectorAll('.wrapper .card-header .date');
 
       expect(date.length).to.equal(1);
-      expect(date[0].innerHTML).contain(`Date: ${mockCard.date}`);
+      // <!--?lit$31297538$--><span class="card-date"><b>Date: <!--?lit$31297538$-->1/2/2019</b></span>
+      expect(date[0].innerHTML).contain(mockCard.date);
     });
 
     it('should have the expected slide link', () => {
