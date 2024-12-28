@@ -18,6 +18,9 @@
     "test": "wtr",
     "test:tdd": "npm run test -- --watch"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.6.1"
+  },
   "dependencies": {
     "lit-element": "^2.4.0",
     "prismjs": "^1.27.0"
