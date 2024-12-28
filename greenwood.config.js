@@ -7,7 +7,7 @@ import { greenwoodPluginRendererPuppeteer } from '@greenwood/plugin-renderer-pup
 export default {
   // TODO optimization: 'strict',
 
-  // prerender: true,
+  prerender: true,
   devServer: {
     port: 51201
   },
@@ -16,7 +16,7 @@ export default {
     greenwoodPluginPostCss(),
     greenwoodPluginImportRaw(),
     greenwoodPluginGraphQL(),
-    // greenwoodPluginRendererPuppeteer(),
+    greenwoodPluginRendererPuppeteer(),
     greenwoodPluginGoogleAnalytics({
       analyticsId: 'UA-117350131-1'
     })
