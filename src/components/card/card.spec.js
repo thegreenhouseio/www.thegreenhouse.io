@@ -1,5 +1,6 @@
 import { expect } from '@esm-bundle/chai';
 import './card.js';
+import mockCard from '../../data/card.js';
 
 describe('Card component', () => {
   let card;
@@ -18,8 +19,8 @@ describe('Card component', () => {
   });
 
   describe('Default Behavior', () => {
-    
-    it('should be have a wrapper', () => { 
+
+    it('should be have a wrapper', () => {
       const wrapper = card.shadowRoot.querySelectorAll('.wrapper');
 
       expect(wrapper.length).to.equal(1);
@@ -78,26 +79,16 @@ describe('Card component', () => {
   });
 
   describe('Complete Card', () => {
-    const mockCard = {
-      link: 'http://www.some-domain.com/',
-      title: 'Card Ttitle',
-      date: '1/2/2019',
-      abstract: 'Lorum Ipsum',
-      slides: 'http://slides.google.com/abc123',
-      img: 'http://static.some-domain.com/image.png',
-      video: 'http://www.youtube.com/abc123'
-    };
-
     beforeEach(async () => {
       card = document.createElement('app-card');
       card.item = mockCard;
-  
+
       document.body.appendChild(card);
-  
+
       await card.updateComplete;
     });
 
-    it('should be have a wrapper', () => { 
+    it('should be have a wrapper', () => {
       const wrapper = card.shadowRoot.querySelectorAll('.wrapper');
 
       expect(wrapper.length).to.equal(1);
